@@ -1,0 +1,366 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\headheight}{14pt}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\definecolor{usercolor}{RGB}{30, 100, 200}
+\definecolor{agentcolor}{RGB}{30, 150, 80}
+\definecolor{doccolor}{RGB}{200, 90, 10}
+\definecolor{userbg}{RGB}{235, 244, 255}
+\definecolor{agentbg}{RGB}{235, 250, 238}
+\definecolor{docbg}{RGB}{255, 243, 220}
+\definecolor{answerbg}{RGB}{250, 250, 235}
+
+\newmdenv[backgroundcolor=userbg,linecolor=usercolor,linewidth=1.5pt,
+  leftmargin=0pt,rightmargin=80pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=8pt,innerbottommargin=8pt,roundcorner=5pt,
+  skipabove=6pt,skipbelow=3pt]{userbubble}
+
+\newmdenv[backgroundcolor=agentbg,linecolor=agentcolor,linewidth=1.5pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=8pt,innerbottommargin=8pt,roundcorner=5pt,
+  skipabove=3pt,skipbelow=3pt]{agentbubble}
+
+\newmdenv[backgroundcolor=docbg,linecolor=doccolor,linewidth=1pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=6pt,innerbottommargin=6pt,roundcorner=4pt,
+  skipabove=2pt,skipbelow=3pt]{docenv}
+
+\newmdenv[backgroundcolor=answerbg,linecolor=gray,linewidth=0.5pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=5pt,innerbottommargin=5pt,roundcorner=4pt,
+  skipabove=2pt,skipbelow=6pt]{refanswerenv}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\cfoot{\thepage}
+
+\lhead{\textcolor{gray}{\small RAG Conversation Dataset}}
+\rhead{\textcolor{gray}{\small Conv.\,\#2\ --\ govt0611}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries RAG Conversation \#2}
+\par\medskip
+{\small\textcolor{gray}{Domain:\ \texttt{govt0611}\quad|\quad Status:\ \textbf{ACCEPTED}}}
+\end{center}
+\vspace{0.4em}
+\noindent\textcolor{gray}{\rule{\linewidth}{0.6pt}}
+\vspace{0.4em}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~1}}}\hfill{\tiny\textcolor{gray}{Explanation\ $\cdot$\ ANSWERABLE}}
+\begin{userbubble}
+"What are the sheltered rooms designated for use?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+A safe room, as defined by FEMA, is designed to provide shelter from tornadoes. However, if the safe room is located below ground, it may not be suitable for protection during a weapons of mass destruction event. The Red Cross recommends safe rooms for areas prone to tornadoes. It's important not to confuse safe rooms for tornadoes with shelter-in-place rooms. An above-ground safe room with no windows can also be used as a shelter-in-place location. It's important to note that a safe room used for protection from windstorms is different from a room selected for shelter-in-place, although they serve a similar purpose. If an above-ground safe room for windstorms has no windows, it can also be an ideal location for sheltering-in-place.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~13.665}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723123788\}\}\}]}}\\[3pt]
+{\small\textit{FAQs • Dublin • CivicEngage}}\\[4pt]
+{\footnotesize FAQs • Dublin • CivicEngage
+A safe room, as defined by the Federal Emergency Management Agency (FEMA), is a room - preferably below ground - in which people can take shelter from a tornado. If such a room is below ground, it may not be the safest choice if told to stay at home and shelter-in-place d$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~12.963}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723123785\}\}\}]}}\\[3pt]
+{\small\textit{FAQs • Disaster Preparedness}}\\[4pt]
+{\footnotesize FAQs • Disaster Preparedness
+It is intended to provide a barrier to air flow. While we can not guarantee that plastic sheeting over air vents will stop all biological, chemical, or radiological agents, it will add to the barrier of protection for your safety.	
+
+5.
+Do I need a safe room? What is a sa$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace Based on the information provided, a safe room can be used for protection from windstorms, such as tornadoes, and can also serve as a shelter-in-place during a weapons of mass destruction event. A safe room is typically built below ground, but if it's above ground level and has no windows, it can also be used for sheltering-in-place. The bathroom can also be a good room in which to shelter-in-plac$\ldots$}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~2}}}\hfill{\tiny\textcolor{gray}{Summarization\ $\cdot$\ ANSWERABLE\ $\cdot$\ Follow-up}}
+\begin{userbubble}
+What items should I keep?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Being prepared to take care of yourself during a disaster is crucial. This means having enough food, water, and other supplies to last at least three days if stores are closed and roads are impassable due to a flood or winter storm. While local officials and relief workers will be available after a disaster, they may only be able to reach some people after a disaster. You could receive help within hours, but it may take days. It's important to note that the recommendation to have at least three days' worth of disaster supplies differs from the advice to shelter in place, which may involve using duct tape and plastic sheeting during an emergency. The Red Cross advises people to have these supplies on hand if needed.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(3)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~21.309}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723125322\}\}\}]}}\\[3pt]
+{\small\textit{FAQs • Dublin • CivicEngage}}\\[4pt]
+{\footnotesize FAQs • Dublin • CivicEngage
+Please do not confuse the recommendation to have at least three days worth of disaster supplies on hand with the amount of time that you may be asked to shelter-in-place. We always recommend having at least three days worth of supplies in case stores are closed and roads $\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~15.969}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723125319\}\}\}]}}\\[3pt]
+{\small\textit{FAQs • Disaster Preparedness}}\\[4pt]
+{\footnotesize FAQs • Disaster Preparedness
+What are the important points to remember in case we are told to "shelter-in-place?"
+
+You should be in a place that will afford you protection from a contaminant in the air. Instructions on how to shelter-in-place are provided on the Red Cross website. Please do not con$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~18.457}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723125316\}\}\}]}}\\[3pt]
+{\small\textit{FEMA: Assemble a Disaster Supplies Kit}}\\[4pt]
+{\footnotesize FEMA: Assemble a Disaster Supplies Kit
+
+
+FEMA: Assemble a Disaster Supplies Kit
+
+Contact Us
+Site Map
+Frequently Asked Questions
+Español
+
+Search
+
+ Advanced Search
+
+Home
+Disaster Information
+Plan Ahead
+Apply for Assistance
+Recover \& Rebuild
+About Us
+
+Prepare for a Disaster
+Determine Your Risk
+Plan for$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace 
+The specific items you should keep in a safe room or during shelter-in-place may vary depending on the situation and the guidelines provided by your local authorities. However, generally, you should have essentials like water, food, a first aid kit, a flashlight, and a battery-powered radio. It's also recommended to have any necessary medications, important documents, and personal items like eyeg$\ldots$}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~3}}}\hfill{\tiny\textcolor{gray}{Explanation, Summarization\ $\cdot$\ ANSWERABLE\ $\cdot$\ Clarification}}
+\begin{userbubble}
+Is it the same for earthquakes?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Each disaster has its characteristics, but it's important to plan and prepare today for you and your family to recover from an emergency tomorrow. Here are some steps you can take: 1. Get an Emergency Supplies kit lasting up to three days per family member, and remember supplies for your pets. 2. Make a family communication plan, including shelter-in-place and evacuation procedures. 3. Stay informed by visiting Ready.gov and signing up for emergency notifications from San Mateo County (SMC) Alert. 4. Get involved by signing up for a Community Emergency Response Team (CERT) course and learning life-saving techniques in a CPR class. Remember, earthquakes can happen suddenly and without warning. Identifying potential hazards and planning can reduce the risk of severe injury or loss of life during an earthquake. If your home is damaged, check for gas leaks and avoid using toilets if you suspect sewage lines are damaged. Contact the gas company and a plumber if needed. In the same way, if water pipes are damaged, please contact the water company and avoid using tap water. You can obtain safe water by melting ice cubes. Each county prone to earthquakes has guides to help citizens before, during, and after an earthquake. Please reach out to your city hall for more information.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(3)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~15.462}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723126091\}\}\}]}}\\[3pt]
+{\small\textit{Emergency Preparedness | San Bruno, CA}}\\[4pt]
+{\footnotesize Emergency Preparedness | San Bruno, CA
+These steps include the following:Get a kit of Emergency Supplies that will last up to three days per family member; don't forget your petsMake a plan to include family communications, shelter-in-place and evacuationBe Informed, visit Ready.gov and sign up for $\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~15.667}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723126094\}\}\}]}}\\[3pt]
+{\small\textit{Earthquake Safety | Monterey Park, CA - Official Website}}\\[4pt]
+{\footnotesize Earthquake Safety | Monterey Park, CA - Official Website
+Earthquake Safety | Monterey Park, CA - Official Website
+
+ 
+
+Skip to Main Content
+
+Create a Website Account - Manage notification subscriptions, save form progress and more.   
+
+Website Sign In
+
+ 
+
+ 中文 Español
+
+ 
+ 
+ 
+
+GovernmentServicesResiden$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~16.430}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723126096\}\}\}]}}\\[3pt]
+{\small\textit{Emergency Preparedness | San Bruno, CA}}\\[4pt]
+{\footnotesize Emergency Preparedness | San Bruno, CA
+HomeDepartmentsFireCommunity OutreachEmergency Preparedness
+
+
+
+Emergency Preparedness	
+
+The likelihood that you and your family will recover from an emergency tomorrow often depends on the planning and preparation done today. There are several steps that citi$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The guidelines for sheltering-in-place during a disaster apply to various types of emergencies, including earthquakes. When an earthquake strikes, it's essential to find a safe location indoors, away from heavy furniture, appliances, or anything that could fall and cause injury. In some cases, local authorities may advise residents to shelter-in-place using duct tape and plastic sheeting to create$\ldots$}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~4}}}\hfill{\tiny\textcolor{gray}{Summarization\ $\cdot$\ PARTIAL\ $\cdot$\ Follow-up}}
+\begin{userbubble}
+Which state has more wildfires?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+ Although I don't have the exact information about which state has more wildfires, it is known that the 2018 wildfire season in California was the deadliest and most destructive on record in the state. In the 2020 California wildfire season, record-setting wildfires burned across the state, with nearly 10,000 fires burning over 4.2 million acres by the end of the year. This accounted for more than 4\% of the state's roughly 100 million acres of land, making 2020 the largest wildfire season in California's modern history. The August Complex fire, part of the 2020 wildfire year, has been described as the first "gigafire" due to the area burned exceeding 1 million acres. This fire spread across seven counties and was larger than the state of Rhode Island.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~20.156}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723127467\}\}\}]}}\\[3pt]
+{\small\textit{Our Impact | CAL FIRE}}\\[4pt]
+{\footnotesize Our Impact | CAL FIRE
+The 2018 wildfire season was the deadliest and most destructive wildfire season on record in California. 
+2020 was the largest wildfire season recorded in California's modern history with more than 4\% of the state's total land burning in a single year. 
+
+Remembering the Camp Fi$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~19.432}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723127470\}\}\}]}}\\[3pt]
+{\small\textit{2020 Fire Season Incident Archive | CAL FIRE}}\\[4pt]
+{\footnotesize 2020 Fire Season Incident Archive | CAL FIRE
+The 2020 California wildfire year was characterized by record-setting wildfires that burned across the state of California as measured during the modern era of wildfire management and record keeping. As of the end of the year, nearly 10,000 fires had burn$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace I'm an AI language model and I don't have real-time access to specific data or the ability to browse the web, so I can't provide the current statistics on which state has the most wildfires. However, states like California, Texas, and Colorado often experience a high number of wildfires due to their climates and vegetation. I recommend checking the latest data from a reliable source such as the Na$\ldots$}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~5}}}\hfill{\tiny\textcolor{gray}{Summarization\ $\cdot$\ ANSWERABLE\ $\cdot$\ Follow-up}}
+\begin{userbubble}
+What causes wildfires?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Although wildfires occur naturally from lightning, human activities cause most wildfires. Drought fuels wildfires, as happened in the Amazon, caused by the El Niño system.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(4)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~19.799}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723128453\}\}\}]}}\\[3pt]
+{\small\textit{Wildfires - NYSDEC}}\\[4pt]
+{\footnotesize Wildfires - NYSDEC
+Wildfires, often called forest fires, damage thousands of acres of natural resources most every year in New York. Although wildfires naturally occur from lightning, human activities are the cause of most wildfires (PDF). To protect our natural resources and communities from wildfi$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~16.347}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723128447\}\}\}]}}\\[3pt]
+{\small\textit{Drought Fuels Wildfires in the Amazon}}\\[4pt]
+{\footnotesize Drought Fuels Wildfires in the Amazon
+The system also detected large numbers of understory forest fires, a particularly harmful type of fire that can cause damage that persists for decades.
+“Deforestation fires are happening this year as well, but I’m especially worried about the addition of so many$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~14.571}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723128424\}\}\}]}}\\[3pt]
+{\small\textit{Drought Fuels Wildfires in the Amazon}}\\[4pt]
+{\footnotesize Drought Fuels Wildfires in the Amazon
+NASA Earth Observatory images by Lauren Dauphin, using MODIS data from NASA EOSDIS LANCE and GIBS/Worldview and Landsat data from the U.S. Geological Survey. Story by Adam Voiland.
+
+View this area in EO Explorer
+
+With an El Niño brewing in the Pacific, uncontrol$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace Wildfires can be caused by various factors, including:
+1. Human activity: Unattended campfires, burning debris, discarded cigarettes, and intentional acts of arson can all spark wildfires.
+2. Lightning: During thunderstorms, lightning strikes can ignite dry vegetation, leading to wildfires.
+3. Natural events: Hot, dry, and windy conditions can contribute to the spread of wildfires, especially in a$\ldots$}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~6}}}\hfill{\tiny\textcolor{gray}{Explanation\ $\cdot$\ UNANSWERABLE\ $\cdot$\ Follow-up}}
+\begin{userbubble}
+Why doesn't the government prevent people from living in areas prone to flooding?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+I do not have the answer to your question.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(1)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~37.755}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'no', 'timestamp': 1723129583\}\}\}]}}\\[3pt]
+{\small\textit{FAQs • Disaster Preparedness}}\\[4pt]
+{\footnotesize FAQs • Disaster Preparedness
+It is intended to provide a barrier to air flow. While we can not guarantee that plastic sheeting over air vents will stop all biological, chemical, or radiological agents, it will add to the barrier of protection for your safety.	
+
+5.
+Do I need a safe room? What is a sa$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace There are several reasons why governments may not prevent people from living in areas prone to flooding. Firstly, many areas that are prone to flooding are also economically valuable for agriculture, industry, or housing. Secondly, preventing development in flood-prone areas can be politically challenging, as it may require eminent domain proceedings or significant financial incentives to relocate$\ldots$}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~7}}}\hfill{\tiny\textcolor{gray}{Factoid\ $\cdot$\ ANSWERABLE\ $\cdot$\ Follow-up}}
+\begin{userbubble}
+Is flooding the most common type of disaster?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Yes, floods are the most common disasters in the United States and can result from various sources such as rain, snow, coastal storms, and dam overflows. They can develop slowly or quickly, with flash floods occurring suddenly and without warning. Floods can cause power outages, disrupt transportation, damage buildings, and lead to landslides. Their impact can range from local to widespread, affecting entire river basins and multiple states. While some floods develop slowly over days, flash floods can emerge within minutes, carrying dangerous debris and swiftly sweeping away whatever is in their path.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~18.109}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723130623\}\}\}]}}\\[3pt]
+{\small\textit{Floods | Ready.gov}}\\[4pt]
+{\footnotesize Floods | Ready.gov
+Floods are the most common disaster in the United States. Failing to evacuate flooded areas or entering flood waters can lead to injury or death.
+Floods may:
+Result from rain, snow, coastal storms, storm surges and overflows of dams and other water systems.Develop slowly or quickl$\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~15.259}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723130620\}\}\}]}}\\[3pt]
+{\small\textit{FEMA: Flood}}\\[4pt]
+{\footnotesize FEMA: Flood
+
+
+FEMA: Flood
+
+Contact Us
+Site Map
+Frequently Asked Questions
+Español
+
+Search
+
+ Advanced Search
+
+Home
+Disaster Information
+Plan Ahead
+Apply for Assistance
+Recover \& Rebuild
+About Us
+
+Disaster Information
+Types of Disasters
+Flood
+
+Flood Maps
+Flood Terms
+Before a Flood
+During a Flood
+After$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace Yes, flooding is one of the most common types of disasters in many regions. It is important to be prepared for flooding and have an emergency plan in place.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~8}}}\hfill{\tiny\textcolor{gray}{Summarization\ $\cdot$\ ANSWERABLE\ $\cdot$\ Follow-up}}
+\begin{userbubble}
+Is climate change the cause of natural disasters?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Climate change can contribute to the intensity and frequency of some natural disasters, but it is not the sole cause. Global warming can be influenced by natural causes such as volcanic activity and changes in Earth's orbit over millions of years. However, these natural factors cannot explain the recent rapid warming. Climate change refers to long-term changes in the average weather patterns, including physical effects such as heat waves, sea level rise, heavy rainfall, floods, and droughts. While some climate change is naturally occurring, today's climate changes rapidly due to human activities such as greenhouse gas emissions from burning fossil fuels, deforestation, and wetland loss. These human activities are causing the Earth's average temperature to increase faster than it would naturally. The Greenhouse Effect, Greenhouse Gases, and Global Warming are all interconnected in this process.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~13.522}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723132014\}\}\}]}}\\[3pt]
+{\small\textit{Climate Change - NYSDEC}}\\[4pt]
+{\footnotesize Climate Change - NYSDEC
+Climate, however, refers to regional or global average patterns of temperature, humidity, and precipitation over longer time periods such as seasons, years, decades, or centuries. Climate is influenced by the movement of heat and moisture by air and ocean currents, which can $\ldots$}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~13.056}}\ {\tiny\textcolor{gray}{[\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723132011\}\}\}]}}\\[3pt]
+{\small\textit{Climate Change - NYSDEC}}\\[4pt]
+{\footnotesize Climate Change - NYSDEC
+When the Earth reflects the same amount of energy as it absorbs, the balance keeps the planet's average temperature fairly stable. This is called the greenhouse effect, and is essential for sustaining life on Earth. The revolution of the Earth around the sun and the tilt of t$\ldots$}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace Climate change can contribute to the intensity and frequency of some natural disasters, but it is not the sole cause. Natural disasters such as floods, hurricanes, and wildfires can have various causes, including weather patterns, geological factors, and human activities. Climate change may exacerbate certain conditions that lead to natural disasters, but it is not the direct cause in every instan$\ldots$}}}
+\end{refanswerenv}
+\vspace{1em}
+\noindent\textcolor{gray}{\rule{\linewidth}{0.6pt}}
+\end{document}
