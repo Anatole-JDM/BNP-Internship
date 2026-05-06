@@ -66,11 +66,19 @@ $\downarrow$ \textbf{Disambiguation}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Freelancer: Should I start a second bank account?\n\item Récupérer les faits nécessaires pour répondre à: Freelancer: Should I start a second bank account?\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Freelancer: Should I start a second bank account?\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: Freelancer: Should I start a second bank account?
+\item Identifier les faits utiles pour répondre à cette question.
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Freelancer: Should I start a second bank account?\n\item Récupérer les faits nécessaires pour répondre à: Freelancer: Should I start a second bank account?\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Freelancer: Should I start a second bank account?\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: Freelancer: Should I start a second bank account?
+\item Identifier les faits utiles pour répondre à cette question.
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -102,15 +110,22 @@ Is it free to open a second bank account?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is it free to open a second bank account? (Contexte: Freelancer: Should I start a second bank account?)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is it free to open a second bank account? (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Is it free to open a second bank account? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: Is it free to open a second bank account? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Is it free to open a second bank account? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: Is it free to open a second bank account?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: Is it free to open a second bank account?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -149,15 +164,22 @@ if it is free, then I should make a second account for my business. how can I cr
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} if it is free, then I should make a second account for my business. how can I create? (Contexte: Is it free to open a second bank account?)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} if it is free, then I should make a second account for my business. how can I create? (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: if it is free, then I should make a second account for my business. how can I create? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: if it is free, then I should make a second account for my business. how can I create? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: if it is free, then I should make a second account for my business. how can I create? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: if it is free, then I should make a second account for my business. how can I create?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1, 2.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: if it is free, then I should make a second account for my business. how can I create?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -204,15 +226,22 @@ what? you said it is free to open one!
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} what? you said it is free to open one! (Contexte: if it is free, then I should make a second account for my business. how can I cr)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} what? you said it is free to open one! (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: what? you said it is free to open one!? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: what? you said it is free to open one!? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: what? you said it is free to open one!? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: what? you said it is free to open one!?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1, 2, 3.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: what? you said it is free to open one!?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -261,15 +290,22 @@ should I set up my second bank account with different bank I have right now?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} should I set up my second bank account with different bank I have right now? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} should I set up my second bank account with different bank I have right now? (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: should I set up my second bank account with different bank I have right now? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: should I set up my second bank account with different bank I have right now? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: should I set up my second bank account with different bank I have right now? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: should I set up my second bank account with different bank I have right now?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1, 2, 3, 4.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: should I set up my second bank account with different bank I have right now?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -301,15 +337,22 @@ what are people's experience with using two bank accounts?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} what are people's experience with using two bank accounts? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} what are people's experience with using two bank accounts? (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: what are people's experience with using two bank accounts? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: what are people's experience with using two bank accounts? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: what are people's experience with using two bank accounts? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: what are people's experience with using two bank accounts?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1, 2, 3, 4, 5.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: what are people's experience with using two bank accounts?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -341,15 +384,22 @@ can you let me know advantages of using two bank accounts?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} can you let me know advantages of using two bank accounts? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} can you let me know advantages of using two bank accounts? (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: can you let me know advantages of using two bank accounts? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: can you let me know advantages of using two bank accounts? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: can you let me know advantages of using two bank accounts? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: can you let me know advantages of using two bank accounts?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1, 2, 3, 4, 5, 6.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: can you let me know advantages of using two bank accounts?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -381,15 +431,22 @@ I am wondering which bank I should start looking at
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} I am wondering which bank I should start looking at (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} I am wondering which bank I should start looking at (avec résolution des références au contexte précédent)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: I am wondering which bank I should start looking at? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: I am wondering which bank I should start looking at? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: I am wondering which bank I should start looking at? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}
+\item Clarifier l'intention exacte: I am wondering which bank I should start looking at?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\item Cette sous-question est déjà couverte par des documents précédents. (Doc Turn 1, 2, 3, 4.)
+\end{itemize}}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}
+\item Clarifier l'intention exacte: I am wondering which bank I should start looking at?
+\item Vérifier les contraintes temporelles/définitions implicites.
+\end{itemize}}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
