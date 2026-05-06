@@ -47,9 +47,9 @@
 \begin{document}
 
 \begin{center}
-{\LARGE\bfseries RAG Conversation #2}
+{\LARGE\bfseries MTRAG Conversation #2}
 \par\medskip
-{\small\textcolor{gray}{Domain:\ \texttt{mt-rag-govt-elser-512-100-20240611}\quad|\quad Status:\ \textbf{accepted}}}
+{\small\textcolor{gray}{Domain:\ \texttt{mt-rag-govt-elser-512-100-20240611}\quad|\quad Status:\ \textbf{ACCEPTED}}}
 \end{center}
 \vspace{0.4em}
 \noindent\textcolor{gray}{\rule{\linewidth}{0.6pt}}
@@ -66,11 +66,17 @@ $\downarrow$ \textbf{Disambiguation}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: "What are the sheltered rooms designated for use?\n\item Récupérer les faits nécessaires pour répondre à: "What are the sheltered rooms designated for use?\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: "What are the sheltered rooms designated for use?\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: '"What are the sheltered rooms designated for use'.
+\item Find factual evidence directly answering: '"What are the sheltered rooms designated for use'.
+\item Check whether time, location, or entity disambiguation is needed for '"What are the sheltered rooms designated for use'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: "What are the sheltered rooms designated for use?\n\item Récupérer les faits nécessaires pour répondre à: "What are the sheltered rooms designated for use?\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: "What are the sheltered rooms designated for use?\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} '"What are the sheltered rooms designated for use'. '"What are the sheltered rooms designated for use'. '"What are the sheltered rooms designated for use'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -138,15 +144,21 @@ What items should I keep?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} What items should I keep? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} What items should I keep? (Resolved context: this refers to What from previous turns.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: What items should I keep? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: What items should I keep? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: What items should I keep? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'What items should I keep'.
+\item Find factual evidence directly answering: 'What items should I keep'.
+\item Check whether time, location, or entity disambiguation is needed for 'What items should I keep'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'What items should I keep'. 'What items should I keep'. 'What items should I keep'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -271,15 +283,21 @@ Is it the same for earthquakes?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is it the same for earthquakes? (Contexte: What items should I keep?)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is it the same for earthquakes? (Resolved context: this refers to What from previous turns.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Is it the same for earthquakes? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: Is it the same for earthquakes? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Is it the same for earthquakes? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'Is it the same for earthquakes'.
+\item Find factual evidence directly answering: 'Is it the same for earthquakes'.
+\item Check whether time, location, or entity disambiguation is needed for 'Is it the same for earthquakes'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'Is it the same for earthquakes'. 'Is it the same for earthquakes'. 'Is it the same for earthquakes'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -424,15 +442,21 @@ Which state has more wildfires?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Which state has more wildfires? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Which state has more wildfires? (Using prior conversation context for disambiguation.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Which state has more wildfires? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: Which state has more wildfires? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Which state has more wildfires? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'Which state has more wildfires'.
+\item Find factual evidence directly answering: 'Which state has more wildfires'.
+\item Check whether time, location, or entity disambiguation is needed for 'Which state has more wildfires'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'Which state has more wildfires'. 'Which state has more wildfires'. 'Which state has more wildfires'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -654,15 +678,21 @@ What causes wildfires?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} What causes wildfires? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} What causes wildfires? (Using prior conversation context for disambiguation.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: What causes wildfires? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: What causes wildfires? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: What causes wildfires? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'What causes wildfires'.
+\item Find factual evidence directly answering: 'What causes wildfires'.
+\item Check whether time, location, or entity disambiguation is needed for 'What causes wildfires'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'What causes wildfires'. 'What causes wildfires'. 'What causes wildfires'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -867,15 +897,21 @@ Why doesn't the government prevent people from living in areas prone to flooding
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Why doesn't the government prevent people from living in areas prone to flooding? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Why doesn't the government prevent people from living in areas prone to flooding? (Using prior conversation context for disambiguation.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Why doesn't the government prevent people from living in areas prone to flooding? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: Why doesn't the government prevent people from living in areas prone to flooding? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Why doesn't the government prevent people from living in areas prone to flooding? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'Why doesn't the government prevent people from living in areas prone to flooding'.
+\item Find factual evidence directly answering: 'Why doesn't the government prevent people from living in areas prone to flooding'. (Doc 1.)
+\item Check whether time, location, or entity disambiguation is needed for 'Why doesn't the government prevent people from living in areas prone to flooding'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'Why doesn't the government prevent people from living in areas prone to flooding'. 'Why doesn't the government prevent people from living in areas prone to flooding'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -919,15 +955,21 @@ Is flooding the most common type of disaster?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is flooding the most common type of disaster? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is flooding the most common type of disaster? (Using prior conversation context for disambiguation.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Is flooding the most common type of disaster? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: Is flooding the most common type of disaster? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Is flooding the most common type of disaster? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'Is flooding the most common type of disaster'.
+\item Find factual evidence directly answering: 'Is flooding the most common type of disaster'.
+\item Check whether time, location, or entity disambiguation is needed for 'Is flooding the most common type of disaster'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'Is flooding the most common type of disaster'. 'Is flooding the most common type of disaster'. 'Is flooding the most common type of disaster'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}
@@ -1053,15 +1095,21 @@ Is climate change the cause of natural disasters?
 \begin{center}
 $\downarrow$ \textbf{Disambiguation}
 \[6pt]
-\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is climate change the cause of natural disasters? (En tenant compte du contexte des tours précédents.)}}
+\fcolorbox{blue}{blue!10}{\parbox{0.85\linewidth}{\textbf{Rewritten Query:} Is climate change the cause of natural disasters? (Using prior conversation context for disambiguation.)}}
 \[6pt]
 $\downarrow$ \textbf{Breakdown}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:}\n\begin{itemize}\item Identifier précisément l'intention utilisateur: Is climate change the cause of natural disasters? (Doc couvert au Turn 1.)\n\item Récupérer les faits nécessaires pour répondre à: Is climate change the cause of natural disasters? (Doc couvert au Turn 1.)\n\item Vérifier les contraintes temporelles ou définitionnelles implicites liées à: Is climate change the cause of natural disasters? (Doc couvert au Turn 1.)\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Breakdown:} 
+\begin{itemize}
+\item Define the exact scope of the user question: 'Is climate change the cause of natural disasters'.
+\item Find factual evidence directly answering: 'Is climate change the cause of natural disasters'. (Doc 5.)
+\item Check whether time, location, or entity disambiguation is needed for 'Is climate change the cause of natural disasters'.
+\end{itemize}
+}}
 \[6pt]
 $\downarrow$ \textbf{Gap Identification}
 \[6pt]
-\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Optimized Retrieval Queries:}\n\begin{itemize}\item Aucun gap: toutes les sous-questions sont déjà couvertes.\n\end{itemize}}}
+\fcolorbox{purple}{purple!10}{\parbox{0.85\linewidth}{\textbf{Retrieval Query:} 'Is climate change the cause of natural disasters'. 'Is climate change the cause of natural disasters'.}}
 \end{center}
 \noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
 \begin{agentbubble}

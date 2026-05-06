@@ -1,0 +1,331 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\headheight}{14pt}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\definecolor{usercolor}{RGB}{30, 100, 200}
+\definecolor{agentcolor}{RGB}{30, 150, 80}
+\definecolor{doccolor}{RGB}{200, 90, 10}
+\definecolor{userbg}{RGB}{235, 244, 255}
+\definecolor{agentbg}{RGB}{235, 250, 238}
+\definecolor{docbg}{RGB}{255, 243, 220}
+\definecolor{answerbg}{RGB}{250, 250, 235}
+
+\newmdenv[backgroundcolor=userbg,linecolor=usercolor,linewidth=1.5pt,
+  leftmargin=0pt,rightmargin=80pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=8pt,innerbottommargin=8pt,roundcorner=5pt,
+  skipabove=6pt,skipbelow=3pt]{userbubble}
+
+\newmdenv[backgroundcolor=agentbg,linecolor=agentcolor,linewidth=1.5pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=8pt,innerbottommargin=8pt,roundcorner=5pt,
+  skipabove=3pt,skipbelow=3pt]{agentbubble}
+
+\newmdenv[backgroundcolor=docbg,linecolor=doccolor,linewidth=1pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=6pt,innerbottommargin=6pt,roundcorner=4pt,
+  skipabove=2pt,skipbelow=3pt]{docenv}
+
+\newmdenv[backgroundcolor=answerbg,linecolor=gray,linewidth=0.5pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=5pt,innerbottommargin=5pt,roundcorner=4pt,
+  skipabove=2pt,skipbelow=6pt]{refanswerenv}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\cfoot{\thepage}
+
+\lhead{\textcolor{gray}{\small RAG Conversation Dataset}}
+\rhead{\textcolor{gray}{\small Conv.\,\#2\ --\ govt0611}}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries RAG Conversation #13}
+\par\medskip
+{\small\textcolor{gray}{Domain:\ \texttt{mt-rag-clapnq-elser-512-100-20240503}\quad|\quad Status:\ \textbf{accepted}}}
+\end{center}
+\vspace{0.4em}
+\noindent\textcolor{gray}{\rule{\linewidth}{0.6pt}}
+\vspace{0.4em}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~1}}}\hfill{\tiny\textcolor{gray}{Explanation \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+what makes the different shapes of the moon
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+The different shapes of the Moon, also known as lunar phases, are determined by the amount of sunlight that is illuminating the portion of the Moon visible from Earth. This changes as the Moon orbits the Earth and the relative positions of the Moon, Earth, and Sun shift. When the Sun, Earth, and Moon are aligned, with the Sun and Moon on opposite sides of the Earth, we see a full moon. When the Moon is positioned between the Earth and the Sun, we see a new moon. The crescent and gibbous shapes occur during the intervals between these principal phases, when only a portion of the Moon's surface is illuminated. The specific shape at any given time depends on the Moon's position in its orbit. When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent .
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(4)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~14.098}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723656667\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent . When a crescent Moon occurs , the phenomenon of earthshine may be apparent , where the night side of the Moon faintly reflects light from the Earth .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~13.589}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723656788\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+The lunar phase or phase of the moon is the shape of the illuminated ( sunlit ) portion of the Moon as seen by an observer on Earth . The lunar phases change cyclically as the Moon orbits the Earth , according to the changing positions of the Moon and Sun relative to the Earth . The Moon 's rotation is tidally locked by the Earth 's gravity , therefore the same lunar surface always faces Earth . This face is variously sunlit depending on the position of the Moon in its orbit . Therefore , the portion of this hemisphere that is visible to an observer on Earth can vary from about 100 \% ( full moon ) to 0 \% ( new moon ) . The lunar terminator is the boundary between the illuminated and darkened hemispheres . Each of the four `` intermediate '' lunar phases ( see below ) is roughly seven days ( \textasciitilde{} 7.4 days ) but this varies slightly due to the elliptical shape of the Moon 's orbit . Aside from some craters near the lunar poles such as Shoemaker , all parts of the Moon see around 14.77 days of sunlight , followed by 14.77 days of `` night '' . ( The side of the Moon facing away from the Earth is sometimes called the `` dark side of the Moon '' , although that is a misnomer . )}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~13.255}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723656855\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+In Western culture , the four principal lunar phases are new moon , first quarter , full moon , and third quarter ( also known as last quarter ) . These are the instances when the Moon 's apparent geocentric celestial longitude minus the Sun 's apparent geocentric celestial longitude is 0 ° , 90 ° , 180 ° and 270 ° , respectively . Each of these phases occur at slightly different times when viewed from different points on the Earth . During the intervals between principal phases , the Moon appears either crescent - shaped or gibbous . These shapes , and the periods of time when the Moon shows them , are called the intermediate phases . They last , on average , one - quarter of a synodic month , roughly 7.38 days , but their durations vary slightly because the Moon 's orbit is slightly elliptical , and thus its speed in orbit is not constant . The descriptor waxing is used for an intermediate phase when the Moon 's apparent size is increasing , from new moon toward full moon , and waning when the size is decreasing .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~4}}}\hfill{\tiny\texttt{score:~13.572}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723657387\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When the Sun and Moon are aligned on the same side of the Earth , the moon is `` new '' , and the side of the Moon facing Earth is not illuminated by the Sun . As the moon waxes ( the amount of illuminated surface as seen from Earth is increasing ) , the lunar phases progress through new moon , crescent moon , first - quarter moon , gibbous moon , and full moon . The moon is then said to wane as it passes through the gibbous moon , third - quarter moon , crescent moon and back to new moon . The terms `` old moon '' and `` new moon '' are not interchangeable . The `` old moon '' is a waning sliver ( which eventually becomes undetectable to the naked eye ) until the moment it aligns with the sun and begins to wax , at which point it becomes new again . Half moon is often used to mean the first - and third - quarter moons , while the term ' quarter ' refers to the extent of the moon 's cycle around the Earth , not its shape .}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The different shapes of the Moon, also known as lunar phases, are determined by the amount of sunlight that is illuminating the portion of the Moon visible from Earth. This changes as the Moon orbits the Earth and the relative positions of the Moon, Earth, and Sun shift. When the Sun, Earth, and Moon are aligned, with the Sun and Moon on opposite sides of the Earth, we see a full moon. When the Moon is positioned between the Earth and the Sun, we see a new moon. The crescent and gibbous shapes occur during the intervals between these principal phases, when only a portion of the Moon's surface is illuminated. The specific shape at any given time depends on the Moon's position in its orbit.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~2}}}\hfill{\tiny\textcolor{gray}{Factoid \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+What is the distance between the moon and earth?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+The average distance from the Moon to the Earth is about 238,856 miles or 384,402 kilometers. But this distance varies throughout the Moon's orbit, ranging from about 221,500 miles or 385,000 kilometers at its closest, to about 252,700 miles or 406,700 kilometers at its farthest resulting in a differential range of 50,200 kilometers or 31,200 miles. Lunar distance (astronomy) Astronomers O'Keefe and Anderson calculated the lunar distance by observing 4 occultations from 9 locations in 1952 . They calculated a mean distance of 7008384407600000000 ♠ 384 407. 6 ± 4.7 km , however the value was refined by in 1962 by Irene Fischer , who incorporated updated geodetic data to produce a value of 7008384403700000000 ♠ 384 403. 7 ± 2 km .
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(7)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~48.407}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723658679\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent . When a crescent Moon occurs , the phenomenon of earthshine may be apparent , where the night side of the Moon faintly reflects light from the Earth .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~35.707}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723658693\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When the Sun and Moon are aligned on the same side of the Earth , the moon is `` new '' , and the side of the Moon facing Earth is not illuminated by the Sun . As the moon waxes ( the amount of illuminated surface as seen from Earth is increasing ) , the lunar phases progress through new moon , crescent moon , first - quarter moon , gibbous moon , and full moon . The moon is then said to wane as it passes through the gibbous moon , third - quarter moon , crescent moon and back to new moon . The terms `` old moon '' and `` new moon '' are not interchangeable . The `` old moon '' is a waning sliver ( which eventually becomes undetectable to the naked eye ) until the moment it aligns with the sun and begins to wax , at which point it becomes new again . Half moon is often used to mean the first - and third - quarter moons , while the term ' quarter ' refers to the extent of the moon 's cycle around the Earth , not its shape .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~31.598}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723658710\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+The lunar phase or phase of the moon is the shape of the illuminated ( sunlit ) portion of the Moon as seen by an observer on Earth . The lunar phases change cyclically as the Moon orbits the Earth , according to the changing positions of the Moon and Sun relative to the Earth . The Moon 's rotation is tidally locked by the Earth 's gravity , therefore the same lunar surface always faces Earth . This face is variously sunlit depending on the position of the Moon in its orbit . Therefore , the portion of this hemisphere that is visible to an observer on Earth can vary from about 100 \% ( full moon ) to 0 \% ( new moon ) . The lunar terminator is the boundary between the illuminated and darkened hemispheres . Each of the four `` intermediate '' lunar phases ( see below ) is roughly seven days ( \textasciitilde{} 7.4 days ) but this varies slightly due to the elliptical shape of the Moon 's orbit . Aside from some craters near the lunar poles such as Shoemaker , all parts of the Moon see around 14.77 days of sunlight , followed by 14.77 days of `` night '' . ( The side of the Moon facing away from the Earth is sometimes called the `` dark side of the Moon '' , although that is a misnomer . )}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~4}}}\hfill{\tiny\texttt{score:~25.346}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723659299\}\}\}}}\\[3pt]
+{\small\textit{Lunar distance (astronomy)}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar distance (astronomy)
+The mean semi-major axis has a value of 384,402 km ( 238,856 mi ) . The time - averaged distance between Earth and Moon centers is 385,000.6 km ( 239,228.3 mi ) . The actual distance varies over the course of the orbit of the Moon , from 356,500 km ( 221,500 mi ) at the perigee to 406,700 km ( 252,700 mi ) at apogee , resulting in a differential range of 50,200 km ( 31,200 mi ) .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~5}}}\hfill{\tiny\texttt{score:~23.823}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723659328\}\}\}}}\\[3pt]
+{\small\textit{Lunar distance (astronomy)}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar distance (astronomy)
+The instantaneous lunar distance is constantly changing . In fact the true distance between the Moon and Earth can change by as much as 7001750000000000000 ♠ 75 m / s , or more than 1,000 kilometers in just 6 hours , due to its non-circular orbit . There are other effects that also influence the lunar distance . Some factors are described in this section .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~6}}}\hfill{\tiny\texttt{score:~23.654}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723659826\}\}\}}}\\[3pt]
+{\small\textit{Lunar distance (astronomy)}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar distance (astronomy)
+Lunar distance ( LD or Δ ⊕ L ( \\textbackslash{} textstyle \\textbackslash{} Delta \_ ( \\textbackslash{} oplus L ) ) ) , also called Earth -- Moon distance , Earth -- Moon characteristic distance , or distance to the Moon , is a unit of measure in astronomy . It is the average distance from the center of Earth to the center of the Moon . More technically , it is the mean semi-major axis of the geocentric lunar orbit . It may also refer to the time - averaged distance between the centers of the Earth and the Moon , or less commonly , the instantaneous Earth -- Moon distance . The lunar distance is approximately a quarter of a million miles .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~7}}}\hfill{\tiny\texttt{score:~20.647}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723659860\}\}\}}}\\[3pt]
+{\small\textit{Lunar distance (astronomy)}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar distance (astronomy)
+Astronomers O'Keefe and Anderson calculated the lunar distance by observing 4 occultations from 9 locations in 1952 . They calculated a mean distance of 7008384407600000000 ♠ 384 407. 6 ± 4.7 km , however the value was refined by in 1962 by Irene Fischer , who incorporated updated geodetic data to produce a value of 7008384403700000000 ♠ 384 403. 7 ± 2 km .}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace I do not have specific information on the current distance between the Moon and Earth. However, it's worth noting that the average distance from the Moon to the Earth is about 238,855 miles or 384,400 kilometers. But this distance varies throughout the Moon's orbit, ranging from about 225,623 miles or 363,104 kilometers at its closest, to about 252,088 miles or 405,696 kilometers at its farthest.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~3}}}\hfill{\tiny\textcolor{gray}{Explanation \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+How old is the moon?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Using the rate of recession to calculate the Moon's age suggest the Moon is approximately 1.5 billion years old while scientific consensus assumes an age of approximately 4 billion years. 
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(4)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~39.461}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723660490\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent . When a crescent Moon occurs , the phenomenon of earthshine may be apparent , where the night side of the Moon faintly reflects light from the Earth .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~29.665}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723660496\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When the Sun and Moon are aligned on the same side of the Earth , the moon is `` new '' , and the side of the Moon facing Earth is not illuminated by the Sun . As the moon waxes ( the amount of illuminated surface as seen from Earth is increasing ) , the lunar phases progress through new moon , crescent moon , first - quarter moon , gibbous moon , and full moon . The moon is then said to wane as it passes through the gibbous moon , third - quarter moon , crescent moon and back to new moon . The terms `` old moon '' and `` new moon '' are not interchangeable . The `` old moon '' is a waning sliver ( which eventually becomes undetectable to the naked eye ) until the moment it aligns with the sun and begins to wax , at which point it becomes new again . Half moon is often used to mean the first - and third - quarter moons , while the term ' quarter ' refers to the extent of the moon 's cycle around the Earth , not its shape .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~28.276}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723660506\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+The lunar phase or phase of the moon is the shape of the illuminated ( sunlit ) portion of the Moon as seen by an observer on Earth . The lunar phases change cyclically as the Moon orbits the Earth , according to the changing positions of the Moon and Sun relative to the Earth . The Moon 's rotation is tidally locked by the Earth 's gravity , therefore the same lunar surface always faces Earth . This face is variously sunlit depending on the position of the Moon in its orbit . Therefore , the portion of this hemisphere that is visible to an observer on Earth can vary from about 100 \% ( full moon ) to 0 \% ( new moon ) . The lunar terminator is the boundary between the illuminated and darkened hemispheres . Each of the four `` intermediate '' lunar phases ( see below ) is roughly seven days ( \textasciitilde{} 7.4 days ) but this varies slightly due to the elliptical shape of the Moon 's orbit . Aside from some craters near the lunar poles such as Shoemaker , all parts of the Moon see around 14.77 days of sunlight , followed by 14.77 days of `` night '' . ( The side of the Moon facing away from the Earth is sometimes called the `` dark side of the Moon '' , although that is a misnomer . )}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~4}}}\hfill{\tiny\texttt{score:~18.885}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723660678\}\}\}}}\\[3pt]
+{\small\textit{Lunar distance (astronomy)}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar distance (astronomy)
+Through the action of tidal forces , angular momentum is slowly being transferred from Earth 's rotation to the Moon 's orbit . The result is that Earth 's rate of spin is imperceptibly decreasing ( at a rate of 7000229999999999999 ♠ 2.3 milliseconds / century ) , and the lunar orbit is gradually expanding . The current rate of recession is 7000380500000000000 ♠ 3.805 ± 0.004 cm per year . However , it is believed that this rate has recently increased , as a rate of 6991120417206325883 ♠ 3.8 cm / year would imply that the Moon is only 1.5 billion years old , whereas scientific consensus assumes an age of \textasciitilde{} 4 billion years . It is also believed that this anomalously high rate of recession may continue to accelerate .}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The age of the Moon is not explicitly stated in the provided documents. However, it's worth noting that scientific estimates suggest the Moon is approximately 4.6 billion years old, which is thought to be close to the age of the Earth.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~4}}}\hfill{\tiny\textcolor{gray}{Factoid \$\\textbackslash{}cdot\$ Clarification \$\\textbackslash{}cdot\$ UNANSWERABLE}}
+\begin{userbubble}
+What was the longest mission to the moon?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+I could not find information about the longest mission to the Moon.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(3)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~39.144}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723661034\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent . When a crescent Moon occurs , the phenomenon of earthshine may be apparent , where the night side of the Moon faintly reflects light from the Earth .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~29.653}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723661086\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When the Sun and Moon are aligned on the same side of the Earth , the moon is `` new '' , and the side of the Moon facing Earth is not illuminated by the Sun . As the moon waxes ( the amount of illuminated surface as seen from Earth is increasing ) , the lunar phases progress through new moon , crescent moon , first - quarter moon , gibbous moon , and full moon . The moon is then said to wane as it passes through the gibbous moon , third - quarter moon , crescent moon and back to new moon . The terms `` old moon '' and `` new moon '' are not interchangeable . The `` old moon '' is a waning sliver ( which eventually becomes undetectable to the naked eye ) until the moment it aligns with the sun and begins to wax , at which point it becomes new again . Half moon is often used to mean the first - and third - quarter moons , while the term ' quarter ' refers to the extent of the moon 's cycle around the Earth , not its shape .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~28.258}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723661091\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+The lunar phase or phase of the moon is the shape of the illuminated ( sunlit ) portion of the Moon as seen by an observer on Earth . The lunar phases change cyclically as the Moon orbits the Earth , according to the changing positions of the Moon and Sun relative to the Earth . The Moon 's rotation is tidally locked by the Earth 's gravity , therefore the same lunar surface always faces Earth . This face is variously sunlit depending on the position of the Moon in its orbit . Therefore , the portion of this hemisphere that is visible to an observer on Earth can vary from about 100 \% ( full moon ) to 0 \% ( new moon ) . The lunar terminator is the boundary between the illuminated and darkened hemispheres . Each of the four `` intermediate '' lunar phases ( see below ) is roughly seven days ( \textasciitilde{} 7.4 days ) but this varies slightly due to the elliptical shape of the Moon 's orbit . Aside from some craters near the lunar poles such as Shoemaker , all parts of the Moon see around 14.77 days of sunlight , followed by 14.77 days of `` night '' . ( The side of the Moon facing away from the Earth is sometimes called the `` dark side of the Moon '' , although that is a misnomer . )}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The provided documents do not contain specific information about the longest mission to the Moon. However, Apollo 17, which lasted for 12 days, 13 hours, and 51 minutes, is often cited as the longest crewed mission to the Moon.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~5}}}\hfill{\tiny\textcolor{gray}{Explanation \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ UNANSWERABLE}}
+\begin{userbubble}
+what makes monkeys suitable for space travel?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+I cannot find information about what makes monkeys suitable for space travel. 
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(4)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~39.144}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723661922\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent . When a crescent Moon occurs , the phenomenon of earthshine may be apparent , where the night side of the Moon faintly reflects light from the Earth .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~29.653}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723661930\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When the Sun and Moon are aligned on the same side of the Earth , the moon is `` new '' , and the side of the Moon facing Earth is not illuminated by the Sun . As the moon waxes ( the amount of illuminated surface as seen from Earth is increasing ) , the lunar phases progress through new moon , crescent moon , first - quarter moon , gibbous moon , and full moon . The moon is then said to wane as it passes through the gibbous moon , third - quarter moon , crescent moon and back to new moon . The terms `` old moon '' and `` new moon '' are not interchangeable . The `` old moon '' is a waning sliver ( which eventually becomes undetectable to the naked eye ) until the moment it aligns with the sun and begins to wax , at which point it becomes new again . Half moon is often used to mean the first - and third - quarter moons , while the term ' quarter ' refers to the extent of the moon 's cycle around the Earth , not its shape .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~28.258}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723661956\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+The lunar phase or phase of the moon is the shape of the illuminated ( sunlit ) portion of the Moon as seen by an observer on Earth . The lunar phases change cyclically as the Moon orbits the Earth , according to the changing positions of the Moon and Sun relative to the Earth . The Moon 's rotation is tidally locked by the Earth 's gravity , therefore the same lunar surface always faces Earth . This face is variously sunlit depending on the position of the Moon in its orbit . Therefore , the portion of this hemisphere that is visible to an observer on Earth can vary from about 100 \% ( full moon ) to 0 \% ( new moon ) . The lunar terminator is the boundary between the illuminated and darkened hemispheres . Each of the four `` intermediate '' lunar phases ( see below ) is roughly seven days ( \textasciitilde{} 7.4 days ) but this varies slightly due to the elliptical shape of the Moon 's orbit . Aside from some craters near the lunar poles such as Shoemaker , all parts of the Moon see around 14.77 days of sunlight , followed by 14.77 days of `` night '' . ( The side of the Moon facing away from the Earth is sometimes called the `` dark side of the Moon '' , although that is a misnomer . )}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~4}}}\hfill{\tiny\texttt{score:~17.432}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723662179\}, '87334bc6-dd39-4565-ae2b-832e60a24b08': \{'value': 'no', 'timestamp': 1726857900\}\}\}}}\\[3pt]
+{\small\textit{Primate}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Primate
+Primates are used as model organisms in laboratories and have been used in space missions . They serve as service animals for disabled humans . Capuchin monkeys can be trained to assist quadriplegic humans ; their intelligence , memory , and manual dexterity make them ideal helpers .}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The documents provided do not include specific information about what makes monkeys suitable for space travel. Generally, animals are selected for space missions based on their physical resilience, size, and ability to perform certain tasks. Monkeys have been used in space experiments due to their similarities to humans in terms of physiology and genetics. However, the specific reasons why monkeys were chosen for space travel would depend on the goals and constraints of each individual mission.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~6}}}\hfill{\tiny\textcolor{gray}{Factoid \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+What was collected from the surface of the moon?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Lunar rock and soil samples have been collected. A large basalt rock collected by astronaut David Scott on the Apollo 15 mission to the moon in 1971 is informally known as Great Scott. Luna 16 was the first robotic probe to land on the Moon and safely return a sample of lunar soil back to Earth on 24 September 1970.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(6)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~39.144}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723662903\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent . When a crescent Moon occurs , the phenomenon of earthshine may be apparent , where the night side of the Moon faintly reflects light from the Earth .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~29.653}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723662910\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+When the Sun and Moon are aligned on the same side of the Earth , the moon is `` new '' , and the side of the Moon facing Earth is not illuminated by the Sun . As the moon waxes ( the amount of illuminated surface as seen from Earth is increasing ) , the lunar phases progress through new moon , crescent moon , first - quarter moon , gibbous moon , and full moon . The moon is then said to wane as it passes through the gibbous moon , third - quarter moon , crescent moon and back to new moon . The terms `` old moon '' and `` new moon '' are not interchangeable . The `` old moon '' is a waning sliver ( which eventually becomes undetectable to the naked eye ) until the moment it aligns with the sun and begins to wax , at which point it becomes new again . Half moon is often used to mean the first - and third - quarter moons , while the term ' quarter ' refers to the extent of the moon 's cycle around the Earth , not its shape .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~28.258}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'no', 'timestamp': 1723662914\}\}\}}}\\[3pt]
+{\small\textit{Lunar phase}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Lunar phase
+The lunar phase or phase of the moon is the shape of the illuminated ( sunlit ) portion of the Moon as seen by an observer on Earth . The lunar phases change cyclically as the Moon orbits the Earth , according to the changing positions of the Moon and Sun relative to the Earth . The Moon 's rotation is tidally locked by the Earth 's gravity , therefore the same lunar surface always faces Earth . This face is variously sunlit depending on the position of the Moon in its orbit . Therefore , the portion of this hemisphere that is visible to an observer on Earth can vary from about 100 \% ( full moon ) to 0 \% ( new moon ) . The lunar terminator is the boundary between the illuminated and darkened hemispheres . Each of the four `` intermediate '' lunar phases ( see below ) is roughly seven days ( \textasciitilde{} 7.4 days ) but this varies slightly due to the elliptical shape of the Moon 's orbit . Aside from some craters near the lunar poles such as Shoemaker , all parts of the Moon see around 14.77 days of sunlight , followed by 14.77 days of `` night '' . ( The side of the Moon facing away from the Earth is sometimes called the `` dark side of the Moon '' , although that is a misnomer . )}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~4}}}\hfill{\tiny\texttt{score:~14.521}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723663251\}\}\}}}\\[3pt]
+{\small\textit{Great Scott}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Great Scott
+A large basalt rock collected by astronaut David Scott on the Apollo 15 mission to the moon in 1971 is informally known as Great Scott .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~5}}}\hfill{\tiny\texttt{score:~12.193}}\ {\tiny\textcolor{gray}{\{'relevant': \{'53573702-4140-4812-8658-ae10a54edfc8': \{'value': 'yes', 'timestamp': 1723663269\}\}\}}}\\[3pt]
+{\small\textit{Moon landing}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Moon landing
+Luna 16 was the first robotic probe to land on the Moon and safely return a sample of lunar soil back to Earth . It represented the first lunar sample return mission by the Soviet Union , and was the third lunar sample return mission overall , following the Apollo 11 and Apollo 12 missions . This mission was later successfully repeated by Luna 20 ( 1972 ) and Luna 24 ( 1976 ) .}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~6}}}\hfill{\tiny\texttt{score:~11.602}}\ {\tiny\textcolor{gray}{\{'relevant': \{'87334bc6-dd39-4565-ae2b-832e60a24b08': \{'value': 'yes', 'timestamp': 1726858019\}\}\}}}\\[3pt]
+{\small\textit{Moon landing}}\\[2pt]
+\vspace{2pt}
+{\footnotesize Moon landing
+The Soviet Union achieved the first unmanned lunar soil sample return with the Luna 16 probe on 24 September 1970 . This was followed by Luna 20 and Luna 24 in 1972 and 1976 , respectively . Following the failure at launch in 1969 of the first Lunokhod , Luna E-8 No. 201 , the Luna 17 and Luna 21 were successful unmanned lunar rover missions in 1970 and 1973 .}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The documents provided do not include detailed information about the specific items collected from the surface of the Moon. However, during the Apollo missions, astronauts collected lunar rock and soil samples, deployed experiments, and returned lunar material to Earth for further study. These samples have provided valuable insights into the Moon's geological history and composition.}}}
+\end{refanswerenv}
+\end{document}
