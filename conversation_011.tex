@@ -1,0 +1,721 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\headheight}{14pt}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\definecolor{usercolor}{RGB}{30, 100, 200}
+\definecolor{agentcolor}{RGB}{30, 150, 80}
+\definecolor{doccolor}{RGB}{200, 90, 10}
+\definecolor{userbg}{RGB}{235, 244, 255}
+\definecolor{agentbg}{RGB}{235, 250, 238}
+\definecolor{docbg}{RGB}{255, 243, 220}
+\definecolor{answerbg}{RGB}{250, 250, 235}
+
+\newmdenv[backgroundcolor=userbg,linecolor=usercolor,linewidth=1.5pt,
+  leftmargin=0pt,rightmargin=80pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=8pt,innerbottommargin=8pt,roundcorner=5pt,
+  skipabove=6pt,skipbelow=3pt]{userbubble}
+
+\newmdenv[backgroundcolor=agentbg,linecolor=agentcolor,linewidth=1.5pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=8pt,innerbottommargin=8pt,roundcorner=5pt,
+  skipabove=3pt,skipbelow=3pt]{agentbubble}
+
+\newmdenv[backgroundcolor=docbg,linecolor=doccolor,linewidth=1pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=6pt,innerbottommargin=6pt,roundcorner=4pt,
+  skipabove=2pt,skipbelow=3pt]{docenv}
+
+\newmdenv[backgroundcolor=answerbg,linecolor=gray,linewidth=0.5pt,
+  leftmargin=80pt,rightmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=5pt,innerbottommargin=5pt,roundcorner=4pt,
+  skipabove=2pt,skipbelow=6pt]{refanswerenv}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\cfoot{\thepage}
+
+\lhead{\textcolor{gray}{\small RAG Conversation Dataset}}
+\rhead{\textcolor{gray}{\small Conv.\,\#2\ --\ govt0611}}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries RAG Conversation #11}
+\par\medskip
+{\small\textcolor{gray}{Domain:\ \texttt{mt-rag-govt-elser-512-100-20240611}\quad|\quad Status:\ \textbf{accepted}}}
+\end{center}
+\vspace{0.4em}
+\noindent\textcolor{gray}{\rule{\linewidth}{0.6pt}}
+\vspace{0.4em}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~1}}}\hfill{\tiny\textcolor{gray}{Factoid \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+I need to do some legal research to be prepared for my oral argument. Can I visit the law library?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Yes, you can visit the law library to conduct legal research for your oral argument. The library can provide self-help guides and suggest materials that may be beneficial, such as resources on reserve or located at the reference desk. Additionally, the Form APP-001 provides comprehensive instructions on appeal procedures. Each Court of Appeal offers self-help resources online. You can also inquire with your local Court of Appeal to check if they have a self-help center at the court.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~13.787}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723018599\}\}\}}}\\[3pt]
+{\small\textit{Oral Argument - California Appellate Courts}}\\[2pt]
+{\tiny\url{https://selfhelp.appellate.courts.ca.gov/knowledge-center/oral-argument/?print=print}}\\[4pt]
+{\footnotesize Oral Argument - California Appellate Courts
+What does my lawyer do in oral argument? If you have a lawyer, then the lawyer will present your oral argument. You can go to court for oral argument but you are not required to go if you are represented by a lawyer.
+ 
+ Can I get a transcript of what was said in the oral argument for my case? All oral arguments in the Court of Appeal are electronically recorded. Any party may pay a fee to get a copy of the oral argument recording from the Court of Appeal. If you want a written transcript of the recording, you will need to contact a transcription service and pay them a separate fee.
+ 
+ What does the court think if I do not make an oral argument? If you decide not to make an oral argument, the court will not think that you are not interested or that you don’t care about the appeal. You do not give up or weaken any arguments in your brief. The court will not think differently or badly about you or your arguments. If you do not make an oral argument, it will not negatively impact the way the court decides an appeal.
+ 
+ How will the court decide if there are no oral arguments? If all the parties waive oral argument – meaning no parties talk to the justices in person – then the Court of Appeal will decide your appeal based on the briefs, the law, and the record on appeal.
+ 
+ What does it mean if the court sends me a notice saying they don’t need oral argument? Sometimes the Court of Appeal will send notice to the parties saying the court is prepared to issue a decision without oral argument. This is not a sign that the court will decide either for or against the appeal.
+Even though the court says oral argument is not necessary, you can still request oral argument. You would need to give the court notice in writing and tell them you want to make an oral argument. As long as you meet the deadline in the court’s notice about oral argument, the court will almost always schedule time for your oral argument.
+ 
+ Where can I get legal help? Form APP-001 has full instructions on appeal procedures.
+Each Court of Appeal has self-help resources online. You can also contact your local Court of Appeal to see if they have a self-help center at the court.}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~13.376}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723018690\}\}\}}}\\[3pt]
+{\small\textit{Law libraries | California Courts | Self Help Guide}}\\[2pt]
+{\tiny\url{https://selfhelp.courts.ca.gov/court-basics/law-libraries}}\\[4pt]
+{\footnotesize Law libraries | California Courts | Self Help Guide
+They can't give you legal advice, but they can suggest things that may be helpful, like materials on reserve or at the reference desk.
+Often, law libraries have printers, so you can print out legal information, including legal forms you may need to fill out and give to the court.
+Click here to find a law library in your area. 
+
+Alameda County Bernard E. Witkin Law Library 
+	125 Twelfth Street, Oakland, CA 94607
+	(510) 208-4832https://lawlibrary.acgov.org/
+Orange County Public Law Library
+	515 North Flower Street, Santa Ana, CA 92703
+	(714) 338-6790http://www.ocpll.org/
+Amador County Law Library
+	530 Sutter Street, Jackson, CA 95642
+	(209) 223-6400  https://www.amadorgov.org/departments/library/law-library
+
+​Placer County Law Library
+	1523 Lincoln Way, Auburn, CA 95603
+	(530) 201-5978
+librarian@placerlaw.orghttps://www.placer.ca.gov/1841/Placer-County-Law-Library
+
+Butte County Public Law Library
+	1675 Montgomery Street, Oroville, CA 95965
+	(530) 538-7122http://www.buttecountylawlibrary.org/
+Plumas County Law Library
+	514 Jackson, Quincy, CA 95971https://www.plumascounty.us/217/Law-Library
+
+Colusa County Law Library
+	738 Market Street, Colusa, CA 95932
+	(530) 458-7671
+https://www.countyofcolusa.org/988/Colusa-County-Law-Library
+
+Riverside County Law Library
+	3989 Lemon Street, Riverside, CA 92501
+	(951) 368-0368
+lawlibrary.riverside@rclawlibrary.org http://www.rclawlibrary.org/  
+
+Contra Costa County Public Law Library}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace Yes, you can visit the law library to do legal research for your oral argument. However, the provided document does not specify any particular law library, so you may need to check with your local court or legal institution for available resources.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~2}}}\hfill{\tiny\textcolor{gray}{How-To \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+How to Hire a Lawyer
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+When looking to hire a lawyer, you can visit the California Courts website, which provides a lot of information about lawyers and legal assistance. If you need help finding a lawyer, the California Bar Association website can connect you with a lawyer referral service in your area. When you meet with a lawyer, it's important to ask questions to understand the services they can provide and the associated costs. You should also ask about their experience in handling cases similar to yours. If you find their answers satisfactory and their fees reasonable, you may want to consider hiring them. However, make sure you fully understand the agreement before signing it. If you're uncomfortable with any terms, don't sign it. It may be best to seek a new lawyer if disagreements arise and cannot be resolved.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(3)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~29.543}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723019214\}\}\}}}\\[3pt]
+{\small\textit{Oral Argument - California Appellate Courts}}\\[2pt]
+{\tiny\url{https://selfhelp.appellate.courts.ca.gov/knowledge-center/oral-argument/?print=print}}\\[4pt]
+{\footnotesize Oral Argument - California Appellate Courts
+You would need to give the court notice in writing and tell them you want to make an oral argument. As long as you meet the deadline in the court’s notice about oral argument, the court will almost always schedule time for your oral argument.
+ 
+ Where can I get legal help? Form APP-001 has full instructions on appeal procedures.
+Each Court of Appeal has self-help resources online. You can also contact your local Court of Appeal to see if they have a self-help center at the court.
+You can also visit a law library to do legal research.
+The California Courts website has a lot of information about lawyers and legal help.
+If you need help finding a lawyer, the California Bar Association website can connect you to a lawyer referral service in your area.
+ 
+FORMSDocuments you will need for your case.}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~10.581}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723019199\}\}\}}}\\[3pt]
+{\small\textit{Hire a lawyer | California Courts | Self Help Guide}}\\[2pt]
+{\tiny\url{https://selfhelp.courts.ca.gov/hire-lawyer}}\\[4pt]
+{\footnotesize Hire a lawyer | California Courts | Self Help Guide
+Do you understand the lawyer's explanation of what your case involves?
+Does the fee seem reasonable?
+If the answers are yes, you may want to hire this lawyer. Make sure you understand the agreement before you sign it. If you are not comfortable with any of the terms, do not sign it. And if you cannot work out your disagreement, you may want to find a new lawyer.
+
+ Working with a lawyer for part of your case
+
+ A lawyer can handle some parts of your case while you handle others. This is called limited-scope representation. Limited-scope representation can be a great way for you to have legal help with your case while keeping costs down.
+
+ Understanding legal fees
+
+ Make sure you are clear about how you will be billed. Lawyers bill in different ways:
+
+Fixed fee
+The lawyer charges a set fee to do something, usually for routine legal matters
+
+Hourly fee
+The lawyer charges by the hour
+
+Retainer fee
+A "down payment" on any legal services. The legal fees will be subtracted from the retainer. If the retainer starts to run out, you may need to add more money.
+
+Contingency fee
+You pay the lawyer from the money you receive if you win the case or settle it out of court. If you lose, the lawyer does not receive a fee.
+
+Statutory fee
+The cost is set by law
+
+The lawyer will also charge you for the costs of your case (filing fees, copying expenses, expert fees). You will be responsible for paying these costs even if your case is not successful. Costs can add up quickly. It is a good idea to ask the lawyer for a written estimate of what the costs will be.
+
+ Handling problems with a lawyer
+
+ If you have questions or concerns about your case, first talk to your lawyer. If you are having serious problems with your lawyer and have been unable to resolve them, there are other things you can do.
+The State Bar also has a lot of information about what to do if you are having problems with your lawyer.
+
+ 
+
+Was this helpful?
+
+Yes
+
+No
+
+did this information help you with your case?
+
+Great!}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~3}}}\hfill{\tiny\texttt{score:~9.761}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723024399\}\}\}}}\\[3pt]
+{\small\textit{Hire a lawyer | California Courts | Self Help Guide}}\\[2pt]
+{\tiny\url{https://selfhelp.courts.ca.gov/hire-lawyer}}\\[4pt]
+{\footnotesize Hire a lawyer | California Courts | Self Help Guide
+When you meet with a lawyer, ask them questions to make sure you know what the lawyer will do for you and how much it will cost. You will then have to decide for yourself if this is the lawyer for you.
+
+Questions to ask when interviewing a lawyer
+Ask about their experience
+What is your experience in this field? 
+Have you handled cases like mine before? 
+When is the last time you handled a case like mine?
+Will anyone else be working on my case? For example, an associate lawyer, legal assistant, paralegal? 
+If another lawyer will be the one mostly handling your case, ask if you can meet them.
+What they expect may happen in your case
+What steps will be involved in my case? 
+What are the possible outcomes?
+How long do you expect this case to take?
+What are my alternatives? Is arbitration or mediation a possibility?
+How will you keep me informed as the case progresses?
+How do they charge
+How do you charge for your time and that of your staff? 
+Do you charge by the hour, a fixed fee, or on contingency? 
+Do you require a retainer?
+What other expenses will there be, and how are they calculated?
+What can be done to reduce fees and costs? (Costs include telephone calls, photocopying, assistant help, court fees, travel expenses, and so on.)
+Can you put your estimates in writing?
+How often will I be billed?
+Can I do some of the work?
+
+Deciding whether to hire the lawyer
+Once you get answers to your questions, consider:
+Will you be comfortable working closely with the lawyer?
+Do you think the lawyer has the experience and skill to handle your case?
+Do you understand the lawyer's explanation of what your case involves?
+Does the fee seem reasonable?
+If the answers are yes, you may want to hire this lawyer. Make sure you understand the agreement before you sign it. If you are not comfortable with any of the terms, do not sign it. And if you cannot work out your disagreement, you may want to find a new lawyer.
+
+ Working with a lawyer for part of your case}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace To hire a lawyer, you can visit the California Courts website, which contains a lot of information about lawyers and legal help. If you need help finding a lawyer, the California Bar Association website can connect you to a lawyer referral service in your area.
+Here are some steps to follow when hiring a lawyer:
+1. Determine the type of lawyer you need. Depending on your legal issue, you may need a lawyer who specializes in a particular area of law.
+2. Research potential lawyers. Look for lawyers who have experience handling cases similar to yours. Check their credentials, education, and disciplinary history.
+3. Schedule consultations. Most lawyers offer free initial consultations. During the consultation, ask questions about their experience, fees, and approach to your case.
+4. Evaluate your options. Consider factors such as the lawyer's expertise, communication skills, and availability. Choose the lawyer who you feel most comfortable with and who you believe will do the best job representing you.
+5. Sign a retainer agreement. Once you have chosen a lawyer, you will need to sign a retainer agreement. This is a contract between you and the lawyer that outlines the terms of their representation, including their fees and expenses.
+Remember, hiring a lawyer can be a significant investment. Take the time to research and evaluate your options carefully.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~3}}}\hfill{\tiny\textcolor{gray}{Summarization \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+What are the grounds for lodging an appeal?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+In most cases, the appellate court considers two main points: whether a legal mistake was made in the trial court and whether this mistake affected the final decision (referred to as the "judgment"). The appellate court only reviews what happened in the trial court to determine if a legal mistake occurred in the original trial. An appeal is a process through which a case is moved from a lower court to a higher court for review or reconsideration after the lower court has issued a judgment. The higher or appellate court may uphold, reverse, or modify the decision.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~19.392}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723019847\}\}\}}}\\[3pt]
+{\small\textit{Guide to civil appeals | California Courts | Self Help Guide}}\\[2pt]
+{\tiny\url{http://www.courts.ca.gov/selfhelp-appeals.htm}}\\[4pt]
+{\footnotesize Guide to civil appeals | California Courts | Self Help Guide
+What is an appeal?
+An appeal is when someone who loses a case in a trial court asks a higher court (the appellate court) to review the trial court's decision
+In almost all cases, the appellate court only looks at two things:
+Whether a legal mistake was made in the trial court
+Whether this mistake changed the final decision (called the "judgment") in the case
+An appeal is not:
+A new trial with witnesses or a jury
+A chance to go to court and present your case all over again in front of a different judge
+A chance to present new evidence or new witnesses
+The appellate court only reviews what happened in the trial court to decide if a legal mistake was made in the original trial. For example, to see if the trial court judge applied the wrong law to the facts of the case.
+The appellate court cannot change the trial court's decision just because the appellate court judges (called justices in the Court of Appeal) disagree with it
+The trial court is entitled to hear the evidence and come to its own decision. The appellate court can only reverse the trial court's decision if it finds a legal mistake in the trial court proceedings that was so important that it changed at least part of the outcome of the case. Because of this heavy burden on the appellant to prove this type of mistake, it is quite difficult to win an appeal.
+Filing an appeal does not stop the trial court's order
+Unless you ask the trial or appellate court to postpone ("stay") the trial court's order, you must do what the trial court's order requires you to do during the appeal. A request for a stay can be complicated, and you may still have to pay some of the money ordered by the trial court upfront. Ask a lawyer if one of these options would be good in your case and get help. But remember that an appeal is not a way to put off having to comply with the trial court's order.
+
+Overview of civil appeals
+
+If you're considering an appeal, read through each section to get an idea of your options and what you'll have to do if you do decide to appeal. Appeals are very complicated, so also talk to a lawyer. 
+
+Appellate court basics}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~15.041}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723020050\}\}\}}}\\[3pt]
+{\small\textit{The Superior Court of California - County of Ventura - Appeals}}\\[2pt]
+{\tiny\url{https://www.ventura.courts.ca.gov/appeals.html}}\\[4pt]
+{\footnotesize The Superior Court of California - County of Ventura - Appeals
+* * * PUBLIC NOTICE * * *
+
+Effective 1/22/24 - Small Claims, Appeals, Mental Health Clerkâs Office Appointments no Longer Required.
+
+Check back often for updates.
+
+INFORMATION ON REMOTE APPEARANCES FOR APPEAL MATTERS
+
+An appeal is a proceeding by which a case is brought from a lower court to a higher court for rehearing or reconsideration after a judgment has been given by the lower court. 
+ The higher or appellate court may sustain, reverse or modify the decision. Most appeals are limited to a review of the record from the lower court. Parties cannot introduce new 
+ evidence, but are limited to what was said and introduced at the original trial. The appellate court reviews the lower courtâs application of the law to the facts as presented 
+ at the trial.
+Some appeals do allow for a new trial without reference to the evidence submitted in the original proceeding. Such an appeal results in a trial de novo, meaning a trial 
+ from the beginning. Appeals from small claims court result in a trial de novo in the Superior court. The superior court judge is not bound by the decision of the small claims 
+ judge, and new evidence can be presented.
+
+Information on Appeal Types
+
+Small Claims Appeals
+
+Appeal after being present at trial
+In small claims court an appeal results in a trial de novo, meaning a trial from the beginning, conducted in the Superior Court. Therefore, all evidence presented at the 
+ small claims trial must be presented again in the Superior Court at the trial de novo. Only a Superior Court judge will hear a trial de novo; no pro tem or temporary judge 
+ hears small claims appeals.
+
+ Only the defendant, or a plaintiff who was counter sued as a cross-defendant and lost on the cross-complaint, can appeal a small claims case. A plaintiff cannot file an 
+ appeal. The defendant or cross-defendant must have been present at the time of trial in order to appeal the decision.
+Any of the parties may choose to have an attorney represent him, her or it at the trial de novo. Unlike in regular superior court cases, an attorney is not required to 
+ represent a corporation at a trial de novo.}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The grounds for lodging an appeal can vary depending on the specifics of the case and the jurisdiction. However, generally, appeals are made when a party believes that legal errors were made during the trial or hearing process that affected the outcome of the case. These errors could include improper admission or exclusion of evidence, incorrect jury instructions, or legal decisions made by the judge. In order to lodge an appeal, a notice of appeal must be filed within the required time frame, and a written brief outlining the grounds for the appeal must be submitted to the appellate court. The appellate court will then review the record of the lower court proceedings and the arguments presented in the brief to determine whether any legal errors occurred and whether those errors warrant reversing the decision of the lower court.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~4}}}\hfill{\tiny\textcolor{gray}{Explanation, Summarization \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+Who is responsible for covering my expenses?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+The Court of Appeal's judgment usually includes costs on appeal. In most instances, if a party prevails on appeal, they can request the other party to cover their court costs. In some cases, the winning party may also request the other party to cover their attorney fees. - After the court issues a remittitur (the final step in an appeal), the prevailing party can file a memorandum of costs in the trial court. The trial court will handle the request and notify the parties about the next steps. - If the parties have questions regarding reimbursement of appeal costs, they can contact the trial court. There are fees in both the trial court and the Court of Appeal during an appeal. If you wish to have your fees waived in both courts, you must obtain a fee waiver.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~18.382}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723020445\}\}\}}}\\[3pt]
+{\small\textit{Court Opinion – California Appellate Courts}}\\[2pt]
+{\tiny\url{https://selfhelp.appellate.courts.ca.gov/knowledge-center/court-opinion/}}\\[4pt]
+{\footnotesize Court Opinion – California Appellate Courts
+send the case back to the trial court for a new trial or hearing
+dismiss the appeal if it was not filed on time, if there is not an appealable order, or if there is a procedural default (like failure to file a brief or pay a fee)
+
+The court’s opinion generally also includes information about who may be eligible to have their appeal fees paid by the other party.
+How the Court Makes a Decision
+There are three justices at every Court of Appeal. A majority of the justices – or two of the three justices – must agree on a decision.
+What’s in the Written Decision
+Regardless of what the Court of Appeal justices decide, they issue an order or opinion in writing. Generally, the court justices must provide an opinion with reasons why they made the decision. The court justices are not required to provide an opinion if they issue an order dismissing the appeal.
+Most often there is one written statement signed by all of the justices. Sometimes a justice will file an additional opinion. This can either be a concurrence (written by a justice who agrees with the decision) or a dissent (written by a justice who does not agree with the decision).
+How the Court Notifies the Parties
+When the Court of Appeal makes a decision, the court clerk sends notice of the court’s opinion or order to all parties in the case. If a party does not have a lawyer, the court sends notice to the party. If a party has a lawyer, the court sends notice to their lawyer.
+Asking for Reimbursement of Court Costs
+The Court of Appeal’s opinion usually awards costs on appeal.
+In most cases, a party who wins an appeal can ask the other party to pay for their court costs. In some cases, a party who wins may also be able to ask the other party to pay for their attorney fees.
+After the court issues a remittitur (the final step in an appeal), the winning party can file a memorandum of costs in the trial court. The trial court will process the request and send notice to the parties about next steps. If the parties have questions about reimbursement of appeal costs, they can contact the trial court.}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~17.008}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723020448\}\}\}}}\\[3pt]
+{\small\textit{Designating the Record – California Appellate Courts}}\\[2pt]
+{\tiny\url{https://selfhelp.appellate.courts.ca.gov/knowledge-center/designating-the-record/}}\\[4pt]
+{\footnotesize Designating the Record – California Appellate Courts
+During an appeal, there are fees in both the trial court and the Court of Appeal. If you want your fees waived in both courts, you must have a fee waiver in both courts.
+The rules for fee waivers are different for each party. Learn more
+ 
+ Where can I get legal help? Form APP-001 has full instructions on appeal procedures, including what needs to be in a brief.
+Each Court of Appeal has self-help resources online. You can also contact your local Court of Appeal to see if they have a self-help center at the court.
+You can visit a law library to do legal research.
+The California Courts website has a lot of information about lawyers and legal help.
+If you need help finding a lawyer, the California Bar Association website can connect you to lawyer referral service in your area.
+ 
+
+Vídeo: Preserving the Record on Appeal, 5:33
+
+Vídeo: If you Can’t Get a Reporter’s Transcript, 5:18
+
+Vídeo: Designating the Record for Appellants, 15:51
+
+FORMSDocuments you will need for your case.
+
+ 
+
+Additional Filings
+Appealable Order
+Appellant’s Opening Brief
+Court Opinion
+Designating the Record
+Forms
+Glossary
+Notice of Appeal
+Oral Argument
+Petition for Rehearing
+Petition for Review
+Remittitur
+Reply Brief
+Respondent’s Brief
+Videos
+Knowledge Center
+
+Introduction
+Step by Step
+
+1. Appealable Order
+2. Notice of Appeal
+3. Designating the Record
+4. Additional Filings
+5. Opening Brief
+6. Respondent’s Brief
+7. Reply Brief
+8. Oral Argument
+9. Court Opinion
+10. Petition for Rehearing
+11. Petition for Review
+12. Remittitur
+
+Forms
+Videos
+Glossary
+
+Was this post helpful?
+
+Let us know if you liked the post. That’s the only way we can improve.
+
+
+	Yes	12 
+
+
+	No	5 
+
+Appeals Timeline}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace The document does not provide specific information on who is responsible for covering your expenses during an appeal process. Generally, parties involved in a lawsuit are responsible for their own legal fees and expenses, unless specified otherwise by a contract or determined by the court. It is advisable to consult the court or a legal professional for guidance tailored to your situation.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~5}}}\hfill{\tiny\textcolor{gray}{Explanation \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+Could you please provide the procedures for a child support case?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+There is a lawyer with experience in family law who works for the superior court in every California county. This lawyer is here to help parents and children involved in family law cases with child, spousal, and partner support problems. If you don't have your own lawyer, you can see the family law facilitator for free. The court where the case is filed has a program that offers free legal information about child support and can help you with forms. This is a service provided by the court to guide you through the legal process. Learn more about the court's Family Law Facilitator or Self-Help Center.  
+Hire a lawyer to help you with all or a part of your case. For legal advice, you can hire a lawyer. If there's a question as to whether you're the child's legal parent (called parentage) and you can't afford a lawyer, the court may appoint you a lawyer for free to help with that issue. Talk to your court's Family Law Facilitator to learn more about that option.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~24.207}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723020704\}\}\}}}\\[3pt]
+{\small\textit{Self-Help Glossary - selfhelp}}\\[2pt]
+{\tiny\url{https://www.courts.ca.gov/selfhelp-glossary.htm}}\\[4pt]
+{\footnotesize Self-Help Glossary - selfhelp
+Family Law Facilitator: A lawyer with experience in family law who works for the superior court in every California county to help parents and children involved in family law cases with child, spousal, and partner support problems. Anyone who does not have their own lawyer can see the family law facilitator for free. Click here for more information on the Family Law Facilitator.
+Family Court Orientation: A class that prepares parents for court-ordered mediation. A counselor talks to parents about how their relationship affects their children, and tells them what they need to know about custody and visitation.
+family violence indicator (FVI): The Federal Case Registry (FCR) uses this term to identify a person involved in a family violence case or order in another state. "FVI" means the person was involved with child abuse or domestic violence and says not to tell the location of a parent and/or a child that the state believes is at risk of family violence.
+FAPE: Stands for a "free, appropriate public education." Used to describe special education rights.
+Federal Case Registry (FCR) of Child Support: A national database of information on all people with IV-D (called "4 D") cases and people with non-IV-D orders entered or changed on or after October 1, 1998.
+federal employer identification number (FEIN): A 9-digit number assigned to all employers by the Internal Revenue Service (IRS). This is used for collecting child support from a parent's paycheck.
+Federal Parent Locator Service (FPLS): A computerized national network and database run by the federal Office of Child Support Enforcement (OCSE) of the Administration for Children and Families (ACF). FPLS collects address and employer information, and data on child support cases in every state; compares them; and gives this information to the proper authorities in the states involved. This helps state and local child support enforcement agencies locate alleged parents that do not have custody of their children. The information is used to establish custody and visitation rights, establish and enforce child support payments, investigate parental kidnapping, and process adoption or foster care cases.}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~19.416}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723020808\}\}\}}}\\[3pt]
+{\small\textit{Summons and Complaint Regarding Parental Obligations (form FL-600) | California Courts | Self Help Guide}}\\[2pt]
+{\tiny\url{https://selfhelp.courts.ca.gov/child-support/LCSA-respond}}\\[4pt]
+{\footnotesize Summons and Complaint Regarding Parental Obligations (form FL-600) | California Courts | Self Help Guide
+This website has information to walk you through the basic process. But, you may need more help or legal advice. 
+
+Get free help from the court. The court where the case is filed has a program where they offer free legal information about child support and can help you with forms. Learn more about the court’s Family Law Facilitator or Self-Help Center.  
+
+Hire a lawyer to help you with all or a part of your case. For legal advice, you can hire a lawyer. If there's a question as to if you're the child's legal parent (called parentage) and you can't afford a lawyer, the court may appoint you a lawyer for free to help with that issue. Talk to your court's Family Law Facilitator to find out more about that option.
+
+Get legal help if the LCSA did not ask to establish parentage, but you think you are not the parent. Learn more
+The LCSA will not check "establish parentage" next to a child's name in item 1 on Page 1 if there's already a legal determination you are the child's legal parent. This means there's a judgment (final court order) that says you are the child's legal parent, you're married to the other parent, or you signed a Voluntary Declaration of Parentage or Paternity (VDOP).
+If you think that is not correct and you are not the child's legal parent, talk to a lawyer or Family Law Facilitator as soon as possible to find out your options. If you signed a VDOP, it may be possible to have the VDOP canceled. But, you must act quickly. Having a judgment undone (set aside) is very difficult and there are strict deadlines. 
+
+What's next?
+Respond to Summons and Complaint
+
+Get step-by-step instructions and the forms you need to file an Answer.
+
+File an Answer
+ Get step-by-step instructions for how to file an Answer and have someone deliver (serve) it to the LCSA and other parent.
+ 
+
+ 
+
+Was this helpful?
+
+Yes
+
+No}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace I'm happy to help guide you through the general process of a child support case in California, but please note that the specifics of your case may vary depending on your circumstances. Here are the general steps involved in a child support case:
+1. File a petition: To start a child support case, you need to file a petition with your local court. This petition will outline your request for child support and provide relevant information about you, the other parent, and the child.
+2. Serve the petition: Once you've filed the petition, you must serve it to the other parent, informing them of the case and giving them an opportunity to respond. The other parent will have a certain amount of time to respond to the petition.
+3. Attend a hearing: After the petition and response have been filed, a hearing will be scheduled. During this hearing, a judge will consider the evidence presented by both parties and make a decision regarding child support.
+4. Establish a child support order: Based on the evidence presented, the judge will establish a child support order. This order will outline the amount of child support to be paid, how often payments should be made, and when the payments should begin.
+5. Enforce the child support order: If the paying parent fails to make the required child support payments, the receiving parent can request enforcement of the child support order. This may involve wage garnishment, bank account seizure, or other measures to ensure payment.
+6. Modify the child support order: If there is a significant change in circumstances, either parent can request a modification of the child support order. This might include changes in income, living arrangements, or the needs of the child.
+For legal advice and representation in your child support case, consider consulting with a family law attorney who is familiar with California laws and procedures.
+Regarding your question about legal research for your oral argument, you can visit the law library to conduct research and consult self-help guides. The Form APP-001 provides comprehensive instructions on appeal procedures, and each Court of Appeal offers self-help resources online. You can also inquire with your local Court of Appeal to check if they have a self-help center at the court.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~6}}}\hfill{\tiny\textcolor{gray}{Factoid \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ PARTIAL}}
+\begin{userbubble}
+  Is a jail sentence given for a child support conviction?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+The documents do not specify jail sentences, but you can opt for the Division of Child Support Services (DCSS) to enforce your support orders. They can issue administrative orders such as suspending the other parent's driver's license, intercepting tax refunds, or placing liens on bank accounts. In cases of willful failure to pay child support, DCSS may file contempt charges against the other parent. The Office of Child Support Enforcement (OCSE) is the federal agency responsible for administering the nationwide child support program. Offset refers to the money taken from a parent's state or federal income tax refund or an administrative payment, like federal retirement benefits, to pay a child support debt.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~13.853}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723021072\}\}\}}}\\[3pt]
+{\small\textit{Self-Help Glossary - selfhelp}}\\[2pt]
+{\tiny\url{https://www.courts.ca.gov/selfhelp-glossary.htm}}\\[4pt]
+{\footnotesize Self-Help Glossary - selfhelp
+obligee: The person, state agency, or institution owed a debt (usually money) like child support (also called "custodial party" if the money is owed to the person with primary custody of a child).
+obligor: The person that must pay child support or perform some other financial obligation.
+offense: An act that violates (breaks) the law. (See also crime, public offense.)
+Office of Child Support Enforcement (OCSE): The federal agency responsible for administering the nationwide child support program.
+offset: Amount of money taken from a parent's state or federal income tax refund before he or she receives it, or from an administrative payment like federal retirement benefits, to pay a child support debt.
+opinion: A judge's written explanation of the decision of the court in appellate cases. Because a case may be heard by 3 or more judges in the appellate court, the opinion in appellate decisions can take several forms. If all the judges completely agree on the result, 1 judge will write the opinion for all. If all the judges do not agree, the formal decision will be based on the majority view, and 1 member of the majority will write the opinion. The judges that do not agree with the majority may write their own dissenting or concurring opinions to state their views. A dissenting opinion disagrees with the majority opinion because of the reasoning and/or the principles of law the majority used to decide the case. A concurring opinion agrees with the decision of the majority opinion, but offers comment or clarification or a completely different reason for reaching the same result. Only the majority opinion can be used as binding precedent in future cases. (See also precedent.)
+oral argument: The part of a trial when lawyers summarize their position in court and also answer the judge's questions.
+order: (1) Decision of a judicial officer ; (2) a directive of the court, on a matter relating to the main proceedings, that decides a preliminary point or directs some steps in the proceedings. Generally used to invalidate a prior conviction, for example, an order issued after a hearing where a prior conviction is found invalid because certain legal standards weren't met during the time of trial and conviction.}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~21.147}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723021123\}\}\}}}\\[3pt]
+{\small\textit{
+	Child Support Information: Sacramento Superior Court
+}}\\[2pt]
+{\tiny\url{https://saccourt.ca.gov/family/child-support.aspx}}\\[4pt]
+{\footnotesize 
+	Child Support Information: Sacramento Superior Court
+
+If the other parent fails to pay court-ordered child support, you have several 
+ options available. First, you must decide if you want to proceed on your own, 
+ hire an attorney, or engage the services of the 
+ Department of Child Support Services (DCSS) - external link. DCSS is available to assist both self-represented and 
+ represented parties.
+
+ If you would like help preparing the necessary forms and getting information on 
+ how to enforce your orders, you can visit the
+ 
+ Self-Help Center at the 
+ William R. Ridgeway Family Relations Courthouse.
+
+ If you choose to have DCSS enforce your support orders, they can do all of the 
+ same things you can as well as issue administrative orders such as suspension of 
+ the other parent's driver license and/or any other license they may hold as 
+ well as intercept tax refunds or place liens on bank accounts. 
+ Additionally, in the case of willful failure to pay child support, DCSS may file 
+ contempt charges against the other parent.
+
+Determining Your Child Support Arrears
+
+ If there is an issue regarding back support, and you need to know how much you
+ owe or how much the other party owes, you can ask the court to determine the amount
+ owing. To request a hearing to ask the court for an arrears determination, you
+ must complete the following forms:
+
+
+	How to Ask the Court to Determine Your Support Balance Packet
+
+Reinstating your Driver License
+
+ If your driver license has been suspended or renewal denied due to your 
+ failure to pay child support, you may contact the 
+ Department of Child Support Services (DCSS) - external link, located at 3701 Power Inn Road (across the street from the 
+ front entrance of the William R. Ridgeway Family Relations Courthouse.) 
+ You may also contact DCSS by telephone at (866) 901-3212.
+
+ If DCSS denies your request to have your license reinstated, you may then file a 
+ 
+ Notice of Motion for Judicial Review of License Denial (FL-670), and an 
+ 
+ Income and Expense Declaration (FL-150).
+
+Frequently Asked Questions
+Is my spouse's income going to be counted for child support?}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace In California, a jail sentence can be given for failure to pay child support, but only after a court hearing and a determination that the individual has the ability to pay but is willfully not doing so. This is known as contempt of court. However, the court may consider other options before resorting to incarceration, such as wage garnishment, bank seizures, or driver's license suspension. It's important to note that the court's primary concern is the welfare of the child, and its decisions will reflect that. If you are having trouble paying child support, it is recommended that you seek legal assistance to explore your options and avoid potential penalties.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~7}}}\hfill{\tiny\textcolor{gray}{How-To \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+How can I get enforcement support?
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+If you encounter a violation, it's important to record the details and severity of the violation. Keeping a record will be helpful if you decide to take action later. Your options include contacting the local police department to enforce the order. Ensure that you have a copy of the current order to provide to them. Additionally, the Federal Parent Locator Service (FPLS), which is managed by the Office of Child Support Enforcement (OCSE) of the Administration for Children and Families (ACF), operates a national network and database. FPLS collects and compares address and employer information, as well as data on child support cases across all states. This helps state and local child support enforcement agencies to locate non-custodial parents.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~13.189}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723023471\}\}\}}}\\[3pt]
+{\small\textit{Self-Help Glossary - selfhelp}}\\[2pt]
+{\tiny\url{https://www.courts.ca.gov/selfhelp-glossary.htm}}\\[4pt]
+{\footnotesize Self-Help Glossary - selfhelp
+Federal Parent Locator Service (FPLS): A computerized national network and database run by the federal Office of Child Support Enforcement (OCSE) of the Administration for Children and Families (ACF). FPLS collects address and employer information, and data on child support cases in every state; compares them; and gives this information to the proper authorities in the states involved. This helps state and local child support enforcement agencies locate alleged parents that do not have custody of their children. The information is used to establish custody and visitation rights, establish and enforce child support payments, investigate parental kidnapping, and process adoption or foster care cases.
+federal question jurisdiction: Authority given to federal courts to hear a case if it involves the interpretation or application of federal law, like the U.S. Constitution, acts of Congress, and treaties.
+Federal Tax Refund Offset Program: A federal program that collects overdue child support payments from parents. The program can take a parent's federal income tax refunds or federal retirement benefits.
+fee: A specific amount of money that's paid in exchange for a service, such as filing a court paper.
+fee waiver: Permission not to pay the court's filing fees. People with very low income can ask the court clerk for a fee waiver form. Click here for more information on fee waivers and court fees.
+felony: A serious crime that can be punished by more than 1 year in prison or by death (Compare infraction, misdemeanor.)
+fiduciary: A person that acts for another person's benefit, like a trustee. It can also be an adjective and mean something that is based on a trust or confidence. (See also trustee.)
+file: When a person officially gives a paper to a court clerk and that paper becomes part of the record of a case.
+file-stamped: See endorsed-filed copies.
+filing a form: A court form is "filed" only when the court clerk stamps it "Filed." You can give your court forms to the clerk by mail or in person.
+filing fees: Money you pay the court clerk to accept (or "file") a complaint or petition, which starts a civil case, or other court papers, like motions and answers.}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~13.103}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723023468\}\}\}}}\\[3pt]
+{\small\textit{Enforce a custody order | California Courts | Self Help Guide}}\\[2pt]
+{\tiny\url{https://selfhelp.courts.ca.gov/child-custody/enforce}}\\[4pt]
+{\footnotesize Enforce a custody order | California Courts | Self Help Guide
+What you do depends in part on what the violation is and how serious it is. Keep a record of any violations. This can help if you decide you do want to enforce an order. You have different options.
+
+Contact the local police department and ask them to enforce
+Make sure you have a copy of the current order to give them. 
+
+Contact the district attorney in your county
+If you think the parent has abducted your child, you can request help from the child abduction unit of your county district attorney's office. 
+
+File a contempt of court 
+These are for cases where the parent is intentionally violating the order. In a contempt case, you ask the judge to enforce the order and make a finding that the other parent willfully disobeyed the court order. This is very complicated and can have serious consequences for the other parent, even jail time. Talk to a lawyer to get help with it.
+
+Get an updated order
+You can ask to change the order. Your new order could include more details and have terms that address any issues. You can ask to change an order if the other parent has blocked your access to your child. 
+
+Enforcing an order can be complicated. You may need advice from a lawyer. You can also find out more about your options from your court's Self-Help Center.
+
+ You're worried the other parent may kidnap your child
+
+ Have a clear order with detailed information about travel 
+Law enforcement or airline staff may not be able to stop a kidnapping if the order is not clear. A clear order could
+List the exact time, location, and manner of any custody exchanges
+Prohibit travel with the child
+Require supervised visitation
+State who can apply for or keep a child's passport
+Ask for a Child Abduction Prevention Order
+You can ask for a judge to make an order to help prevent child abduction. For example, you can ask the judge to order supervised visitation or restrict the parent from taking the child out of the county, state, or country. In your request, you will need to explain why you think the other parent may take your child without permission. 
+To make the request, you file a Request for Order (form FL-300). Then}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace If you need assistance enforcing a child support order, you can contact the Division of Child Support Services (DCSS) or the Office of Child Support Enforcement (OCSE). These organizations can help enforce support orders through various means, such as suspending the other parent's driver's license, intercepting tax refunds, placing liens on bank accounts, and filing contempt charges for willful failure to pay child support. Additionally, offset refers to the money taken from a parent's state or federal income tax refund or an administrative payment to pay a child support debt.}}}
+\end{refanswerenv}
+\vspace{0.5em}
+\noindent{\small\textcolor{usercolor}{\textbf{$\triangleright$\enspace User --- Turn~8}}}\hfill{\tiny\textcolor{gray}{Keyword \$\\textbackslash{}cdot\$ Follow-up \$\\textbackslash{}cdot\$ ANSWERABLE}}
+\begin{userbubble}
+Spousal support
+\end{userbubble}
+\noindent\hfill{\small\textcolor{agentcolor}{\textbf{Agent\enspace$\triangleleft$}}}
+\begin{agentbubble}
+Spousal support, also known as alimony, is a payment made by a higher-earning spouse to a lower-earning spouse. Temporary or pendente lite orders are issued any time after the Petition is filed until the Final Judgment is entered. These orders are intended to maintain the parties' status quo until a final judgment on all issues can be ordered, including custody, visitation, child support, and spousal support. A party who cannot file for divorce due to not meeting the residency requirements or does not wish to end the marriage for psychological or economic reasons may file for legal separation. In this case, a judicial officer, a court official, can make orders for child support and/or spousal support, custody and visitation, and division of property.
+\end{agentbubble}
+\noindent\hfill{\footnotesize\textcolor{doccolor}{\textbf{$\hookrightarrow$\enspace Retrieved documents~(2)}}}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~1}}}\hfill{\tiny\texttt{score:~13.239}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723024143\}\}\}}}\\[3pt]
+{\small\textit{The Superior Court of California - County of Ventura - FAQs}}\\[2pt]
+{\tiny\url{https://www.ventura.courts.ca.gov/faqs.html}}\\[4pt]
+{\footnotesize The Superior Court of California - County of Ventura - FAQs
+COMMUNITY PROPERTY is any property, whether real or personal, which has been acquired by the parties during 
+ the marriage. This property is owned equally by the parties. The same applies to debts acquired during the marriage.
+
+SEPARATE PROPERTY is any property, whether real or personal, acquired by a party before they married, after 
+ the date of separation with separate funds or during the marriage by gift or inheritance. This property belongs solely to the party acquiring it.
+
+LEGAL CUSTODY applies to the right and responsibility to make decisions regarding the health, education and 
+ welfare of the minor child. SOLE LEGAL CUSTODY means that only one parent has the right to make these decisions. 
+ Usually, the court will order JOINT LEGAL CUSTODY which means that either parent may make the decisions unless 
+ the court specifies circumstances requiring joint consent.
+
+PHYSICAL CUSTODY addresses the period of time each parent will have the child in his or her physical custody. 
+ An order for JOINT PHYSICAL CUSTODY does not necessarily mean a 50/50 custody arrangement but instead that each 
+ parent will have significant periods of physical custody. A SOLE PHYSICAL CUSTODY order means that the child will 
+ reside primarily with one parent who will have the day-to-day care of the child and the other parent will have âvisitationâ on specified times.
+
+GUIDELINE CHILD SUPPORT is the amount of child support which is presumed to be correct. This is a complicated 
+ formula which has been turned into a computer program called DISSOMASTER. This program calculates Guideline child 
+ support and may be used to calculate temporary spousal support but not âlong-termâ spousal support.
+
+SPOUSAL SUPPORT is a payment made by a higher earning spouse to a lower earning spouse. SS used to be called âalimonyâ.
+
+TEMPORARY or PENDENTE LITE ORDERS are orders that are issued at any time after the Petition is 
+ filed until the Final Judgment is entered. Often these orders are designed to maintain the âstatus quoâ of the parties until a final 
+ judgment on all issues can be ordered and involve issues of custody, visitation, child and/or spousal support.
+
+SERVICE or SERVICE OF PROCESS is the procedure whereby a party is given copies of certain documents}
+\end{docenv}
+\begin{docenv}
+{\footnotesize\textcolor{doccolor}{\textbf{Doc~2}}}\hfill{\tiny\texttt{score:~11.523}}\ {\tiny\textcolor{gray}{\{'relevant': \{'9dcd142c-415e-4161-a82f-c8b14bfb36ac': \{'value': 'yes', 'timestamp': 1723024139\}\}\}}}\\[3pt]
+{\small\textit{Family Law | Superior Court of California | County of Tulare}}\\[2pt]
+{\tiny\url{https://www.tulare.courts.ca.gov/divisions/family-law}}\\[4pt]
+{\footnotesize Family Law | Superior Court of California | County of Tulare
+A party who either can't file for divorce because he or she doesn't meet the residency requirements or does not wish to end the marriage for psychological or economic reasons may file a legal separation. The judicial officer can make orders for child support and/or spousal support, custody and visitation, and division of property; however, the parties remain legally married, even though they may be living apart.
+You may ask the judge to declare that your marriage is not valid by filing an annulment (nullity of marriage). There are several reasons for why a judge may say that a marriage is not legally valid. For example, a marriage that is incestuous (between close blood relatives) or bigamous (where a spouse is already married to someone else) is never legally valid.
+Custody and Visitation
+The Petition for Custody and Support of Minor Children may be filed by parents who:
+Have signed a Voluntary Declaration of Paternity, or
+Are married and don't want to get legally separated or divorced, or
+Are not married and have legally adopted a child together, or
+Have been determined to be the parents in a juvenile or Department of Child Support case
+By filing this petition, the parents may ask the court to make custody and support orders, in addition to other orders.
+You may also ask the court to make orders for child support, spousal support, custody, and visitation by filing an Order to Show Cause or a Notice of Motion on an existing divorce, legal separation, or nullity, domestic partnership, or paternity case.
+Paternity
+Establishing paternity means saying who the legal parents of a child are if the parents were not married when the child was born.
+A child's parentage must be established before you can get child support or custody and visitation orders. By filing the Petition to Establish Parental Relationship, you may ask the court for child support or custody and visitation as part of this case.
+Domestic Partnerships
+Domestic partners are defined as "two adults who have chosen to share one another's lives in an intimate and committed relationship of mutual caring."
+To dissolve (terminate) a Domestic Partnership, you may file a Petition for Dissolution.
+How to Get a Domestic Violence Restraining Order
+What is a restraining order?}
+\end{docenv}
+\begin{refanswerenv}
+{\footnotesize\textit{\textcolor{gray}{\textbf{Reference answer:}\enspace Spousal support, also known as alimony, is financial support paid by one spouse to the other after a divorce or legal separation. The purpose of spousal support is to help the supported spouse maintain a similar standard of living as during the marriage. The amount and duration of spousal support are determined based on various factors, such as the length of the marriage, the income and earning capacity of both spouses, and the standard of living established during the marriage. If you have specific questions about spousal support in your case, it may be helpful to consult with a family law attorney.}}}
+\end{refanswerenv}
+\end{document}
