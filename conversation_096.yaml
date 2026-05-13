@@ -1,0 +1,45 @@
+conversation_id: "96"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #96 - No References"
+turns:
+  - turn_number: 1
+    user_query: "when did the wall in berlin come down"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Berlin Wall began to come down on the evening of 9 November 1989."
+
+  - turn_number: 2
+    user_query: "When did the official reunification of Germany take place?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The official reunification of Germany took place on 3 October 1990."
+
+  - turn_number: 3
+    user_query: "How many people died trying to cross the Berlin Wall?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The number of people who died trying to cross the Wall, or as a result of the Wall's existence, has been disputed. Historical Research ( ZZF ) in Potsdam has confirmed at least 140 deaths. An estimated death toll ranges from 136 to more than 200 in and around Berlin."
+
+  - turn_number: 4
+    user_query: "How did people try to escape?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Berlin Wall Early successful escapes involved people jumping the initial barbed wire or leaping out of apartment windows along the line, but these ended as the Wall was fortified.  East German authorities no longer permitted apartments near the Wall to be occupied, and any building near the Wall had its windows boarded and later bricked up."
+
+  - turn_number: 5
+    user_query: "Did all government agencies move to Berlin"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Government offices have been moving progressively to Berlin. Under the terms of the treaty between West and East Germany, Berlin became the capital of a unified Germany.  The Bundestag voted in June 1991 to make Berlin the seat of government, but the political institutions remained at Bonn for the time being. Only after a heated 1991 debate did the Bundestag conclude on moving itself and most of the government to Berlin as well, a process that took until 1999 to complete. Many government departments still maintain sizable presences in Bonn."
+
+  - turn_number: 6
+    user_query: "Who was running East Germany when the wall came down"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "When the Berlin Wall came down, Erich Honecker, the General Secretary of the Socialist Unity Party of Germany, was the head of state of East Germany. The longtime leader of East Germany was forced to resign on 18 October 1989 and replaced by Egon Krenz."
+
+  - turn_number: 7
+    user_query: "Who was Willy Brandt and what did he do."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Willy Brandt was one of the most popular politicians who served as Mayor ( Oberbürgermeister ) of West-Berlin and as the Chancellor of West Germany. Brandt received the Nobel Peace Prize in 1971 for his efforts in strengthening cooperation between East and West."

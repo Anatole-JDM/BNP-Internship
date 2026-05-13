@@ -1,0 +1,53 @@
+conversation_id: "30"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #30 - No References"
+turns:
+  - turn_number: 1
+    user_query: "How many fatalities each year are caused by collisions between motorcycles and other vehicles in New York?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I do not have specific information on the number of fatalities each year caused by collisions between motorcycles and other vehicles in New York."
+
+  - turn_number: 2
+    user_query: "What are the regulations for motorcycle driving?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "New York was the first state in the nation to introduce a universal motorcycle helmet law. This law, which took effect on January 1, 1967, requires anyone operating or riding a motorcycle to wear a Department of Transportation (DOT)-approved helmet.  It's important to be a responsible driver by ensuring your vehicle is in safe operating condition and that all of your safety equipment is properly adjusted. It is crucial to observe and obey all traffic laws, signs, and signals. Avoid being distracted by cell phones and other activities while driving. It's important to drive sober and never drive impaired by alcohol or drugs."
+
+  - turn_number: 3
+    user_query: "Tipsy"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "For more than three decades, New York has been a leader in reducing crashes, fatalities and injuries resulting from alcohol and drug impaired driving.  However, I do not have information specific to the 'tipsy' state of alcohol violation."
+
+  - turn_number: 4
+    user_query: "What is OTS?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The OTS plays a key role in making California roadways safe by collaborating with around 300 state and local agencies to effectively utilize federal grant program funds. The OTS also works closely with traffic safety partners to monitor successful programs, promote collaboration, develop new countermeasures, and explore emerging trends. In addition to funding various programs through these grants, the OTS team is dedicated to promoting traffic safety through public awareness campaigns aimed at educating the public about safe driving habits. The OTS proudly represents California as a leader in traffic safety efforts at the local, state, and national levels."
+
+  - turn_number: 5
+    user_query: "Speed limit"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The law sets certain prima facie limits, including a speed limit of 25 MPH in business and residential districts, a speed limit of 15 MPH in alleys, at blind intersections, and blind railroad crossings, and a part-time speed limit of 25 MPH in school zones when children are going to and from school. Signs only sometimes indicate these speed limits, so all California motorists must be aware of these 10, 20, and 30-mile-per-hour speed laws. Local authorities can establish intermediate speed limits between 25 and 55 miles per hour based on traffic engineering surveys, which evaluate roadway conditions, accident records, and the prevailing speed of prudent drivers."
+
+  - turn_number: 6
+    user_query: "What about bicycles?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "In California, there are over 4,000 freeways, with approximately 1,000 miles open to bicyclists, mostly in rural areas with no alternate routes. According to California Vehicle Code Section 21960, Caltrans and local agencies have the authority to prohibit bicyclists from traveling on freeways under their jurisdiction, and they are required to post signs stating the prohibition. Currently, there are no signs permitting bicyclists on freeways. When bicyclists legally travel on a freeway, they may be directed off at the next off-ramp by a sign that says \"Bicycles Must Exit.\"  The CHP has created a Bicycle Safety Course which holds valuable information related to bicycle safety and maintenance."
+
+  - turn_number: 7
+    user_query: "Are the laws the same for pedestrians?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "No, they are not. The pedestrian signal, when activated, provides time for the pedestrian to enter the street on the steady \"Walk\" and to finish crossing the street on the flashing \"Don't Walk\" signal. The pedestrian signal is normally activated by a push-button that tells the signal controller that there is a pedestrian who wishes to cross the street.
+Drivers and pedestrians must work together to demonstrate safe road behaviors, helping protect themselves and those around them. To ensure safety, pedestrians should make themselves visible by wearing bright-colored clothes and carrying a flashlight when walking at night. They should avoid dangerous behaviors, such as jaywalking, staying sober, and making eye contact with drivers. Pedestrians should also refrain from using their phones while walking, as talking and texting can distract them from paying attention to their surroundings.
+Before crossing a street, pedestrians should look before stepping, cross streets at marked crosswalks or intersections, obey traffic signals, and watch for turning vehicles. It's important to look left-right-left before crossing a street."
+
+  - turn_number: 8
+    user_query: "Fines and penalties"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Fines can be increased under Vehicle Code 42009 for offenses committed in a highway construction or maintenance area and under Vehicle Code 40210 for violations in a Safety Enhancement-Double Fine Zone. Higher fines apply for violations in a school zone, a business district, a senior center zone, or railroad crossing. A $40 court security fee is added for each infraction, misdemeanor, or felony conviction under Penal Code Section 1465.8, effective June 27, 2014. An assessment of $30 for each misdemeanor or felony and $35 for each infraction, added for each conviction under Government Code 70373, effective January 1, 2009. Furthermore, a 20% State Surcharge is imposed on the base bail or base fine amount, effective September 20, 2002."
