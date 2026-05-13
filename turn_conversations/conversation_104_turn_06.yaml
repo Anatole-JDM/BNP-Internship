@@ -1,0 +1,86 @@
+conversation_id: "104"
+domain: "mt-rag-ibmcloud-elser-512-100-20240502"
+title: "RAG Conversation #104 - No References"
+turns:
+  - turn_number: 1
+    user_query: "What are the billing plans available and differences between each of them?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are two billing plans available: Pay-As-You-Go and Subscription. 1. Pay-As-You-Go: With this account, you're billed monthly for your resource usage. Your resource usage consists of recurring and fluctuating costs. This plan is suitable for developers or companies that want to explore the entire IBM Cloud catalog but have smaller or variable workloads. You pay only for what you use or commit to on a monthly basis, with no long-term contracts. Usage consists of products, services, and resources. 2. Subscription: With this account, you buy a subscription for an amount of credit to spend on resource usage within a certain time period. In exchange for this spending commitment, you get a discount on your usage costs."
+
+  - turn_number: 2
+    user_query: "how can I estimate my costs?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To estimate your costs, you can use the IBM Cloud cost estimator tool. Here are the steps to follow: 1. Go to the IBM Cloud console and click on the Cost estimator icon. 2. Click on 'Create new estimate' and enter a name and description for the estimate. 3. Click on 'Create' and you will be directed to the estimate details page. 4. Click on 'Go to catalog' to add products to the estimate. 5. Select the product you are interested in and choose your pricing plan and enter any necessary configuration details. 6. Click on 'Add to estimate'. 7. Enter your estimated usage and click on 'Calculate Cost'. You can adjust the estimated usage and recalculate the cost to see how different usage levels affect the overall cost. By default, the estimator shows the pricing and billing currency set for your account. If you're estimating costs for a different location or currency, you might have to select the appropriate currency on the order summary page for the product or change the currency on your account. Once you have added all the products to your estimate, review the product details and click on 'View estimate' to see the total estimated cost."
+
+  - turn_number: 3
+    user_query: "are there different types of charges I am charged?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, Different types of charges apply depending on the features of IBM Cloud that you're using. The types of charges are Fixed, Metered, Tiered, and Reserved."
+
+  - turn_number: 4
+    user_query: "can you tell me the difference among Fixed, Metered, Tiered, and Reserved?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Sure, here are the differences among Fixed, Metered, Tiered, and Reserved charges:
+1. Fixed: Fixed-rate pricing is based on an agreed upon monthly charge. If you buy an additional bare metal server, virtual server, or storage resource after the start of the monthly billing period, the cost of the resource for the first month is prorated based on the number of days remaining in the billing period. The prorated cost is billed in a separate invoice. An example of this type of charge is the fixed plans for Bare Metal Servers.
+2. Metered: Metered usage is a unit-based pricing model in which you pay for what you consume. In this case, the number of GB hours that are consumed for runtimes and the number of IP addresses and storage that is consumed for containers. An example of this type of charge is the Push service, where any usage over the free monthly allowance is charged.
+3. Tiered: Tiered charges add more pricing tiers, often offering discounted charges in tiers with larger consumption. Tiered pricing is offered in simple, graduated, or block. In the simple tier model, the unit price is determined by the tier that the quantity of your usage falls into. The total price is your quantity that is multiplied by the unit price in that tier. An example of this type of charge is the API Connect service, where one of the tiered plans charges $10,000 for the first 25 million monthly API calls and $40.00 USD per 100,000 API calls per month thereafter.
+4. Reserved: Reserved pricing is based on a long-term commitment for a service, so you can get a discounted price. With a reserved plan, you get a dedicated service instance that is easy to set up, deploy, and deliver in the public IBM Cloud environment. An example of this type of charge is the Db2 on Cloud service, which has reserved plans."
+
+  - turn_number: 5
+    user_query: "I want to update my pricing plan and view my usage"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To update your pricing plan: First, navigate to the IBM Cloud console, go to the Resource List, and select the service. Then, click on Plan in the service instance dashboard and select the pricing plan you want. Finally, click Save. However, some services might require assistance from the IBM Cloud Sales team or a migration before you can update plans. You can view your usage details from the billing and usage dashboard or from the Usage page in the console. This includes a summary of estimated charges for all services and resources used per month in your organizations. To view usage for all resources in the account, you need an access policy with the Administrator role on the Billing account management service. To view usage only for specific IBM Cloud Identity and Access Management (IAM) resources, you need the Viewer role on the resource group. To view usage only for specific Cloud Foundry services, the Billing manager role must be applied at the org level."
+
+  - turn_number: 6
+    user_query: "am I charged for those support costs as well?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "Based on your resource usage, there can be additional costs for support beyond the starting price. The higher your resource usage, the higher your total support cost. If you have Advanced or Premium support, you can view your monthly support costs from the Support costs page in the IBM Cloud console."
+
+  - turn_number: 7
+    user_query: "what is the process of managing my payments?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To manage your payments, you can use the [Payments](https://cloud.ibm.com/billing/payments) page in the IBM Cloud® console or go to [IBM® Billing](https://myibm.ibm.com/billing/). Depending on your account type, you may need to be assigned the operator role or higher on the billing account management service. For new US-based Pay-As-You-Go accounts with credit card billing, you can add multiple cards, replace the default card, or edit card details from the [Payments](https://cloud.ibm.com/billing/payments) page.  If you're using a payment method other than a credit card, you can switch to your payment method by going to the same page, clicking 'Payment method', selecting 'Pay with Other', and submitting a change request. Some payment methods may not be accepted as recurring payment methods and must be manually submitted each month."
+
+  - turn_number: 8
+    user_query: "view my invoices and status"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To manage and view your invoices, visit the Invoices page from the billing and usage dashboard in the IBM Cloud® console. To view your invoices, you need to be assigned the operator role or higher on the billing account management service.  These are the status of invoices: Invoiced: You received the latest invoice from IBM Cloud. Paid: Your payment for the charges on your latest invoice was received. Unpaid: The charges on your latest invoice have not been paid. Pending: Your payment for your latest charges has not been applied due to a payment processing error. You can view and download your invoice from the IBM console by clicking the Download icon. The invoice is available as a simplified PDF, a detailed PDF, or as an excel spreadsheet."
+
+  - turn_number: 9
+    user_query: "Why do you think I can not apply a subscription code?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "You might not be able to apply a subscription code because you don't have the required access in the account or the code expired. To successfully apply a subscription code, you must have an Editor role or higher on all account management services. If the expired code needs to be reissued, you would need to contact the person who provided the code for help with reissuing a new one."
+
+  - turn_number: 10
+    user_query: "what about why can't I apply a feature code?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "You might not be able to apply a feature code because your account doesn't meet the requirements for the feature code, you don't have the required access in the account, or the code expired. To successfully apply a feature code, you must have an Editor role or higher on all account management services. If the expired code needs to be reissued, you would need to contact the person who provided the code for help."
+
+  - turn_number: 11
+    user_query: "I also tried to update my credit card, but it keeps showing errors"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I'm sorry to hear that you're having trouble updating your credit card. Can you please let me know the error you are seeing? It can be like \"Could not place order. Problem authorizing the credit card. We are unable to process your request: Transaction Rejected; Could not place order. Problem authorizing the credit card. We're afraid this transaction has been rejected; or Failed to complete the Change Request process due to the following error: We are unable to process your request: Transaction Rejected.\""
+
+  - turn_number: 12
+    user_query: "it is showing \"Could not place order. Problem authorizing the credit card. We are unable to process your request: Transaction Rejected\""
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The error message \"Could not place order. Problem authorizing the credit card. We are unable to process your request: Transaction Rejected\" might be due to IBM Cloud® was unable to process your transaction. You can contact the Cloud Trust and Enablement team by email at verify@us.ibm.com. to resolve this issue."

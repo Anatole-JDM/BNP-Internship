@@ -1,0 +1,64 @@
+conversation_id: "54"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #54 - No References"
+turns:
+  - turn_number: 1
+    user_query: "where does the penobscot river start and end"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Penobscot River originates from four branches in various lakes in north-central Maine. It specifically begins where the West Branch meets the East Branch at Medway. The river flows into the Atlantic Ocean at Penobscot Bay, and historically served as an important trade route from the Atlantic coast to interior Maine."
+
+  - turn_number: 2
+    user_query: "The West branch."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The West Branch is home to many types of fish, such as landlocked salmon and brook trout. There are many deep pools within the river due to the many slate ledges, making the river ideal for fishing from shore, although there are still areas that are good for canoe fishing. The West Branch is a world-class landlocked salmon river, while the East Branch is known for its smallmouth bass fishery. In 2008, the Atlantic Salmon Commission opened the main stem of the river to catch and release fly fishing for Atlantic salmon."
+
+  - turn_number: 3
+    user_query: "Are there any other important river systems?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, Main has the Androscoggin River, a 178-mile river located in the U.S. states of Maine and New Hampshire in northern New England. It joins the Kennebec River at Merrymeeting Bay in Maine before flowing into the Gulf of Maine on the Atlantic Ocean. The river is a popular fishing destination, offering opportunities to catch brook, rainbow, brown trout, landlocked salmon, and smallmouth bass."
+
+  - turn_number: 4
+    user_query: "Is this the best river for fishing in the country?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The \"best\" river for fishing depends on the specific type of fish being pursued and the angler's preferences. The Yellowstone River is considered one of the world's greatest trout streams. It is officially classed as a blue ribbon stream in Montana from the park to the confluence with the Boulder River east of Livingston and from the mouth of Rosebud Creek near Rosebud, Montana, to the North Dakota border.  The Snake River was once one of the most important rivers for the spawning of anadromous fish -- which are hatched in the headwaters of rivers, live in the ocean for most of their lives, and return to the river to spawn -- in the United States."
+
+  - turn_number: 5
+    user_query: "The Snake River is the longest river in the country."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "No. The Snake River is the thirteenth longest river in the United States. The longest river is the Mississippi River, the chief river of the second-largest drainage system on the North American continent, second only to the Hudson Bay drainage system. Using the longest stream as the source, Brower's Spring in Montana, the source of the Missouri River, would give it an incredible length of 3,710 miles, making it the fourth longest river in the world after the Nile, Amazon, and Yangtze. If we use the Largest Stream measurement, the Ohio River, and by extension the Allegheny River would be the source, and the Mississippi would begin in Pennsylvania."
+
+  - turn_number: 6
+    user_query: "Which is the largest river in America?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Mississippi River is the chief river of the second-largest drainage system on the North American continent and is the longest river in the United States."
+
+  - turn_number: 7
+    user_query: "That was not my question. When I say \"America,\" I'm referring to the continent, not the United States of America."
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The Amazon River is located in the America continent, also called the Americas, and is the largest river basin in the world, covering about 40% of South America with an area of approximately 7,050,000 square kilometers (2,722,020 sq mi). It flows from west to east, starting from Iquitos in Peru and continuing across Brazil to the Atlantic. The river runs mainly through Brazil and Peru and is part of the border between Colombia and Peru. With an average discharge of about 209,000 cubic meters per second (7,400,000 cu ft/s), the Amazon represents 20% of the global riverine discharge to the ocean, greater than the combined discharge of the following seven largest independent rivers."
+
+  - turn_number: 8
+    user_query: "Which rivers are navigable in the USA?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are several navigable rivers in the United States. For instance, the Penobscot River becomes navigable at the city of Bangor. Additionally, both the Mississippi River and the Missouri River are commercially navigable along their entire lengths in Missouri."
+
+  - turn_number: 9
+    user_query: "Is the Hudson River important?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, the Hudson River is considered an important river in the United States. The 315-mile-long Hudson River flows through eastern New York, serving as a boundary between New Jersey and New York. The region has experienced economic revitalization, especially in green development. Notable projects such as the High Line and the Walkway Over the Hudson, along with waterfront parks and annual festivals, contribute to the area's appeal. The Hudson River valley runs primarily from north to south down the eastern edge of New York State, cutting through a series of rock types including Triassic sandstones and redbeds in the south, and much more ancient Precambrian gneiss in the north (and east)."

@@ -1,0 +1,46 @@
+conversation_id: "47"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #47 - No References"
+turns:
+  - turn_number: 1
+    user_query: "robert louis stevenson a child's garden of verses"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Robert Louis Stevenson is the author of A Child's Garden of Verses, a collection of poetry for children about darkness and solitude. The collection was first published in 1885 under the title Penny Whistles and contains about 65 poems, including classics such as \"Foreign Children,\" \"The Lamplighter,\" \"The Land of Counterpane,\" \"Bed in Summer,\" \"My Shadow,\" and \"The Swing.\""
+
+  - turn_number: 2
+    user_query: "is a child's garden of verses only in English?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "No, A Child's Garden of Verses is not only in English. It has been translated into Latin by Terrot Reaveley Glover in 1922 under the title Carmina non prius audita de ludis et hortis virginibus puerisque."
+
+  - turn_number: 3
+    user_query: "what are the contents of a child's garden of verses"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Here are the contents of the a child's garden of verses: * Foreign Children * The Lamplighter * The Land of Counterpane * Bed in Summer * My Shadow * The Swing * The Land of Nod * My Bed is a Boat * The Moon * Time to Rise * Looking-glass River * Winter-time * The Hayloft * Farewell to the Farm * Northwest Passage: Good Night, Shadow March, In Port."
+
+  - turn_number: 4
+    user_query: "any other famous poets you recommend me to know?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are Tyger Blake, E. E. Cummings, Dylan Thomas, James Russell Lowell, and William Blake."
+
+  - turn_number: 5
+    user_query: "can you provide more details of E. E. Cummings?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "E. E. Cummings (October 14, 1894 -- September 3, 1962) was an American poet, painter, essayist, author, and playwright. Cummings wrote approximately 2900 poems, two autobiographical novels, four plays, and several essays. Many of his poems are satirical and address social issues, but they also have a strong bias towards romanticism, celebrating love, sex, and the season of rebirth. His first published work was a collection of poems titled Tulips and Chimneys (1923), which introduced the public to his characteristic eccentric use of grammar and punctuation. In addition to his poetry, Cummings also wrote children's books and novels, showcasing his versatility as a writer."
+
+  - turn_number: 6
+    user_query: "how was E. E. Cummings's life? Was E. E. Cummings's famous poem affected by something?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "E. E. Cummings expressed a strong desire to become a poet, writing daily from the age of 8 to 22. He attended Harvard University, where he developed an interest in modern poetry while aiming for a dynamic use of language. Cummings's early work was influenced by notable modernists such as Gertrude Stein and Ezra Pound, as well as the imagist experiments of Amy Lowell. Later, his visits to Paris exposed him to Dada and surrealism, which he incorporated into his poetry. Over time, his style evolved to rely more on symbolism and allegory, but he rarely used comparisons that required objects that were not previously mentioned in the poem."

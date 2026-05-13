@@ -1,0 +1,46 @@
+conversation_id: "36"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #36 - No References"
+turns:
+  - turn_number: 1
+    user_query: "How can I get a restraining order without notifying the other person of my address?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Unfortunately, I do not have information on how to keep your address confidential from the person you are seeking the restraining order against."
+
+  - turn_number: 2
+    user_query: "How do I file an order?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The procedure to file a restraining order depends on the type of restraining order and the court where you want to file it in."
+
+  - turn_number: 3
+    user_query: "I am in Sacramento."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "In Sacramento, you would file a restraining order at the Sacramento Superior Court. The specific steps for filing a restraining order can vary depending on the type of order you need."
+
+  - turn_number: 4
+    user_query: "What types of orders are there?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are several types of restraining orders in Sacramento Superior Court, including Emergency Protective Order, Domestic Violence Restraining Order, Elder or Dependent Adult Abuse Restraining Order, Civil Harassment Restraining Order, Firearms Restraining Order, and Workplace Violence Restraining Order. Each has its own eligibility requirements and procedures."
+
+  - turn_number: 5
+    user_query: "I am interested in the civil harassment order."
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "To file a Civil Harassment Restraining Order in Sacramento Superior Court, you need to complete the Request for Civil Harassment Restraining Order (Step 1) Packet (CV\\E-CH-01) and present the completed forms to the Civil Front Counter - Window 14 in Room 102 of the Gordon D. Schaber Sacramento County Courthouse. You will need to pay a filing fee, but if you cannot afford it, you can request a fee waiver. After filing, if your forms are completed and filed by 11:30 a.m., you will receive your Order at 4:00 p.m. the same day. If the forms are filed after 11:30 a.m., then the Order will be ready for pick up after 4:00 p.m. the next court business day. It is your responsibility to have the respondent personally served no later than five (5) days prior to the scheduled hearing date. Proof of service for the respondent must be filed with the court prior to or at the time of the Civil Harassment Restraining Order hearing."
+
+  - turn_number: 6
+    user_query: "Thank you!"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "You are welcome. Is there anything else I can help you with?"

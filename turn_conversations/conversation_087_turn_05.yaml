@@ -1,0 +1,75 @@
+conversation_id: "87"
+domain: "mt-rag-ibmcloud-elser-512-100-20240502"
+title: "RAG Conversation #87 - No References"
+turns:
+  - turn_number: 1
+    user_query: "Can you summarize the differences between good bots and bad bots?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Bots are software programs that typically use a \"headless browser\" to make HTTP requests and other actions. A bot that performs a helpful service can be considered \"good.\" For example, customer service chatbots, search engine crawlers, and performance monitoring bots are generally good bots. Good bots look for and abide by the rules outlined in a website's robots.txt file and read them and avoid that webpage. On the other hand, bad bots range from malicious to simply annoying; for instance, breaking into user accounts to steal data or buying concert tickets online to assist scalpers. Malicious bots typically don't  check a website's robots.txt file before accessing the website, which generates the need for bot management."
+
+  - turn_number: 2
+    user_query: "What are the features in the CIS bot?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "One of the features of CIS bot is JavaScript detections to help CIS classify traffic as automated or human. It works via ingesting a small amount of JavaScript into client devices using Google’s Picasso fingerprinting technique and factoring those Picasso results into bot scores. This detection technique gathers general data about the machines reaching CIS and cannot identify specific individuals. Additional steps are taken to anonymize and phase out data for privacy."
+
+  - turn_number: 3
+    user_query: "How does CIS manage bots?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Cloudflare Bot Management, which is part of IBM Cloud® Internet Services (CIS), manages bots by collecting data from requests flowing through its network every day. With this data, powered by Cloudflare's machine learning and behavior analysis, CIS can identify likely bot activity and can provide you with information on how to allow or disallow specific bot traffic using Firewall Rules. The detection mechanisms used by CIS produce their own scores, which are then combined to form a single score."
+
+  - turn_number: 4
+    user_query: "How can I update machine leaning models?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "You  can enable auto-updates on the machine learning models to receive newest models. To enable auto-updates:
+1. Log in to the CIS and select your account and domain.
+2. Go toSecurity > Bots.    
+3. Select Configure Bot Management.  
+4. Enable auto-updates to the machine learning model.  
+
+Enabling auto-updates for the machine learning model upgrades you to the latest version immediately. You can toggle the button off within 24 hours to revert to the previous version. To make changes after 24 hours, contact support."
+
+  - turn_number: 5
+    user_query: "Can I create a machine learning model and how should I do that?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "I am sorry I don't have any information on creating a custom machine learning model for bot detection."
+
+  - turn_number: 6
+    user_query: "Speaking about bots again, can they get private information from the user"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, malicious bots can be designed to steal private information from users by breaking into user accounts. This is why bot management is important, as it helps to identify and mitigate the actions of such bad bots."
+
+  - turn_number: 7
+    user_query: "By the way, what is a secret?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "A secret is any piece of data that is sensitive within the context of an application or service.
+
+Secrets include all of the following but are not limited to:
+- Passwords of any type (database logins, OS accounts, functional IDs, and so on)
+- API keys
+- Long-lived authentication tokens (OAuth2, GitHub, IAM, and so on)
+- SSH keys
+- Encryption keys
+- Other private keys (PKI/TLS certificates, HMAC keys, signing keys, and so on)
+- Any type of credential used to access a confidential system
+
+  It is critical that secrets are securely protected through their entire lifecycle."
+
+  - turn_number: 8
+    user_query: "How can I protect my privacy?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are basic things you can do to  protect the confidentiality of your personal data. For sure, avoid to enter  personally identifiable information (PII), such as your name or location, when you add keys to the service. It is very important  not store your personal data as metadata for your key."

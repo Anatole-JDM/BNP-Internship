@@ -1,0 +1,60 @@
+conversation_id: "93"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #93 - No References"
+turns:
+  - turn_number: 1
+    user_query: "How do I file a complaint with the state?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To file a complaint with the New York State Attorney General, you can visit their official website and select the category that best fits your purpose. For consumer issues, you can choose from categories like goods or services purchase, credit cards, credit reports, and personal finance, social media, personal data and information privacy, vehicle lease or purchase, and lemon law. If you cannot complete the form online or need additional assistance, you can call their OAG Help Line at 1-800-771-7755. Please note that patterns of complaints often help in allocating law enforcement resources, and filing a false complaint is punishable as a Class A Misdemeanor."
+
+  - turn_number: 2
+    user_query: "what if I want to file a complaint with other states"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The information I have does not provide an answer for other states except California, where you can file a complaint online. The whistleblower hotline is 1-800-649-7570, and the Department of Managed Health Care Help Center is 1-888-466-2219."
+
+  - turn_number: 3
+    user_query: "what is NY and CA office hours?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The New York State Attorney General's Offices are open from 8:30 a.m. to 5:00 p.m., Monday through Friday. In contrast, the California Department of Consumer Affairs' Consumer Service Representatives are available to answer consumer, licensee, and applicant questions in over 200 different languages by phone from 8:00 a.m. to 5:00 p.m., Monday through Friday, except on the first and third Wednesday of each month, when they open at 8:30 a.m., and on state-observed holidays."
+
+  - turn_number: 4
+    user_query: "if I work with New York State Attorney General office, who am I going to work with?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The question is not clear enough. You need to say the position you will have so that I can tell you who you will work with."
+
+  - turn_number: 5
+    user_query: "can you please tell me more about Letitia James?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "Letitia James is the 67th Attorney General for the state of New York, and she is the first woman of color to hold statewide office in New York and the first woman to be elected Attorney General. 
+
+Some recent highlights: Attorney General James Secures $740,000 from Online Mental Health Provider for its Burdensome Cancellation Process; she reaches $310,000 Settlement-in-Principle with Syracuse Landlord for Failing to Address Lead-Based Paint Hazards; she secures $15.2 Million Judgment Against Unlicensed Cannabis Store Owner in Upstate New York; and she also wins Landmark Victory in Case Against Donald Trump."
+
+  - turn_number: 6
+    user_query: "wow, that sounds great. maybe tell me more about Office of the New York State Attorney General itself"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The office employs over 1,700 staff, including investigators, analysts, scientists, forensic accountants, legal assistants and support staff, and over 700 assistant attorneys general, serving in over two dozen locations across New York state. The New York State Attorney General's Office is responsible for carrying out essential defensive, regulatory, and affirmative justice functions throughout the state. This includes representing and defending the state, its officers, and other government agencies in federal and state courts, handling claims and defensive litigation, conducting social and economic justice investigations, litigation, and enforcement, prohibiting discrimination and protecting the rights of various groups such as consumers, senior citizens, tenants, immigrants, and others. They also sponsor community outreach and education, mediate consumer-frauds cases, manage regulatory matters involving charities, handle Mental Hygiene Law cases, facilitate Extreme Risk Protection Orders (ERPOs), and enforce the Cannabis Law. The office has divisions such as Administration, Criminal Justice, Economic Justice, Executive, Regional Offices, Social Justice, Solicitor General, and State Counsel. Each division has various bureaus and units that focus on specific areas of responsibility."
+
+  - turn_number: 7
+    user_query: "Office of the New York State Attorney General press conference"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I cannot answer the question because it refers to a specific conference without specifying which one."
+
+  - turn_number: 8
+    user_query: "how can I protect myself if I am the whistleblower...."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If you are a whistleblower, you can protect yourself by using the Whistleblower Portal provided by the New York State Attorney General's Office. The portal allows anonymous submissions and two-way communications with the office through a unique key code that submitters can use to send and retrieve messages. To begin the anonymous submission process, you need to download and install Tor Browser on your computer, which provides an extra layer of security and privacy to protect your anonymity. After installation, launch Tor Browser and type the following URL into the Tor Browser's address bar: `http://wux56igrepfok5cz5eqszt3xr7ng6tqai2ayplbmvp5qxruax5eicjad.onion`. Once you have accessed the whistleblower portal, you can submit your communication via the simple form that asks for the subject of the communication, a description of the communication, and any supporting files available to upload. After submitting the form, you will receive a secret code to track your submission and communicate with the office anonymously."

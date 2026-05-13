@@ -1,0 +1,75 @@
+conversation_id: "23"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #23 - No References"
+turns:
+  - turn_number: 1
+    user_query: "As an employee, when is it inappropriate to request to see your young/startup company's financial statements?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If you approach the request professionally, directly, and briefly it is not inappropriate to request to see the financial statements. It is also suggested to keep the request vague to avoid pushing for specific information that may not be disclosed."
+
+  - turn_number: 2
+    user_query: "what are the risks of working at a startup?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Working at a startup can involve several risks. One of the primary risks is the possibility of the business failing, which could result in your shares becoming worthless. There is also a risk that if the startup succeeds, the financial rewards may not be evenly distributed among employees. Additionally, startups often require long working hours and high levels of responsibility, and there may be a risk of job security as the company grows and hires new employees."
+
+  - turn_number: 3
+    user_query: "tips for starting my own"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Here are some tips for starting your own business:
+1. Start small and grow it up. You can start online with a website and dedicate an hour a day to researching and planning.
+2. Get your family involved 
+3. Look for incubators in your area that can provide mentorship and seed money to promising startups.
+4. Consider crowdfunding as an alternative financing method.
+5. When raising money, be prepared to answer questions about your business strategy and what you will do with the funds to generate profits in the future.
+6. Be aware that most startups fail, but also keep in mind that many successful businesses were started by people who were willing to take the risk.
+7. Develop forward and backward linkages with the help of startup advisors who can provide expertise and guidance in different verticals of the economy.
+8. Be persistent in presenting your business plan to potential investors, but avoid overwhelming them with continuous bombardment.
+9. Get business mentors and startup advisors
+10. Hire a tax advisor regarding startup costs
+Consider reading \"The $100 Startup\" by Chris Guillebeau and \"The 4 Hour Workweek\" by Timothy Ferriss for helpful guidance."
+
+  - turn_number: 4
+    user_query: "that sounds like a lot of work maybe I should just invest in existing startups"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are opportunities for outside investors and it can be a way to potentially earn significant returns if you are able to pick successful startups before their valuation increases.  It's important to note that this is a high-risk investment strategy. Investors usually also becoming involved in the day-to-day operations of the businesses you invest in. Resources such as Paul Graham's essays at www.paulgraham.com and being skeptical about what you are getting for your investment."
+
+  - turn_number: 5
+    user_query: "but is it ok if I only can invest a little?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, it is possible to invest a small amount in a startup ( a few thousand dollars), such as Paul Graham's Y-Combinator, but there are very few opportunities for this. The cost and hassle of raising small amounts would prevent most startups from doing it."
+
+  - turn_number: 6
+    user_query: "Am I better off going to work for a FAANG?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I can't tell you much about working for a FAANG (Facebook, Amazon, Apple, Netflix, Google) company, but large companies offer resources such as the opportunity to learn from experienced people, and teams dedicated to support you.  There isn't a single \"\"right\"\" place to work. FAANG companies tend to offer 6-figure salaries."
+
+  - turn_number: 7
+    user_query: "which FAANG pays the most?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I'm sorry I don't have that information."
+
+  - turn_number: 8
+    user_query: "what about goldman sachs or other finance companies"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Goldman Sachs and the other top finance companies offer high paychecks with low 6 figure starting salaries and a potential to make 400k or more. Note, the starting salary can vary greatly based on the cost of living in different locations."
+
+  - turn_number: 9
+    user_query: "so is it more or less than tech companies?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The starting salaries are comparable, both in the low 6-figures, however earning potential may differ as your career progresses."

@@ -1,0 +1,59 @@
+conversation_id: "45"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #45 - No References"
+turns:
+  - turn_number: 1
+    user_query: "What is the Web extension for federal government websites and how do we ensure the site is secure?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The web extension for federal government websites often ends in .gov or .mil. To ensure the site is secure, look for the \"https://\" in the website's URL. This indicates that you are connected to the official website and any information you provide will be encrypted and transmitted securely."
+
+  - turn_number: 2
+    user_query: "How can I protect my personal information from identity theft"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Here are some tips to protect your personal information from identity theft:
+1. Do not respond to or click on any links within unsolicited emails or pop-up boxes. They can put your personal information in jeopardy.
+2. Be cautious when using your debit card online. Consider using a credit card instead as they typically provide added protection against fraudulent charges.
+3. Only download mobile applications from official app stores and check other users’ reviews, as well as the app’s privacy policies, before downloading.
+4. Use a variety of strong and unique passwords for your online activities. Avoid using the same password for all your accounts.
+5. Keep your financial documents and records in a secure place. Shred sensitive materials before disposing of them.
+6. Secure your wireless network with a strong password and turn on Wireless Network Encryption if available.
+7. Lock your computer when you are using it in a public or shared space.
+8. Regularly update anti-virus protection software on your computer and keep your computer system and browser up to date.
+9. Double-check mailings and always make sure that documents are not stuck together and that the recipient’s information is correct before sending any Personally Identifiable Information.
+10. Avoid sending any sensitive information via email. If you must use email, consider purchasing encryption software.
+11. Use social media responsibly and monitor your privacy settings.
+12. Consider purchasing and using a reputable Virtual Private Network or VPN software to use while online using public networks.
+For parents, it's important to start the conversation about online safety with your children, establish rules, monitor their playtime, and teach them about cell phone safety."
+
+  - turn_number: 3
+    user_query: "can you clarify the definition of identity theft?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes. Identity theft occurs when someone steals your identity to commit fraud. Stealing your identity could mean using personal information without your permission, such as your name, Social Security number, bank account information, or credit card number."
+
+  - turn_number: 4
+    user_query: "what do systems use to protect my personal information?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I'm sorry, but I don't have any information to share about that topic."
+
+  - turn_number: 5
+    user_query: "I want to understand the definition of personal information we are talking about here"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "\"Personal information\" refers to data that can be used to identify or describe an individual, such as their name, social security number, physical description, home address, home telephone number, education, financial matters, medical or employment history, readily identifiable to that specific individual. However, a domain name or Internet Protocol address is not considered personal information, but rather \"electronically collected personal information.\""
+
+  - turn_number: 6
+    user_query: "do you have any programs you can recommend for me to download on my computer for information protection?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "I am sorry, but I do not have specific program names to share."

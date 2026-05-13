@@ -1,0 +1,65 @@
+conversation_id: "105"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #105 - No References"
+turns:
+  - turn_number: 1
+    user_query: "what system does the sec require companies to use when preparing financial statements"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I have no specific information about the system required by the SEC for preparing financial statements."
+
+  - turn_number: 2
+    user_query: "Do US-based companies need to comply with SEC regulations?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, US-based companies are obligated to adhere to the regulations mandated by the US government, which are supervised by the Securities and Exchange Commission (SEC). The SEC's EDGAR system contains all the necessary reports. Both foreign and domestic companies must electronically submit registration statements, periodic reports, and other forms to the SEC's EDGAR database."
+
+  - turn_number: 3
+    user_query: "What are the requirements?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The SEC defines an accredited investor as a variety of entities, including financial institutions, employee benefit plans with over $5 million in assets, certain charitable organizations, and individuals meeting specific income or net worth thresholds. There are no citizenship or residency requirements to qualify.
+If a company has more than 500 shareholders, it must register with the SEC as an Investment Company. This registration brings about public reporting and additional regulatory compliance. This often leads to the practical necessity of going public with an IPO, even if it's not a legal requirement."
+
+  - turn_number: 4
+    user_query: "What is the filing requirement for them?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are many different kinds of SEC filings with different purposes.  Prior to going public, a company has to file financial documents with the SEC. These filings are available to the public at www.sec.gov on the Edgar database. There are various types of filings, some specific to publicly traded companies and others applicable to registered corporations in general. You can find more information on different types of filings at http://reportstream.io/explore/has-form."
+
+  - turn_number: 5
+    user_query: "Is there one that is more important than the others?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes. Some SEC filings are more important than others. The most crucial filings include Form 10-K, which is the annual report required by the U.S. Securities and Exchange Commission (SEC), and Form 10-Q for the interim quarters. One of the most commonly discussed filings is the 10-K, which, as Wikipedia describes, is \"a comprehensive summary of a company's financial performance\". This includes information such as earnings and executive pay. A form that some people believe has potential utility for investors is Form 4, which discloses \"insider trading\". People with a privileged stake in a company, such as executives, directors, and major shareholders, cannot legally buy or sell shares without disclosing it by filing a Form 4."
+
+  - turn_number: 6
+    user_query: "I believe it is the 13F"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "No. The most important filings are Form 10-K, the annual report, and Form 10-Q for the interim quarters. Ownership is reported on Form 3/4 and in 10-Q/Ks. Non-individual legal entities such as companies (for example, a hedge fund) must disclose any ownership exceeding 10% by filing Form 13-F."
+
+  - turn_number: 7
+    user_query: "What is considered a violation?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "In the United States vs. O'Hagan case, the Supreme Court set a precedent for interpreting SEC Rule 10(b) by using the \"misappropriation theory.\" This theory states that misappropriating confidential information for securities trading purposes, in breach of a duty owed to the source of that information, requires disclosure or abstention. From a legal perspective, the rules are anything but clear outside of company insiders. However, your own admission is consistent with what anyone in the securities industry knows is true - if you trade on material non-public information, you risk being charged. It's possible to commit normal fraud all day long, and the SEC won't lift a finger, but as soon as you get within a hundred miles of an insider trading deal, they'll come down on you like a ton of bricks. It's an easy case to prove; there is no question about its illegality (even the janitor is expected to take a class on it), and the SEC was specifically set up to stop it after the Great Depression."
+
+  - turn_number: 8
+    user_query: "International equity."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "International equity refers to shares of companies headquartered outside the United States. Stocks or stock funds in foreign countries are treated separately because they are usually affected by different factors compared to US equities. These factors include foreign currency fluctuations, regional events, and political situations in other countries."
+
+  - turn_number: 9
+    user_query: "What about securities?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The term “security” in finance means any note, stock, treasury stock, security future, security-based swap, bond, debenture, among others."

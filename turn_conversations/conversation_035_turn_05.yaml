@@ -1,0 +1,46 @@
+conversation_id: "35"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #35 - No References"
+turns:
+  - turn_number: 1
+    user_query: "Where do guinea pigs sleep in the wild?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "In the wild, guinea pigs, which are social animals, tend to  seek shelter in the burrows of other animals, as well as in crevices and tunnels formed by vegetation where they most likely sleep."
+
+  - turn_number: 2
+    user_query: "where does Domestic guinea pigs live and what does Domestic guinea pigs activity look like?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Domestic guinea pigs thrive in groups of two or more and can learn to recognize and bond with other individual pigs. They have developed a different biological rhythm from their wild counterparts, with longer periods of activity followed by short periods of sleep throughout the day. Activity is scattered randomly throughout the day, with no regular circadian patterns, aside from an avoidance of intense light. Domestic guinea pigs generally live in cages, although some owners of large numbers of guinea pigs dedicate entire rooms to their pets."
+
+  - turn_number: 3
+    user_query: "more about guinea pig appearance or body"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Guinea pig has a stout, compact body, and its normal body temperature is 101--104° F ( 38 -- 40 ° C ). Domesticated guinea pigs occur in many breeds:  The most common varieties found in pet stores are the English shorthair ( also known as the American ) , which have a short , smooth coat , and the Abyssinian , whose coat is ruffled with cowlicks , or rosettes . Also popular among breeders are the Peruvian and the Sheltie ( or Silkie ) , both straight longhair breeds , and the Texel , a curly longhair."
+
+  - turn_number: 4
+    user_query: "can you clarify the breed here? is there different species of Guinea pig? maybe they are from different origin?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The most common varieties found in pet stores are the English shorthair ( also known as the American ), and the Abyssinian. Also popular among breeders are the Peruvian and the Sheltie ( or Silkie ). The guinea pig or domestic guinea pig ( Cavia porcellus ) is a species of rodent belonging to the family Caviidae and the genus Cavia. Guinea pig C. porcellus is likely descended from closely related species of cavies , such as C. aperea , C. fulgida , and C. tschudii."
+
+  - turn_number: 5
+    user_query: "why is Guinea pig called pig?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "How the animals came to be called `` pigs '' is not clear. Some thinks it is because of how it looks like, and some say they emit are similar to those made by pigs. Ironically , breeders tend to use the more formal cavy '' to describe the animal , while in scientific and laboratory contexts , it is far more commonly referred to by the more colloquial `` guinea pig '' ."
+
+  - turn_number: 6
+    user_query: "do you think I can have guinea pig as my pet?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Guinea pigs can make great pets due to their docile nature, friendly responsiveness to handling, and relatively easy care. It is popular as exotic pets among the upper classes and royalty in Europe. If handled correctly early in life , guinea pigs become amenable to being picked up and carried , and seldom bite or scratch. Guinea pigs that become familiar with their owner will whistle on the owner 's approach."

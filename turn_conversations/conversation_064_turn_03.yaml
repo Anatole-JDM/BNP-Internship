@@ -1,0 +1,64 @@
+conversation_id: "64"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #64 - No References"
+turns:
+  - turn_number: 1
+    user_query: "What are the scientific objectives of NASA's Deep Impact Extended Mission?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Deep Impact Extended Investigation (DIXI) aims to fly by comet 103P/Hartley 2 and return images and data. The Extrasolar Planet Observation and Characterization (EPOCh) investigation uses the Deep Impact imaging system to observe nearby bright stars with known large planets. This part of the mission characterizes the planets as they orbit behind and in front of the stars and searches for other planets in those systems."
+
+  - turn_number: 2
+    user_query: "what about the goal of Deep Impact mission?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The goal of the Deep Impact mission was to rendezvous with comet 9P/Tempel 1 and launch a projectile into the comet nucleus. Observations were then made of the ejecta, crater formation process, the resulting crater, and outgassing from the nucleus, particularly the newly exposed surface. The mission aimed to improve the knowledge of the physical characteristics of cometary nuclei and directly assess the interior of cometary nucleus, determine properties of the surface layers, study the relationship between the surface layers of a cometary nucleus and the possibly pristine materials of the interior, and improve our understanding of the evolution of cometary nuclei, particularly their approach to dormancy."
+
+  - turn_number: 3
+    user_query: "Deep Impact mission Spacecraft and Subsystems"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The Deep Impact spacecraft consists of a 370 kg cylindrical copper impactor attached to a 650 kg flyby bus. The spacecraft is a box-shaped honeycomb aluminum framework with a flat rectangular Whipple debris shield mounted on one side. There are two high- and medium-resolution instruments, each consisting of an imaging camera and an infrared spectrometer. The medium resolution camera has a field of view of 0.587 degrees and a resolution of 7 m/pixel at 700 km distance, while the high resolution camera has a field of view of 0.118 degrees and a resolution of 1.4 m/pixel at 700 km. These instruments are used to observe the ejected ice and dust from the comet nucleus."
+
+  - turn_number: 4
+    user_query: "can you give summary of this Deep Impact mission?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Deep Impact mission, launched in 2005, was designed to study comet 9P/Tempel 1. The spacecraft transferred into a heliocentric orbit and will rendezvous with comet P/Tempel 1 in July 2005.The spacecraft consisted of a flyby bus and a copper impactor, which were used to collide with the comet's nucleus and study the resulting ejecta and crater. The mission's scientific objectives included improving our understanding of the physical characteristics of cometary nuclei, determining the properties of the surface layers, studying the relationship between the surface and interior of the comet, and learning more about the evolution of cometary nuclei. After the primary mission, Deep Impact was extended to include the Deep Impact Extended Investigation (DIXI) and the Extrasolar Planet Observation and Characterization (EPOCh) investigations. DIXI involved flying by comet 103P/Hartley 2, while EPOCh used the Deep Impact imaging system to observe nearby bright stars with known large planets and search for other planets in those systems."
+
+  - turn_number: 5
+    user_query: "you mentioned about Comet. Can you please more clarification?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Certainly! 1. Comet 9P/Tempel 1: This is a periodic comet with an orbital period of 5.51 years. It has a semi-major axis of 3.12 astronomical units (AU) and a perihelion distance of 1.5 AU, which places it between the orbits of Mars and Jupiter. The nucleus of Tempel 1 is estimated to be around 14 km long and 4 km wide. 2. Comet 103P/Hartley 2: Also known as Hartley 2, this is another periodic comet with an orbital period of 6.46 years. Its semi-major axis is 3.46 AU, and it has a perihelion distance of 1.05 AU. The nucleus of Hartley 2 is elongated, measuring about 2 km long by 0.5 km wide."
+
+  - turn_number: 6
+    user_query: "I want to watch some press conference about Deep Impact"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Here are some Deep Impact Press Release: NASA sends spacecraft on mission to Comet Hartley 2 - 13 December 2007  New extended missions chosen for Deep Impact - 3 July 2007  Deep Impact extended missions chosen for further study - 30 October 2006  NASA's Deep Impact tells a tale of the comet - 4 July 2005  Deep Impact kicks off Fourth of July with deep space fireworks - 4 July 2005  NASA announces spectacular day of the comet - 9 June 2005  NASA's Deep Impact spacecraft spots its quarry, stalking begins - 27 April 2005  NASA releases Deep Impact mission status report - 25 March 2005  Deep Impact launched and flying toward date with a comet - 12 January 2005  Deep Impact arrives in Florida to prepare for launch - 18 October 2004  Deep Impact launch date changed - 01 April 2003  University of Maryland Press Release on Deep Impact - 07 July 1999"
+
+  - turn_number: 7
+    user_query: "what is NASA Discovery Program? Is Deep Impact Mission part of NASA Discovery program?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "NASA's Discovery Program is a series of cost-effective missions that aim to answer critical questions in solar system science. The program supports the development and implementation of over 20 missions and instruments. The selected investigations will be managed by the Planetary Missions Program Office at NASA's Marshall Space Flight Center in Huntsville, Alabama. The goals of the program are to provide frequent opportunities for principal investigator-led investigations in planetary sciences that can be accomplished under a not-to-exceed cost cap. Yes, Deep Impact Mission is part of NASA Discovery program."
+
+  - turn_number: 8
+    user_query: "Are there names for the data collected through this deep impact program?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, the data collections have their names. Here are some examples: 1. Deep Impact SPICE Navigation Files (PDS) 2. Deep Impact/EPOXI: High Resolution Instrument (HRI) 3. Deep Impact/EPOXI: Medium Resolution Instrument (MRI) 4. Deep Impact Comet Tempel 1 Support Archives (PDS) 5. Deep Impact HRIV Raw Image Calibration Archive, Cruise Phase (PDS) 6. Deep Impact/EPOXI: High Resolution Instrument (HRI) Deep Impact HRIV Raw Image Archive, 9P/Tempel 1 Encounter (PDS) 7. Deep Impact/EPOXI: High Resolution Instrument (HRI) Deep Impact HRIV Reduced Image Archive, Comet 9P/Tempel 1 Encounter (PDS) 8. Deep Impact/EPOXI: High Resolution Instrument (HRI) Deep Impact HRII Raw Spectral Image Archive, 9P/Tempel 1 Encounter (PDS) 9. Deep Impact/EPOXI: High Resolution Instrument (HRI) Deep Impact HRII Raw Spectral Image Calibration Archive, 9P/Tempel 1 Cruise (PDS) 10. Deep Impact/EPOXI: High Resolution Instrument (HRI) Deep Impact HRII Reduced Spectral Image Archive, 9P/Tempel 1 Encounter (PDS) 11. Deep Impact/EPOXI: Medium Resolution Instrument (MRI) Deep Impact MRI Raw Image Archive, Encounter Phase (PDS) 12. Deep Impact/EPOXI: Medium Resolution Instrument (MRI) Deep Impact MRI Reduced Image Archive, Encounter Phase (PDS) 13. Deep Impact/EPOXI: Medium Resolution Instrument (MRI) Deep Impact Spice Files (PDS) 14. Deep Impact/EPOXIDeep Impact HRII Reduced Spectral Image Archive, 9P/Tempel 1 Encounter (Version 2) (PDS) These data collections contain various types of data, such as"
+
+  - turn_number: 9
+    user_query: "I want to another discovery program summary other than deep impact mission here"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "1. Lunar Discovery and Exploration - NASA Science helps us understand the influence the Moon has had on the Earth, the record of the ancient Sun, and it serves as a platform to study the rest of the universe. 2. The low-cost Mars Pathfinder mission in 1997 was viewed as proof that spacecraft could be built more often and for far less money — a radical cultural change NASA termed “Faster, Better, Cheaper.” 3. NASA's Near Earth Asteroid Rendezvous (NEAR) Shoemaker spacecraft, the first to orbit an asteroid, has met all its scientific goals in its year of orbiting the asteroid Eros."

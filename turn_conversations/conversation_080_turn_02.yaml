@@ -1,0 +1,58 @@
+conversation_id: "80"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #80 - No References"
+turns:
+  - turn_number: 1
+    user_query: "Why could the serious financial woes of some EU member states lead to the end of the Euro?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Euro will collapse because Spain, Italy, Portugal and Greece will have to default on their debt. In order to keep up with current payments they have to take emergency loans at the same time that their economies are in recession and demands on social programs are increasing. There is simply no way that they can cut enough spending and raise enough revenue to balance their budgets. That is not opinion, it is arithmetic. If they cannot pay their loans they will either voluntarily leave the Euro, or they will be forced out. Next comes France who also has a large and growing budget deficit and a large public debt. It is unsustainable. That which is unsustainable will end. The last reason that the Euro will fail and that it will be soon is Germany. Up to now, all the bailouts of Ireland, Portugal, Italy, Greece and Spain have come predominantly from Germany. In order to float the Eurobonds that some idiots think might save Europe, the German people have to authorize their government to participate and thereby take on another mountain of debt. The German people will not vote for that authorization."
+
+  - turn_number: 2
+    user_query: "But those countries are no longer in recession."
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "I do not have any other information on whether Spain, Italy, Portugal and Greece are still in recession."
+
+  - turn_number: 3
+    user_query: "Is there any evidence that what you said about France above is true?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The only citation I have about France having a large and growing budget deficit and a large public debt that is unsustainable."
+
+  - turn_number: 4
+    user_query: "Does Germany have a strong economy?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Germany's economy has been very strong over the past decade. It has a very extremely diversified economy. It does not depend primarily upon oil exports like other countries, but rather on very complex machinery and other finished products.  Additionally Germany currently are in control of al lot of countries debts (especially Ireland) which means that they will become the main players in decisions regarding the proliferation/faltering of the European economy in the future."
+
+  - turn_number: 5
+    user_query: "ok, diversified is good."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Anything else I can help with?"
+
+  - turn_number: 6
+    user_query: "Is that the reason why it keeps bailing the other countries?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I do not have enough information to form an opinion about that."
+
+  - turn_number: 7
+    user_query: "Is there an advantage for why Germany keeps doing this?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Here are some advantages: Germany currently are in control of a lot of countries debts (especially Ireland) which means that they will become the main players in decisions regarding the proliferation/faltering of the european economy in the future. Some disadvantages include: In order to float the Eurobonds that some people think might save Europe, the German people have to authorize their government to participate and thereby take on another mountain of debt."
+
+  - turn_number: 8
+    user_query: "What happens if Germany stops bailing them out?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Greece will officially default when Germany stops bailing them out. Spain is in the exact same situation, just about a year behind. They haven't technically defaulted yet, but they will. They're receiving bailout after bailout and the Greece situation only makes their interest rates worse. Italy is just barely behind Spain, the Greek default followed by the Spanish default will send Italian interest rates through the roof dooming them to the same fate."

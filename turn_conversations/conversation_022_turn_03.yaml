@@ -1,0 +1,34 @@
+conversation_id: "22"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #22 - No References"
+turns:
+  - turn_number: 1
+    user_query: "F-1 student investing in foreign markets"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "It is legal for an F-1 student to trade stocks and have an account with both US and non-US based brokerage firms. However, if you are considered a non-resident alien for tax purposes, which is typical for F-1 students, you would need to file Form 1040NR and account for any profit made on dividends/capital gain when doing your US taxes. It's important to note that a software package provided by your university for doing taxes might not be adequate for this, so you may need to seek additional resources."
+
+  - turn_number: 2
+    user_query: "Can I not use the 1040NR-EZ?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Forms 1040NR and 1040NR-EZ are both for non-resident aliens. However, I do not have information on when you can use one over the other."
+
+  - turn_number: 3
+    user_query: "OK"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "Is there anything else I can help you with?"
+
+  - turn_number: 4
+    user_query: "Are there any downsides of investing in foreign markets?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, there are several downsides to investing in foreign markets. One of the main risks is exchange rate risk, which occurs when there is a currency movement that makes your investment worth less, regardless of the stock's performance. This can be mitigated using exchange rate swaps. Another risk is political risk, which includes potential issues such as a country deciding to seize foreign nationals' assets or applying sanctions that make it difficult to get your money back. Additionally, there may be a lack of understanding of foreign countries' laws, tax codes, and customs related to investments, and it can be challenging to stay informed about company-specific issues in foreign countries. As an individual investor, it may not be feasible to dedicate the necessary time to monitor international relations and the foreign country's news. Furthermore, foreign stocks may be thinly traded on your local stock market, making it harder to buy and sell, and you may be late to the game if there is a sudden change in the share price in the original country. Lastly, for foreign stocks, news and intraday price moves often happen while you're asleep, making it challenging to respond promptly."

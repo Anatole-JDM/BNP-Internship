@@ -1,0 +1,34 @@
+conversation_id: "85"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #85 - No References"
+turns:
+  - turn_number: 1
+    user_query: "How old do I have to be to drive in CA?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To get a provisional instruction permit or the “learner’s permit\", you must be at least 15 ½ years old. However, I do not have information on the minimum age requirements for a driver's license in California."
+
+  - turn_number: 2
+    user_query: "Are you sure? I am pretty sure you can get a permit as soon as you are 15 years old."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Based on my information, the minimum age to get a provisional instruction permit in California is 15 ½ years."
+
+  - turn_number: 3
+    user_query: "How do I apply?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The steps differ depending on whether you want to apply for a California Instruction Permit or a California Motorcycle Instruction Permit. If you tell me which type of permit you are interested in, I can provide more information."
+
+  - turn_number: 4
+    user_query: "The regular one."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If you are under age 18, to apply for a California Instruction Permit, you must: - Be at least 15 ½ but under 18. - Have a Certificate of Completion/Enrollment of Driver Education. - Complete the California Driver’s License or ID Card Application. - Have a parent(s)/guardian(s) sign the application. - Visit a DMV office (schedule an appointment), where you will:  - Bring your California Identification Card or proof of identity and residency. (Federal Noncompliant/REAL ID/AB60)  - Pay the application fee.  - Pass a vision exam.  - Take a photo.  - Take the knowledge test(s). There are multiple choice questions based on the California Driver’s Handbook, and a passing score is 80%. If you are over the age of 18, the steps differ. Please let me know if you want more details about that process."
