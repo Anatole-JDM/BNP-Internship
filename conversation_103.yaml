@@ -1,0 +1,57 @@
+conversation_id: "103"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #103 - No References"
+turns:
+  - turn_number: 1
+    user_query: "Did the Soviet orbit made three years earlier map a different region?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I have no specific information about the Soviet orbit you mentioned or the regions it mapped."
+
+  - turn_number: 2
+    user_query: "What is an Earth satellite orbit?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "An Earth satellite orbit refers to the path taken by a satellite as it revolves around the Earth. The catalog of Earth satellite orbits includes various types, such as the High Earth orbit (Molniya orbit), Medium Earth Orbit (MEO), and Low Earth Orbit (LEO), among others."
+
+  - turn_number: 3
+    user_query: "What is the difference?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Among the three types of Earth orbits, many weather and communications satellites tend to have a high Earth orbit far from the surface. Satellites in a medium (mid) Earth orbit include navigation and specialty satellites designed to monitor a particular region. Most scientific satellites, including NASA’s Earth Observing System fleet, have a low Earth orbit. Just as different seats in a theater provide different perspectives on performance, different Earth orbits give satellites varying perspectives, each valuable for various reasons. Some seem to hover over a single spot, providing a constant view of one face of the Earth, while others circle the planet, zipping over many different places in a day."
+
+  - turn_number: 4
+    user_query: "What is the distance to the Sun?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The distance from the Sun to the Earth is 150 million kilometers or 93 million miles.  Earth is one astronomical unit (abbreviated as AU) away from the Sun."
+
+  - turn_number: 5
+    user_query: "How big is it?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The sun is a moderate-sized star with a diameter of 864,000 miles (1,392,000 km) and a G spectral type. It is a variable star in a vast collection of an estimated 200-400 billion stars in a barred spiral galaxy called the Milky Way. Although it is a relatively small star, most stars in our galaxy are smaller and less massive. The sun is 109 times wider than Earth."
+
+  - turn_number: 6
+    user_query: "What is a galaxy?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "A galaxy is a massive collection of gas, dust, and billions of stars held together by gravity. Each galaxy contains stars, planets, and large clouds of gas and dust. The largest galaxies can span more than a million light-years and contain trillions of stars, while the smallest galaxies may only span a few hundred light-years and contain a few thousand stars. Most large galaxies have supermassive black holes at their centers, some with billions of times the mass of the Sun. Galaxies come in different shapes, with spirals and ellipticals being the most common and irregular galaxies having less orderly appearances. The age of most galaxies ranges between 10 billion and 13.6 billion years."
+
+  - turn_number: 7
+    user_query: "Does every one have black holes?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Not all galaxies contain black holes. Black holes exist at the centers of most galaxies, including the Milky Way. Many large galaxies have supermassive black holes at their centers, some with billions of times the Sun’s mass."
+
+  - turn_number: 8
+    user_query: "Apart from gravity, what other factor is responsible for holding the universe together?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Four fundamental forces—gravity, electromagnetism, and the strong and weak nuclear forces—shape the universe we inhabit. The most familiar force is gravity. It keeps our feet on the ground and holds Earth in orbit around the Sun. According to the general theory of relativity, gravity can be understood as bends and curves in the fabric of space-time that affect the motions of galaxies, stars, planets, and even light."
+
+  - turn_number: 9
+    user_query: "When did it begin?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Big Bang is how astronomers explain the beginning of the universe. According to this theory, the universe started as a single point and then expanded to become as large as it is now, and it is still expanding. In 1927, the astronomer Georges Lemaître proposed this idea, suggesting that the universe’s expansion could continue indefinitely. The estimated age of the universe is about 13.8 billion years, determined by measuring the ages of the oldest stars and the rate at which the universe is expanding. Scientists also used the Doppler shift in light from galaxies, which showed that almost all galaxies are moving away from us and from each other."
