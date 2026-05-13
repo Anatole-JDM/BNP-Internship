@@ -1,0 +1,52 @@
+conversation_id: "71"
+domain: "mt-rag-ibmcloud-elser-512-100-20240502"
+title: "RAG Conversation #71 - No References"
+turns:
+  - turn_number: 1
+    user_query: "How do I build my client application using dialogue nodes?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To build your client application using dialog nodes, you need to follow these steps: create a simple conversation with two intents; the dialog uses intents to identify the purpose of the user's input regardless of the precise wording used, and then responds in the way you specify. The client application sends a message containing user input and the user input triggers a dialog node."
+
+  - turn_number: 2
+    user_query: "what are worker nodes?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "Worker nodes carry the deployments and services that make up your app. Virtual machines that your cluster manages are instances that are called worker nodes. Worker nodes are provisioned in to an IBM Cloud account that is owned by IBM to enable monitoring of malicious activities and apply security updates."
+
+  - turn_number: 3
+    user_query: "what are VPC clusters?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "With IBM Cloud Kubernetes Service, you can create a standard cluster in a Virtual Private Cloud (VPC). A VPC gives you the security of a private cloud environment with the dynamic scalability of a public cloud."
+
+  - turn_number: 4
+    user_query: "How to create a cluster."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To create a cluster, you need to set up your account and then decide on the setup of your cluster. It is recommended that you have those things in mind when create a cluster. You also need to have a least two servers running Windows  2019 and SQL 2010 to  cluster, A Bastion host with external also is necessary and  as well have deployed active directory."
+
+  - turn_number: 5
+    user_query: "How much do the IBM Cloud Schematics templates cost?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Getting started tutorial incurs costs. You must have an IBM Cloud Pay-As-You-Go or Subscription account to proceed. IBM Cloud Schematics Workspaces are provided to you at no cost. However, when you decide to apply your Terraform template in IBM Cloud by clicking Apply plan from the workspace details page or running the IBM cloud schematics apply command, you are charged for the IBM Cloud resources that are described in your Terraform template."
+
+  - turn_number: 6
+    user_query: "And what is the charge for VPC?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Pay for only what you use, no minimum VPC hourly package is required, which makes it very inexpensive to get started.  IBM Blockchain Platform introduces a new hourly pricing model that is based on virtual processor core (VPC) allocation. This simplified model is based on the amount of CPU (or VPC) that your IBM Blockchain Platform nodes are allocated on an hourly basis, at a flat rate of $0.29 USD/VPC-hour."
+
+  - turn_number: 7
+    user_query: "Is storage included in the VPC price?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "No, storage is not included in the VPC price. Storage is a separate service and has its own pricing. Cost for Block Storage for VPC is calculated based on GB capacity that is stored per month. Some storage solutions, such as file and block storage offer hourly and monthly rates that you can choose from. A simple hourly pricing model makes cost estimation clear and easy by using the cost estimator tool that is available in the IBM Cloud dashboard."

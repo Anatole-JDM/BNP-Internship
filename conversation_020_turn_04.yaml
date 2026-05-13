@@ -1,0 +1,42 @@
+conversation_id: "20"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #20 - No References"
+turns:
+  - turn_number: 1
+    user_query: "how does pre-market trading work?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Pre-market trading takes place before the regular trading hours (RTH) of the stock market. For example, pre-market hours are from 4:00 a.m. to 9:30 a.m. Eastern Time (ET) on the NASDAQ stock market. During pre-market hours, you can place limit orders, but you cannot place market orders due to lower liquidity. This is because the volume and liquidity are generally much lower during pre-market hours compared to RTH. If an unexpected world event occurs, the volume and liquidity might increase. It is important to note that not all brokers allow pre-market trading, and if they do, you might need to specify that you want your order to be executed during pre-market hours."
+
+  - turn_number: 2
+    user_query: "what are limit orders vs market orders?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "A limit order is a type of order where you set a specific price at which you want to buy or sell a security. The order will only be executed if the market price reaches the price you set. On the other hand, a market order is an order to buy or sell a security immediately at the best available current market price. Market orders do not guarantee a specific price, and the final execution price may be different from the price quoted at the time of order entry.
+The choice between limit orders and market orders depends on your trading goals and risk tolerance."
+
+  - turn_number: 3
+    user_query: "if I'm in the US how can I buy / sell on other countries markets?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If you're in the US and want to buy or sell securities on other countries' markets, you generally have two options. Some large brokers offer trading access to popular equity markets in other countries, such as the Toronto Stock Exchange, Mexico Stock Exchange, or London Stock Exchange. One such broker is Interactive Brokers, offering many foreign markets (19 countries) for US-based investors, allowing you to trade all these local markets within one universal account, which can be very convenient. However, at many brokers or in less popular foreign markets, you typically must open an account with a broker in that country."
+
+  - turn_number: 4
+    user_query: "why isn't there just one global market? wouldn't that be easier?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "Creating a single global market would be quite complex and challenging for several reasons. First, each country has its own exchange, which is closely tied to its local currency. Exchanges primarily support transactions and settlements in their local currency, and securities are denominated in a single currency. Cross-currency translation would complicate the trading process, as it would require additional steps and considerations.
+Furthermore, citizens and businesses in most countries are restricted to having bank accounts in local currency, making it difficult or impossible to open a domestic bank account in a foreign-denominated currency. A public company headquartered in a given country is more likely to do business with local citizenry and businesses in that currency, and thus look for investors from the same pool, which generally means listing in local currency on an exchange in that country."
+
+  - turn_number: 5
+    user_query: "this sounds complicated, no wonder retail investors usually don't do well"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, understanding the intricacies of the stock market and investing can be complex, especially for retail investors who may not have extensive knowledge or resources. Many retail traders lose money due to relying on unproven technical strategies, not being sufficiently well-informed or well-equipped, following scammers and rumors, not learning how to read company financial reports or compare multiple stocks, struggling with the psychology of trading, and not being able to trade quickly enough or at a high enough volume. However it is possible for some retail traders to over time improve their understanding and learn to navigate the market more effectively."

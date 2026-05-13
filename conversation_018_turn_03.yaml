@@ -1,0 +1,46 @@
+conversation_id: "18"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #18 - No References"
+turns:
+  - turn_number: 1
+    user_query: "What are the MOXIE instrument's primary attributes and functionalities?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Mars Oxygen In-Situ Resource Utilization Experiment (MOXIE) is a Scale Model for a Future Big MOXIE, an instrument designed to help NASA prepare for human exploration of Mars. Its main job is to produce oxygen from the Martian carbon-dioxide atmosphere where less than 1% as much air on the surface as on Earth is present.  It will test a way for future explorers to produce oxygen for burning fuel and breathing. MOXIE is currently making 6-10 grams of oxygen per hour, but the Big MOXIE, would need to make 2,000 to 3,000 grams of oxygen per hour to support a crewed mission to Mars."
+
+  - turn_number: 2
+    user_query: "Is there H on Mars to make water with O?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Mars' atmosphere is mostly carbon dioxide, that makes up about 96%, argon, and nitrogen, with only 0.13% oxygen.The only information about water (H2O) on Mars is that it could be found if travel to the far north or south to find ice, or to mine for ice buried deep in the ground."
+
+  - turn_number: 3
+    user_query: "MOXIE a tree?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "No, MOXIE does not work like a tree. It produces oxygen from the Martian carbon-dioxide atmosphere using a device called an \"electrolyzer,\" a close cousin to a fuel cell that is running in reverse. On Earth, trees and plants absorb carbon dioxide and release oxygen through photosynthesis, but MOXIE uses a different process to achieve the same result."
+
+  - turn_number: 4
+    user_query: "right, there is no water on Mars. silly thoughts...well, Moxie sounds familiar like a beverage?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, you're correct. The word \"moxie,\" used to describe someone with spunk and audacity, came from the soft drink of the same name. The soft drink, Moxie, was invented in the late 1800s in Lowell, Massachusetts, not far from the M.I.T. Haystack Observatory where the MOXIE principal investigator works.  You can still buy Moxie in New England, and it's considered the official drink of the state of Maine. The connection with soft drinks doesn't end there. According to some accounts, the Moxie company was the first in the U.S. to use carbon dioxide (CO2) to make a beverage fizzy.  MOXIE is the first to use carbon dioxide on Mars."
+
+  - turn_number: 5
+    user_query: "Others in the past?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There have been previous experiments and studies related to Mars exploration and resource utilization.  Some notable ones include the Mars Exploration Rovers, Sprit and Opportunity, which landed on Mars in 2004; the Mars Reconnaissance Orbiter, which has been studying Mars from orbit since 2006; the Mars Science Laboratory mission, which include the Curiosity rover that has been exploring Mars since 2012; and the InSight lander, which touched down on Mars in 2018 to study the planet's deep interior.  Additionally, there was the Mars Global Surveyor, which orbited Mars from 1997 to 2006, and Mars Pathfinder mission, which included the Sojourner rover and landed on Mars in 1997.  These are just few examples of the many missions and programs that have contributed to our understanding of Mars."
+
+  - turn_number: 6
+    user_query: "wow there are so many I didn't recognize. Are they all by us?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "They are NASA-led initiatives, however, there have been international collaborations with commercial and international partners in the explorations.  For example the Mars Exploration Rovers, Sprit and Opportunity, are jointly developed by NASA and the European Space Agency(ESA).  Mars Reconnaissance Orbiter, Mars Science Laboratory mission and InSight lander also involved contributions from various countries and organizations."

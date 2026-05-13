@@ -1,0 +1,58 @@
+conversation_id: "1"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #1 - No References"
+turns:
+  - turn_number: 1
+    user_query: "where do the arizona cardinals play this week"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I'm sorry, but I don't have the answer to your question."
+
+  - turn_number: 2
+    user_query: "Do the Arizona Cardinals play outside the US?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The Arizona Cardinals do play outside the United States. They had a game in London, England, on October 22, 2017, against the Los Angeles Rams at Twickenham Stadium and in 2005 they played in Mexico."
+
+  - turn_number: 3
+    user_query: "Are the Arizona Cardinals and the Chicago Cardinals the same team?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Chicago Cardinals became the St. Louis Cardinals in 1960 and eventually moved and became the Arizona Cardinals. The Chicago Cardinals ( now the Arizona Cardinals ) were a founding member of the NFL."
+
+  - turn_number: 4
+    user_query: "How many teams are in the NFL?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "There are 32 teams in the National Football League (NFL)."
+
+  - turn_number: 5
+    user_query: "How many teams are in the NFL playoffs?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Six teams from each conference (AFC and NFC), for a total of 12 team playoff system."
+
+  - turn_number: 6
+    user_query: "Which team has won the most Super Bowls?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Pittsburgh Steelers have won six Super Bowls."
+
+  - turn_number: 7
+    user_query: "How many times have the New England Patriots played the super bowl?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The New England Patriots have the most Super Bowl appearances. Super Bowl LII was the Patriots ' tenth Super Bowl appearance."
+
+  - turn_number: 8
+    user_query: "Who is the Patriot's coach?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Bill Belichick was hired as the team's head coach in 2000. New England Patriots Bill Belichick achieved his 200th career head coaching win on November 22, 2012."

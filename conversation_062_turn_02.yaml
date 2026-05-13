@@ -1,0 +1,55 @@
+conversation_id: "62"
+domain: "mt-rag-ibmcloud-elser-512-100-20240502"
+title: "RAG Conversation #62 - No References"
+turns:
+  - turn_number: 1
+    user_query: "Is it possible to build a dialog skill in a language other than English?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, it is possible to build a dialog skill in a language other than English. Languages supported include English, Brazilian Portuguese, Czech, Dutch, French, German, Italian, Spanish, Arabic, Chinese, Korean, and Japanese languages."
+
+  - turn_number: 2
+    user_query: "What are the other skills and what languages are supported for them?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "1. **Actions Skill**: Actions offer step-by-step flows for a conversation and can be built by anyone. 
+2. **Search Skill**: This skill is configured to search appropriate external data sources for answers to customer questions. 
+The language support for this skill is not explicitly mentioned, but since it's a part of the Watson Assistant service, it should support the same languages as the dialog skill."
+
+  - turn_number: 3
+    user_query: "how many skills can I create?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The number of skills you can create depends on your Watson Assistant plan type. Any sample dialog skills that are available for you to use do not count toward your limit unless you use them. A skill version does not count as a skill: - Enterprise: 100 - Premium (legacy): 100 - Plus: 50 - Standard (legacy): 20 - Lite, Trial: 5 Additionally, after 30 days of inactivity, an unused skill in a Lite plan service instance might be deleted to free up space."
+
+  - turn_number: 4
+    user_query: "What about Hebrew?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Hebrew is not included in the supported languages for developing dialog skills in Watson Assistant. However, you can utilize the universal language model to create a conversation in a language for which no dedicated language model is available."
+
+  - turn_number: 5
+    user_query: "Can it handle the reverse order of text?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, the universal language model can handle the reverse order of text if the skill supports a language with right-to-left directional text, such as Hebrew. You can configure the bidirectional capabilities in the skill settings to enable this feature."
+
+  - turn_number: 6
+    user_query: "What if I forget?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I cannot find information regarding what will happen if you forget to configure the bidirectional capabilities."
+
+  - turn_number: 7
+    user_query: "how do I set it"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To set the bidirectional capabilities for handling the reverse order of text, follow these steps: 1. Go to your skill tile and click the Actions drop-down menu. 2. Select Language Preferences. 3. Choose the appropriate options for your skill, including selecting a bidirectional language like Hebrew. GUI Direction: Specifies the layout direction of elements, such as buttons or menus, in the graphical user interface. Choose LTR (left-to-right) or RTL (right-to-left). If not specified, the tool follows the web browser GUI direction setting.
+Text Direction: Specifies the direction of typed text. Choose LTR (left-to-right) or RTL (right-to-left), or select Auto which will automatically choose the text direction based on your system settings. The None option will display left-to-right text. These settings are only available for skills that are configured to use a bidirectional language."

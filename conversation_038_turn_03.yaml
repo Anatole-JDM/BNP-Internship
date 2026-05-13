@@ -1,0 +1,52 @@
+conversation_id: "38"
+domain: "mt-rag-ibmcloud-elser-512-100-20240502"
+title: "RAG Conversation #38 - No References"
+turns:
+  - turn_number: 1
+    user_query: "What is the Score Agreement level if it is less than 0?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If the Score Agreement level is less than 0, it indicates poor agreement among the annotators, taking into account that what constitutes an acceptable level of agreement depends on your domain data and type system. This score can suggest that the annotation guidelines or instructions may need to be revised to improve consistency."
+
+  - turn_number: 2
+    user_query: "How many annotators are needed?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The number of annotators needed can vary depending on the specific requirements of the project. However, inter-annotator agreement scores cannot be calculated unless two or more human annotators annotate the same documents. That allows you to view the scores by comparing a pair of human annotators (for example, compare all of John's mention annotations to all of Mary's mention annotations). You can also view the scores by comparing specific documents (for example, compare the relation annotations that John made in one document to the relation annotations that Mary made in the same document)."
+
+  - turn_number: 3
+    user_query: "data volume"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "There are certain guidelines for the volume of data when adding documents for annotation to train a machine learning model. It is recommended to provide a set of documents that have a total size of about 300,000 words. The number of words can be adjusted based on the complexity of the type system. Each document should be limited to a page or two of content, preferably fewer than 2,000 words and closer to 1,000 words per document.  A goal to aim for is to eventually have at least 50 annotations for each entity type and 50 for each relation type in the document collection.  The set of documents for training must contain at least 10 annotated documents."
+
+  - turn_number: 4
+    user_query: "So, 3 ppl at least?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I am not sure what you are asking. The minimal number of annotators needed is two, as per my answer to your previous question above. There can of course be more than two annotators depending on the project, but the minimal requirement is two annotators."
+
+  - turn_number: 5
+    user_query: "pre-annotations make the task easier"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, pre-annotating documents can make the job of human annotators easier later by identifying potential entities or concepts in the text beforehand. Although it is an optional step, it can help to speed up the annotation process and increase consistency in the annotations  because it covers the straightforward annotations, and gets the job of annotating the documents underway."
+
+  - turn_number: 6
+    user_query: "many kinds of pre-anno! Use one at a time or combination?  also, different tool btn conversational and technical docs?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, there are indeed several types of pre-annotators available.  These pre-annotators can be used individually or in combination. Regarding the use of different tools for conversational and technical documents, for instance,  if your source documents have general knowledge subject matter, then Natural Language Understanding pre-annotator is a good choice for you. If you are working with highly specialized documents that focus on a specific field, such as patent law research, the dictionary pre-annotator or rule-based model might be a better choice."
+
+  - turn_number: 7
+    user_query: "corelation os 3 metrics"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "It seems like you are asking about the 3 metrics of F1, Precision and Recall in analyzing machine learning model. The F1 score can be interpreted as a weighted average of the precision and recall values, where an F1 score reaches its best value at 1 and worst value at 0.  Precision is determined by the number of correctly labeled annotations divided by the total number of annotations added by the machine learning model.   Recall is determined by the number of correctly labeled annotations divided by the number of annotations that should have been created."

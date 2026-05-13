@@ -1,0 +1,71 @@
+conversation_id: "92"
+domain: "mt-rag-govt-elser-512-100-20240611"
+title: "RAG Conversation #92 - No References"
+turns:
+  - turn_number: 1
+    user_query: "What should I do if my garbage/recycling/organics collection is missed?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If you are in City of Piedmont, you should call Republic Services at their toll-free number, (800) 320-8077 before 12 noon for a return trip on the same day."
+
+  - turn_number: 2
+    user_query: "do i need to pay for garbage/recycling/organics service? what if I do not have enough money?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, service rates are based upon the size of your garbage cart. According to the Piedmont Municipal Code, every owner of any premises is required to ensure that arrangements are made to properly dispose of solid waste, recyclable material, and organic waste created, produced, or accumulated on the premises. There are ways to reduce the cost of garbage collection service. For example, you may be able to switch to a smaller garbage cart to save money; or you can switch to curbside service."
+
+  - turn_number: 3
+    user_query: "can you please clarify the service rate here?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The service rates for single-family residences in the City of Piedmont are based on the size of the garbage cart. The rates for curbside collection are as follows: $94.76 per month for a 20-gallon garbage cart, $100.41 per month for a 35-gallon garbage cart, $138.33 per month for a 65-gallon garbage cart, and $154.91 per month for a 95-gallon garbage cart. Each residential account includes unlimited recycling and organics carts. On-premises (backyard) collection rates are different and are limited to a maximum size of 35 gallons. Additional garbage carts are available for an additional cost.
+For residents of Madison County, NY, there is no charge for residential yard waste drop-off if the items are up to 6 inches in diameter and no longer than 10 feet in length. Commercial yard waste, stumps, and oversized tree limbs are charged per ton and must go over the scales before unloading."
+
+  - turn_number: 4
+    user_query: "recycle food scraps"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Properly sorting your food scraps and food soiled paper not only helps fight climate change, it's now the law. To recycle food scraps in the City of Piedmont, you should collect food scraps and food-soiled paper in the green kitchen pail and then empty the pail contents into the large green Organics cart for collection."
+
+  - turn_number: 5
+    user_query: "I do not want to miss my garbage collection service again...especially during the holiday time"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Service hours are Monday - Friday from 7:00 a.m. to 3:00 p.m. Regarding your concern about not missing the garbage collection service during the holiday season, there is no garbage, organics, or recycling collection on New Year's Day, Independence Day, Labor Day, Thanksgiving Day, and Christmas Day. During weeks when these holidays fall on a weekday, pickup is one day later for the rest of the week, including Saturday. LOJO Technology will also offer quarterly Saturday collection dates for those who cannot make it during the week. 2024 Saturday dates from 9 AM to 1 PM for electronic recycling. To set up an HHW appointment for Hazardous waste, please fill out the reservation form and enter your preferred date/time. Miller Environmental Group, Inc. is open Monday - Friday, 8 AM to 3 PM."
+
+  - turn_number: 6
+    user_query: "what is electronic waste and hazardous waste here?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Electronic waste (e-waste) considers items such as TVs, computer accessories, cables, small accessories, inkjet printers/scanners/fax machines, laser printers, desktop copiers, stereos, audio/video equipment, video games, laptops, cellular/cordless phones and answering machines, power supplies. Hazardous waste, on the other hand, refers to any household material that is toxic or corrosive, or can catch fire, react or explode under certain conditions. Examples include bleaches, cleaning solvents, pesticides, pool chemicals and more. In Madison County, NY, there is a free household hazardous waste program for its residents where they can bring their waste to Miller Environmental Group in Syracuse, NY. Appointments are required and there is a limit of 1 visit per household per year."
+
+  - turn_number: 7
+    user_query: "how do I recycle paint?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "To recycle paint in the City of Piedmont, you should take latex and oil-based paint to an Alameda County Household Hazardous Waste Facility. You can call (800) 606-6606 or visit http://www.StopWaste.org/recycling/residents/household-hazardous-waste/paints."
+
+  - turn_number: 8
+    user_query: "I am allergic to latex..."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "If you are allergic to latex, you should avoid contact with natural rubber latex products. If you have to wear gloves in your work, ask your employer for nonlatex gloves. Avoid areas where you might inhale the powder from latex gloves worn by other workers. Wear a personal medical emergency ID bracelet. If prescribed by your physician, carry an emergency epinephrine kit in case you are accidentally exposed to latex and go into anaphylactic shock. Learn how to use it and make sure family members, friends and fellow employees know how to use it. If you use latex-based products on the job, alert your employer about your allergy. Before dental and medical procedures or examinations, alert health care providers about your allergy. Ask to be scheduled as the first patient in the morning to minimize your exposure to airborne latex particles. Participate in educational and training programs regarding latex allergy. If the allergy sufferer is a child, alert school and/or day care providers. Work with your allergist, local hospital and medical facilities to find latex-safe environments where you can go for treatment. Contact your local emergency responders (police, fire and ambulance service) to inform them of your condition so a plan of care can be developed before there is an actual emergency. Health care facilities are beginning to create latex-safe treatment areas and surgical suites to accommodate people who are allergic to latex. Check with your local hospital."
+
+  - turn_number: 9
+    user_query: "if I plan to remodel my house, do I need to pay for the debris? can I move debris myself out from my house?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "No. There are no additional City fees associated with the requirement to recycle C&D debris. Contractors, or any other paid hauler other than Republic Services, cannot remove the debris for the homeowner. Only home-owners who do not pay to have debris removed but personally transport the debris to the solid waste and/or recycling facility are exempt from the exclusive franchise agreement."
+
+  - turn_number: 10
+    user_query: "I heard that Alameda County has three recycling ordinances that are mandatory. please explain with penalty."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Alameda County has indeed implemented three mandatory recycling ordinances: ORGANICS REDUCTION AND RECYCLING ORDINANCE, MANDATORY COMMERCIAL RECYCLING LAW, and PLANT DEBRIS LANDFILL BAN ORDINANCE. Violation of a City ordinance, such as the Construction and Demolition Debris Recycling Ordinance, is considered an infraction that may result in a fine."

@@ -1,0 +1,58 @@
+conversation_id: "101"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #101 - No References"
+turns:
+  - turn_number: 1
+    user_query: "‚ÄúInternational credit report‚Äù for French nationals?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I don't have information on obtaining an international credit report specifically for French nationals.   A company's ability to report on your credit report is dependent on their membership in Equifax, USA etc., and while most of your credit is country by country, international companies or companies with any relationship in other countries can follow you cross-border."
+
+  - turn_number: 2
+    user_query: "Do you mean I can get my credit report in US?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, as a French national, you can obtain your credit report in the United States. Generally, in the U.S., you can request a free copy of your credit report from each of the three major credit bureaus - Equifax, Experian, and TransUnion - once a year through the AnnualCreditReport website. Your credit report contains information that goes into your credit score, such as the lines of credit on file and any delinquencies reported. To get your actual credit score, you would need to pay a nominal fee."
+
+  - turn_number: 3
+    user_query: "what would hurt my credit?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Several factors could negatively impact your credit score. These include having a high credit utilization rate, which means using more than 50% or 33% of your credit card limit at any given time. This applies even if you charge a large amount and pay it off quickly. Having a large available credit balance could also potentially harm your credit score, as this could indicate to lenders that you might quickly accumulate high credit card debt. Late payments, a large total credit balance outstanding, and making many credit applications in a short period of time can also negatively affect your credit score.   However, opening and closing bank accounts, buying or selling cars without debt, or even buying or selling houses without debt won't affect your credit score."
+
+  - turn_number: 4
+    user_query: "should I live in the US?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I have no information that you should live in the US to obtain your credit report."
+
+  - turn_number: 5
+    user_query: "But I have to have some credit activities in the US, right?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, credit history is local. To have a credit report in the U.S., you generally need to have credit activities here that are reported to the credit bureaus.  This could include having credit cards, loans, or other types of credit accounts with financial institutions in the U.S."
+
+  - turn_number: 6
+    user_query: "if I am wrongfully reported..."
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "If you believe you have been wrongfully reported on in your credit report, you can file a dispute with the credit bureaus. All three credit bureaus allow you to file a dispute online, and some may allow you to upload documentation at the same time. If you have a letter from your bank regarding the dispute, you can send it to the credit bureaus, who will then return to the collection company.  It is important to note that disputes must be initiated by the consumer."
+
+  - turn_number: 7
+    user_query: "clearing period"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Fair Credit Reporting Act specifies that when a consumer initiates a dispute, the reporting agency must remove the information in dispute from reports within 30 days if the reporting party does not certify the information is complete and accurate.  Additionally, the furnisher of information is responsible for reporting information after notice and confirmation of errors, and has a duty to correct and update information."
+
+  - turn_number: 8
+    user_query: "confusing, layman's term pls"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Sure, I'd be happy to simplify it! If you find something in your credit report that you believe is incorrect, you can file a dispute to have it investigated. The credit bureaus must remove the disputed information from your report within 30 days if the company that provided the information can't prove that it's accurate. After that, the company that gave the wrong information is responsible for fixing it and updating your report."

@@ -1,0 +1,40 @@
+conversation_id: "75"
+domain: "mt-rag-fiqa-beir-elser-512-100-20240501"
+title: "RAG Conversation #75 - No References"
+turns:
+  - turn_number: 1
+    user_query: "hi, can you help me"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Of course! I'm here to help. However, I might need more context or information about what you're looking for. Could you please provide more details about your question or request?"
+
+  - turn_number: 2
+    user_query: "what's the difference between debit and credit cards"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "A debit card takes the funds directly from your  checking account when you make a purchase. There's no loan or credit involved, it's just your money being spent.  A credit card facilitates a short term loan. When you make a purchase with a credit card, you're essentially borrowing money from the bank, which you then pay back later."
+
+  - turn_number: 3
+    user_query: "how do I select a credit card, there are so many choices, it is overwhelming"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I understand that choosing a credit card can be overwhelming due to the variety of options available. Here are some tips that might help you: 1. Look for a card that gives you the best rewards without charging you an annual or other fees. 2. Make sure the card delivers on the benefits you expect. Also, ensure that the best earnings aren't only from shopping at one gas station or one store, as you may not make as much as you expect."
+
+  - turn_number: 4
+    user_query: "can you recommend some"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I am sorry, I cannot specifically recommend a credit card for you."
+
+  - turn_number: 5
+    user_query: "ok bye"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Goodbye! Please let me know if there is anything else I can help you with."

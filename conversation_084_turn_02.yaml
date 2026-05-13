@@ -1,0 +1,58 @@
+conversation_id: "84"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #84 - No References"
+turns:
+  - turn_number: 1
+    user_query: "what is the defense of marriage act 1996"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Defense of Marriage Act (DOMA) is a United States federal law that defines and protects the institution of marriage. enacted in 1996. It was introduced by Georgia Representative Bob Barr and Senator Don Nickles of Oklahoma. The Act was intended by Congress to reflect and honor a collective moral judgment and to express moral disapproval of homosexuality. It also defined marriage for federal purposes as the legal union of a man and a woman as husband and wife, and a spouse as a husband or wife of the opposite sex. Section 3 of DOMA defines marriage and spouse for federal purposes. Section 3 codified non-recognition of same - sex marriages for all federal purposes, including insurance benefits for government employees, social security survivors ' benefits, immigration, bankruptcy, and the filing of joint tax returns, as well as excluding same - sex spouses from the scope of laws protecting families of federal officers, laws evaluating financial aid eligibility, and federal ethics laws applicable to opposite - sex spouses."
+
+  - turn_number: 2
+    user_query: "How is marriage defined?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "In determining the meaning of any Act of Congress , or of any ruling , regulation , or interpretation of the various administrative bureaus and agencies of the United States , the word ' marriage ' means only a legal union between one man and one woman as husband and wife. Additionally, any other State , territory , possession , or tribe respecting a relationship between persons of the same sex that is treated as a marriage under the laws of such other State , territory , possession , or tribe , or a right or claim arising from such relationship based on \"Defense of Marriage Act,\"."
+
+  - turn_number: 3
+    user_query: "How are weddings celebrated?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The typical wedding involves a couple proclaiming their commitment to one another in front of their close relatives and friends , often presided over by a religious figure such as a minister , priest , or rabbi , depending upon the faith of the couple . In traditional Christian ceremonies , the bride 's father will `` give away '' ( hand off ) the bride to the groom . Secular weddings are also common , often presided over by a judge , Justice of the Peace , or other municipal official . At a wedding reception , the father of the bride , in his role as host , regularly offers the first toast , thanking the guests for attending , offering tasteful remembrances of the bride 's childhood , and wishing the newlyweds a happy life together . The best man usually proposes a toast in the form of best wishes and congratulations to the newlyweds . A best man 's toast takes the form of a short speech ( 3 -- 5 minutes ) that combines a mixture of humor and sincerity . The actual `` toast '' is then delivered at the end of the speech and is a short phrase wishing the newlyweds a happy , healthy , loving life together . The maid of honor may follow suit , appropriately tailoring her comments to the bride . The groom may offer the final toast , thanking the bride 's parents for hosting the wedding , the wedding party for their participation , and finally dedicating the toast to the bridesmaids ."
+
+  - turn_number: 4
+    user_query: "What is the meaning of the glass being broken at a Jewish wedding?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The primary reason is that joy must always be tempered . This is based on two accounts in the Talmud of rabbis who , upon seeing that their son 's wedding celebration was getting out of hand , broke a vessel -- in the second case a glass -- to calm things down . Another explanation is that it is a reminder that despite the joy , Jews still mourn the destruction of the Temple in Jerusalem ."
+
+  - turn_number: 5
+    user_query: "Do all states allow same sex marriages?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "As of the time when the Defense of Marriage Act (DOMA) was in effect, it allowed states to refuse to recognize same-sex marriages granted under the laws of other states. Therefore, not all states allowed same-sex marriages. However, same - sex marriage has been legal in the United States since 26 June 2015 by the Society of the United States Marriage laws."
+
+  - turn_number: 6
+    user_query: "Can same sex couples adopt children?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I am sorry that I do not have that information."
+
+  - turn_number: 7
+    user_query: "Legal immigration for same sex couples."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "I am sorry that I do not have information, either."
+
+  - turn_number: 8
+    user_query: "Restrictions to immigration."
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The National Origins Formula of 1921 ( and its final form in 1924 ) not only restricted the number of immigrants who might enter the United States , but also assigned slots according to quotas based on national origins ."

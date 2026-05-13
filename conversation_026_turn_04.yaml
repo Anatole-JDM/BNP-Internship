@@ -1,0 +1,58 @@
+conversation_id: "26"
+domain: "mt-rag-ibmcloud-elser-512-100-20240502"
+title: "RAG Conversation #26 - No References"
+turns:
+  - turn_number: 1
+    user_query: "I cannot get select query to work, what steps should I take?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "1. Check if you have the correct access rights: You need at least 'Reader' access to the buckets that contain the input objects. 2. After the FROM keyword, specify one or more unique resource identifiers (URIs) which can be thought of as tables. Each URI can specify one or more input objects, which can also be thought of as table partitions. 3. If the format of the input objects is CSV, and no special options are required, it is not necessary to specify a STORED AS clause. However, if the format is JSON, ORC, Parquet, or AVRO, after the FROM clause, specify STORED AS JSON, STORED AS ORC, STORED AS PARQUET, or STORED AS AVRO. 4. If text formats, such as JSON and CSV, are compressed with either gzip or bzip2 and have the extensions .gz and .bz, they automatically get recognized as compressed files. However, do not use these kinds of compressed files due to performance reasons. 5. If the format of the input objects is CSV and a delimiter other than the default , (comma) is used, you must specify the delimiter by using the FIELDS TERMINATED BY option of the STORED AS clause. All single Unicode characters are allowed as delimiters. 6. Check for a header line: By default, it is assumed that CSV input objects have a header line that specifies the names of the input columns."
+
+  - turn_number: 2
+    user_query: "query definition"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Query is a standard JavaScript object, which is passed to the db.find function which it POSTs to the _find endpoint on your behalf. To retrieve data from Discovery after it is ingested, indexed, and enriched, submit a query."
+
+  - turn_number: 3
+    user_query: "how can I improve query"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "You can use the tools that are built into Discovery to make improvements. If you want more control over how queries are handled, you must use the query API. Cataloging improves your query performance, especially for text-based data formats where the schema inference requires a full scan of the data before the actual query execution. Adding a custom stop words list can improve the relevance of results for natural language queries. You can also improve the quality of search results by expanding the meaning of the queries that are submitted by customers."
+
+  - turn_number: 4
+    user_query: "can you give more details about the query API?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "Watson Query provides REST APIs that you can use to interact with your instance. When you submit a search from the product user interface, your text is passed as a natural language query value to the Query API. You can use operators when you write queries to submit to Discovery by using the Query API. The API coordination node can make a request directly to servers that host that data rather than needing to combine responses from many servers. The API coordination node is also free from buffering the response since it has no combination step to carry out. As a result, the data arrives at the client more quickly."
+
+  - turn_number: 5
+    user_query: "Can I address my storage space limits? how can I add or delete storage?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, you can take the following actions to free up space: 1. Delete snapshot versions of any models that you do not expect to need to revert to. 2. Delete any models that you do not need. 3. If your models are too important to delete, consider upgrading your plan to one that provides a larger allotment of storage space. 4. After you remove models or model versions, wait an hour before you retry the action that resulted in the error message. Regarding add or delete storage question: In the VMware Solutions console, click Resources > VMware as a Service from the left navigation pane. In the VMware as a Service table, click the Cloud director sites tab, then click an instance name.. Click the Infrastructure tab. On the Clusters tab, click a cluster name to expand its details. Click Edit NFS storage. In the Edit shared storage window, increase or decrease the current sizings for the performance tiers available. Review the new cost, select the confirmation checkbox, and click Change to confirm."
+
+  - turn_number: 6
+    user_query: "what is Data lakes"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "A data lake is an approach to storing data in its native format for organizational use. It is an essential tool for storing structured and unstructured data on the cloud. You can create a data lake for your organization using Object Storage."
+
+  - turn_number: 7
+    user_query: "how to create schema or tables?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Here are the steps to create a schema and tables: To create a schema: 1. Go to Databases. 2. Select the database in which you want to create a schema. 3. Click Create schema. 4. Type a name for the schema. 5. Specify the retention time interval (in days) for the schema. 6. Click Create. To create a table: 1. Log in to IBM® watsonx.data console. 2. From the navigation menu, select Data manager. 3. Select the engine from the Engine menu. Catalogs that are associated with the selected engine are listed. 4. Click Create and select Create table. 5. In the Create table form, drag a file to the box or click to upload. 6. Click the data type and choose the required data types for each column. Click Next. 7. In the Target form, select the Engine, Catalog, and Schema in which the table is created. 8. Enter a name for the table in the Table name field and click Next. 9. Verify the details in the Summary page and scroll down to view the DDL preview. 10. Click Create. 11. Verify that the table creation status in the Result set is successful, indicated as true. 12. Go to the Data manager page and select the schema under which you created the table and click the refresh icon. The newly created table is listed."
+
+  - turn_number: 8
+    user_query: "use IBM Cloudant Query"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "IBM Cloudant Query uses Mongo-style query syntax to search for documents by using logical operators. IBM Cloudant Query is a combination of a view and a search indexFor faster performance, an IBM Cloudant Query _find must be backed by a suitable secondary index. You will be able to create an index, run a simple query, run a query with two fields and run a query with operators via IBM Cloudant Query."

@@ -1,0 +1,58 @@
+conversation_id: "110"
+domain: "mt-rag-clapnq-elser-512-100-20240503"
+title: "RAG Conversation #110 - No References"
+turns:
+  - turn_number: 1
+    user_query: "which industry provides the largest employment in india"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The retail industry, excluding wholesale, is the second largest employer in India, after agriculture. Economy of India Agricultural and allied sectors accounted for about 52.1 % of the total workforce in 2009 -- 10. About 51.2 % of the workforce in India is self - employed."
+
+  - turn_number: 2
+    user_query: "Agriculture seems very important to India"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, economy of India Agriculture is an important part of the Indian economy. It accounts for a significant portion of the country's GDP and employs a large portion of the workforce. Labour in India Agriculture, dairy, horticulture and related occupations alone employ 52 percent of labour in India. Agriculture and allied sectors accounted for 17% of the GDP and employed 49% of the total workforce in 2014. Additionally, agriculture alone accounted for 23% of GDP and employed 59% of the country's total workforce in 2016. Despite the declining contribution of agriculture to the GDP over the years, it remains the largest employment source in India and plays a significant role in the country's overall socio-economic development."
+
+  - turn_number: 3
+    user_query: "what does indian agriculture produce include?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Wheat, barley, and jujube were domesticated in the Indian subcontinent by 9,000 BC, soon followed by sheep and goats. Agriculture includes crops, horticulture, milk and animal husbandry, aquaculture, fishing, sericulture, aviculture, forestry and related activities. India is the second - largest producer of rice, wheat, sugarcane, cotton and groundnuts, as well as the second - largest fruit and vegetable producer, and it is also the second - largest producer and the largest consumer of silk; and it is the largest exporter of cashew kernels and cashew nut shell liquid."
+
+  - turn_number: 4
+    user_query: "do you think indian people working in agriculture industry make money"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Labourers do not get more than Rs. 80 in the private agricultural labour market. On an inflation adjusted 1973 Rupee basis, the average income of Indian agrarian labourer was Rs. 7.20 per year in 1885."
+
+  - turn_number: 5
+    user_query: "what is cashew kernels and cashew nut shell liquid?"
+    macro_informative: ""
+    micro_informative: ""
+    rewrite:
+      rewritten_query: ""
+      macro_informative: ""
+      micro_informative: ""
+      correctness:
+        changes: ""
+        groundedness: ""
+    agent_answer: "The cashew nut,often simply called a cashew, is widely consumed. It is eaten on its own, used in recipes, or processed into cashew cheese or cashew butter. Cashew Cashew nutshell liquid is a natural resin found in the honeycomb structure of the cashew nutshell. It is a byproduct of processing cashew nuts and has multiple uses in developing drugs, antioxidants, fungicides, and biomaterials. It is also used in tropical folk medicine and for anti-termite treatment of timber. The composition of CNSL varies depending on how it is processed."
+
+  - turn_number: 6
+    user_query: "can you explain more about the retail industry in india?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "India 's retail industry mostly consists of local mom - and - pop stores, owner - manned shops and street vendors. Retail supermarkets are expanding. India had $600 billion worth of retail market in 2015. The city 's retail industry is majorly concentrated in T. Nagar which accounts for major share jewellery and clothes sold in Chennai."
+
+  - turn_number: 7
+    user_query: "other indian industries"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "The Indian pharmaceutical industry has grown in recent years to become a major manufacturer of health care products to the world. India has one of the fastest growing service sectors in the world. India has become a major exporter of IT services, Business Process Outsourcing services, and software services. The financial services industry contributed $809 billion and employed 14.17 million people in 2016, and the banking sector contributed $407 billion and employed 5.5 million people in 2016. The engineering industry of India includes its growing car, motorcycle and scooters industry, and productivity machinery. The textile industry in India traditionally, after agriculture, is the only industry that has generated huge employment for both skilled and unskilled labour in textiles."
+
+  - turn_number: 8
+    user_query: "is india growing fast? how fast?"
+    macro_informative: ""
+    micro_informative: ""
+    agent_answer: "Yes, India is growing at a fast pace. After 1991 economic liberalization , India achieved 6 - 7 % average GDP growth annually. Averaging an economic growth rate of 7.5 % for several years prior to 2007. In 2006, the share of external trade in India 's GDP stood at 24 %, up from 6 % in 1985. In 2008. India has one of the fastest growing service sectors in the world with an annual growth rate above 9 % since 2001. The contribution of petrochemical and engineering goods to total exports grew from 14 % to 42 %. India topped the World Bank 's growth outlook for the first time in fiscal year 2015 -- 16, during which the economy grew 7.6 %. India 's consumer market, the world 's eleventh - largest, is expected to become fifth - largest by 2030. During the next four decades, Indian GDP is expected to grow at an annualised average of 8 %, making it potentially the world 's fastest - growing major economy until 2050."
