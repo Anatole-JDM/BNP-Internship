@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How is sickle cell disease treated?"
       macro_informative: ""
       micro_informative: ""
       correctness:

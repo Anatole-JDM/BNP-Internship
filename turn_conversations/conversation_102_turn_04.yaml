@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is housing assistance available for veterans in California?"
       macro_informative: ""
       micro_informative: ""
       correctness:

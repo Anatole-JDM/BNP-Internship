@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If a dealer offers 0% financing, does that combine the advantages of both paying cash and paying in installments?"
       macro_informative: ""
       micro_informative: ""
       correctness:

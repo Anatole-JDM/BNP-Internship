@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How many Infinity Stones are there in the Marvel universe?"
       macro_informative: ""
       micro_informative: ""
       correctness:

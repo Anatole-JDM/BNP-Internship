@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What are worker nodes in a cloud or Kubernetes cluster?"
       macro_informative: ""
       micro_informative: ""
       correctness:

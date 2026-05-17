@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is a web chat widget secure enough to handle sensitive user data?"
       macro_informative: ""
       micro_informative: ""
       correctness:

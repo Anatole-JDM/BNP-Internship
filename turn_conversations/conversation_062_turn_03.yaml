@@ -21,7 +21,7 @@ The language support for this skill is not explicitly mentioned, but since it's 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How many skills can I create in Watson Assistant?"
       macro_informative: ""
       micro_informative: ""
       correctness:

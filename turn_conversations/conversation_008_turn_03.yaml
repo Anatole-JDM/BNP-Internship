@@ -23,7 +23,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "In IBM Cloudant, can I store images or PDFs together with a document?"
       macro_informative: ""
       micro_informative: ""
       correctness:

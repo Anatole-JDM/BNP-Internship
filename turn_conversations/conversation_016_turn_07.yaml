@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "When and how did the use of slave labor in cotton production end in the United States?"
       macro_informative: ""
       micro_informative: ""
       correctness:

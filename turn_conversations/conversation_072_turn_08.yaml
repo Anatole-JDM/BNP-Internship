@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How many people worldwide still lack proper sewage treatment?"
       macro_informative: ""
       micro_informative: ""
       correctness:

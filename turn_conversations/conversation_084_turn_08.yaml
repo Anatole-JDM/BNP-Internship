@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What immigration restrictions still apply to same-sex couples?"
       macro_informative: ""
       micro_informative: ""
       correctness:

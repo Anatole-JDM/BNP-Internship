@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do catch basins actually capture litter and debris from street runoff?"
       macro_informative: ""
       micro_informative: ""
       correctness:

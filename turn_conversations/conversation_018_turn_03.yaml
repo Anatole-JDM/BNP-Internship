@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is MOXIE a tree, or what exactly is MOXIE on Mars missions?"
       macro_informative: ""
       micro_informative: ""
       correctness:

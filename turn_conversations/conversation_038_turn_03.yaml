@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How much data volume is needed for reliable annotation agreement analysis?"
       macro_informative: ""
       micro_informative: ""
       correctness:

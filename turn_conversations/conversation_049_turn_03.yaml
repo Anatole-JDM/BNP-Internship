@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can women play soccer professionally and in international competitions?"
       macro_informative: ""
       micro_informative: ""
       correctness:

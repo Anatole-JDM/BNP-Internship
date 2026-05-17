@@ -50,7 +50,7 @@ For parents, it's important to start the conversation about online safety with y
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What software tools can I install on my computer to help protect personal information?"
       macro_informative: ""
       micro_informative: ""
       correctness:

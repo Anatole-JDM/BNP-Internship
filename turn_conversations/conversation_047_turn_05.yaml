@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you share more details about E. E. Cummings and his major works?"
       macro_informative: ""
       micro_informative: ""
       correctness:

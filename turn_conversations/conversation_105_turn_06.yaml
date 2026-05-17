@@ -38,7 +38,7 @@ If a company has more than 500 shareholders, it must register with the SEC as an
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is Form 13F considered more important than other SEC filings?"
       macro_informative: ""
       micro_informative: ""
       correctness:

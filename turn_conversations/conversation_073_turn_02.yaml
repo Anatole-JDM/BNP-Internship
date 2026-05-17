@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the process for contractors to participate in this procurement program?"
       macro_informative: ""
       micro_informative: ""
       correctness:

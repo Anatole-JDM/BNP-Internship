@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is an IRA, and how is it different from a 401(k)?"
       macro_informative: ""
       micro_informative: ""
       correctness:

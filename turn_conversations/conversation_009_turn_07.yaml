@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Beyond salary and benefits, what additional employment-related costs do companies pay per employee?"
       macro_informative: ""
       micro_informative: ""
       correctness:

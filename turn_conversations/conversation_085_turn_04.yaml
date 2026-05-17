@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "I mean the regular California driver's license application process."
       macro_informative: ""
       micro_informative: ""
       correctness:

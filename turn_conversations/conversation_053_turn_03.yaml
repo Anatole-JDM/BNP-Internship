@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is a typical down payment amount when buying a home with a mortgage?"
       macro_informative: ""
       micro_informative: ""
       correctness:

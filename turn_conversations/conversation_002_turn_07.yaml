@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is flooding the most common type of natural disaster?"
       macro_informative: ""
       micro_informative: ""
       correctness:

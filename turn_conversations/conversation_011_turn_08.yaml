@@ -50,7 +50,7 @@ Hire a lawyer to help you with all or a part of your case. For legal advice, you
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is spousal support (alimony), and how is it determined?"
       macro_informative: ""
       micro_informative: ""
       correctness:

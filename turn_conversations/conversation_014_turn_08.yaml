@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "After Indian independence, when did India's economy begin to significantly grow?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Which singers have performed at the Super Bowl halftime show in recent years?"
       macro_informative: ""
       micro_informative: ""
       correctness:

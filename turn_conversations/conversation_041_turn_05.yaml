@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do small business credit cards work, and should I get one?"
       macro_informative: ""
       micro_informative: ""
       correctness:

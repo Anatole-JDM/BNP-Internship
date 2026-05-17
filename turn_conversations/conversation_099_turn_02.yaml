@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you tell me more about the new commands introduced in version 6.15.0?"
       macro_informative: ""
       micro_informative: ""
       correctness:

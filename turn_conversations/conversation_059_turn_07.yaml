@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How have guinea pigs contributed to vitamin C research?"
       macro_informative: ""
       micro_informative: ""
       correctness:

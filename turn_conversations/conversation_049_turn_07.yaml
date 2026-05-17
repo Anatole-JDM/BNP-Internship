@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "In which countries is American football most popular?"
       macro_informative: ""
       micro_informative: ""
       correctness:

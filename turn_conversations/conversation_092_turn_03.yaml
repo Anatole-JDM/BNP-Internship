@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you clarify garbage, recycling, and organics service rates and billing?"
       macro_informative: ""
       micro_informative: ""
       correctness:

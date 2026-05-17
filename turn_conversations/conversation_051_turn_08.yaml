@@ -53,7 +53,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are income tax rules and rates the same across all U.S. states?"
       macro_informative: ""
       micro_informative: ""
       correctness:

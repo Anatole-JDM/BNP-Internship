@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I create a user ID so I can find specific conversations later?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do the Arizona Cardinals ever play regular-season NFL games outside the United States?"
       macro_informative: ""
       micro_informative: ""
       correctness:

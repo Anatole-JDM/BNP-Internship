@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do volcanic eruptions compare with human activity in contributing to climate change?"
       macro_informative: ""
       micro_informative: ""
       correctness:

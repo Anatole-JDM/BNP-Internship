@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are you saying North Carolina can experience many hurricanes during the summer?"
       macro_informative: ""
       micro_informative: ""
       correctness:

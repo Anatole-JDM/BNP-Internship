@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you clarify what IBM Cloud Container Registry is and how it relates to Vulnerability Advisor?"
       macro_informative: ""
       micro_informative: ""
       correctness:

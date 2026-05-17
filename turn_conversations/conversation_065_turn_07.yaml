@@ -49,7 +49,7 @@ Remember, the dialogue matches intents (what users say) to responses (what the b
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What types of skills can I create in Watson Assistant?"
       macro_informative: ""
       micro_informative: ""
       correctness:

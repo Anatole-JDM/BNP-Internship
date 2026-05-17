@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is it true that guinea pigs are raised for human consumption in some cultures?"
       macro_informative: ""
       micro_informative: ""
       correctness:

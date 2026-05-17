@@ -38,7 +38,7 @@ For parents, it's important to start the conversation about online safety with y
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What security systems and controls are used to protect personal information?"
       macro_informative: ""
       micro_informative: ""
       correctness:

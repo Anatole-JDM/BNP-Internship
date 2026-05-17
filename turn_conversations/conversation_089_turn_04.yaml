@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How much money do I need to start investing in mutual funds or ETFs?"
       macro_informative: ""
       micro_informative: ""
       correctness:

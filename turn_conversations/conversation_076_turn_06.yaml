@@ -47,7 +47,7 @@ To assist clients in making informed decisions, IBM engaged Cohasset Associates 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "I heard on-premises storage is possible—can immutable data storage be deployed on-premises?"
       macro_informative: ""
       micro_informative: ""
       correctness:

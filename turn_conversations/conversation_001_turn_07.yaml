@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How many Super Bowl appearances have the New England Patriots made in franchise history?"
       macro_informative: ""
       micro_informative: ""
       correctness:

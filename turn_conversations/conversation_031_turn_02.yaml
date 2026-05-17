@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What were the deadliest global pandemics before COVID-19 in 2020?"
       macro_informative: ""
       micro_informative: ""
       correctness:

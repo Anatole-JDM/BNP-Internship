@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can chemotherapy affect fertility, including when treatment happens before puberty?"
       macro_informative: ""
       micro_informative: ""
       correctness:

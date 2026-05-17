@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "In IBM Cloud, what does an account mean and what types are available?"
       macro_informative: ""
       micro_informative: ""
       correctness:

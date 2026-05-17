@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What other Watson Assistant skill types exist, and which languages does each support?"
       macro_informative: ""
       micro_informative: ""
       correctness:

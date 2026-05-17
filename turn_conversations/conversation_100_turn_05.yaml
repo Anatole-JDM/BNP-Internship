@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can I track user access and activity for secrets and credentials?"
       macro_informative: ""
       micro_informative: ""
       correctness:

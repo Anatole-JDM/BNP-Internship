@@ -45,7 +45,7 @@ Other things to consider are: 1) the need for systems that can access very fast 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do pattern day trading rules and IRA contribution limits both apply when day trading inside an IRA?"
       macro_informative: ""
       micro_informative: ""
       correctness:

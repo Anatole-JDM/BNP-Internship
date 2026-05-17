@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you suggest other educational or science-themed games?"
       macro_informative: ""
       micro_informative: ""
       correctness:

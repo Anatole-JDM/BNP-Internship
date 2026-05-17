@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What does OTS mean in the context of traffic and motorcycle safety?"
       macro_informative: ""
       micro_informative: ""
       correctness:

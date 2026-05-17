@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can a beginner learn investing in stocks and other assets?"
       macro_informative: ""
       micro_informative: ""
       correctness:

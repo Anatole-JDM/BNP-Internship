@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What are the most common scams and frauds people face today?"
       macro_informative: ""
       micro_informative: ""
       correctness:

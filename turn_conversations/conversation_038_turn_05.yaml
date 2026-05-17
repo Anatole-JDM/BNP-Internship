@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do pre-annotations make annotation tasks easier and faster?"
       macro_informative: ""
       micro_informative: ""
       correctness:

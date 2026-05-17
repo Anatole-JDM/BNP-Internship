@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What does the CocoaPods installation warning mean for this mobile SDK, and how can I resolve it?"
       macro_informative: ""
       micro_informative: ""
       correctness:

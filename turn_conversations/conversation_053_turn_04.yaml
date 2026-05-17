@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do I need to buy homeowners insurance when I have a mortgage?"
       macro_informative: ""
       micro_informative: ""
       correctness:

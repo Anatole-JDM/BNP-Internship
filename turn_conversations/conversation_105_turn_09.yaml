@@ -56,7 +56,7 @@ If a company has more than 500 shareholders, it must register with the SEC as an
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is meant by international equity, and how is it regulated?"
       macro_informative: ""
       micro_informative: ""
       correctness:

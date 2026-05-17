@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "For stock accounting and taxes, should I use FIFO or LIFO cost basis?"
       macro_informative: ""
       micro_informative: ""
       correctness:

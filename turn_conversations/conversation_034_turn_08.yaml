@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "I understand—so a good diet is important for anyone who wants to play sports, right?"
       macro_informative: ""
       micro_informative: ""
       correctness:

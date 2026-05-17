@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What should I do if my COVID-19 test result is positive?"
       macro_informative: ""
       micro_informative: ""
       correctness:

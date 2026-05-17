@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are there any cures available for Huntington's disease?"
       macro_informative: ""
       micro_informative: ""
       correctness:

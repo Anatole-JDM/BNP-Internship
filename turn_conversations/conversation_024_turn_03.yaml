@@ -25,7 +25,7 @@ It is important to note that errors and fraud can also impact your credit score,
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is the credit score shown by Credit Karma the same as a FICO score?"
       macro_informative: ""
       micro_informative: ""
       correctness:

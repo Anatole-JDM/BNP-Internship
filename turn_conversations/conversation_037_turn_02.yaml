@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If the borrower misses payments, how does cosigner responsibility work on a loan in the U.S.?"
       macro_informative: ""
       micro_informative: ""
       correctness:

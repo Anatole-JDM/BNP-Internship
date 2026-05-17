@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I filter messages when analyzing conversation metrics?"
       macro_informative: ""
       micro_informative: ""
       correctness:

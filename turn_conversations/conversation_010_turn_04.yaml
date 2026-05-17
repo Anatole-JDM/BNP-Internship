@@ -30,7 +30,7 @@ To summarize, when reading bond yield quotes, the time refers to the quote's gen
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Why do municipal governments issue bonds?"
       macro_informative: ""
       micro_informative: ""
       correctness:

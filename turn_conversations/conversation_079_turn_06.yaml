@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is infertility after chemotherapy hereditary and passed on to children?"
       macro_informative: ""
       micro_informative: ""
       correctness:

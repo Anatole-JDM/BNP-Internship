@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is storage included in IBM Cloud VPC pricing, or billed separately?"
       macro_informative: ""
       micro_informative: ""
       correctness:

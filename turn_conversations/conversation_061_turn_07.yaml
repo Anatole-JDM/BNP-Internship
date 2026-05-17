@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is the COVID-19 vaccine safe, and what side effects are common?"
       macro_informative: ""
       micro_informative: ""
       correctness:

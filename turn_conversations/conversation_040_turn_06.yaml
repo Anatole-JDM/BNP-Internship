@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are you asking whether The Office is one of the best TV series in history?"
       macro_informative: ""
       micro_informative: ""
       correctness:

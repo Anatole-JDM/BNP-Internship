@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How is marriage legally defined in the context of DOMA and current U.S. law?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you explain the query API in more detail for troubleshooting SELECT queries?"
       macro_informative: ""
       micro_informative: ""
       correctness:

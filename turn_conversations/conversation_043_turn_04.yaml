@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do balance transfer credit cards work for debt payoff?"
       macro_informative: ""
       micro_informative: ""
       correctness:

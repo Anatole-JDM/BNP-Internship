@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I use those new commands in version 6.15.0?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can I change my 401(k) contribution amount in the middle of the year?"
       macro_informative: ""
       micro_informative: ""
       correctness:

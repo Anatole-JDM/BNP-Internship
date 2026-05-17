@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "As a freelancer, should I open my second bank account at a different bank than my current one?"
       macro_informative: ""
       micro_informative: ""
       correctness:

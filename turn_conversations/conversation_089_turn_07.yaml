@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Will I be taxed on income withdrawn during retirement?"
       macro_informative: ""
       micro_informative: ""
       correctness:

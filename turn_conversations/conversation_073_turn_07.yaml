@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are there procurement advantages or set-asides for veteran-owned businesses?"
       macro_informative: ""
       micro_informative: ""
       correctness:

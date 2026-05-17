@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I customize my website's web chat appearance and open/close behavior?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -55,7 +55,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "I see—what role did North Carolina play in the U.S. Civil War?"
       macro_informative: ""
       micro_informative: ""
       correctness:

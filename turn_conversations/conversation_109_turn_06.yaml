@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are these animal-borne diseases region-specific, or found worldwide?"
       macro_informative: ""
       micro_informative: ""
       correctness:

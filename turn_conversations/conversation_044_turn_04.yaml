@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What does virtualization mean in the context of Red Hat OpenShift?"
       macro_informative: ""
       micro_informative: ""
       correctness:

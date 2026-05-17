@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What types of charitable organizations qualify for tax-deductible donations?"
       macro_informative: ""
       micro_informative: ""
       correctness:

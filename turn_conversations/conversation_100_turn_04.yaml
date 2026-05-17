@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is an IAM credential in this secrets and access-management context?"
       macro_informative: ""
       micro_informative: ""
       correctness:

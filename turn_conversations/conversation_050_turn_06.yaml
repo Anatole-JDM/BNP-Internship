@@ -51,7 +51,7 @@ The Transport Layer Security (TLS) options allow you to control whether visitors
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What security features are provided by CIS?"
       macro_informative: ""
       micro_informative: ""
       correctness:

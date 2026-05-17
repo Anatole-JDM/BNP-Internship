@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What are effective solutions to reduce and prevent water pollution?"
       macro_informative: ""
       micro_informative: ""
       correctness:

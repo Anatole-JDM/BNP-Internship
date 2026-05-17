@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Why didn't General MacArthur prosecute Emperor Hirohito as a war criminal after WWII?"
       macro_informative: ""
       micro_informative: ""
       correctness:

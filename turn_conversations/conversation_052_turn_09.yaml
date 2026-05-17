@@ -55,7 +55,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "I'm still nervous—what are the safety risks, if any, when watching a lunar eclipse?"
       macro_informative: ""
       micro_informative: ""
       correctness:

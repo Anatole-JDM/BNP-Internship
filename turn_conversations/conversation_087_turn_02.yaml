@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What features does the CIS bot management system provide?"
       macro_informative: ""
       micro_informative: ""
       correctness:

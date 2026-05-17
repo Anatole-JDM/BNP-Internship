@@ -41,7 +41,7 @@ To assist clients in making informed decisions, IBM engaged Cohasset Associates 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is cloud storage the only option for immutable data storage, or are there alternatives?"
       macro_informative: ""
       micro_informative: ""
       correctness:

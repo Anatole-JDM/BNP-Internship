@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can we request an interpreter for a small claims court hearing?"
       macro_informative: ""
       micro_informative: ""
       correctness:

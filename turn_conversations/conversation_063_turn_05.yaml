@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What are the different types of cloud deployment models?"
       macro_informative: ""
       micro_informative: ""
       correctness:

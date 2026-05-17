@@ -55,7 +55,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "When did the universe begin?"
       macro_informative: ""
       micro_informative: ""
       correctness:

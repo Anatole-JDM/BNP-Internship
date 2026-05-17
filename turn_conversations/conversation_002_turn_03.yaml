@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Should I keep the same emergency supplies and follow the same shelter guidance for earthquakes as for other disasters?"
       macro_informative: ""
       micro_informative: ""
       correctness:

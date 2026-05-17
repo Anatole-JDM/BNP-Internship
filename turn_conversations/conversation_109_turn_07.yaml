@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "With warming trends, can West Nile virus survive winters and spread more widely?"
       macro_informative: ""
       micro_informative: ""
       correctness:

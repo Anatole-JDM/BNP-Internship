@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How did archaeological discoveries affect colonialist interpretations of history?"
       macro_informative: ""
       micro_informative: ""
       correctness:

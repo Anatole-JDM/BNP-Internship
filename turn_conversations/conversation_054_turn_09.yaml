@@ -55,7 +55,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is the Hudson River historically or economically important in the United States?"
       macro_informative: ""
       micro_informative: ""
       correctness:

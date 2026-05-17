@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Why are guinea pigs called pigs even though they are rodents?"
       macro_informative: ""
       micro_informative: ""
       correctness:

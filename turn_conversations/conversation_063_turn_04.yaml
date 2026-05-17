@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is a VPC (Virtual Private Cloud) in IBM Cloud?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -23,7 +23,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the surface of Jupiter's moon Europa like?"
       macro_informative: ""
       micro_informative: ""
       correctness:

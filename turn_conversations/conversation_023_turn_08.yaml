@@ -60,7 +60,7 @@ Consider reading \"The $100 Startup\" by Chris Guillebeau and \"The 4 Hour Workw
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do compensation levels at Goldman Sachs and other finance firms compare?"
       macro_informative: ""
       micro_informative: ""
       correctness:

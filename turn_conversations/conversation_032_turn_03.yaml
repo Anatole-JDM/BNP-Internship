@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Have European clubs ever played against MLS All-Stars in MLS All-Star Games?"
       macro_informative: ""
       micro_informative: ""
       correctness:
