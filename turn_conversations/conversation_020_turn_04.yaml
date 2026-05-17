@@ -26,7 +26,7 @@ The choice between limit orders and market orders depends on your trading goals 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Why isn't there a single global stock market, and what prevents that model?"
       macro_informative: ""
       micro_informative: ""
       correctness:

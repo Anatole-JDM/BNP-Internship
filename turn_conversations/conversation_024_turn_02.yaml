@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What factors have the biggest impact on a person's credit score?"
       macro_informative: ""
       micro_informative: ""
       correctness:

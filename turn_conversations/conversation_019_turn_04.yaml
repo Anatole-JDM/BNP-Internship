@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "In this tax context, what counts as a charitable donation of assets?"
       macro_informative: ""
       micro_informative: ""
       correctness:

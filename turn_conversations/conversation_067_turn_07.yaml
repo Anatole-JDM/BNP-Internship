@@ -48,7 +48,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can this be configured to work with different Cloud Functions installations?"
       macro_informative: ""
       micro_informative: ""
       correctness:

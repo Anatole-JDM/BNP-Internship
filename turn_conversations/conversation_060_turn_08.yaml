@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is it called when all the Infinity Stones are brought together?"
       macro_informative: ""
       micro_informative: ""
       correctness:

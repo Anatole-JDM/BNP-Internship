@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What was the longest human mission to the Moon?"
       macro_informative: ""
       micro_informative: ""
       correctness:

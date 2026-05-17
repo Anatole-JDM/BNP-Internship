@@ -39,7 +39,7 @@ Finally, you can see the \"Account types\" section to compare and choose an acco
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do I need to purchase IBM Cloud Lite with other products, or can I use it standalone?"
       macro_informative: ""
       micro_informative: ""
       correctness:

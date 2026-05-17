@@ -25,7 +25,7 @@ Keep in mind that updating a cluster to a new version may impact deployed apps, 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are IBM Cloud Kubernetes Service clusters available only in the United States?"
       macro_informative: ""
       micro_informative: ""
       correctness:

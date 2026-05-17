@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "For U.S. investors, what are the tax rates on stock investment gains and dividends?"
       macro_informative: ""
       micro_informative: ""
       correctness:

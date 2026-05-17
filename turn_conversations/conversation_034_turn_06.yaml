@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is there a special diet that helps someone become a better soccer player or athlete?"
       macro_informative: ""
       micro_informative: ""
       correctness:

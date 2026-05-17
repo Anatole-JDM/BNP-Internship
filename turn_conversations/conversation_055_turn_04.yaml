@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can I avoid using CocoaPods and install this mobile SDK another way?"
       macro_informative: ""
       micro_informative: ""
       correctness:

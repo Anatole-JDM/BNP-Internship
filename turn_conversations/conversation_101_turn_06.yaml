@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If incorrect information is reported on my U.S. credit report, how can I dispute and correct it?"
       macro_informative: ""
       micro_informative: ""
       correctness:

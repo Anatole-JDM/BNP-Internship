@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are there special assistance programs for medical debt from a deceased relative?"
       macro_informative: ""
       micro_informative: ""
       correctness:

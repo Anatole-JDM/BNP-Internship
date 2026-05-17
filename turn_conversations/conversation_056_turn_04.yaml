@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do I need a real estate agent to buy a home, or can I do it myself?"
       macro_informative: ""
       micro_informative: ""
       correctness:

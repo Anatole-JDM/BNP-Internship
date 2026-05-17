@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Okay, understood."
       macro_informative: ""
       micro_informative: ""
       correctness:

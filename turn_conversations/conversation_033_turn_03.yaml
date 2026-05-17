@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "In air-to-air photography, is the pilot of the second aircraft also usually the photographer?"
       macro_informative: ""
       micro_informative: ""
       correctness:

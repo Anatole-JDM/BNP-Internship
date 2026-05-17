@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What are the basic steps to open a small business?"
       macro_informative: ""
       micro_informative: ""
       correctness:

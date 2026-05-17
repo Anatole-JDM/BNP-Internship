@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is buying a home generally a good financial investment?"
       macro_informative: ""
       micro_informative: ""
       correctness:

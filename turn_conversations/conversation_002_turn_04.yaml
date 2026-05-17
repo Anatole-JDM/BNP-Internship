@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Which U.S. state experiences the highest number of wildfires?"
       macro_informative: ""
       micro_informative: ""
       correctness:

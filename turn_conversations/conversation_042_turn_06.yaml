@@ -46,7 +46,7 @@ Servers that belong to a paid plans do not expire, and that's why they can be re
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What could happen if I force-delete an encryption key?"
       macro_informative: ""
       micro_informative: ""
       correctness:

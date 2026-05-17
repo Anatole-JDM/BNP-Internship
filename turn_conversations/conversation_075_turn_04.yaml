@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you recommend beginner-friendly credit cards based on common selection criteria?"
       macro_informative: ""
       micro_informative: ""
       correctness:

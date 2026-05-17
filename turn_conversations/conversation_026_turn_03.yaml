@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I improve a database query that is not returning the expected results?"
       macro_informative: ""
       micro_informative: ""
       correctness:

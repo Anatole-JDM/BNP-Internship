@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Was the cotton gin's invention an indirect cause of the American Civil War?"
       macro_informative: ""
       micro_informative: ""
       correctness:

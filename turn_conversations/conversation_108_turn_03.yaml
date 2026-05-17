@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What was the 'Greater East Asia Co-Prosperity Sphere' that Japan promoted?"
       macro_informative: ""
       micro_informative: ""
       correctness:

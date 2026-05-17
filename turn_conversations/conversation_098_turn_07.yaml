@@ -46,7 +46,7 @@ Additionally, to configure how your assistant interacts with a SIP trunk from an
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are there limits on how many phone numbers I can use for phone interactions?"
       macro_informative: ""
       micro_informative: ""
       correctness:

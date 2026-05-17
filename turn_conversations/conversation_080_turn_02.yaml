@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If those EU countries are no longer in recession, why is the euro still considered at risk?"
       macro_informative: ""
       micro_informative: ""
       correctness:

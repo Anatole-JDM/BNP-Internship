@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can people receiving welfare also qualify for housing assistance?"
       macro_informative: ""
       micro_informative: ""
       correctness:

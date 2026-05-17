@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Who wrote and performed the song 'Grenade' by Bruno Mars?"
       macro_informative: ""
       micro_informative: ""
       correctness:

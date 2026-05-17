@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Which Shakespeare play includes the line 'A horse, a horse, my kingdom for a horse,' and what does it mean?"
       macro_informative: ""
       micro_informative: ""
       correctness:

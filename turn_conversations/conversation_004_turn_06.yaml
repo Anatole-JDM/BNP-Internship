@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How reliable is using WACC as a formula for valuing a company?"
       macro_informative: ""
       micro_informative: ""
       correctness:

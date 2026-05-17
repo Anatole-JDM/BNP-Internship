@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is there a vaccine for herpes, and how can herpes infections be prevented?"
       macro_informative: ""
       micro_informative: ""
       correctness:

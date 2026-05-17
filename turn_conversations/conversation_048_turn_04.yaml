@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do child privacy protections apply the same way across all U.S. states nationwide?"
       macro_informative: ""
       micro_informative: ""
       correctness:

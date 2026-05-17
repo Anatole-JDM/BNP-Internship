@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If someone is a victim of identity theft, what should they do first?"
       macro_informative: ""
       micro_informative: ""
       correctness:

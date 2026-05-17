@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "When should I start saving for retirement?"
       macro_informative: ""
       micro_informative: ""
       correctness:

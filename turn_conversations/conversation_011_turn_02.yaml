@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I hire a lawyer for my case?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How does the stock exchange work?"
       macro_informative: ""
       micro_informative: ""
       correctness:

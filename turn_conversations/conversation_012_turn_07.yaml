@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I add user identity information to a web chat widget?"
       macro_informative: ""
       micro_informative: ""
       correctness:

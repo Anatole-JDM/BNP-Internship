@@ -55,7 +55,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are egg donation programs usually organized through agencies/clinics rather than private individual contracts?"
       macro_informative: ""
       micro_informative: ""
       correctness:

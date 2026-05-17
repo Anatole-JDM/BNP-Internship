@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How did people attempt to escape across the Berlin Wall?"
       macro_informative: ""
       micro_informative: ""
       correctness:

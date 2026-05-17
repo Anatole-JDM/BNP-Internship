@@ -27,7 +27,7 @@ The key and its associated data will be inaccessible 90 days after being deleted
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What happens if the second user takes no action and the 7-day key-deletion approval period expires?"
       macro_informative: ""
       micro_informative: ""
       correctness:

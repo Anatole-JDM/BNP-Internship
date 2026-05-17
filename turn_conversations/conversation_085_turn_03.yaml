@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I apply for a California driver's license or learner's permit?"
       macro_informative: ""
       micro_informative: ""
       correctness:

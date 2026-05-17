@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If I go far from city lights, can I see Saturn's rings with the naked eye?"
       macro_informative: ""
       micro_informative: ""
       correctness:

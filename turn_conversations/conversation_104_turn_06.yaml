@@ -41,7 +41,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Am I also charged separately for support costs under my billing plan?"
       macro_informative: ""
       micro_informative: ""
       correctness:

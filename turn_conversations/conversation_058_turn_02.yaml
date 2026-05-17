@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you give examples of alerts I can set when comparing metrics across time periods?"
       macro_informative: ""
       micro_informative: ""
       correctness:

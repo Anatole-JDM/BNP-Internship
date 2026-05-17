@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the speed limit for motorcycles in New York?"
       macro_informative: ""
       micro_informative: ""
       correctness:

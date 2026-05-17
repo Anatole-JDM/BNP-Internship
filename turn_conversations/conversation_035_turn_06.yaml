@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Would a guinea pig be a good pet for me?"
       macro_informative: ""
       micro_informative: ""
       correctness:

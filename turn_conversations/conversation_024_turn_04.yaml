@@ -31,7 +31,7 @@ It is important to note that errors and fraud can also impact your credit score,
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How is a FICO credit score calculated?"
       macro_informative: ""
       micro_informative: ""
       correctness:

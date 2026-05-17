@@ -53,7 +53,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I view my invoices and payment status?"
       macro_informative: ""
       micro_informative: ""
       correctness:

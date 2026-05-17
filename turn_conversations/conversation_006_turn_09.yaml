@@ -55,7 +55,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If I might not be able to resell an EV later, does buying one still make financial sense?"
       macro_informative: ""
       micro_informative: ""
       correctness:

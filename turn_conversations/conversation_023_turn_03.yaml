@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What are practical tips for starting my own startup business?"
       macro_informative: ""
       micro_informative: ""
       correctness:

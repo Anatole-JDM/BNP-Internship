@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How many people died trying to cross the Berlin Wall?"
       macro_informative: ""
       micro_informative: ""
       correctness:

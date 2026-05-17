@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is there evidence supporting the claim about France's economic situation and euro-related risks?"
       macro_informative: ""
       micro_informative: ""
       correctness:

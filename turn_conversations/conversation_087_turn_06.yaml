@@ -43,7 +43,7 @@ Enabling auto-updates for the machine learning model upgrades you to the latest 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can bots collect users' private information, and how can that be prevented?"
       macro_informative: ""
       micro_informative: ""
       correctness:

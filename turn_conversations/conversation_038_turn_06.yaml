@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Should I use one pre-annotation method or combine multiple methods, and do tools differ for conversational vs technical documents?"
       macro_informative: ""
       micro_informative: ""
       correctness:

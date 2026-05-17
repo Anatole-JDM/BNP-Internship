@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "When evaluating an investment fund, which is usually more important: market capitalization or net asset value (NAV)?"
       macro_informative: ""
       micro_informative: ""
       correctness:

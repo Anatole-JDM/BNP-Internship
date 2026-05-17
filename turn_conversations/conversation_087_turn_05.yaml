@@ -37,7 +37,7 @@ Enabling auto-updates for the machine learning model upgrades you to the latest 
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can I create my own machine learning model, and how would I do that?"
       macro_informative: ""
       micro_informative: ""
       correctness:

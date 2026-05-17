@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are you sure? I thought California allows a learner's permit starting at age 15."
       macro_informative: ""
       micro_informative: ""
       correctness:

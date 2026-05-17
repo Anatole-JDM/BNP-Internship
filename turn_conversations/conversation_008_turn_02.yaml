@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "In IBM's document database, can I store arbitrary JSON objects, or do I need to define a fixed schema in advance?"
       macro_informative: ""
       micro_informative: ""
       correctness:

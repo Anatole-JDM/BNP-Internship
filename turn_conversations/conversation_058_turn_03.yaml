@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you explain weak-understanding metrics and how to interpret them?"
       macro_informative: ""
       micro_informative: ""
       correctness:

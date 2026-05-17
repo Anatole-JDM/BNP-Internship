@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the latest Carthage version, and where can I download it?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you provide example source code for installing or integrating the mobile SDK with Carthage?"
       macro_informative: ""
       micro_informative: ""
       correctness:

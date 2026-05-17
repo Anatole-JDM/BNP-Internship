@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is air-to-air aviation photography more difficult than ground-to-air photography?"
       macro_informative: ""
       micro_informative: ""
       correctness:

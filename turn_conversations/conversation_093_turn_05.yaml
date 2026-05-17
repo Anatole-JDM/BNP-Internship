@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you tell me more about New York Attorney General Letitia James and her role?"
       macro_informative: ""
       micro_informative: ""
       correctness:

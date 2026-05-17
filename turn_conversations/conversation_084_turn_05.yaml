@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Do all U.S. states allow same-sex marriage?"
       macro_informative: ""
       micro_informative: ""
       correctness:

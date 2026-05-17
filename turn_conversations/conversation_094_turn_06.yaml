@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "If Vulnerability Advisor cannot scan encrypted images, what should I do when creating secure container images?"
       macro_informative: ""
       micro_informative: ""
       correctness:

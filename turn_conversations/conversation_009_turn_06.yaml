@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Besides salary, what core employee benefits do companies usually provide?"
       macro_informative: ""
       micro_informative: ""
       correctness:

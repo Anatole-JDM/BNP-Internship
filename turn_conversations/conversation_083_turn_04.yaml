@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can I use a New York boating safety certificate in other U.S. states?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "For Cavia tschudii specifically, what are its main natural predators?"
       macro_informative: ""
       micro_informative: ""
       correctness:

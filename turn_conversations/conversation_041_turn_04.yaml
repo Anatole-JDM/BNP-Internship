@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I register a new small business legally?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "As an F-1 student, am I allowed to use Form 1040NR instead of 1040NR-EZ for tax filing?"
       macro_informative: ""
       micro_informative: ""
       correctness:

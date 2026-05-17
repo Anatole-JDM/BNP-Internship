@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Are small claims court forms available online?"
       macro_informative: ""
       micro_informative: ""
       correctness:

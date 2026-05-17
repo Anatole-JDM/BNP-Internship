@@ -61,7 +61,7 @@ Remember, the dialogue matches intents (what users say) to responses (what the b
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is a search skill in Watson Assistant, and when should I use it?"
       macro_informative: ""
       micro_informative: ""
       correctness:

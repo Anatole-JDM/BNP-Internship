@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Were those Mars exploration missions all run by the United States, or were some international?"
       macro_informative: ""
       micro_informative: ""
       correctness:

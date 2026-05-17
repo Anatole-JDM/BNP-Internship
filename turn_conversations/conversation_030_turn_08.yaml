@@ -51,7 +51,7 @@ Before crossing a street, pedestrians should look before stepping, cross streets
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What fines and penalties apply to motorcycle traffic violations in New York?"
       macro_informative: ""
       micro_informative: ""
       correctness:

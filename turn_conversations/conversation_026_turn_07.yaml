@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I create schemas or tables when working with IBM Cloudant queries?"
       macro_informative: ""
       micro_informative: ""
       correctness:

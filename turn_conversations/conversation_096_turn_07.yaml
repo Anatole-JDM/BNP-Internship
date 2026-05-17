@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Who was Willy Brandt, and what was he known for?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Who was Sardar Patel in the context of India's independence movement?"
       macro_informative: ""
       micro_informative: ""
       correctness:

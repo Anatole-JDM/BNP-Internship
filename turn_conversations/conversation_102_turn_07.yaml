@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What kinds of housing discrimination are illegal, and where can people report them?"
       macro_informative: ""
       micro_informative: ""
       correctness:

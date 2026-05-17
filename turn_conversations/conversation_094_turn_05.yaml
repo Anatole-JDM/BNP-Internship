@@ -31,7 +31,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the difference between Vulnerability Advisor version 3 and version 4?"
       macro_informative: ""
       micro_informative: ""
       correctness:

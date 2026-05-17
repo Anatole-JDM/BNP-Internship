@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do modern cotton gins work, and where are they used today?"
       macro_informative: ""
       micro_informative: ""
       correctness:

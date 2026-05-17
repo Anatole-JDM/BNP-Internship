@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "I understand VA is federal—how does that affect which procurement system it uses?"
       macro_informative: ""
       micro_informative: ""
       correctness:

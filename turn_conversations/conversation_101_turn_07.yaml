@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the typical time period for negative credit information to be cleared from a U.S. credit report?"
       macro_informative: ""
       micro_informative: ""
       correctness:

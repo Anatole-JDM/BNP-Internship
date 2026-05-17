@@ -43,7 +43,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "When I say America, I mean the continent—what is the largest river in the Americas?"
       macro_informative: ""
       micro_informative: ""
       correctness:

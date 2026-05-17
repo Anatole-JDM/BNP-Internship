@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is American football historically derived from rugby or soccer?"
       macro_informative: ""
       micro_informative: ""
       correctness:

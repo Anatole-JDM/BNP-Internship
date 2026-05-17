@@ -59,7 +59,7 @@ Registrations are associations between root keys and other cloud resources, such
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do backups relate to key deletion and recovery planning?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is swimming a popular physical activity for children?"
       macro_informative: ""
       micro_informative: ""
       correctness:

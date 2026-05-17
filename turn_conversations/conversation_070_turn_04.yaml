@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you provide example words or phrases that might be detected as disgust?"
       macro_informative: ""
       micro_informative: ""
       correctness:

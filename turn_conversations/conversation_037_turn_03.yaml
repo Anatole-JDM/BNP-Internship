@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is it generally a bad idea to agree to be a loan cosigner?"
       macro_informative: ""
       micro_informative: ""
       correctness:

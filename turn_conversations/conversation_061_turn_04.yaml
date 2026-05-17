@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What COVID-19 treatments are available, and do I need medication?"
       macro_informative: ""
       micro_informative: ""
       correctness:

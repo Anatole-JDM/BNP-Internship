@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is exposure to light pollution harmful to human health?"
       macro_informative: ""
       micro_informative: ""
       correctness:

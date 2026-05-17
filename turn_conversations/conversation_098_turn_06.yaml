@@ -40,7 +40,7 @@ Additionally, to configure how your assistant interacts with a SIP trunk from an
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I secure phone connections and optimize assistant actions for phone-based interactions?"
       macro_informative: ""
       micro_informative: ""
       correctness:

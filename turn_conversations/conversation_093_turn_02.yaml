@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How can I file a complaint if the issue involves another U.S. state?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What is the biggest risk of buying discounted company stock?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -29,7 +29,7 @@ If the IDP administrator will assign users to projects, you can define project v
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "What makes a strong password for securing user accounts and conversations?"
       macro_informative: ""
       micro_informative: ""
       correctness:

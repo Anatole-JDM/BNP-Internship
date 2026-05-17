@@ -44,7 +44,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I get started with IBM Cloudant from the IBM Cloud catalog?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -19,7 +19,7 @@ IBM Cloud Internet Service"
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "When deleting a CIS instance, do I need to import or recreate my DNS records afterward?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Sorry, I meant Saturn's rings, not Jupiter's."
       macro_informative: ""
       micro_informative: ""
       correctness:

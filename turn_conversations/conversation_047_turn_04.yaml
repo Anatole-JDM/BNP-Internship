@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Can you recommend other famous poets besides Robert Louis Stevenson?"
       macro_informative: ""
       micro_informative: ""
       correctness:

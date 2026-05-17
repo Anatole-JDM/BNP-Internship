@@ -38,7 +38,7 @@ Must have at least one unique character. (^(w)w?(?!1)w+$)"
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How long are conversations retained before they are automatically deleted?"
       macro_informative: ""
       micro_informative: ""
       correctness:

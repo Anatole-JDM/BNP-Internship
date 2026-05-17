@@ -13,7 +13,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Does physical activity improve a child's attention span?"
       macro_informative: ""
       micro_informative: ""
       correctness:

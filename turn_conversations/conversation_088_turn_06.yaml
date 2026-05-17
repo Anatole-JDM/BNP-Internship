@@ -37,7 +37,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Why did the six main Friends cast members receive equal pay?"
       macro_informative: ""
       micro_informative: ""
       correctness:

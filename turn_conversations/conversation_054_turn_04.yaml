@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is the Penobscot River considered one of the best rivers for fishing in the U.S.?"
       macro_informative: ""
       micro_informative: ""
       correctness:

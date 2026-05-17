@@ -49,7 +49,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Is India's economy growing quickly, and at what rate?"
       macro_informative: ""
       micro_informative: ""
       correctness:

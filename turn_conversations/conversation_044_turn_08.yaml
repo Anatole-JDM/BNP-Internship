@@ -51,7 +51,7 @@ When any of the custom scripts start, the complete URL of the custom script file
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do I install Red Hat OpenShift Virtualization?"
       macro_informative: ""
       micro_informative: ""
       correctness:

@@ -19,7 +19,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "How do you create intents in a dialog skill?"
       macro_informative: ""
       micro_informative: ""
       correctness:

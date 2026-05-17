@@ -25,7 +25,7 @@ turns:
     macro_informative: ""
     micro_informative: ""
     rewrite:
-      rewritten_query: ""
+      rewritten_query: "Should I bag recyclables to protect them from rain before pickup?"
       macro_informative: ""
       micro_informative: ""
       correctness:
