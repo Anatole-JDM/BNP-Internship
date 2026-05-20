@@ -4,14 +4,10 @@ title: "RAG Conversation #6 - No References"
 turns:
   - turn_number: 1
     user_query: "How to pay with cash when car shopping?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "When paying with cash for a car, you need to get a cashier's check made out for the amount. Note that dealers may not accept personal checks as they may bounce. You would typically pay a deposit of $500, which can be a check or bank deposit after negotiation. Then, you can return to the dealership later the same day or within a few days with a cashier's check for the remaining amount. Keep in mind that if you give the dealership $10,000 or more in actual cash, they will be required to fill out a form 8300 with the IRS."
 
   - turn_number: 2
     user_query: "Or installment easier?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I'm sorry, but I don't have an answer to your question."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "If a dealer offers 0% financing, does that combine the advantages of both paying cash and paying in installments?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "A 0% interest rate offer can provide some benefits of both paying in cash and financing. With a 0% interest rate, you can effectively borrow money from the dealership without paying any interest, which can make your payments lower and more manageable.  This can be beneficial if you want to preserve your savings by not paying the full price of the car upfront.  However, zero percent interest may sound great,  those deals often have extra margin built into the price to make up for it. There might also be late payment fees, prepayment penalties, and other clauses.  Also, these tend to be shorter 12 months vs  72 months."
 
   - turn_number: 4

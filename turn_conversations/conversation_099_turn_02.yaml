@@ -4,8 +4,6 @@ title: "RAG Conversation #99 - No References"
 turns:
   - turn_number: 1
     user_query: "How does version 6.15.0 differ from 6.14.0?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Assuming the question is about the IBM Cloud® Virtual Private Cloud (VPC) command line interface (CLI),  version 6.15.0 includes the following changes over version 6.14.0. It introduces new commands image-obsolete and image-deprecate for image lifecycle management. It also adds support for image lifecycle management in image-create, image-update, and images commands and it fixes an issue with using the SSH key generated from UI in CLI."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Can you tell me more about the new commands introduced in version 6.15.0?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The new commands introduced in version 6.15.0 of the IBM Cloud® Virtual Private Cloud (VPC) command line interface (CLI) are image-obsolete and image-deprecate. These commands support image lifecycle management, allowing users to manage the lifecycle of their custom images more effectively. The image-obsolete command can be used to mark an image as obsolete, indicating that it is no longer available to be used to provision an instance. The image-deprecate command can be used to mark an image as deprecated, discouraging its use before it becomes obsolete."
 
   - turn_number: 3

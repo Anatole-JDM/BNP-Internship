@@ -4,8 +4,6 @@ title: "RAG Conversation #87 - No References"
 turns:
   - turn_number: 1
     user_query: "Can you summarize the differences between good bots and bad bots?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Bots are software programs that typically use a \"headless browser\" to make HTTP requests and other actions. A bot that performs a helpful service can be considered \"good.\" For example, customer service chatbots, search engine crawlers, and performance monitoring bots are generally good bots. Good bots look for and abide by the rules outlined in a website's robots.txt file and read them and avoid that webpage. On the other hand, bad bots range from malicious to simply annoying; for instance, breaking into user accounts to steal data or buying concert tickets online to assist scalpers. Malicious bots typically don't  check a website's robots.txt file before accessing the website, which generates the need for bot management."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What features does the CIS bot management system provide?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "One of the features of CIS bot is JavaScript detections to help CIS classify traffic as automated or human. It works via ingesting a small amount of JavaScript into client devices using Google’s Picasso fingerprinting technique and factoring those Picasso results into bot scores. This detection technique gathers general data about the machines reaching CIS and cannot identify specific individuals. Additional steps are taken to anonymize and phase out data for privacy."
 
   - turn_number: 3

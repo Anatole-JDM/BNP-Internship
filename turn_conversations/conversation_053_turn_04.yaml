@@ -4,20 +4,14 @@ title: "RAG Conversation #53 - No References"
 turns:
   - turn_number: 1
     user_query: "When applying for a mortgage, can it also cover outstanding debts?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The documents do not provide an answer to the question."
 
   - turn_number: 2
     user_query: "Is refinancing the same as getting a mortgage?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, they are not the same. A mortgage is a secured debt consisting of a promissory note and a security interest that provides the mortgage holder with a secured interest in the property. A mortgage is a loan backed by a property, as specific laws cover it due to its wide usage. Therefore, the bank is not an \"investor\" in your house; it is simply lending you money with the property as collateral. Thus, it does not receive any share of the profit. On the other hand, refinancing, or re-fi, occurs when a debtor takes out a new loan, usually with new bank, to pay off an old one. This can be done for various reasons, primarily because the new loan terms will result in a lower monthly payment."
 
   - turn_number: 3
     user_query: "What is the typical down payment amount for a mortgage?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Ideally, a 20% down payment is suggested when buying a house. The idea behind this is that if someone can't save 1/5 of the cost of a house, they might not be responsible enough to ensure loan repayment. Additionally, by putting down 20%, you can avoid paying costly private mortgage insurance (PMI)."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Do I need to buy homeowners insurance when I have a mortgage?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "You can obtain various types of insurance, each with commendable rules. If you require a specific kind of insurance, the insurance company can offer it to you. Homeowners insurance helps to protect against the potential devastation of a catastrophic event, which could otherwise wipe out a large portion of our net worth. For many individuals, a fully paid-off house represents their most significant asset, often more valuable than all other savings combined. It's a risk that most people would prefer to avoid."
 
   - turn_number: 5

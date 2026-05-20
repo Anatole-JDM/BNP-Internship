@@ -4,14 +4,10 @@ title: "RAG Conversation #7 - No References"
 turns:
   - turn_number: 1
     user_query: "What is the goal of NASA‚Äôs Europa Clipper mission?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The main science goal of NASA's Europa Clipper mission is to determine whether there are places below the surface of Jupiter's icy moon, Europa, that could support life. The mission's three main science objectives are to understand the nature of the ice shell and the ocean beneath it, to investigate its composition, and to characterize its geology. The mission’s detailed exploration of Europa will help scientists better understand the astrobiological potential for habitable worlds beyond our planet."
 
   - turn_number: 2
     user_query: "I Europa livable for humans?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Europa is not considered directly habitable for humans, but it is one of the most promising environments in our solar system due to the presence of a vast ocean beneath its icy crust. This ocean could potentially contain conditions suitable for life as we know it. The Europa Clipper mission is designed to investigate whether the moon could have conditions suitable for life, but it is not a life detection mission. Europa could have all the necessary \"ingredients\" for life as we know it: 
 - Water: Twice as much as Earth’s oceans
 - Organics: Essential chemical building blocks from a variety of sources
@@ -20,26 +16,18 @@ turns:
 
   - turn_number: 3
     user_query: "The surface of Jupiter Europa"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The surface of Jupiter's moon, Europa, is made up of ice. It is covered in a thick crust of frozen water that is estimated to be between 10 to 100 kilometers thick. The surface also shows signs of past and present geological activity, such as ridges, chaos terrain, and lenticulae. These features suggest that there is heat being generated from within Europa, which is thought to be due to tidal heating caused by Jupiter's gravitational pull. Additionally, the surface of Europa is subject to bombardment by radiation from Jupiter, which can cause the ice to darken and form a reddish-brown color in some areas. The surface of Jupiter's moon Europa features a widely varied landscape, including ridges, bands, small rounded domes and disrupted spaces that geologists call \"chaos terrain.\""
 
   - turn_number: 4
     user_query: "Who funds the Clipper mission?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Europa Clipper mission is sponsored by NASA. The total contract award amount for launch services is approximately $178 million."
 
   - turn_number: 5
     user_query: "Does NASA have an intern program?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, NASA does offer an internship program. Interns may support a variety of business and program management work, including human resources, administration and program analysis, accounting and budgeting, communication and public relations, procurement and contracts, information technology, security, and education."
 
   - turn_number: 6
     user_query: "Does Clipper have an antennae?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, the Europa Clipper spacecraft has an high-gain antenna. It is used for communication with Earth and sending data back to NASA. Workers were seen installing it on the spacecraft on August 14, 2023. Europa Clipper’s 10-foot-diameter (3-meter-diameter) high-gain antenna (HGA) and other smaller radio antennas will be used to receive commands from Earth through NASA’s Deep Space Network."
 
   - turn_number: 7
@@ -49,10 +37,10 @@ turns:
     rewrite:
       rewritten_query: "What speed does NASA's Europa Clipper spacecraft travel at?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The propulsion subsystem of the Europa Clipper will carry fuel and oxidizer to change its velocity by about 3,600 miles per hour (5,800 kilometers per hour). While this is a significant and crucial capability, it represents only about five percent of the velocity change needed for the mission. The majority of the velocity change required to adjust trajectories once in Jupiter's orbit will come from planned gravitational flybys of Jovian moons. The propulsion subsystem can be thought of as the \"gas tank\" of the Europa Clipper."
 
   - turn_number: 8

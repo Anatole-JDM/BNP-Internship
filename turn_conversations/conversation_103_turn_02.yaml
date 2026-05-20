@@ -4,8 +4,6 @@ title: "RAG Conversation #103 - No References"
 turns:
   - turn_number: 1
     user_query: "Did the Soviet orbit made three years earlier map a different region?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I have no specific information about the Soviet orbit you mentioned or the regions it mapped."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What is an Earth satellite orbit?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "An Earth satellite orbit refers to the path taken by a satellite as it revolves around the Earth. The catalog of Earth satellite orbits includes various types, such as the High Earth orbit (Molniya orbit), Medium Earth Orbit (MEO), and Low Earth Orbit (LEO), among others."
 
   - turn_number: 3

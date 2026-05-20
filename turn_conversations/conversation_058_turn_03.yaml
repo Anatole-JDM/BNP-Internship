@@ -4,14 +4,10 @@ title: "RAG Conversation #58 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I compare the metrics for different periods?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To compare the metrics for different periods, you can use the Time period control to select the desired time frames. You can choose from predefined periods such as a single day, a week, a month, or a quarter, or create custom time periods. The data points on the graph will adjust to an appropriate measurement period for the selected time frame. For example, when viewing a graph for a day, the data is presented in hourly values, but when viewing a graph for a week, the data is shown by day. Additionally, you can use the Refresh data option to ensure the data is up-to-date."
 
   - turn_number: 2
     user_query: "some example of alerts"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Sure, here's an example of detail alerts: - Name: Enter a name for the alert (e.g., 'High CPU Usage'). - Description: Add a description for more context (optional). - Group: Specify the alert group (or use the default group). - Severity: Set the level of criticality (e.g., 'High', 'Medium', 'Low', or 'Info'). - Metric: Configure the metric you want to monitor (e.g., 'CPU usage'). - Scope: Configure the scope (e.g., specific resources, resource groups, or cloud accounts). - Trigger: Define the condition and threshold value that must be evaluated. For instance, you can set an alert to trigger when CPU usage exceeds 80% for at least 5 minutes. - Notification Channel: Enable 1 or more notification channels to receive alert notifications. Remember to save your alert settings after configuring them. For more information, refer to the document on configuring alerts: [Configuring an alert](https://cloud.ibm.com/docs/monitoring?topic=monitoring-alert-config)."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Can you explain weak-understanding metrics and how to interpret them?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "A metric is a measure of something that can be quantified and tracked over time. In the context of cloud monitoring, metrics are data points that provide insights into the performance, availability, and usage of resources in your cloud environment.  In scorecards, a weak understanding is measured by counting the number of individual messages that are not classified by an intent and do not contain any known entities. Reviewing these unrecognized messages can help identify potential dialog problems and improve the system's understanding of user inputs."
 
   - turn_number: 4

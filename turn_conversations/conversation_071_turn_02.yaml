@@ -4,8 +4,6 @@ title: "RAG Conversation #71 - No References"
 turns:
   - turn_number: 1
     user_query: "How do I build my client application using dialogue nodes?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To build your client application using dialog nodes, you need to follow these steps: create a simple conversation with two intents; the dialog uses intents to identify the purpose of the user's input regardless of the precise wording used, and then responds in the way you specify. The client application sends a message containing user input and the user input triggers a dialog node."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What are worker nodes in a cloud or Kubernetes cluster?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Worker nodes carry the deployments and services that make up your app. Virtual machines that your cluster manages are instances that are called worker nodes. Worker nodes are provisioned in to an IBM Cloud account that is owned by IBM to enable monitoring of malicious activities and apply security updates."
 
   - turn_number: 3

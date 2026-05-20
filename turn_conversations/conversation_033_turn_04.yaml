@@ -4,20 +4,14 @@ title: "RAG Conversation #33 - No References"
 turns:
   - turn_number: 1
     user_query: "who takes photos of planes in the air"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In ground-to-air photography, photos of aircraft in flight are taken with the photographer on the ground. This type of photography is common at airshows or airports."
 
   - turn_number: 2
     user_query: "No, I meant photos in the air."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Air - to - air aviation photography is the art of photographing aircraft in the air, while using another aircraft as a photo platform."
 
   - turn_number: 3
     user_query: "So does that mean pilot of the second aircraft also acts as a photographer?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I am sorry I don't have any specific knowledge about who acts as a photographer in air-to-air aviation photography."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Is air-to-air aviation photography more difficult than ground-to-air photography?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Air-to-air military aviation photography,  requires additional skills , as the photo and target aircraft often fly at velocities of over Mach 1, while under moderate to high G . On the other hand, in ground-to-air settings a long focus photographic lens is necessary due to the greater distance between the photographer and the target aircraft. Thus is it hard to say if one is more difficult than other conclusively."
 
   - turn_number: 5

@@ -4,26 +4,18 @@ title: "RAG Conversation #5 - No References"
 turns:
   - turn_number: 1
     user_query: "Freelancer: Should I start a second bank account?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, as a freelancer, it is recommended to separate your business finances from your personal finances. You can use current account for daily spending and re-investing your business, and you can have another account for your savings. You should be careful so that not to mix personal and business expenses."
 
   - turn_number: 2
     user_query: "Is it free to open a second bank account?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Find a bank offering a free checking account, especially if you don't anticipate much activity. Other accounts, such as IRAs and discount brokerage, are also free. If you think it would be beneficial to open another account, feel free to do so."
 
   - turn_number: 3
     user_query: "if it is free, then I should make a second account for my business. how can I create?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To open a second bank account, you can go to a bank of your choice and let them know that you have an existing checking account and that you would like to open a second checking account. You will need USA address to open an account in USA. You also can open one with SSN and foreign passport. However, bank will require you to deposit $1500 only to get you a debit card, and you are required to maintain min balance of $1500 only."
 
   - turn_number: 4
     user_query: "what? you said it is free to open one!"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I apologize for any confusion. While Bank accounts are free, there may be requirements to maintain a minimum balance or set up direct deposit. The user would need to deposit and maintain a minimum balance of $1500 to open a second account."
 
   - turn_number: 5
@@ -33,10 +25,10 @@ turns:
     rewrite:
       rewritten_query: "As a freelancer, should I open my second bank account at a different bank than my current one?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "There are advantages and disadvantages to keeping all your accounts with the same bank versus having accounts at different banks. If you open a second account at a different bank, you may have more options for products like Mortgage or credit extensions since you are not limited to just one institution. If you use the same bank, that would make it harder to lose track of, and you could probably still get reports summarizing the balances across them. Additionally, occasionally there are also perks like the bank spontaneously offering you increased credit or even a whole line of credit because the bank has your data already."
 
   - turn_number: 6

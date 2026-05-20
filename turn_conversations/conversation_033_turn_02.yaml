@@ -4,8 +4,6 @@ title: "RAG Conversation #33 - No References"
 turns:
   - turn_number: 1
     user_query: "who takes photos of planes in the air"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In ground-to-air photography, photos of aircraft in flight are taken with the photographer on the ground. This type of photography is common at airshows or airports."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Who takes air-to-air photos of airplanes while both aircraft are in flight?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Air - to - air aviation photography is the art of photographing aircraft in the air, while using another aircraft as a photo platform."
 
   - turn_number: 3

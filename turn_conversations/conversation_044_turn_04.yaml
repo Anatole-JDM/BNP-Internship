@@ -4,20 +4,14 @@ title: "RAG Conversation #44 - No References"
 turns:
   - turn_number: 1
     user_query: "Is Red Hat Virtualization the same as Red Hat OpenShift virtualization?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The documents do not contain any information about Red Hat Virtualization to assist in deciding about potential differences."
 
   - turn_number: 2
     user_query: "What is Red Hat OpenShift?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Red Hat OpenShift is a Kubernetes container platform that offers a reliable environment for running enterprise workloads. It enhances the Kubernetes platform with built-in software to improve application lifecycle development, operations, and security. IBM sets up and assists in managing a cluster of worker nodes equipped with the OpenShift Container Platform container orchestration software. Red Hat OpenShift enables you to deploy your workloads consistently across hybrid cloud providers and environments."
 
   - turn_number: 3
     user_query: "What benefits does it offer?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Red Hat OpenShift allows you to efficiently manage and expand your Red Hat OpenShift workloads across on-premises and off-premises clouds, creating a portable, hybrid solution that functions consistently in multi-cloud scenarios. It enhances the Kubernetes platform with integrated software designed to improve application lifecycle management, operations, and security. You can seamlessly deploy your workloads across hybrid cloud providers and environments, as the platform efficiently orchestrates containerized workloads across a cluster of nodes. Leveraging Kubernetes as the core container orchestration engine, it effectively manages the Docker container images and their lifecycle."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "What does virtualization mean in the context of Red Hat OpenShift?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "IBM Cloud® Virtualization allows you to run multiple virtual machines in a dedicated environment. These virtual machines can integrate with other physical and virtual devices on the network and are managed through the IBM Cloud® console and API. This virtualization solution is available within IBM Cloud® Classic Infrastructure. The virtual machines can be integrated with other devices on the network and managed through both the console and API. Running virtual machines on IBM Cloud's proprietary architecture and automated platform provides high stability, making it suitable for enterprise-level and smaller-scale virtualization."
 
   - turn_number: 5

@@ -4,14 +4,10 @@ title: "RAG Conversation #64 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the scientific objectives of NASA's Deep Impact Extended Mission?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Deep Impact Extended Investigation (DIXI) aims to fly by comet 103P/Hartley 2 and return images and data. The Extrasolar Planet Observation and Characterization (EPOCh) investigation uses the Deep Impact imaging system to observe nearby bright stars with known large planets. This part of the mission characterizes the planets as they orbit behind and in front of the stars and searches for other planets in those systems."
 
   - turn_number: 2
     user_query: "what about the goal of Deep Impact mission?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The goal of the Deep Impact mission was to rendezvous with comet 9P/Tempel 1 and launch a projectile into the comet nucleus. Observations were then made of the ejecta, crater formation process, the resulting crater, and outgassing from the nucleus, particularly the newly exposed surface. The mission aimed to improve the knowledge of the physical characteristics of cometary nuclei and directly assess the interior of cometary nucleus, determine properties of the surface layers, study the relationship between the surface layers of a cometary nucleus and the possibly pristine materials of the interior, and improve our understanding of the evolution of cometary nuclei, particularly their approach to dormancy."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What were the spacecraft and key subsystems used in NASA's Deep Impact mission?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The Deep Impact spacecraft consists of a 370 kg cylindrical copper impactor attached to a 650 kg flyby bus. The spacecraft is a box-shaped honeycomb aluminum framework with a flat rectangular Whipple debris shield mounted on one side. There are two high- and medium-resolution instruments, each consisting of an imaging camera and an infrared spectrometer. The medium resolution camera has a field of view of 0.587 degrees and a resolution of 7 m/pixel at 700 km distance, while the high resolution camera has a field of view of 0.118 degrees and a resolution of 1.4 m/pixel at 700 km. These instruments are used to observe the ejected ice and dust from the comet nucleus."
 
   - turn_number: 4

@@ -4,32 +4,22 @@ title: "RAG Conversation #4 - No References"
 turns:
   - turn_number: 1
     user_query: "What's the difference between Market Cap and NAV?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The market cap is simply the share price multiplied by the number of shares. It doesn't indicate any inherent value; rather, it reflects what people believe the company is worth. NAV, or net asset value, is the total value of the company's assets divided by the number of shares. This is also referred to as the book value. In summary, market cap is calculated by multiplying the share price by the number of shares."
 
   - turn_number: 2
     user_query: "Which is more important?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Both market capitalization and net asset value (NAV) provide different perspectives on a company's value. Market cap is basically the amount of money that it would cost to buy all of the company's shares of public stock. On the other hand, NAV adds up all the assets and subtracts all the liabilities, essentially representing a bookkeeping exercise."
 
   - turn_number: 3
     user_query: "enterprise value"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Enterprise value is the estimated cost of acquiring a company. Typically, companies are acquired without any debt or cash, so any cash on the balance sheet at the time of the transaction is given to the original owners. The Enterprise Value represents the fundamental total value of the firm. It excludes cash because paying for cash with cash doesn't make sense. This also simplifies the analysis of transaction multiples, as some companies might have a significant amount of extra cash on their balance sheet, which could distort the multiples."
 
   - turn_number: 4
     user_query: "How is it calculated?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Calculating a company's enterprise value requires considering several factors. The equation for enterprise value is as follows: EV = Market Cap + Minority Interest + Preferred Stock + Debt—Cash. Enterprise value represents the total value of a company to all its shareholders, including creditors, preferred stockholders, and common stockholders. It's important to note that taking on debt can either increase or decrease the enterprise value, depending on the company's cash balance."
 
   - turn_number: 5
     user_query: "What is WACC?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Weighted Average Cost of Capital (WACC) is a formula that helps determine the cost for a company to raise $1 of capital, whether through issuing bonds or stocks. It is a standard tool used by finance professionals. Ideally, you would want a WACC similar to other successful companies of your size and industry. Adjusting your WACC involves issuing or repurchasing equity or debt."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "How reliable is using WACC as a formula for valuing a company?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Every situation is unique, but it's about evaluating the company's objectives. People often mention WACC, but in truth, it's less crucial than determining the amount of debt a company can handle, which is determined by leverage and solvency statistics. WACC is a pricing model and isn't related to risk modeling."
 
   - turn_number: 7

@@ -4,14 +4,10 @@ title: "RAG Conversation #62 - No References"
 turns:
   - turn_number: 1
     user_query: "Is it possible to build a dialog skill in a language other than English?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, it is possible to build a dialog skill in a language other than English. Languages supported include English, Brazilian Portuguese, Czech, Dutch, French, German, Italian, Spanish, Arabic, Chinese, Korean, and Japanese languages."
 
   - turn_number: 2
     user_query: "What are the other skills and what languages are supported for them?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "1. **Actions Skill**: Actions offer step-by-step flows for a conversation and can be built by anyone. 
 2. **Search Skill**: This skill is configured to search appropriate external data sources for answers to customer questions. 
 The language support for this skill is not explicitly mentioned, but since it's a part of the Watson Assistant service, it should support the same languages as the dialog skill."
@@ -23,10 +19,10 @@ The language support for this skill is not explicitly mentioned, but since it's 
     rewrite:
       rewritten_query: "How many skills can I create in Watson Assistant?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The number of skills you can create depends on your Watson Assistant plan type. Any sample dialog skills that are available for you to use do not count toward your limit unless you use them. A skill version does not count as a skill: - Enterprise: 100 - Premium (legacy): 100 - Plus: 50 - Standard (legacy): 20 - Lite, Trial: 5 Additionally, after 30 days of inactivity, an unused skill in a Lite plan service instance might be deleted to free up space."
 
   - turn_number: 4

@@ -4,26 +4,18 @@ title: "RAG Conversation #39 - No References"
 turns:
   - turn_number: 1
     user_query: "What does a small claims court do"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A small claims court is designed to provide a fair, quick, and inexpensive way for individuals to resolve disputes involving relatively small amounts of money. You must have asked the defendant to pay and the defendant has refused. You may not have a lawyer represent you. The judge will hear your case or the court will give parties an opportunity to meet with a mediator at the time of trial. The Small Claims Court has a monetary limit on the amount of money damages that can be claimed, usually up to $12,500 for \"a natural person\", with some exceptions."
 
   - turn_number: 2
     user_query: "My renter left and the damage to the apartment is $1000 more than the security deposit. Is this a claim for small claims court?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, if you are at least 18 years old, you can file a small claims court case for the additional $1000, as Small Claims cases are for damages of $10,000 or less.  You will need to bring proof to to your court date to show to the other side. Examples of proof (also called evidence) are: Repair receipts, Photos of damage, Emails."
 
   - turn_number: 3
     user_query: "Are the forms online?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, the forms to file a small claims case can be located on the court website under Online Forms by selecting the Judicial Council hyperlink."
 
   - turn_number: 4
     user_query: "How much is the filing fee?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In Ventura County the filing fee for a small claims case depends on the amount of your claim: * If your claim is for $1,500.00 or less, the filing fee is $30.00. * If your claim is more than $1,500.00 but less than or equal to $5,000.00, the filing fee is $50.00. * If your claim is more than $5,000.00 but less than or equal to $10,000.00, the filing fee is $75.00. * If you have filed more than 12 small claims in California within the past 12 months, the filing fee is $100.00. Service by certified mail must be done by the clerk's office. The fee is $15.00 per defendant. For Sacramento: Find out how much it will cost to file Small Claims forms online."
 
   - turn_number: 5
@@ -33,10 +25,10 @@ turns:
     rewrite:
       rewritten_query: "Is mediation an option for resolving a small claims dispute?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "You can mediate your case before or after a small claims case has been filed. If you mediate before filing a case and an agreement is reached at the mediation, there will be no need to file a small claims case. If a case has already been filed, the agreement reached at the mediation can be entered into the court record without having to appear in court. The Superior Court of California  provides free mediation services for litigants in small claims cases. The mediation is facilitated by trained volunteer mediators. The benefits of mediation include determining the outcome of the case by the parties themselves, saving important relationships without going to court, and having both views of the dispute heard. If the case is settled after the filing of the claim and before the hearing date, the plaintiff must file Judicial Council form “Request For Dismissal” (CIV-110) with the court."
 
   - turn_number: 6

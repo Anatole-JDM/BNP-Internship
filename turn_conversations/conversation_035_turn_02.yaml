@@ -4,8 +4,6 @@ title: "RAG Conversation #35 - No References"
 turns:
   - turn_number: 1
     user_query: "Where do guinea pigs sleep in the wild?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In the wild, guinea pigs, which are social animals, tend to  seek shelter in the burrows of other animals, as well as in crevices and tunnels formed by vegetation where they most likely sleep."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Where do domestic guinea pigs live, and what are their typical daily activity patterns?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Domestic guinea pigs thrive in groups of two or more and can learn to recognize and bond with other individual pigs. They have developed a different biological rhythm from their wild counterparts, with longer periods of activity followed by short periods of sleep throughout the day. Activity is scattered randomly throughout the day, with no regular circadian patterns, aside from an avoidance of intense light. Domestic guinea pigs generally live in cages, although some owners of large numbers of guinea pigs dedicate entire rooms to their pets."
 
   - turn_number: 3

@@ -4,55 +4,41 @@ title: "RAG Conversation #14 - No References"
 turns:
   - turn_number: 1
     user_query: "name the viceroy at the time of quit india movement"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "The Viceroy at the time of the Quit India Movement was Lord Linlithgow."
 
   - turn_number: 2
     user_query: "what did he do?"
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "He had a significant role in the suppression of the Quit India Movement, which brought India into World War II without consultation with Indian nationalists, which led to their anger. The British had the support of his council. He brought India into World War II without consultation with Indian nationalists, which led to their anger.  The Conservatives in England were forced to concede some of the demands made by the Indians and On 8 August , the Viceroy issued a statement that has come to be referred as the `` August Offer '' . However , the Congress rejected the offer."
 
   - turn_number: 3
     user_query: "opposition leader for the movement"
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "A movement was launched at the Bombay session of the All - India Congress Committee by Mahatma Gandhi on 8 August 1942.  Many students paid attention to Subhas Chandra Bose as a leader,  who was in exile. He organized the Indian Legion in Germany , reorganized the Indian National Army with Japanese assistance , and soliciting help from the Axis Powers , conducted a guerrilla war against the British authorities."
 
   - turn_number: 4
     user_query: "who is Patel?"
-    macro_informative: "1"
-    micro_informative: "0"
     agent_answer: "Vallabhbhai Patel, popularly known as Sardar Patel , was the first Deputy Prime Minister of India . He was an Indian barrister and statesman , a senior leader of the Indian National Congress and a founding father of the Republic of India who played a leading role in the country 's struggle for independence and guided its integration into a united , independent nation . He acted as de facto Supreme Commander - in - chief of Indian army during the political integration of India and the Indo - Pakistani War of 1947 . He is credited by historians with ensuring the success of the rebellion across India. He was arrested and was imprisoned with the entire Congress Working Committee from 1942 to 1945"
 
   - turn_number: 5
     user_query: "how do you pronounce Vallabhbhai?"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "Sorry, but I cannot find the pronunciation of Vallabhbhai."
 
   - turn_number: 6
     user_query: "That is too bad.  Although the movement was non-violent, some ended up in violence, right?"
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "Yes, that's correct. While the Quit India Movement was primarily a non-violent movement, there were instances where it turned violent. Some protesters resorted to bombings, arson, cutting electricity and communication lines, and other destructive activities. They attacked 550 post offices , 250 railway stations , damaged many rail lines , destroyed 70 police stations , and burned or damaged 85 other government buildings.  The British response was also firm and over 100,000 arrests were made,  with mass detentions, fines, public flogging, and killings of hundreds of civilians."
 
   - turn_number: 7
     user_query: "population back then"
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "I don't have the specific population figures for the time of the Quit India Movement, which took place from 1942 to 1945.  The Indian population rose to 300 million by 1920 and the population of undivided India in 1947 was approx 390 million .  The first post-colonial census , conducted in 1951 , counted 361.1 million people after partition in India. According to the 1951 Census of India , 2 % of India 's population were refugees ( 1.3 % from West Pakistan and 0.7 % from East Pakistan ) . Delhi received the largest number of refugees for a single city -- the population of Delhi grew rapidly in 1947 from under 1 million ( 917,939 ) to a little less than 2 million ( 1,744,072 ) during the period 1941 -- 1951"
 
   - turn_number: 8
     user_query: "when was the time Indian economy blossomed after independence?"
-    macro_informative: "1"
-    micro_informative: "1"
+    macro_informative: 1
+    micro_informative: 1
     rewrite:
       rewritten_query: "After Indian independence, when did India's economy begin to significantly grow?"
-      macro_informative: "1"
-      micro_informative: "1"
-      correctness:
-        changes: ""
-        groundedness: ""
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
+      correctness: []
     agent_answer: "The Indian economy started to blossom in the 1990s, following market-based economic reforms.  After 1991 economic liberalization, India achieved 6 - 7 % average GDP growth annually . In FY 2015 and 2018 India 's economy became the world 's fastest growing major economy , surpassing China ."

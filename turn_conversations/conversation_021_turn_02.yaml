@@ -4,8 +4,6 @@ title: "RAG Conversation #21 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I make $250,000.00 from trading/investing/business within 5 years?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have an exact answer for this, but there are a few options based on opinions of several individuals. First, you need to have money to invest before you can make a profit from it. Then there are several paths that one can consider. If you have $500K or more, you can put that in mutual funds and live modestly off the profits. If you don't have that $500K to start out with, you're either looking at a long time frame to accumulate it - say by working a job for 30+ years, and contributing the max to your 401k - or at playing the market trying to get it. The last is essentially gambling. Another option is to try Forex trading. You can get to 250K quicker than any other \"investment\" scheme. You'll just need to start with at least 500K. Other people have tried day trading and turned $300,000 into over $10 million over the course of a few years."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Can you explain the last strategy you mentioned for reaching $250,000 in five years?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Day trading is risky, according to several opinions. It is probably the most often tried and failed activity in the financial world. People think they can parlay $1,000 investment into $1,000,000 in a week with little or no knowledge on how to evaluate stocks and or companies. If it were that simple everyone would be making money hand over fist in the market.
 
 Other things to consider are: 1) the need for systems that can access very fast data streams so that you can make moves quickly as trends start to develop in the markets, 2) you may be paying commissions that may greatly reduce or even eliminate gains, 3) you need to spend all day monitoring investments, and 4) tax implications, since all day-trading gains are taxed at ordinary income tax rates (unless you are using a tax-sheltered account like an IRA)."

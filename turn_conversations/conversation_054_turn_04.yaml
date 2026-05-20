@@ -4,20 +4,14 @@ title: "RAG Conversation #54 - No References"
 turns:
   - turn_number: 1
     user_query: "where does the penobscot river start and end"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Penobscot River originates from four branches in various lakes in north-central Maine. It specifically begins where the West Branch meets the East Branch at Medway. The river flows into the Atlantic Ocean at Penobscot Bay, and historically served as an important trade route from the Atlantic coast to interior Maine."
 
   - turn_number: 2
     user_query: "The West branch."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The West Branch is home to many types of fish, such as landlocked salmon and brook trout. There are many deep pools within the river due to the many slate ledges, making the river ideal for fishing from shore, although there are still areas that are good for canoe fishing. The West Branch is a world-class landlocked salmon river, while the East Branch is known for its smallmouth bass fishery. In 2008, the Atlantic Salmon Commission opened the main stem of the river to catch and release fly fishing for Atlantic salmon."
 
   - turn_number: 3
     user_query: "Are there any other important river systems?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, Main has the Androscoggin River, a 178-mile river located in the U.S. states of Maine and New Hampshire in northern New England. It joins the Kennebec River at Merrymeeting Bay in Maine before flowing into the Gulf of Maine on the Atlantic Ocean. The river is a popular fishing destination, offering opportunities to catch brook, rainbow, brown trout, landlocked salmon, and smallmouth bass."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Is the Penobscot River considered one of the best rivers for fishing in the U.S.?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The \"best\" river for fishing depends on the specific type of fish being pursued and the angler's preferences. The Yellowstone River is considered one of the world's greatest trout streams. It is officially classed as a blue ribbon stream in Montana from the park to the confluence with the Boulder River east of Livingston and from the mouth of Rosebud Creek near Rosebud, Montana, to the North Dakota border.  The Snake River was once one of the most important rivers for the spawning of anadromous fish -- which are hatched in the headwaters of rivers, live in the ocean for most of their lives, and return to the river to spawn -- in the United States."
 
   - turn_number: 5

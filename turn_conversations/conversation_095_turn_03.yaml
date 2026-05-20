@@ -4,8 +4,6 @@ title: "RAG Conversation #95 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I update the cluster master?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To update the cluster master, you should follow these steps:
 1. Check if your cluster is unsupported by reviewing the State field in the output of the `ibmcloud ks cluster ls` command or in the IBM Cloud Kubernetes Service console.
 2. If your cluster is unsupported, you need to create a new cluster and deploy your apps to the new cluster. Then, you can delete the unsupported cluster.
@@ -16,8 +14,6 @@ Keep in mind that updating a cluster to a new version may impact deployed apps, 
 
   - turn_number: 2
     user_query: "CIS Kubernetes Benchmark"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The CIS Kubernetes Benchmark is a framework of specific steps to configure Kubernetes more securely and with standards that are commensurate to various industry regulations. It is published by the Center for Internet Security (CIS). When a new Kubernetes version is released, IBM engineers compare the default configuration of a cluster that runs that Kubernetes version against the benchmark and publishes the results in the IBM Cloud documentation. The benchmark recommendations are provided by the Center for Internet Security, and it covers recommendations for master components, etcd, control plane configurations, worker nodes, and policies such as for users, network, and pod security."
 
   - turn_number: 3
@@ -27,10 +23,10 @@ Keep in mind that updating a cluster to a new version may impact deployed apps, 
     rewrite:
       rewritten_query: "Are IBM Cloud Kubernetes Service clusters available only in the United States?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "No, you can deploy IBM Cloud® Kubernetes Service clusters worldwide, not just in the USA. Cloud Kubernetes Service is available in a subset of these locations, including worldwide multizone regions and single zone regions."
 
   - turn_number: 4

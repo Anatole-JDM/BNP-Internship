@@ -4,14 +4,10 @@ title: "RAG Conversation #105 - No References"
 turns:
   - turn_number: 1
     user_query: "what system does the sec require companies to use when preparing financial statements"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I have no specific information about the system required by the SEC for preparing financial statements."
 
   - turn_number: 2
     user_query: "Do US-based companies need to comply with SEC regulations?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, US-based companies are obligated to adhere to the regulations mandated by the US government, which are supervised by the Securities and Exchange Commission (SEC). The SEC's EDGAR system contains all the necessary reports. Both foreign and domestic companies must electronically submit registration statements, periodic reports, and other forms to the SEC's EDGAR database."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What SEC requirements must U.S.-based companies follow?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The SEC defines an accredited investor as a variety of entities, including financial institutions, employee benefit plans with over $5 million in assets, certain charitable organizations, and individuals meeting specific income or net worth thresholds. There are no citizenship or residency requirements to qualify.
 If a company has more than 500 shareholders, it must register with the SEC as an Investment Company. This registration brings about public reporting and additional regulatory compliance. This often leads to the practical necessity of going public with an IPO, even if it's not a legal requirement."
 

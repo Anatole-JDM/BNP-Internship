@@ -4,20 +4,14 @@ title: "RAG Conversation #27 - No References"
 turns:
   - turn_number: 1
     user_query: "How do I find specific conversations?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To find specific conversations, you can use the time period control to choose the period for which data is displayed. This control affects all data shown on the page, including the list of conversations. You can choose to view data for a single day, a week, a month, or a quarter. However, please note that the statistics can cover a longer time period than the period for which logs of conversations are retained. For each entity you can select from the Values column to see a list of the most common values that were identified for this entity during the time period."
 
   - turn_number: 2
     user_query: "Is a user ID necessary to find a specific conversation?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, statistics for Active users and Average conversations per user require a unique user\\_id parameter to be specified with the messages. This value is typically specified by all integrations because it is used for billing purposes. Therefore, having a user ID can help you find a specific conversation more effectively. A property defined in the v2 API that identifies a single conversation between a user and the assistant."
 
   - turn_number: 3
     user_query: "How to create a user ID?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The creation of a user ID depends on the specific system or platform you are using to integrate with the IBM Watson Assistant. Typically, the user ID is created and managed by the application that is using the assistant. It is up to the developer of that application to ensure that each user is assigned a unique user ID. You should refer to the documentation of your specific application or platform for instructions on how to create a user ID. Open the App ID instance page from the resource list Services and software section. 2. Go to Manage Authentication → Cloud Directory → Users, and click Create User. Enter the user details.
 
 Step 6: Create or modify users' project assignments
@@ -31,10 +25,10 @@ If the IDP administrator will assign users to projects, you can define project v
     rewrite:
       rewritten_query: "What makes a strong password for securing user accounts and conversations?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "A strong password typically includes a combination of uppercase and lowercase letters, numbers, and special characters. It should be at least 12 characters long and not contain common phrases or easily guessable information like your name or birthdate. It's also recommended to avoid using the same password for multiple accounts. Must be at least 8 characters. (^.{8,}$)
 Must have one number, one lowercase letter, and one capital letter. (^(?:(?=.d)(?=.[a-z])(?=.[A-Z]).)$)
 Must have only English letters and numbers. (^[A-Za-z0-9]$)

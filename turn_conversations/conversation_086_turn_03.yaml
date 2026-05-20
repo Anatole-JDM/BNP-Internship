@@ -4,14 +4,10 @@ title: "RAG Conversation #86 - No References"
 turns:
   - turn_number: 1
     user_query: "Name the sources of light pollution that affect skywatching."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Light pollution is caused by stray light from various human activities, including parking lots, sport complexes, street lights, and other sources. This scattered light makes it difficult to observe fainter stars and the Milky Way in the night sky. The larger and more developed a city is, the more light pollution it tends to produce, and the effect decreases the farther away you travel from a city."
 
   - turn_number: 2
     user_query: "if I get away from the city can I see jupiter's rings?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The light pollution effect decreases the farther away you travel from a city. Additionally, if you use binoculars or a small telescope you will be able to see details of things like the large moons of Jupiter."
 
   - turn_number: 3
@@ -21,8 +17,8 @@ turns:
     rewrite:
       rewritten_query: "Sorry, I meant Saturn's rings, not Jupiter's."
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, if you get away from the city and use a small telescope, you can see the rings of Saturn."

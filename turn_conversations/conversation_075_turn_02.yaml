@@ -4,8 +4,6 @@ title: "RAG Conversation #75 - No References"
 turns:
   - turn_number: 1
     user_query: "hi, can you help me"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Of course! I'm here to help. However, I might need more context or information about what you're looking for. Could you please provide more details about your question or request?"
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What is the difference between debit cards and credit cards?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "A debit card takes the funds directly from your  checking account when you make a purchase. There's no loan or credit involved, it's just your money being spent.  A credit card facilitates a short term loan. When you make a purchase with a credit card, you're essentially borrowing money from the bank, which you then pay back later."
 
   - turn_number: 3

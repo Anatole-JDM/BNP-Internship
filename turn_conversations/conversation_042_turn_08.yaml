@@ -4,8 +4,6 @@ title: "RAG Conversation #42 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I delete a key?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To delete a key using IBM Key Protect, you can follow these steps:
 1. Log in to the IBM Cloud console.
 2. Go to Menu > Resource List to view a list of your resources.
@@ -17,41 +15,29 @@ Also, keep in mind that deleting a key will make any data encrypted by the key i
 
   - turn_number: 2
     user_query: "what happen when the first user authorizes a key for deletion?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "When the first user authorizes a key for deletion, it remains in the Active state for seven days. During this time, all key operations are allowed on the key. To complete the deletion, another user with a Manager role can use the Key Protect GUI or API to delete the key at any point during those seven days. Once the key is deleted, it will be moved to the Destroyed state. However, because it is impossible to purge an active key, another user must delete the key before it can be purged.
 The key and its associated data will be inaccessible 90 days after being deleted. When you delete a key, it is \"soft deleted\", meaning that the key and its associated data will be restorable up to 30 days after deletion. You are able to still retrieve associated data such as key metadata, registrations, and policies for up to 90 days. After 90 days, the key becomes eligible to be automatically purged, or hard deleted, and its associated data will be permanently removed from the Key Protect service."
 
   - turn_number: 3
     user_query: "What could happen if no action is taken by the second user and the 7-day period experies?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If no action is taken by the second user and the 7-day period expires, the key will remain in the Active state and will not be deleted and you must restart the dual authorization process to delete the key . All key operations will still be allowed on the key. The key and its associated data will continue to be accessible and will not be moved to the Destroyed state. No further action can be taken to delete the key until the first user authorizes deletion again."
 
   - turn_number: 4
     user_query: "In case, the server expired, Could I remove the entry from the resource list?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In case  the server expire, you indeed can remove  the entry from the resource list and also  wait for the target time to trigger deletion for you, or even manually trigger the deletion from the resource reclamations.If an expired server is restored, only the entry within the resource list is restored, not the server itself.Restoring servers that belong to paid plans
 Servers that belong to a paid plans do not expire, and that's why they can be restored during the reclamation period. If a server is restored, the timeframe for which the server was within the resource reclamations is billed to your account. After the server is deleted, only metadata, which isn't considered to be personal data is kept for 6 months. Make sure you back up important data for future use because you can't recover data after the virtual server has been deleted."
 
   - turn_number: 5
     user_query: "Why could not I delete keys?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "One of the reason you could not delete a key it is when you are using the the Hyper Protect Crypto Services user interface. The service was not able to delete key \"<key_name>\". Because the key is enabled with the dual authorization policy and you set the key for deletion, a second approver needs to continue with the key deletion operation. Note that you will not be able to delete the key if it is protecting a registered IBM Cloud resource that's non-erasable due to a retention policy."
 
   - turn_number: 6
     user_query: "What could happen if I force a deletion on a key?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you force a deletion on a key won't succeed if the key is protecting a registered IBM Cloud resource that's non-erasable due to a retention policy, which is a Write Once Read Many (WORM) policy set on the your IBM Cloud resource. You can verify whether a key is associated with a non-erasable resource by checking the 'preventKeyDeletion\" field in the registration details for the key. Then, you must contact an account owner to remove the retention policy on each registered IBM Cloud resource that is associated with the key before you can delete the key. However, You must use the force option to delete a root key that is registered with another cloud resource.
 Registrations are associations between root keys and other cloud resources, such as Cloud Object Storage (COS) buckets or Cloud Databases deployments."
 
   - turn_number: 7
     user_query: "Cryptoshredding ."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Cryptoshredding Key Protect provides for a force delete of a key that is in use by IBM Cloud® services, including your Cloud Databases deployments. This action is called cryptoshredding.Note that Cryptoshredding is a destructive action. When the key is deleted, your data is unrecoverable even from a soft delete state."
 
   - turn_number: 8
@@ -61,10 +47,10 @@ Registrations are associations between root keys and other cloud resources, such
     rewrite:
       rewritten_query: "How do backups relate to key deletion and recovery planning?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "You always must a strategy for backing up your Block Storage for VPC volumes. Here are some considerations:Cloud Identity and Access Management (IAM) Evaluate your IAM access permissions to create and manage backups. Volumes Evaluate which volumes are most important to back up. You can create backups of boot and data volumes. A volume with numerous changes and a lengthy retention period requires more attention than a volume with moderate changes. Also, the cumulative size of all backups for a volume can't exceed 10 TB. Backup schedule Determine a backup schedule based on the type of volumes that you're backing up. For example, you might want to back up critical data that changes frequently more often than static data. Retention Determine a retention policy for backups in the backup plan. As subsequent backups are created, keep in mind that you incur costs for each backup that you retain.  You do your first backup  with a seed( a complete , a full backup)using  Delta Technology. With this technology, \"full backups\" are created at each session, but it saves enormous amounts of space on the vault and decreases the amount of time each subsequent backup takes to complete. Also . Administrators can set backups to follow an hourly, daily, weekly, or custom schedule that targets full systems, specific directories, or even individual files."
 
   - turn_number: 9

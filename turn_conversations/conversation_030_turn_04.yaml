@@ -4,20 +4,14 @@ title: "RAG Conversation #30 - No References"
 turns:
   - turn_number: 1
     user_query: "How many fatalities each year are caused by collisions between motorcycles and other vehicles in New York?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have specific information on the number of fatalities each year caused by collisions between motorcycles and other vehicles in New York."
 
   - turn_number: 2
     user_query: "What are the regulations for motorcycle driving?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "New York was the first state in the nation to introduce a universal motorcycle helmet law. This law, which took effect on January 1, 1967, requires anyone operating or riding a motorcycle to wear a Department of Transportation (DOT)-approved helmet.  It's important to be a responsible driver by ensuring your vehicle is in safe operating condition and that all of your safety equipment is properly adjusted. It is crucial to observe and obey all traffic laws, signs, and signals. Avoid being distracted by cell phones and other activities while driving. It's important to drive sober and never drive impaired by alcohol or drugs."
 
   - turn_number: 3
     user_query: "Tipsy"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "For more than three decades, New York has been a leader in reducing crashes, fatalities and injuries resulting from alcohol and drug impaired driving.  However, I do not have information specific to the 'tipsy' state of alcohol violation."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "What does OTS mean in the context of traffic and motorcycle safety?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The OTS plays a key role in making California roadways safe by collaborating with around 300 state and local agencies to effectively utilize federal grant program funds. The OTS also works closely with traffic safety partners to monitor successful programs, promote collaboration, develop new countermeasures, and explore emerging trends. In addition to funding various programs through these grants, the OTS team is dedicated to promoting traffic safety through public awareness campaigns aimed at educating the public about safe driving habits. The OTS proudly represents California as a leader in traffic safety efforts at the local, state, and national levels."
 
   - turn_number: 5

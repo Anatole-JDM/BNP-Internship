@@ -4,8 +4,6 @@ title: "RAG Conversation #31 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the categories of people for which it is especially important to get a flu vaccine?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have specific information about those categories of people that should get a flu vaccine. Nevertheless, vaccination is a cheap and effective way of preventing infections by viruses.  Their use has resulted in a dramatic decline in morbidity ( illness ) and mortality ( death ) associated with viral infections such as polio , measles , mumps and rubella . In fact, vaccines are available to prevent over thirteen viral infections of humans , and more are used to prevent viral infections of animals ."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What were the deadliest global pandemics before COVID-19 in 2020?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, a number of pandemics have affected the world before COVID. The 1918 flu pandemic , which lasted until 1919, was a category 5 influenza pandemic caused by an unusually severe and deadly influenza A virus . The victims were healthy young adults , in contrast to most influenza outbreaks , which predominantly affect juvenile , elderly , or otherwise - weakened patients . Older estimates say it killed 40 -- 50 million people , while more recent research suggests that it may have killed as many as 100 million people , or 5 % of the world 's population in 1918. The third bubonic plague pandemic, also known as the modern pandemic, spread the bubonic plague disease to port cities throughout the world in the second half of the 19th century and early 20th century via shipping routes . The bubonic plague affected people in Chinatown in San Francisco from 1900 - 1904, and the people of Oakland and east bay again from 1907 - 1909. In 1994, Zimbabwe suffered outbreaks of acute diseases like plague. In 2014, West African had the Ebola virus epidemic. In 2001 the Bubonic plague affected Zambia , India , Malawi , Algeria , China , Peru , and the Democratic Republic of the Congo .   2009 saw a pandemic involving the H1N1 influenza virus (swine flu). These are just some examples of other modern-day pandemics."
 
   - turn_number: 3

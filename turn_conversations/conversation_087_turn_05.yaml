@@ -4,26 +4,18 @@ title: "RAG Conversation #87 - No References"
 turns:
   - turn_number: 1
     user_query: "Can you summarize the differences between good bots and bad bots?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Bots are software programs that typically use a \"headless browser\" to make HTTP requests and other actions. A bot that performs a helpful service can be considered \"good.\" For example, customer service chatbots, search engine crawlers, and performance monitoring bots are generally good bots. Good bots look for and abide by the rules outlined in a website's robots.txt file and read them and avoid that webpage. On the other hand, bad bots range from malicious to simply annoying; for instance, breaking into user accounts to steal data or buying concert tickets online to assist scalpers. Malicious bots typically don't  check a website's robots.txt file before accessing the website, which generates the need for bot management."
 
   - turn_number: 2
     user_query: "What are the features in the CIS bot?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "One of the features of CIS bot is JavaScript detections to help CIS classify traffic as automated or human. It works via ingesting a small amount of JavaScript into client devices using Google’s Picasso fingerprinting technique and factoring those Picasso results into bot scores. This detection technique gathers general data about the machines reaching CIS and cannot identify specific individuals. Additional steps are taken to anonymize and phase out data for privacy."
 
   - turn_number: 3
     user_query: "How does CIS manage bots?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Cloudflare Bot Management, which is part of IBM Cloud® Internet Services (CIS), manages bots by collecting data from requests flowing through its network every day. With this data, powered by Cloudflare's machine learning and behavior analysis, CIS can identify likely bot activity and can provide you with information on how to allow or disallow specific bot traffic using Firewall Rules. The detection mechanisms used by CIS produce their own scores, which are then combined to form a single score."
 
   - turn_number: 4
     user_query: "How can I update machine leaning models?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You  can enable auto-updates on the machine learning models to receive newest models. To enable auto-updates:
 1. Log in to the CIS and select your account and domain.
 2. Go toSecurity > Bots.    
@@ -39,10 +31,10 @@ Enabling auto-updates for the machine learning model upgrades you to the latest 
     rewrite:
       rewritten_query: "Can I create my own machine learning model, and how would I do that?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "I am sorry I don't have any information on creating a custom machine learning model for bot detection."
 
   - turn_number: 6

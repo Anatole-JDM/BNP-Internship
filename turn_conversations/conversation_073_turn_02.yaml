@@ -4,8 +4,6 @@ title: "RAG Conversation #73 - No References"
 turns:
   - turn_number: 1
     user_query: "Can you summarize the types of services?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The types of services include commodity services such as fuel, vehicles, office supplies, and food; service services like elevator maintenance; and technology services including hardware, software, telecommunications, and IT services."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What is the process for contractors to participate in this procurement program?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "I do not have specific information on the process for becoming a contractor with the Office of General Services."
 
   - turn_number: 3

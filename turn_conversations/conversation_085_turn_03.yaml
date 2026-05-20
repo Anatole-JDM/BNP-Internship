@@ -4,14 +4,10 @@ title: "RAG Conversation #85 - No References"
 turns:
   - turn_number: 1
     user_query: "How old do I have to be to drive in CA?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To get a provisional instruction permit or the “learner’s permit\", you must be at least 15 ½ years old. However, I do not have information on the minimum age requirements for a driver's license in California."
 
   - turn_number: 2
     user_query: "Are you sure? I am pretty sure you can get a permit as soon as you are 15 years old."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Based on my information, the minimum age to get a provisional instruction permit in California is 15 ½ years."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "How do I apply for a California driver's license or learner's permit?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The steps differ depending on whether you want to apply for a California Instruction Permit or a California Motorcycle Instruction Permit. If you tell me which type of permit you are interested in, I can provide more information."
 
   - turn_number: 4

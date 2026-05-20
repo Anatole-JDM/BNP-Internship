@@ -4,14 +4,10 @@ title: "RAG Conversation #72 - No References"
 turns:
   - turn_number: 1
     user_query: "where does water go after it enters a storm drain"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The water that enters a storm drain like some of the heavier sediment and small objects may settle in a catchbasin , or sump , which lies immediately below the outlet , where water from the top of the catchbasin reservoir overflows into the sewer proper . Most drains have a single large exit at their point of discharge ( often covered by a grating ) into a canal , river , lake , reservoir , sea or ocean . Storm drains may discharge into man - made excavations known as recharge basins or retention ponds ."
 
   - turn_number: 2
     user_query: "What is a catchbasin and how they are designed?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A catchbasin is a component in a storm drain system that serves as a first-line pretreatment for other treatment practices. It functions similarly to the trap in household wastewater plumbing by capturing large sediments and street litter from urban runoff before it enters the storm drainage pipes. It is designed with a single large exit at its point of discharge, often covered by a grating, and lies immediately below the outlet of the storm drain. Water from the top of the catchbasin reservoir overflows into the sewer proper, and most catchbasins are connected to a piping system that leads to a canal, river, lake, reservoir, sea, or ocean.  Unlike the plumbing trap , the catchbasin does not necessarily prevent sewer gases such as hydrogen sulfide and methane from escaping. Its performance at removing sediment and other pollutants depends on the design of the catchbasin ( for example , the size of the sump ) , and on routine maintenance to retain the storage available in the sump to capture sediment . Some  catch basins are also commonly designed with a sump area below the outlet pipe level which is a reservoir for water and debris to help prevent the pipe from clogging"
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Do catch basins actually capture litter and debris from street runoff?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "As I mentioned before the are commonly designed to capture large sediments and street litter from urban runoff before it enters the storm drainage pipes. However its  functionality is questionable , as these catch basins are most commonly not cleaned annually as is needed to make them perform as designed . The trapping of debris serves no purpose because once filled they operate as if no basins were present , but continue to allow a shallow area of water retention for the breeding of mosquito since it is cool , dark , and retains stagnant water for long periods of time . Combined with standard grates which have holes large enough for mosquitoes to enter and leave the basin , this is a major problem in mosquito control .  . Moreover , even if cleaned and maintained , the water reservoir remains filled , accommodating the breeding of mosquitoes ."
 
   - turn_number: 4

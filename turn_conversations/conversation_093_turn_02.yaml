@@ -4,8 +4,6 @@ title: "RAG Conversation #93 - No References"
 turns:
   - turn_number: 1
     user_query: "How do I file a complaint with the state?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To file a complaint with the New York State Attorney General, you can visit their official website and select the category that best fits your purpose. For consumer issues, you can choose from categories like goods or services purchase, credit cards, credit reports, and personal finance, social media, personal data and information privacy, vehicle lease or purchase, and lemon law. If you cannot complete the form online or need additional assistance, you can call their OAG Help Line at 1-800-771-7755. Please note that patterns of complaints often help in allocating law enforcement resources, and filing a false complaint is punishable as a Class A Misdemeanor."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "How can I file a complaint if the issue involves another U.S. state?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The information I have does not provide an answer for other states except California, where you can file a complaint online. The whistleblower hotline is 1-800-649-7570, and the Department of Managed Health Care Help Center is 1-888-466-2219."
 
   - turn_number: 3

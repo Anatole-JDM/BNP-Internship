@@ -4,14 +4,10 @@ title: "RAG Conversation #3 - No References"
 turns:
   - turn_number: 1
     user_query: "What is ground water contamination?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Groundwater contamination refers to the presence of harmful substances, such as household cleaners, flea powders, garden pesticides, paints, varnishes, motor oil, and antifreeze. It occurs when these products are disposed of improperly and seep into the ground.  By disposing of these harmful products improperly, we are contributing to groundwater contamination."
 
   - turn_number: 2
     user_query: "Can it be clean up?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, contaminated groundwater can be cleaned up, but it can be a time-consuming and expensive process. Communities whose drinking water source has become contaminated have had to spend millions of dollars to remove contaminants from the water before it can be piped to homes and businesses. The cleanup is effective, but it can significantly affect the cost of providing the water to customers. It is far better to prevent contamination in the first place."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What does groundwater contamination mean?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Contrary to popular belief, groundwater is not found in underground rivers or lakes. Instead, water fills the cracks and pore spaces in rocks and sediments beneath the Earth's surface, similar to how water saturates a sponge or towel. Only 3.5 percent of the water on Earth is fresh water suitable for drinking, and most of that, 68 percent, is trapped in ice and glaciers. One-third of the freshwater is found in the ground, known as groundwater."
 
   - turn_number: 4

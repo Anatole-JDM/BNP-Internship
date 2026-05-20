@@ -4,14 +4,10 @@ title: "RAG Conversation #39 - No References"
 turns:
   - turn_number: 1
     user_query: "What does a small claims court do"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A small claims court is designed to provide a fair, quick, and inexpensive way for individuals to resolve disputes involving relatively small amounts of money. You must have asked the defendant to pay and the defendant has refused. You may not have a lawyer represent you. The judge will hear your case or the court will give parties an opportunity to meet with a mediator at the time of trial. The Small Claims Court has a monetary limit on the amount of money damages that can be claimed, usually up to $12,500 for \"a natural person\", with some exceptions."
 
   - turn_number: 2
     user_query: "My renter left and the damage to the apartment is $1000 more than the security deposit. Is this a claim for small claims court?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, if you are at least 18 years old, you can file a small claims court case for the additional $1000, as Small Claims cases are for damages of $10,000 or less.  You will need to bring proof to to your court date to show to the other side. Examples of proof (also called evidence) are: Repair receipts, Photos of damage, Emails."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Are small claims court forms available online?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, the forms to file a small claims case can be located on the court website under Online Forms by selecting the Judicial Council hyperlink."
 
   - turn_number: 4

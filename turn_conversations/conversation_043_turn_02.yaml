@@ -4,8 +4,6 @@ title: "RAG Conversation #43 - No References"
 turns:
   - turn_number: 1
     user_query: "If I have a lot of debt and the housing market is rising, should I rent and slowly pay off my debt or buy and roll the debt into a mortgage?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you have a significant amount of debt and the housing market is rising, delaying your house purchase another year you could well end up forking out extra money on the mortgage due to the rise in house prices. However, in order to roll debt into a home purchase, you need to have a sufficient down payment. However, if you have a lot of debt, it's unlikely that you have the necessary funds for a substantial down payment. Therefore, renting and paying off your debt first might be the better option."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What are the fastest realistic ways to pay off debt?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Here are some strategies to help you get rid of your debt quickly: 1. Stop using your credit cards: Destroy them or lock them away to prevent further spending. 2. Pay off higher interest debts first: This will help you save money on interest charges over time. 3. Consider debt consolidation: If you can obtain a lower interest rate loan, it might be worth considering. However, be cautious about extending the term of the loan, as this could result in paying more interest in the long run. 4. Reduce your expenses: Make coffee and lunches at home, cancel unnecessary services, and cut back on discretionary spending. 5. Increase your income: Consider picking up a part-time job or freelancing to earn extra money to put towards your debt."
 
   - turn_number: 3

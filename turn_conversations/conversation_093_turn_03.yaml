@@ -4,14 +4,10 @@ title: "RAG Conversation #93 - No References"
 turns:
   - turn_number: 1
     user_query: "How do I file a complaint with the state?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To file a complaint with the New York State Attorney General, you can visit their official website and select the category that best fits your purpose. For consumer issues, you can choose from categories like goods or services purchase, credit cards, credit reports, and personal finance, social media, personal data and information privacy, vehicle lease or purchase, and lemon law. If you cannot complete the form online or need additional assistance, you can call their OAG Help Line at 1-800-771-7755. Please note that patterns of complaints often help in allocating law enforcement resources, and filing a false complaint is punishable as a Class A Misdemeanor."
 
   - turn_number: 2
     user_query: "what if I want to file a complaint with other states"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The information I have does not provide an answer for other states except California, where you can file a complaint online. The whistleblower hotline is 1-800-649-7570, and the Department of Managed Health Care Help Center is 1-888-466-2219."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What are the office hours for the New York and California Attorney General offices?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The New York State Attorney General's Offices are open from 8:30 a.m. to 5:00 p.m., Monday through Friday. In contrast, the California Department of Consumer Affairs' Consumer Service Representatives are available to answer consumer, licensee, and applicant questions in over 200 different languages by phone from 8:00 a.m. to 5:00 p.m., Monday through Friday, except on the first and third Wednesday of each month, when they open at 8:30 a.m., and on state-observed holidays."
 
   - turn_number: 4

@@ -4,19 +4,19 @@ title: "RAG Conversation #13 - No References"
 turns:
   - turn_number: 1
     user_query: "what makes the different shapes of the moon"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "The different shapes of the Moon, also known as lunar phases, are determined by the amount of sunlight that is illuminating the portion of the Moon visible from Earth. This changes as the Moon orbits the Earth and the relative positions of the Moon, Earth, and Sun shift. When the Sun, Earth, and Moon are aligned, with the Sun and Moon on opposite sides of the Earth, we see a full moon. When the Moon is positioned between the Earth and the Sun, we see a new moon. The crescent and gibbous shapes occur during the intervals between these principal phases, when only a portion of the Moon's surface is illuminated. The specific shape at any given time depends on the Moon's position in its orbit. When a sphere is illuminated on one hemisphere and viewed from a different angle , the portion of the illuminated area that is visible will have a two - dimensional shape defined by the intersection of an ellipse and circle ( where the major axis of the ellipse coincides with a diameter of the circle ) . If the half - ellipse is convex with respect to the half - circle , then the shape will be gibbous ( bulging outwards ) whereas if the half - ellipse is concave with respect to the half - circle , then the shape will be a crescent ."
 
   - turn_number: 2
     user_query: "What is the distance between the moon and earth?"
-    macro_informative: "1"
-    micro_informative: "1"
+    macro_informative: 1
+    micro_informative: 1
     rewrite:
       rewritten_query: "What is the average distance between Earth and the Moon?"
-      macro_informative: "1"
-      micro_informative: "1"
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
       correctness:
-        changes: "[distance > average distance]"
-        groundedness: "0"
+        - change: "distance ||| average distance"
+          score: 0
     agent_answer: "The average distance from the Moon to the Earth is about 238,856 miles or 384,402 kilometers. But this distance varies throughout the Moon's orbit, ranging from about 221,500 miles or 385,000 kilometers at its closest, to about 252,700 miles or 406,700 kilometers at its farthest resulting in a differential range of 50,200 kilometers or 31,200 miles. Lunar distance (astronomy) Astronomers O'Keefe and Anderson calculated the lunar distance by observing 4 occultations from 9 locations in 1952 . They calculated a mean distance of 7008384407600000000 ♠ 384 407. 6 ± 4.7 km , however the value was refined by in 1962 by Irene Fischer , who incorporated updated geodetic data to produce a value of 7008384403700000000 ♠ 384 403. 7 ± 2 km ."

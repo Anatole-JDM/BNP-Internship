@@ -4,46 +4,32 @@ title: "RAG Conversation #21 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I make $250,000.00 from trading/investing/business within 5 years?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have an exact answer for this, but there are a few options based on opinions of several individuals. First, you need to have money to invest before you can make a profit from it. Then there are several paths that one can consider. If you have $500K or more, you can put that in mutual funds and live modestly off the profits. If you don't have that $500K to start out with, you're either looking at a long time frame to accumulate it - say by working a job for 30+ years, and contributing the max to your 401k - or at playing the market trying to get it. The last is essentially gambling. Another option is to try Forex trading. You can get to 250K quicker than any other \"investment\" scheme. You'll just need to start with at least 500K. Other people have tried day trading and turned $300,000 into over $10 million over the course of a few years."
 
   - turn_number: 2
     user_query: "I would like to know more about the last option"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Day trading is risky, according to several opinions. It is probably the most often tried and failed activity in the financial world. People think they can parlay $1,000 investment into $1,000,000 in a week with little or no knowledge on how to evaluate stocks and or companies. If it were that simple everyone would be making money hand over fist in the market.
 
 Other things to consider are: 1) the need for systems that can access very fast data streams so that you can make moves quickly as trends start to develop in the markets, 2) you may be paying commissions that may greatly reduce or even eliminate gains, 3) you need to spend all day monitoring investments, and 4) tax implications, since all day-trading gains are taxed at ordinary income tax rates (unless you are using a tax-sheltered account like an IRA)."
 
   - turn_number: 3
     user_query: "Aha, that might be it ... Tell me more about that IRA thing."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "IRAs are tax-sheltered accounts that allow you to invest in the stock market. They are basically just normal investment accounts, except you don't owe taxes until you withdraw from them (and with Roth you don't even owe taxes at withdrawal, although you pay taxes on the funds you deposit)."
 
   - turn_number: 4
     user_query: "ok. I'll do day trading in an IRA account. Can I start with a 50K deposit?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, you cannot deposit 50K into an IRA account. The main restrictions with IRA accounts involve contributions. There is a limit of $5,500 for contributions in 2016 ($6,500 if you're over 50) as long as your adjusted gross income is below a certain level. Full details are available in IRS publication 590."
 
   - turn_number: 5
     user_query: "omg."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I am sorry if that was not what you were looking for."
 
   - turn_number: 6
     user_query: "Is it still advisable to do day trading in an IRA account, with just $5500?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, you cannot do day trading with just $5,500. Based on the available information, if you're in the US, you're required to follow the SEC rules on pattern day trading. FINRA rules define a “pattern day trader” as any customer who executes four or more “day trades” within five business days, provided that the number of day trades represents more than six percent of the customer’s total trades in the margin account for that same five business day period. If you trip this rule, you'll be required to maintain $25,000 in a margin brokerage account. If you can't maintain the balance, your account will be locked."
 
   - turn_number: 7
     user_query: "I am not sure those rules apply to IRAs ..."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You may be right. In the stock market, the pattern day trader rule applies to retail margin accounts. I do not have specific information on whether an IRA account can be a margin account."
 
   - turn_number: 8
@@ -53,8 +39,8 @@ Other things to consider are: 1) the need for systems that can access very fast 
     rewrite:
       rewritten_query: "Thanks, that's all for now."
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Glad to be of assistance."

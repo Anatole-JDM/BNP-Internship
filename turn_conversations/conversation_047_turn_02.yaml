@@ -4,8 +4,6 @@ title: "RAG Conversation #47 - No References"
 turns:
   - turn_number: 1
     user_query: "robert louis stevenson a child's garden of verses"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Robert Louis Stevenson is the author of A Child's Garden of Verses, a collection of poetry for children about darkness and solitude. The collection was first published in 1885 under the title Penny Whistles and contains about 65 poems, including classics such as \"Foreign Children,\" \"The Lamplighter,\" \"The Land of Counterpane,\" \"Bed in Summer,\" \"My Shadow,\" and \"The Swing.\""
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Is Robert Louis Stevenson's A Child's Garden of Verses available only in English, or also in translations?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "No, A Child's Garden of Verses is not only in English. It has been translated into Latin by Terrot Reaveley Glover in 1922 under the title Carmina non prius audita de ludis et hortis virginibus puerisque."
 
   - turn_number: 3

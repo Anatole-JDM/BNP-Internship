@@ -4,32 +4,22 @@ title: "RAG Conversation #97 - No References"
 turns:
   - turn_number: 1
     user_query: "Name two spacecraft that were sent to explore Jupiter."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Previous missions were sent to Jupiter like Pioneer 10 and 11 and also Voyager 1 and 2 in the 1970s. But  the two spacecrafts most famous to reach Jupiter were Juno and Galileo. Juno began its circuitous five-year journey to Jupiter on August 5  of 2011 and it was launched from Cape Canaveral Air Force Station Florida’s Atlantic coast . Juno mission completed its 50th close pass by Jupiter since its arrived at the big planet in 2016.  Galileo mission to Jupiter had been authorized in October 1977 for a 1982 space shuttle launch, but there were some delays to the shuttle program, confusion over the development of an appropriate upper stage to send the probe on its way out of Earth orbit, and finally the loss of space shuttle Challenger and its crew in 1986, postponed Galileo's launch until 1989. Galileo deployment from space shuttle Atlantis, October 1989."
 
   - turn_number: 2
     user_query: "Could you tell me about the most important discoveries that Juno did in its way to Jupiter and also what it found in that huge planet?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "NASA's Juno mission has made several significant discoveries since was launched that have changed the view of Jupiter’s atmosphere and interior, revealing an atmospheric weather layer that extends far beyond its water clouds and a deep interior with a dilute heavy element core.  Furthermore, the Juno close passes, on Dec. 30, 2023, and Feb. 3, 2024, allowed scientists to compare data and images from these visits with previous observations that Juno and other craft made of this volatile world, slightly larger than Earth's Moon. Io is caught in a tug-of-war between Jupiter's powerful gravity and the smaller pull from two neighboring moons, churning its insides and creating eruptions and lakes of lava that cover its surface.  Juno mission discoveries were so important  that is preparing the way for future visitors, such as ESA’s Juice mission (JUpiter ICy moons Explorer), launched in April 2023 and scheduled to reach Jupiter in July 2031."
 
   - turn_number: 3
     user_query: "What about the major discoveries made by the spacecraft Galileo?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Galileo spacecraft, which orbited Jupiter from 1995 to 2003, made several significant discoveries about the planet. One of its most notable findings was the discovery of evidence of an ocean under Europa's planetary ice sheet and possibly under two other moons as well; determined that the moon Ganymede has a magnetic field; and spotted the first asteroid moon, Dactyl, orbiting main belt asteroid 243 Ida in the main asteroid belt between Mars and Jupiter. The Galileo mission also becomes notable for discoveries during its journey to the gas giant. It is the first spacecraft to visit an asteroid, called Gaspra. Galileo also provided the only close observations of a comet colliding with a planet when it witnesses fragments of comet Shoemaker-Levy 9 impact Jupiter."
 
   - turn_number: 4
     user_query: "were Juno and Galileo able to find out if Jupiter has cyclones?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. From JunoCam some images of individual cyclones near the north pole were are able to see. The complete picture surprised researchers, showing a pinwheel of complementary storms twirling around a central vortex. Others had more whimsical takes on the JunoCam views, turning Jupiter’s swirls into artwork that echoes Monet or VanGogh, or adding dreamlike figures or stark geometrics.  That cyclone at the north pole was surrounded by eight more, as if they’re bowing in tribute. These cyclones stretched more than 2,500 miles across (4,000 kilometers). And though their spiral arms smack together as they spin, the storms did not merge. During a close flyby of the south pole, Juno spotted a new, giant cyclone in the region. A pattern of six cyclones, with one in the center, had seemed locked in place at the south pole, but a new maelstrom had somehow muscled in as Jupiter had an intense magnetic ."
 
   - turn_number: 5
     user_query: "By the way, how are the cyclones on earth formed?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Cyclones also known as hurricanes or typhoons depending on their location are the most violent storms on our planet. They are formed due to several conditions. They typically begin over warm ocean waters, near the equator. The warm, moist air over the ocean rises upward, creating an area of low pressure below. Surrounding air then rushes in to fill this low-pressure area, causing the air to spin and form a cyclonic storm. As the air continues to rise and cool, it forms thunderstorms and heavy rain. The storm system can grow in size and strength if conditions remain favorable, such as warm sea surface temperatures and weak vertical wind shear. The specific process of cyclone formation on Jupiter may differ from the one on Earth due to the planet's unique atmospheric conditions and lack of a solid surface."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "Could cyclones on Jupiter ever affect Earth or cause damage here?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "No, the cyclones on Jupiter cannot affect the Earth or cause damage to cities and people. This is because Jupiter is very far away from Earth, with an average distance of about 5.3 astronomical units (AU) or 778 million kilometers."
 
   - turn_number: 7

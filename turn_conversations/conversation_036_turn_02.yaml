@@ -4,8 +4,6 @@ title: "RAG Conversation #36 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I get a restraining order without notifying the other person of my address?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Unfortunately, I do not have information on how to keep your address confidential from the person you are seeking the restraining order against."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "How do I file a restraining order while keeping my address confidential?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The procedure to file a restraining order depends on the type of restraining order and the court where you want to file it in."
 
   - turn_number: 3

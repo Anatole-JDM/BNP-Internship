@@ -4,38 +4,26 @@ title: "RAG Conversation #49 - No References"
 turns:
   - turn_number: 1
     user_query: "how does the mls all star game work"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The MLS All-Star Game is an annual soccer game featuring select players from Major League Soccer. It originally started with a traditional East vs. West format, but later evolved into inviting a club from abroad to play against a league all-star team. Players are awarded roster spots through a combination of fan voting and selections by the appointed manager and league commissioner. The game takes place during the middle of the MLS season, which coincides with the pre-seasons of most European leagues. The MLS All-Stars have an 8-4 record in the competition as of 2015."
 
   - turn_number: 2
     user_query: "What is it called outside of the USA?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In the United States, it is known as soccer. Some other countries also call it soccer, but in most parts of the world, it is called football. Sports commonly called football in certain places include association football ( known as soccer in some countries ) ; gridiron football ( specifically American football or Canadian football ) ; Australian rules football ; rugby football ( either rugby league or rugby union ) ; and Gaelic football ."
 
   - turn_number: 3
     user_query: "Can women play it?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, women's association football, also commonly known as women's football or women's soccer, is the most prominent team sport for women worldwide. In the 1970s, Italy became the first country to have professional women's football players on a part-time basis. An Italian women's football federation, known as Federazione Femminile Italiana Gioco Calcio or FFIGC, ran a \"World Championships\" tournament in Rome supported by the Martini and Rossi wine manufacturers, entirely without the involvement of FIFA or any of the common national associations."
 
   - turn_number: 4
     user_query: "Which is the most popular?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The World Cup is the world's most prestigious association football tournament and has the highest television audience of any sport, making it the most popular event globally. In terms of viewership, it exceeds even the Olympic Games. On the other hand, American football is the most popular sport in the United States, with 1.1 million high school football players and nearly 70,000 college football players."
 
   - turn_number: 5
     user_query: "Where does it originate from?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The origins of modern football codes can be traced back to Western Europe, particularly England. In 1409, King Henry IV of England made one of the earliest documented uses of the English word \"football\" when he issued a proclamation forbidding the levying of money for \"foteball\". FIFA acknowledges England as the birthplace of club football. The Football Association, established in 1863 by Ebenezer Cobb Morley, is recognized as the oldest football association, with the first set of football rules being drafted at that time."
 
   - turn_number: 6
     user_query: "Is American football derived from it?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, American football evolved in the United States from the sports of association football (known in the U.S. as soccer) and rugby football."
 
   - turn_number: 7
@@ -45,10 +33,10 @@ turns:
     rewrite:
       rewritten_query: "In which countries is American football most popular?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The National Football League (NFL) has the highest average attendance of any sports league in the world, and the Super Bowl is watched by millions globally. American football is played in European countries such as Switzerland, which has American football clubs in every major city, and Germany, where the sport has around 45,000 registered amateur players. In Europe, almost all nations have their leagues, highlighting its importance, such as Austria (Austrian Football League), Germany (German Football League), Great Britain (BAFA National Leagues), France (Ligue Élite de Football Américain), and Italy (Italian Football League). However, American football has not yet reached the same level of popularity it has in, for example, North America. Football organizers are targeting Europe to expand the game."
 
   - turn_number: 8

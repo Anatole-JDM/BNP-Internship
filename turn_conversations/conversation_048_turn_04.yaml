@@ -4,20 +4,14 @@ title: "RAG Conversation #48 - No References"
 turns:
   - turn_number: 1
     user_query: "How do I know I am on a secured government website before sharing sensitive information?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To ensure that you are on a secured government website before sharing sensitive information, look for a lock icon () or the \"https://\" prefix in the website's URL. These indicators signify that the website is using a secure connection and is less vulnerable to external threats. Additionally, official government websites typically end in \".gov\", providing another layer of assurance. However, it's always important to double-check and remain vigilant to protect your sensitive information."
 
   - turn_number: 2
     user_query: "child privacy"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "For children's privacy, both the Caltech/JPL and CDC have specific policies in place. For a child under 13 years old, when information and instructions are provided by the specific Web page that collects information about the child, personal information about your child will be destroyed immediately upon completion of its intended purpose.  Further, the CDC requires a child's parent or guardian to provide consent before they collect, use, or share personal information from a child under age 13. They also delete immediately any information about a child that they might inadvertently collect. Their digital media channels are not intended to solicit information of any kind from children under age 13.  So, both organizations have policies in place to protect children's privacy and require parental consent for collecting, using, or sharing personal information from a child under age 13."
 
   - turn_number: 3
     user_query: "Raising protection to 18 yr old?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Children are not eligible to use services that require submission of personal information, and we require that minors (under the age of 18) do not submit any personal information.  State law, including the Information Practices Act of 1977, Government Code Section 11015.5., and the federal Privacy Act of 1974, protect it."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Do child privacy protections apply the same way across all U.S. states nationwide?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, the policy of requiring minors (under the age of 18) not to submit any personal information applies nationwide, in all states. The state will not provide personal information about children to third parties."
 
   - turn_number: 5

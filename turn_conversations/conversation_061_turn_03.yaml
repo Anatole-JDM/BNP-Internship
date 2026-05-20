@@ -4,14 +4,10 @@ title: "RAG Conversation #61 - No References"
 turns:
   - turn_number: 1
     user_query: "Can you get free tests if you have Medi-Cal?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, if you have Medi-Cal, you can receive free COVID-19 tests. You can visit the MyTurn.ca.gov to find more resources for testing."
 
   - turn_number: 2
     user_query: "how long will it take for me to get the testing result back?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Testing results vary widely, depending on where you get tested and what lab the test is sent to. Some places usually have test results in about 3 to 4 days. PCR tests can take up to 3 days to return results, while antigen tests typically provide results in 15-30 minutes. However, the document also notes that antigen tests may be less likely to detect the virus than PCR tests, especially when symptoms are not present. Sometimes testing results generally take two to 12 days, as it takes time to ship the samples and for labs to process the tests. However, some facilities with their own labs or nearby facilities may provide results in as little as 24 hours. It is recommended to consult with your healthcare provider for more specifics regarding the testing location you chose."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What should I do if my COVID-19 test result is positive?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "A positive COVID-19 test means the virus was detected and you have or recently had an infection. Seek health care right away for treatment if you have risk factors for severe illness. Treatment needs to be started within a few days of when your symptoms begin. A positive at-⁠home test result means that the test found the virus, and you very likely have COVID-⁠19.If you test positive, follow the latest CDC guidance for isolation. Treatments for COVID-19 are now widely available. If you have any signs of emergency, call 911 or get help right away."
 
   - turn_number: 4

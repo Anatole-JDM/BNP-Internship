@@ -4,14 +4,10 @@ title: "RAG Conversation #108 - No References"
 turns:
   - turn_number: 1
     user_query: "why did the us demand trade with japan"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The United States demanded a complete halt to trade with Japan because it wanted to bring the Japanese war effort to a stop, particularly their war in China. The US recognized Chiang Kai-Shek's Nationalist Government as the legitimate government of China. The United States sought to bring the Japanese war effort to a halt by imposing an embargo on all trade between the United States and Japan. This was a response to Japan's dependence on the US for 80% of its petroleum. The US aimed to create an economic and military crisis for Japan, hoping that this would force Japan to withdraw its troops from China and Indochina."
 
   - turn_number: 2
     user_query: "So, are you saying that the petroleum dependance eventually caused Japan to start WWII?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, Japan's petroleum dependence on the US was not the direct cause of World War II.  However, the US full embargo on trade created an economic and military crisis for Japan.   In the 1930s , the Great Depression wrecked Japan 's economy and gave radical elements within the Japanese military the chance to force the entire military into working towards the conquest of all of Asia.  Japan sought to remove the Western powers ' influence in China and replace it with Japanese domination, and eventually leading up to the Second World War ."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What was the 'Greater East Asia Co-Prosperity Sphere' that Japan promoted?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "It seems like you might be referring to the concept of \"Greater East Asia Co-Prosperity Sphere.\" This was a concept put forward by the Japanese government before and during World War II. It promoted the idea of a bloc of Asian nations led by the Empire of Japan, free from Western powers and to create a self-sufficient economic sphere.  It included Manchuria , Inner Mongolia , large parts of China , Malaysia , French Indochina , Dutch East Indies , The Philippines , Burma , a small part of India , and various Pacific Islands in the central Pacific .  This idea was used to justify Japanese expansionism and aggression in Asia during World War II."
 
   - turn_number: 4

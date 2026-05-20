@@ -4,32 +4,22 @@ title: "RAG Conversation #60 - No References"
 turns:
   - turn_number: 1
     user_query: "where does doctor strange get his powers from"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Doctor Strange's powers come from mystical entities such as Agamotto, Cyttorak, Ikonn, Oshtur, Raggadorr, and Watoomb, who lend their energies for spells. He also wields mystical artifacts including the Cloak of Levitation, the Eye of Agamotto, the Book of the Vishanti, and the Orb of Agamotto which give him additional powers."
 
   - turn_number: 2
     user_query: "did he always have powers? what was he before?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, Doctor Strange did not always have powers. He was a brilliant but egotistical neurosurgeon. He was in a car accident that ended his surgical career. He searched the globe for a way to repair his hands and encountered the Ancient One, eventually becoming one of her students."
 
   - turn_number: 3
     user_query: "how many films does he appear in"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have an exact count of films in which Doctor Strange appears, but here are some: Doctor Strange, Thor: Ragnarok, Avengers: Infinity War, and The Amazing Spider-Man. Doctor Strange, voiced by Liam O'Brien, appears in the 2016 animated film Hulk: Where Monsters Dwell and will appear again in the untitled sequel to Avengers: Infinity War, which will return in the fourth Avengers film in 2019."
 
   - turn_number: 4
     user_query: "wasn't he in captain america?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Doctor Strange was first referenced by name in the film Captain America: The Winter Soldier but he did not appear in the film."
 
   - turn_number: 5
     user_query: "I see thanks for explaining. Why was he referenced in the film?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I'm sorry, but I cannot find the reason he was referenced in the film."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "Does Doctor Strange have an Infinity Stone in the Marvel films?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, Doctor Strange possesses the Time Stone. The Time Stone is encased in the Eye of Agamotto, a mystical relic that Doctor Strange uses to manipulate time."
 
   - turn_number: 7

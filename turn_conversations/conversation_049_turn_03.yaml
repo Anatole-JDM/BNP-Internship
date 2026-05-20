@@ -4,14 +4,10 @@ title: "RAG Conversation #49 - No References"
 turns:
   - turn_number: 1
     user_query: "how does the mls all star game work"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The MLS All-Star Game is an annual soccer game featuring select players from Major League Soccer. It originally started with a traditional East vs. West format, but later evolved into inviting a club from abroad to play against a league all-star team. Players are awarded roster spots through a combination of fan voting and selections by the appointed manager and league commissioner. The game takes place during the middle of the MLS season, which coincides with the pre-seasons of most European leagues. The MLS All-Stars have an 8-4 record in the competition as of 2015."
 
   - turn_number: 2
     user_query: "What is it called outside of the USA?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In the United States, it is known as soccer. Some other countries also call it soccer, but in most parts of the world, it is called football. Sports commonly called football in certain places include association football ( known as soccer in some countries ) ; gridiron football ( specifically American football or Canadian football ) ; Australian rules football ; rugby football ( either rugby league or rugby union ) ; and Gaelic football ."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Can women play soccer professionally and in international competitions?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, women's association football, also commonly known as women's football or women's soccer, is the most prominent team sport for women worldwide. In the 1970s, Italy became the first country to have professional women's football players on a part-time basis. An Italian women's football federation, known as Federazione Femminile Italiana Gioco Calcio or FFIGC, ran a \"World Championships\" tournament in Rome supported by the Martini and Rossi wine manufacturers, entirely without the involvement of FIFA or any of the common national associations."
 
   - turn_number: 4

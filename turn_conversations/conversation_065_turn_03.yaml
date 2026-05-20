@@ -4,14 +4,10 @@ title: "RAG Conversation #65 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the different types of dialog nodes?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "There are various types of dialog nodes. These include the Welcome node, which greets users when interacting with the assistant, and the Anything else node, which provides responses for unrecognized user input. You can also create custom nodes by adding a condition that triggers the assistant to process the node. It is possible to create an intent that can be recognized when a customer asks to speak to someone. After defining the intent, you can add a root-level dialog node that conditions the intent."
 
   - turn_number: 2
     user_query: "Whatar are intents?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Intents are the purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent in a customer's input, the Watson Assistant service can choose the appropriate dialog flow to respond. Intents added from a content catalog are distinguishable from other intents by their names. Each intent name is prefixed with the content catalog name."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "How do you create intents in a dialog skill?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "To create a dialogue, follow these steps:
 1. Click the Dialog tab and then click Create dialog. When you open the dialog editor for the first time, the Welcome and Anything else nodes will be created for you.
 2. To add more nodes, click the \"More\" icon on the Welcome node and select Add node below.

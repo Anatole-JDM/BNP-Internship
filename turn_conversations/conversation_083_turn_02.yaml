@@ -4,8 +4,6 @@ title: "RAG Conversation #83 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I obtain a replacement for my lost New York boating safety certificate?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You can order a replacement for your lost New York boating safety certificate online at https://www.ilostmycard.com/. However, if you lost temporary certificates, the temporary certificates cannot be replaced. Additionally, please note that NYS can only issue replacement certificates for the NY Safe Boating Course."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Do I need a boating safety certificate to legally operate a boat in New York?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "In New York, anyone operating a Personal Watercraft (JetSki™, Wave Runner™, etc.) must have a boating safety certificate and be at least 14 years of age or older. Starting in 2024, if you are operating any other type of motorized boat, you will need a safety certificate if you were born on or after January 1, 1978. Starting in 2025, all operators of motorized vessels, regardless of age, will be required to have a safety certificate. However, if you are renting a boat, you do not need a safety certificate if you are at least 18 years old, although the livery must demonstrate how to properly use the boat before renting it. Persons under the age of 18 may only rent a motorboat if they hold a safety certificate."
 
   - turn_number: 3

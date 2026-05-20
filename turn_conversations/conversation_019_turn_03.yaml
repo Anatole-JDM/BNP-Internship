@@ -4,14 +4,10 @@ title: "RAG Conversation #19 - No References"
 turns:
   - turn_number: 1
     user_query: "Can capital expenses for volunteer purposes be deducted from income?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Indeed you can't deduct the value of your time or services, including the  value of income lost while you work as an unpaid volunteer for a qualified organization. You can only deduct  what something cost  even if you had done volunteer work for a charity as a sole prop you could only deduct your actual costs. If you paid an employee to do charity work or to learn something related to the business that would be deductible as a normal business expense. It would be impossible for the IRS to determine the value of your time and it would open the tax system to an enormous amount of fraud (think of being able to make up time spent or writing off time spent volunteering at a soup kitchen or any other charity). Nevertheless, you can write off expenses you have involved in doing the work, equipment and supplies used to do the work along with any wages you paid an employee or contractor to do said work."
 
   - turn_number: 2
     user_query: "In other words, charitable donations, capital expenses or my time could be make my taxesa lower, right?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "There are some tax-deductible options related to charitable activities. However, it's important to clarify that you cannot deduct the value of your time or services, including the income lost while working as an unpaid volunteer for a qualified organization. This includes charitable donations of time or services. However, you can deduct actual costs associated with volunteering, such as expenses for equipment, supplies, or wages paid to employees or contractors for work related to the charity. If you have donated items like a published book that you authored (not specifically written for the organization), you might be able to deduct its fair market value. In summary, while you cannot directly deduct the value of your time or services, you can deduct certain expenses related to charitable activities, which may help lower your tax burden.  In fact, tax deductions allow you to give to charities from your gross salary, not your net salary. The Charitable donations can be deducted from your income, and in that way make your taxable income lower, hence lower taxes."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What types of charitable organizations qualify for tax-deductible donations?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "To lower your taxable income through charitable donations, you should consider donating to organizations that are qualified for tax-deductible contributions, making sure the giving money  will be used for the specific goal the charity declared, and that's the way for you to funnel money to the goals of your preference/choice.  For example, you can donate money to your temple, to a church for the building fund, to a hospital to buy a new x-ray machine, orphanage ,a gay rights organization , to  Red Cross for a specific disaster or even donate money to to the scouts for a new dining hall, etc."
 
   - turn_number: 4

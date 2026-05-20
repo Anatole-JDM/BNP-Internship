@@ -4,14 +4,10 @@ title: "RAG Conversation #23 - No References"
 turns:
   - turn_number: 1
     user_query: "As an employee, when is it inappropriate to request to see your young/startup company's financial statements?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you approach the request professionally, directly, and briefly it is not inappropriate to request to see the financial statements. It is also suggested to keep the request vague to avoid pushing for specific information that may not be disclosed."
 
   - turn_number: 2
     user_query: "what are the risks of working at a startup?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Working at a startup can involve several risks. One of the primary risks is the possibility of the business failing, which could result in your shares becoming worthless. There is also a risk that if the startup succeeds, the financial rewards may not be evenly distributed among employees. Additionally, startups often require long working hours and high levels of responsibility, and there may be a risk of job security as the company grows and hires new employees."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What are practical tips for starting my own startup business?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Here are some tips for starting your own business:
 1. Start small and grow it up. You can start online with a website and dedicate an hour a day to researching and planning.
 2. Get your family involved 

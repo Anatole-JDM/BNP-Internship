@@ -4,20 +4,14 @@ title: "RAG Conversation #88 - No References"
 turns:
   - turn_number: 1
     user_query: "how much were the actors in friends paid"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In the first season, the cast members were paid $22,500 per episode. In the second season, their salaries ranged from $20,000 to $40,000 per episode. From the third season onwards, they negotiated for equal salaries as a group. They were paid $75,000 per episode in season three, $85,000 in season four, $100,000 in season five, $125,000 in season six, $750,000 in seasons seven and eight, and $1 million in seasons nine and ten. Additionally, each actor, Jennifer Aniston , Courteney Cox , Lisa Kudrow , Matt LeBlanc , Matthew Perry and David Schwimmer, receives about $20 million in annual residuals from syndication revenue."
 
   - turn_number: 2
     user_query: "oh my god, I am a big fan of Jennifer Aniston. how was she introduced in Friends"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Jennifer Aniston portrayed the character Rachel Green in the TV show Friends. She was introduced in the pilot episode as a naive runaway bride who reunites with her childhood best friend Monica. Rachel starts off as a spoiled, inexperienced \"daddy's girl\" but gradually evolves into a successful businesswoman throughout the series."
 
   - turn_number: 3
     user_query: "how many seasons does Friends have? When did it start and end?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Friends has a total of 10 seasons with episodes 236. It aired on NBC from September 22 , 1994 to May 6 , 2004."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Did Friends air internationally, and did the show win major awards?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, Friends aired in various countries including Australia on the Seven Network, Nine Network, Network Ten, GEM, and Arena; in New Zealand on TV2; in Greece on Star Channel; in Cyprus on CyBC 2 and TVOne; in Canada on Global, Slice, DTour, and TVTropolis; and on different channels in the UK. Regarding awards, It was nominated for 62 Primetime Emmy Awards, winning six. Jennifer Aniston and Lisa Kudrow are the only main cast members to win an Emmy, while Courteney Cox is the only actor not to be nominated. The series also won an American Comedy Award, one GLAAD Media Award, one Golden Globe Award, three Logie Awards, six People's Choice Awards, one Satellite Award, and one Screen Actors Guild Award."
 
   - turn_number: 5

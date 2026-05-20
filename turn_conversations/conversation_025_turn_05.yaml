@@ -4,14 +4,10 @@ title: "RAG Conversation #25 - No References"
 turns:
   - turn_number: 1
     user_query: "What's the difference between Market Cap and NAV?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Market capitalization, or Market Cap, is calculated by multiplying the share price by the number of shares. It represents the current market perception of the company's worth. On the other hand, NAV, or net asset value, is the value of the company's stock divided by the number of shares, also known as the book value. NAV reflects the value of the company's assets if it were to sell everything, pay off its debts, and shut down. While Market Cap represents current market sentiment and future expectations, NAV provides a measure of the company's tangible asset value per share. These two values often differ significantly, especially for companies expected to grow or those with substantial intangible assets. NAV is a measurable value, derived from known factors, while Market Cap is determined by the stock price, which is influenced not only by NAV but also by future expectations."
 
   - turn_number: 2
     user_query: "What are the key factors to consider when purchasing a business?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Before making a purchase, it's crucial to thoroughly explore at least 6-10 other options, and if it's a significant business transaction, consider researching even more options. Relying on luck in such transactions can be risky due to the high dollar amounts and liabilities involved. Here are some steps to consider before making a purchase:
 1. Clarify your goals.
 2. Work with trustworthy professionals.
@@ -21,14 +17,10 @@ The key to successful investing is understanding what you are investing in. For 
 
   - turn_number: 3
     user_query: "Will purchasing stocks give me control over it?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You will own a fraction of the company that you buy. You must buy 100% of the outstanding stock to own the company entirely.  Purchasing most of the shares allows you to control the company. The process may be complex, and you may need to appoint board members at preset intervals. The company's charter may include conditions to prevent a change in control. Depending on your jurisdiction, owning a certain percentage of shares may come with specific requirements."
 
   - turn_number: 4
     user_query: "Value?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The concept of value is a subject where economic theories often differ, and each school of thought has valid points. One school of thought argues that monetary value can always be determined by the net labor involved or the cost of inputs. The other school of thought suggests that economic value does not exist inherently and that only the market can determine value. For instance, the value of a stock is solely determined by the price people are willing to pay for it and the price at which those who have it are willing to sell. Even if something drastic happens to a company, such as their only factory burning down and traders remaining indifferent, the value of the stock would not change in that scenario."
 
   - turn_number: 5
@@ -38,10 +30,10 @@ The key to successful investing is understanding what you are investing in. For 
     rewrite:
       rewritten_query: "What are good decision-making practices when purchasing a business?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Any decisions a business makes are for one reason: $$$. Decision-makers must CONSTANTLY re-evaluate not only the current climate but the future.  If business owners aren't careful, it very well could collapse, and in the end, if it fails, nobody else is responsible except themselves. So, in times of success, yes, the business owners reap profit, but in tough times, they have to take full responsibility and the consequences of reality. You can't run a business without making \" $$$.\" Good will and good intentions only go so far, and they do not always equate to positive results. Capitalism rewards the positive results of proper decision-making in the marketplace as businesses generate enough profit to allow them to stay afloat and expand, while those businesses that do not follow through with appropriate decision-making reap negative results, fail, and eventually go out of business."
 
   - turn_number: 6
