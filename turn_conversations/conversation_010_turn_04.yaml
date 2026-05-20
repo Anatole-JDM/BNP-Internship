@@ -4,8 +4,8 @@ title: "RAG Conversation #10 - No References"
 turns:
   - turn_number: 1
     user_query: "How to read bond yield quotes? What do the time, coupon, price, yield, and time mean?"
-    macro_informative: ""
-    micro_informative: ""
+    macro_informative: "1"
+    micro_informative: "1"
     agent_answer: "Bond yield quotes provide important information about a bond's yield, which is the annualized return on investment for the bond. Here's how to read bond yield quotes:
 * Time: This refers to the time of the quote presented and indicates when the quote was generated.
 * Coupon (coupon rate): This is the amount of interest paid on the bond each period, as specified on the coupon itself. It is usually expressed as a percentage of the bond's face value.
@@ -15,31 +15,26 @@ To summarize, when reading bond yield quotes, the time refers to the quote's gen
 
   - turn_number: 2
     user_query: "Whata is the safest type of bond to invest in?"
-    macro_informative: ""
-    micro_informative: ""
+    macro_informative: "1"
+    micro_informative: "1"
     agent_answer: "The safest place to put money is a mixture of cash, local municipal bond funds with average durations under two years and US Treasury bond funds with short duration. Among government bonds, U.S. Treasury securities are often regarded as the safest, followed by municipal bonds and government agency bonds. However, it is essential to note that even the safest bonds come with some level of risk, and do not make much money.  If you do choose to invest in bonds, some bonds being riskier than others,  I recommend that you diversify your risks by investing in a bond fund, rather than in just one company's or government's debt. This will reduce the likelihood that you will experience a catastrophic loss. investing in a short-term, high quality bond fund or a tax-free bond fund with short durations is a good way to balance safety vs. return. Additionally, You should talk to a financial fiduciary (make sure they are a fiduciary, not all planners are) about investing your money."
 
   - turn_number: 3
     user_query: "Investing in foreign bonds"
-    macro_informative: ""
-    micro_informative: ""
+    macro_informative: "0"
+    micro_informative: "0"
     agent_answer: "Adding international bonds to an individual investor's portfolio is a controversial subject. On top of the standard risks of bonds, you are adding country specific risk, currency risk and diversifying your individual company risk. In theory many of these risks should be rewarded but the data are noisy at best and adding risk like developed currency risk may not be rewarded at all.  However, if your home currency (or currency union) does not have a deep bond market and/or bonds make up most of your portfolio, it is probably worth diversifying a chunk of your bond exposure internationally."
 
   - turn_number: 4
     user_query: "Why do municipalities issue bonds?"
-    macro_informative: ""
-    micro_informative: ""
+    macro_informative: "1"
+    micro_informative: "1"
     rewrite:
       rewritten_query: "Why do municipal governments issue bonds?"
-      macro_informative: ""
-      micro_informative: ""
+      macro_informative: "1"
+      micro_informative: "1"
       correctness:
-        changes: ""
-        groundedness: ""
+        changes: "["municipalities" > "municipal governments"]"
+        groundedness: "0"
     agent_answer: "Many municipalities issue bonds as a way to raise capital for various projects and infrastructure developments. These bonds are essentially loans that investors provide to the municipality. By issuing bonds, municipalities can finance essential public works such as schools, roads, hospitals, and other infrastructure projects."
 
-  - turn_number: 5
-    user_query: "bonds versus stocks"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "A stock is an ownership interest in a company, when you buy stocks, you become a partial owner of the company.   A company issues a number of shares you can buy. If you own 1,000 shares, for example, you  would own one one-thousandth of the company. You typically buy stock in a company because you believe the company is going to prosper into the future and thus the value of its stock should rise in the open market. A stock also may or may not allow you to vote on company business. A bond is an indebted interest in a company. A company issues bonds to borrow money at an interest rate specified in the bond issuance and makes periodic payments of principal and interest. You buy bonds in a company to lend the company money at an interest rate specified in the bond because you believe the company will be able to repay the debt per the terms of the bond. Think of bonds as kind of like a corporate credit card. When a company needs a lot of cash, it will sell bonds. Bonds tend to be a safer investment than stocks, but offer less potential return."

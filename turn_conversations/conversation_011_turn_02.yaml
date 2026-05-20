@@ -4,56 +4,20 @@ title: "RAG Conversation #11 - No References"
 turns:
   - turn_number: 1
     user_query: "I need to do some legal research to be prepared for my oral argument. Can I visit the law library?"
-    macro_informative: ""
-    micro_informative: ""
+    macro_informative: "0"
+    micro_informative: "1"
     agent_answer: "Yes, you can visit the law library to conduct legal research for your oral argument. The library can provide self-help guides and suggest materials that may be beneficial, such as resources on reserve or located at the reference desk. Additionally, the Form APP-001 provides comprehensive instructions on appeal procedures. Each Court of Appeal offers self-help resources online. You can also inquire with your local Court of Appeal to check if they have a self-help center at the court."
 
   - turn_number: 2
     user_query: "How to Hire a Lawyer"
-    macro_informative: ""
-    micro_informative: ""
+    macro_informative: "1"
+    micro_informative: "1"
     rewrite:
       rewritten_query: "How do I hire a lawyer for my case?"
-      macro_informative: ""
-      micro_informative: ""
+      macro_informative: "1"
+      micro_informative: "1"
       correctness:
         changes: ""
         groundedness: ""
     agent_answer: "When looking to hire a lawyer, you can visit the California Courts website, which provides a lot of information about lawyers and legal assistance. If you need help finding a lawyer, the California Bar Association website can connect you with a lawyer referral service in your area. When you meet with a lawyer, it's important to ask questions to understand the services they can provide and the associated costs. You should also ask about their experience in handling cases similar to yours. If you find their answers satisfactory and their fees reasonable, you may want to consider hiring them. However, make sure you fully understand the agreement before signing it. If you're uncomfortable with any terms, don't sign it. It may be best to seek a new lawyer if disagreements arise and cannot be resolved."
 
-  - turn_number: 3
-    user_query: "What are the grounds for lodging an appeal?"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "In most cases, the appellate court considers two main points: whether a legal mistake was made in the trial court and whether this mistake affected the final decision (referred to as the \"judgment\"). The appellate court only reviews what happened in the trial court to determine if a legal mistake occurred in the original trial. An appeal is a process through which a case is moved from a lower court to a higher court for review or reconsideration after the lower court has issued a judgment. The higher or appellate court may uphold, reverse, or modify the decision."
-
-  - turn_number: 4
-    user_query: "Who is responsible for covering my expenses?"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "The Court of Appeal's judgment usually includes costs on appeal. In most instances, if a party prevails on appeal, they can request the other party to cover their court costs. In some cases, the winning party may also request the other party to cover their attorney fees. - After the court issues a remittitur (the final step in an appeal), the prevailing party can file a memorandum of costs in the trial court. The trial court will handle the request and notify the parties about the next steps. - If the parties have questions regarding reimbursement of appeal costs, they can contact the trial court. There are fees in both the trial court and the Court of Appeal during an appeal. If you wish to have your fees waived in both courts, you must obtain a fee waiver."
-
-  - turn_number: 5
-    user_query: "Could you please provide the procedures for a child support case?"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "There is a lawyer with experience in family law who works for the superior court in every California county. This lawyer is here to help parents and children involved in family law cases with child, spousal, and partner support problems. If you don't have your own lawyer, you can see the family law facilitator for free. The court where the case is filed has a program that offers free legal information about child support and can help you with forms. This is a service provided by the court to guide you through the legal process. Learn more about the court's Family Law Facilitator or Self-Help Center.  
-Hire a lawyer to help you with all or a part of your case. For legal advice, you can hire a lawyer. If there's a question as to whether you're the child's legal parent (called parentage) and you can't afford a lawyer, the court may appoint you a lawyer for free to help with that issue. Talk to your court's Family Law Facilitator to learn more about that option."
-
-  - turn_number: 6
-    user_query: "Is a jail sentence given for a child support conviction?"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "The documents do not specify jail sentences, but you can opt for the Division of Child Support Services (DCSS) to enforce your support orders. They can issue administrative orders such as suspending the other parent's driver's license, intercepting tax refunds, or placing liens on bank accounts. In cases of willful failure to pay child support, DCSS may file contempt charges against the other parent. The Office of Child Support Enforcement (OCSE) is the federal agency responsible for administering the nationwide child support program. Offset refers to the money taken from a parent's state or federal income tax refund or an administrative payment, like federal retirement benefits, to pay a child support debt."
-
-  - turn_number: 7
-    user_query: "How can I get enforcement support?"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "If you encounter a violation, it's important to record the details and severity of the violation. Keeping a record will be helpful if you decide to take action later. Your options include contacting the local police department to enforce the order. Ensure that you have a copy of the current order to provide to them. Additionally, the Federal Parent Locator Service (FPLS), which is managed by the Office of Child Support Enforcement (OCSE) of the Administration for Children and Families (ACF), operates a national network and database. FPLS collects and compares address and employer information, as well as data on child support cases across all states. This helps state and local child support enforcement agencies to locate non-custodial parents."
-
-  - turn_number: 8
-    user_query: "Spousal support"
-    macro_informative: ""
-    micro_informative: ""
-    agent_answer: "Spousal support, also known as alimony, is a payment made by a higher-earning spouse to a lower-earning spouse. Temporary or pendente lite orders are issued any time after the Petition is filed until the Final Judgment is entered. These orders are intended to maintain the parties' status quo until a final judgment on all issues can be ordered, including custody, visitation, child support, and spousal support. A party who cannot file for divorce due to not meeting the residency requirements or does not wish to end the marriage for psychological or economic reasons may file for legal separation. In this case, a judicial officer, a court official, can make orders for child support and/or spousal support, custody and visitation, and division of property."
