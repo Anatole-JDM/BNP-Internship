@@ -4,8 +4,6 @@ title: "RAG Conversation #1 - No References"
 turns:
   - turn_number: 1
     user_query: "where do the arizona cardinals play this week"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I'm sorry, but I don't have the answer to your question."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Do the Arizona Cardinals ever play regular-season NFL games outside the United States?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The Arizona Cardinals do play outside the United States. They had a game in London, England, on October 22, 2017, against the Los Angeles Rams at Twickenham Stadium and in 2005 they played in Mexico."
 
   - turn_number: 3

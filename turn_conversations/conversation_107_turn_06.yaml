@@ -4,32 +4,22 @@ title: "RAG Conversation #107 - No References"
 turns:
   - turn_number: 1
     user_query: "\"What happens to people's bodies when there isn't enough atmospheric pressure?\""
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have much information about this, but I can say that the atmospheric pressure in each layer of our atmosphere weighs down on the layer below it. If you're on a mountaintop or in an airplane, you can experience lower atmospheric pressure than if you're at sea level. At higher altitudes, where the atmospheric pressure is lower, people can experience various symptoms such as altitude sickness."
 
   - turn_number: 2
     user_query: "Speaking about sea level, is it true that it is rising?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, that is true.The rate of sea level rise is faster now than at any time in the past 2,000 years, and that rate has doubled in the past two decades.  Accordingly to studies from 2022, that is tracking 30 years of sea level rise global has risen 101 millimeters (3.98 inches) since 1992, and it continues to do so at 3.9 mm (0.15 inches) per year. The globe is warming, ice is melting, factors that help the sea level to rise. In addition, global sea level can fluctuate due to climate patterns such as El Niño and La Niña, which influence ocean temperature and global precipitation patterns. NASA has also been conducting airborne and ship-based campaigns such as Operation IceBridge and Oceans Melting Greenland to gather measurements of ice sheets and glaciers. Although rise of a few inches over a few decades does not sound like much. But sea level does not rise evenly; it piles up more in some places because of natural wind and current patterns. And turbulence matters."
 
   - turn_number: 3
     user_query: "danger of the rise of the sea level"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The rising sea levels can erode coasts and cause more frequent coastal flooding. Some island nations will disappear. The problem is serious because up to 10 percent of the world’s population lives in coastal cities and in vulnerable areas less than 10 meters (about 30 feet) above sea level. It can also impact ecosystems. Even NASA has been affected as half to two-thirds of its space infrastructure and assets stand within 5 meters of sea level. The acceleration of the rise of the sea level  has been driven mainly by increased ice melting in Greenland and Antarctica, and it has the potential to double the total sea level rise projected by 2100."
 
   - turn_number: 4
     user_query: "climage change is fake"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Climate change is not fake.  In fact, the climate is influenced by the movement of heat and moisture by air and ocean currents, which can affect the temperatures, precipitation, humidity, soil moisture, surface water levels, groundwater levels, and even storm events of a particular region. Climate change refers to long-term changes in the average weather patterns that define the Earth's global, regional and local climates. Said that global temperatures are rising and this is a global warming in face of the  higher sea levels and more intense storms, coastal communities facing greater risk of rapid beach erosion from destructive storms. Hotter summers and more frequent fires will lead to more cases of heat stroke and deaths, and to higher levels of near-surface ozone and smoke, which would cause more ‘code red’ air quality days. Intense droughts can lead to an increase in malnutrition. On a longer time scale, fresh water will become scarcer, especially during the summer, as mountain glaciers disappear, particularly in Asia and parts of North America.  All that scientists predicted, such as the loss of sea ice, melting glaciers and ice sheets, sea level rise, and more intense heat waves. It is true that despite the amount of available scientific knowledge about the impacts of climate change happening now, and of new risks for the future, there is still a lack of understanding amongst the general public. But indeed, global warming with some exceptions is real, the tropics will likely receive less rain as the planet warms, while the polar regions will receive more precipitation. Climate change is already affecting every inhabited region across the globe with human influence contributing to many observed changes in weather and climate extremes. Limiting human-induced global warming will require rapidly reducing and then eliminating GHG emissions and removing emissions previously trapped in the atmosphere ."
 
   - turn_number: 5
     user_query: "solutions"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have specific information about overall solution for global warming issue. I can tell you about some of the steps that California is taking to address the problem. The state passed legislature, California Global Warming Solutions Act of 2006, to help diminish the global warming  impact. One of the solutions is to reduce emissions of greenhouse gases  investing in the development of innovative and pioneering technologies with the support of the state agencies, as well as consult with the environmental justice community, industry sectors, business groups, academic institutions, environmental organizations. The bill would require the state board to monitor compliance with and enforce any rule, regulation, order, emission limitation, emissions reduction measure, or market-based compliance mechanism adopted by the state board, pursuant to specified provisions of existing law."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "Are human activities the main cause of current climate change?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "It is true that humans are part of a wide interconnected system and share their homes with over 8.5 million species. There is undeniable evidence that Earth is warming at an unprecedented rate and human activity is the principal cause. Over the last century, burning of fossil fuels like coal and oil has increased the concentration of atmospheric carbon dioxide (CO2). The effects of human-caused global warming are happening now, are irreversible for people alive today, and will worsen as long as humans add greenhouse gases to the atmosphere. We already see effects scientists predicted, such as the loss of sea ice, melting glaciers and ice sheets, sea level rise, and more intense heat waves. Scientists predict global temperature increases from human-made greenhouse gases will continue."
 
   - turn_number: 7

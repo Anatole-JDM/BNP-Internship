@@ -4,14 +4,10 @@ title: "RAG Conversation #80 - No References"
 turns:
   - turn_number: 1
     user_query: "Why could the serious financial woes of some EU member states lead to the end of the Euro?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Euro will collapse because Spain, Italy, Portugal and Greece will have to default on their debt. In order to keep up with current payments they have to take emergency loans at the same time that their economies are in recession and demands on social programs are increasing. There is simply no way that they can cut enough spending and raise enough revenue to balance their budgets. That is not opinion, it is arithmetic. If they cannot pay their loans they will either voluntarily leave the Euro, or they will be forced out. Next comes France who also has a large and growing budget deficit and a large public debt. It is unsustainable. That which is unsustainable will end. The last reason that the Euro will fail and that it will be soon is Germany. Up to now, all the bailouts of Ireland, Portugal, Italy, Greece and Spain have come predominantly from Germany. In order to float the Eurobonds that some idiots think might save Europe, the German people have to authorize their government to participate and thereby take on another mountain of debt. The German people will not vote for that authorization."
 
   - turn_number: 2
     user_query: "But those countries are no longer in recession."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have any other information on whether Spain, Italy, Portugal and Greece are still in recession."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Is there evidence supporting the claim about France's economic situation and euro-related risks?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The only citation I have about France having a large and growing budget deficit and a large public debt that is unsustainable."
 
   - turn_number: 4

@@ -4,26 +4,18 @@ title: "RAG Conversation #91 - No References"
 turns:
   - turn_number: 1
     user_query: "Following an investment guru a good idea?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Following an investment guru can be a good idea if you can afford the time and are looking for more in-depth, fun investment tips. However, it's crucial to understand what you're investing in, including the company's products, and to buy stock in good companies at good prices, considering factors like price to earnings, price to revenue, and price to book. Therefore, while following an investment guru can provide valuable insights, it's essential to conduct your own research and make informed decisions based on your understanding and investment goals. Blindly following other investors, including big investors or gurus, is not recommended, as their strategies may differ from yours. Instead, consider finding someone with similar goals to help guide your investment decisions."
 
   - turn_number: 2
     user_query: "name a few gurus"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I don't have a lot of information about individual investment gurus to recommend, but a classic investing guru is Benjamin Graham.  Also Warren Buffett, the CEO of Berkshire Hathaway, is certainly one, who looks for value and ignores hype, greed, and fear.  The websites like Gurufocus (<http://gurufocus.com>) may provide resources for fundamental analysis of \"Intelligent Investor\" style businesses which can help you identify potential investment gurus."
 
   - turn_number: 3
     user_query: "Those gurus average return?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I don't have specific information on the average returns of investment gurus. However, Warren Buffet, arguably the most successful investor ever lived, has averaged returns of around 21% throughout his 40 years in business."
 
   - turn_number: 4
     user_query: "any online self-help?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, for self-service type online customers, some recommended include OptionsXpress, Marketclub.com, where you can watch and learn from experienced traders like Adam Hewison, and Corey Rosenblum's blog at blog.afraidtotrade.com that offers valuable content focusing on market internals and short-term trades. Trending123.com, run by successful trader John Lansing, provides a live daily chat room for learning from large account day traders. Additionally, seekingalpha.com gives a quick overview and offers free articles on portfolio allocation, and WorldCap which is a mobile solution to analyze global stocks at FactSet and S&P CapitalIQ. Further, YouTube channels and Google searches can help you learn about various aspects of technical analysis and trading strategies.   Remember that no matter how much you learn from others, conducting your own research and making informed decisions based on your understanding and investment goals is crucial."
 
   - turn_number: 5
@@ -33,10 +25,10 @@ turns:
     rewrite:
       rewritten_query: "I mean online investing education and training resources, not online trading platforms."
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "For self-help in terms of investment training, there are several online resources available. Try online workshops that are relatively cheap but give you a glimpse of a particular subject: Shaw Academy, Udemy, Khan Academy, Investopedia, etc..  For a more hands-on approach, you might consider opening a paper trading account with a brokerage like ThinkOrSwim by TDAmeritrade, which allows you to practice trading without risking real money. Additionally, joining investment clubs or groups in your community can provide opportunities for learning from experienced investors and discussing investment ideas with like-minded individuals."
 
   - turn_number: 6

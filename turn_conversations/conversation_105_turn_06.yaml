@@ -4,33 +4,23 @@ title: "RAG Conversation #105 - No References"
 turns:
   - turn_number: 1
     user_query: "what system does the sec require companies to use when preparing financial statements"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I have no specific information about the system required by the SEC for preparing financial statements."
 
   - turn_number: 2
     user_query: "Do US-based companies need to comply with SEC regulations?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, US-based companies are obligated to adhere to the regulations mandated by the US government, which are supervised by the Securities and Exchange Commission (SEC). The SEC's EDGAR system contains all the necessary reports. Both foreign and domestic companies must electronically submit registration statements, periodic reports, and other forms to the SEC's EDGAR database."
 
   - turn_number: 3
     user_query: "What are the requirements?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The SEC defines an accredited investor as a variety of entities, including financial institutions, employee benefit plans with over $5 million in assets, certain charitable organizations, and individuals meeting specific income or net worth thresholds. There are no citizenship or residency requirements to qualify.
 If a company has more than 500 shareholders, it must register with the SEC as an Investment Company. This registration brings about public reporting and additional regulatory compliance. This often leads to the practical necessity of going public with an IPO, even if it's not a legal requirement."
 
   - turn_number: 4
     user_query: "What is the filing requirement for them?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "There are many different kinds of SEC filings with different purposes.  Prior to going public, a company has to file financial documents with the SEC. These filings are available to the public at www.sec.gov on the Edgar database. There are various types of filings, some specific to publicly traded companies and others applicable to registered corporations in general. You can find more information on different types of filings at http://reportstream.io/explore/has-form."
 
   - turn_number: 5
     user_query: "Is there one that is more important than the others?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. Some SEC filings are more important than others. The most crucial filings include Form 10-K, which is the annual report required by the U.S. Securities and Exchange Commission (SEC), and Form 10-Q for the interim quarters. One of the most commonly discussed filings is the 10-K, which, as Wikipedia describes, is \"a comprehensive summary of a company's financial performance\". This includes information such as earnings and executive pay. A form that some people believe has potential utility for investors is Form 4, which discloses \"insider trading\". People with a privileged stake in a company, such as executives, directors, and major shareholders, cannot legally buy or sell shares without disclosing it by filing a Form 4."
 
   - turn_number: 6
@@ -40,10 +30,10 @@ If a company has more than 500 shareholders, it must register with the SEC as an
     rewrite:
       rewritten_query: "Is Form 13F considered more important than other SEC filings?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "No. The most important filings are Form 10-K, the annual report, and Form 10-Q for the interim quarters. Ownership is reported on Form 3/4 and in 10-Q/Ks. Non-individual legal entities such as companies (for example, a hedge fund) must disclose any ownership exceeding 10% by filing Form 13-F."
 
   - turn_number: 7

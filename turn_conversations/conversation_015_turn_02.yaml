@@ -4,19 +4,17 @@ title: "RAG Conversation #15 - No References"
 turns:
   - turn_number: 1
     user_query: "Pros/Cons of Buying Discounted Company Stock"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "Pro: If you can buy discounted company stock, you have the opportunity to sell in-the-money covered calls and potentially make more than you would selling at strike. Con:  If the company that provides your income experiences difficulties, there is a risk that you may lose your job and also see your investments in the company's stock decrease in value. In addition, putting a large portion of your savings in a single stock can be risky."
 
   - turn_number: 2
     user_query: "What is the biggest risk?"
-    macro_informative: "0"
-    micro_informative: "0"
+    macro_informative: 0
+    micro_informative: 0
     rewrite:
       rewritten_query: "What is the biggest risk of buying discounted company stock?"
-      macro_informative: "1"
-      micro_informative: "1"
-      correctness:
-        changes: ""
-        groundedness: "1"
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
+      correctness: []
     agent_answer: "The biggest risk mentioned is tying a significant portion of your savings and income to a single company. If the company experiences difficulties, you may lose your job and see the value of your investments decrease due to a single cause."

@@ -4,8 +4,6 @@ title: "RAG Conversation #46 - No References"
 turns:
   - turn_number: 1
     user_query: "why was the eastern roman empire called the byzantine empire"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Modern historians refer to the Byzantine Empire as such to distinguish it from ancient Rome. This name comes from Byzantium, the original name of Constantinople, the capital city of the empire. The citizens of the empire continued to refer to their empire as the Roman Empire or Romania and to themselves as \"Romans.\""
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What was the main religion of the Byzantine (Eastern Roman) Empire?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "During the reign of Constantine in the Byzantine Empire, Christianity was not declared the exclusive state religion, but it received special favor from the emperor, who granted it generous privileges. Constantine also established the principle that emperors could not unilaterally decide matters of religious doctrine, and instead, they should convene general ecclesiastical councils for that purpose. His summoning of the Synod of Arles and the First Council of Nicaea demonstrated his commitment to the unity of the Church and asserted his authority as its leader.The ascendancy of Christianity was briefly challenged when Emperor Julian came to power in 361 and sought to revive polytheism throughout the empire. He was later known as \"Julian the Apostate\" by the Church. However, Julian's efforts were reversed when he died in battle in 363.
 The foundation of the Byzantine Empire was based on the belief that it was a reflection of the Kingdom of Heaven on Earth. Just as God ruled in Heaven, the Emperor, created in His image, was expected to govern on Earth and uphold His commandments. The empire aspired to be universal and aimed to encompass all the peoples of the Earth. Ideally, all people would be members of the one true Christian Church, the Orthodox Church."
 

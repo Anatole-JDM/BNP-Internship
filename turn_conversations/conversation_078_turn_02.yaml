@@ -4,8 +4,6 @@ title: "RAG Conversation #78 - No References"
 turns:
   - turn_number: 1
     user_query: "Does being active affect how kids do in school? How?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, being active can positively influence children's academic performance. Children who get enough physical activity tend to have an easier time focusing, perform better on tests, and exhibit improvements in memory, flexible thinking, and self-control. Encouraging kids to participate in sports or family activities that involve movement can contribute to these benefits as kids need physical activity to grow up strong and healthy.  A good night of sleep also help their mood and  get better grades."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Does physical activity improve a child's attention span?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, physical activity can increase a child's attention span. Children who get enough physical activity often find it easier to focus, which can lead to better test performance and improved memory, flexible thinking, and self-control. Encouraging children to engage in regular physical activity, such as sports or family games that involve movement, can contribute to these benefits."
 
   - turn_number: 3

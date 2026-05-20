@@ -4,20 +4,14 @@ title: "RAG Conversation #102 - No References"
 turns:
   - turn_number: 1
     user_query: "When was the Costa-Hawkins Rental Housing Act enacted in California?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Costa-Hawkins Rental Housing Act was passed in California in 1995. Rent control cannot be applied to any newly built housing completed on or after February 1, 1995."
 
   - turn_number: 2
     user_query: "Is there a housing problem in California?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. In recent years, California housing costs have risen rapidly, particularly in terms of home purchase prices. The monthly fees for a newly purchased home are now about $2,500 higher than they were just a few years ago. The annual income required to qualify for a typical home is around $235,000—more than twice the median household income of about $85,000. To qualify for a more affordable \"bottom-tier\" home, the annual income needed is over 50% higher than the median income. The California Housing Finance Agency (CHFA) originally offered a first-time home buyer program limited to low-income households, but due to few households in this income bracket being able to purchase homes, the program has been expanded to include moderate-income households. As of September 2000, home buyers in 22 counties had received funding from the state."
 
   - turn_number: 3
     user_query: "Renters"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Rental housing in California is more expensive compared to other states, with renters typically paying 50 percent more for housing. In some parts of the state, rent costs are more than double the national average. The high rent in California is due to the housing shortage, which results in fierce competition for housing, driving up rent prices. As per the rent control law, the value of rental housing would decrease because potential landlords would only be willing to pay as much for these properties. Consequently, some renters would pay less, while landlords would receive less rental income. Additionally, fewer renters would move as frequently due to rent increases. The impact of these effects would vary depending on the number of communities passing new rent control laws and the specific type and scope of rent control being adopted."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Is housing assistance available for veterans in California?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes. VA housing assistance is available to help Veterans, service members, and their surviving spouses purchase a home or refinance a loan. Additionally, benefits and services are offered to assist in building, improving, or maintaining current homes. The Supportive Services for Veteran Families (SSVF) provides case management and supportive services for very low-income Veterans to prevent the loss of their homes, find a more suitable housing situation, or rapidly re-house homeless Veterans and their families."
 
   - turn_number: 5

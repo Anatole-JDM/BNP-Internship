@@ -4,8 +4,6 @@ title: "RAG Conversation #50 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the steps involved to delete the CIS instance?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To delete a CIS instance, you must first delete all global load balancers, pools, and health checks. Then, delete the associated domain (zone). Go to the Overview page and click the trash can icon next to the domain name located in the Service Details section to start the deletion process.
 If you are moving your domain to a different provider, be sure to migrate your DNS records and other configuration information to the new provider before activating the domain there. Activating the domain before migrating from CIS can cause your domain to change to a \"Moved\" state.
 You can visit the IBM Cloud Internet Services for more information on how to delete the CIS instance. Delete the CIS instance if you created it specifically for this tutorial.
@@ -16,14 +14,10 @@ IBM Cloud Internet Service"
 
   - turn_number: 2
     user_query: "Do I need to import or recreate my DNS records in CIS?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, before you switch the traffic for your domain to CIS, it's important to import or recreate your DNS records in CIS. Although you can skip this step, it's crucial to ensure that your DNS records are correctly configured in CIS to avoid any parts of your website becoming inaccessible. Here are the command options: DNS_DOMAIN_ID: The ID of the DNS domain. Since CIS doesn't support email traffic by default, you need to set the PTR record to the location of your email server. You may need to reach out to your email provider for help. Import records - By default, a total of 3500 DNS records are allowed (imported and created on CIS)."
 
   - turn_number: 3
     user_query: "Can I add a custom domain?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To add a custom domain to IBM Cloud Internet Services, follow these steps:
 1. Go to the Overview page of your CIS instance.
 2. Under the Domain section, click the plus (+) icon next to your domain.
@@ -34,16 +28,12 @@ Work with your Domain Name Service (DNS) provider or IBM Cloud DNS to register y
 
   - turn_number: 4
     user_query: "What is the transportation layer?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Mutual Transport Layer Security (mTLS) authentication ensures that traffic is secure and trusted in both directions between a client and server. This feature is exclusively available for customers at the Enterprise or Security plan level. 
 When mTLS is configured, access is only granted to requests with a corresponding client certificate. Upon reaching the application, CIS requests the client certificate. If the client fails to present the certificate, the request is denied. Otherwise, the key exchange proceeds.
 The Transport Layer Security (TLS) options allow you to control whether visitors can browse your website over a secure connection and, if they do, how IBM Cloud® Internet Services connects to your origin server. Mutual TLS is not enabled by default. It is an additional service that requires prior authorization and enablement."
 
   - turn_number: 5
     user_query: "Is privacy protected?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. Data privacy is upheld through the use of private data collections. For example, multiple wholesalers and a group of farmers can be connected to a single channel. If a farmer and a wholesaler want to conduct a private transaction, they can create a channel for this purpose. Alternatively, they can choose to establish a private data collection on the smart contract governing their business interactions to maintain privacy regarding sensitive aspects of the sale, such as the price, without the need to create an additional channel. This policy applies to EU-US and Swiss-US customers. If a government wants access to data held by IBM on behalf of a SaaS client, IBM expects that government to deal directly with that client. Data privacy and governance are of utmost importance. As a leader in providing a fully managed and globally distributable Database-as-a-Service, IBM® Cloudant® for IBM Cloud® allows customers to position data in any global IBM Cloud® or AWS region. By providing customers with high levels of data mobility to meet their local needs, IBM® and IBM Cloudant take data privacy and governance seriously. IBM Cloud Delivery Services does not use DLP monitoring. Access controls are implemented on all databases restricted to privileged users only."
 
   - turn_number: 6
@@ -53,10 +43,10 @@ The Transport Layer Security (TLS) options allow you to control whether visitors
     rewrite:
       rewritten_query: "What security features are provided by CIS?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "IBM Cloud Internet Services (CIS) offers Transport Layer Security (TLS) options that enable you to control whether visitors can access your website over a secure connection and, if they do, how IBM Cloud® Internet Services connects to your origin server. A Transport Layer Security (TLS) secret includes a signed TLS certificate, along with all its intermediate certificates, and the corresponding private key from a certificate authority (CA). You use TLS secrets when working with custom domain mappings.
 To view the CLI help for creating a TLS secret, run ibmcloud ce secret create --format tls. Mutual Transport Layer Security (mTLS) authentication ensures that traffic is both secure and trusted in both directions between a client and server. It is only available for customers at the Enterprise or Security plan level.
 When mTLS is configured, access is only granted to requests with a corresponding client certificate. When a request reaches the application, CIS requests the client certificate. If the client fails to present the certificate, the request is not allowed to proceed. Otherwise, the key exchange continues."

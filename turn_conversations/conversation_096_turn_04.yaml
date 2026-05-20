@@ -4,20 +4,14 @@ title: "RAG Conversation #96 - No References"
 turns:
   - turn_number: 1
     user_query: "when did the wall in berlin come down"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Berlin Wall began to come down on the evening of 9 November 1989."
 
   - turn_number: 2
     user_query: "When did the official reunification of Germany take place?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The official reunification of Germany took place on 3 October 1990."
 
   - turn_number: 3
     user_query: "How many people died trying to cross the Berlin Wall?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The number of people who died trying to cross the Wall, or as a result of the Wall's existence, has been disputed. Historical Research ( ZZF ) in Potsdam has confirmed at least 140 deaths. An estimated death toll ranges from 136 to more than 200 in and around Berlin."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "How did people attempt to escape across the Berlin Wall?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Berlin Wall Early successful escapes involved people jumping the initial barbed wire or leaping out of apartment windows along the line, but these ended as the Wall was fortified.  East German authorities no longer permitted apartments near the Wall to be occupied, and any building near the Wall had its windows boarded and later bricked up."
 
   - turn_number: 5

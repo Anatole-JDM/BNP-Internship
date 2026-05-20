@@ -4,32 +4,22 @@ title: "RAG Conversation #29 - No References"
 turns:
   - turn_number: 1
     user_query: "where is bone marrow found what does it do for the body"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Bone marrow is found within the spongy or cancellous portions of bones. Human marrow produces approximately 500 billion blood cells per day. The main functional component of bone marrow includes the progenitor cells which are destined to mature into blood and lymphoid cells. These include white blood cells, red blood cells, and platelets. In humans, the red marrow of some bones is an important site for blood cell production, in order to replace existing cells that have been destroyed by the liver."
 
   - turn_number: 2
     user_query: "What happens if it does not work well?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If bone marrow does not function properly, it can lead to a decrease in the production of blood cells and blood platelets. This can be caused by various factors such as aplastic anemia, malignancies like multiple myeloma, congenital defects , autoimmune diseases, infections like tuberculosis, leukemia, or exposure to radiation or chemotherapy. Symptoms of a malfunctioning bone marrow can include fatigue, increased risk of infection, and easy bruising or bleeding. In the case of sickle cell disease, the bone marrow's attempt to compensate for the destruction of red cells is not sufficient, leading to anemia."
 
   - turn_number: 3
     user_query: "How is Sickle cell treated?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The treatment for sickle cell disease may include infection prevention with vaccination and antibiotics, high fluid intake, folic acid supplementation, pain medication, blood transfusion, and the medication hydroxycarbamide (hydroxyurea). A small percentage of people can be cured by a transplant of bone marrow cells. When treating avascular necrosis of the bone in people with sickle cell disease, the aim of treatment is to reduce or stop the pain and maintain joint mobility. Current treatment options are to rest the joint, physical therapy, pain relief medicine, joint replacement surgery, or bone grafting. High quality randomized controlled trials are needed to assess the most effective treatment option and determine if a combination of physical therapy and surgery are more effective than physical therapy alone."
 
   - turn_number: 4
     user_query: "Will it kill me?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A small percentage of people can be cured by a transplant of bone marrow cells. Life expectancy for people with sickle cell disease in the developed world is 40 to 60 years. About 90 % of people survive to age 20, and close to 50 % survive beyond age 50, and many people with the condition live well into adulthood with proper medical care. The disease can be life-threatening, but with appropriate treatment and management, the prognosis can be improved."
 
   - turn_number: 5
     user_query: "How about transplant?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A bone marrow transplant is a potential cure for sickle cell disease, although it is difficult to obtain a suitable donor due to the specific HLA typing necessary. Ideally, a close relative would donate the bone marrow. Risks associated with the procedure are a 7% mortality rate and the possibility of graft versus host disease. In phase 1 clinical trials for adults with severe sickle cell disease, the safety and initial evidence for efficacy have been assessed, no randomized controlled trials have been reported as of 2016. It is important to note that while a bone marrow transplant can potentially cure sickle cell disease, it is not a guaranteed solution and carries significant risks."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "Is Huntington's disease an inherited genetic condition?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, Huntington's disease is an inherited disorder from one's parents. It is caused by an autosomal dominant mutation in the Huntingtin gene, which results in an abnormal protein that gradually damages cells in the brain. If a person inherits the mutated gene from an affected parent, they will typically develop the disease. The probability of inheriting the mutant allele and being affected with the disorder is 50% for each offspring of an affected individual, regardless of sex."
 
   - turn_number: 7

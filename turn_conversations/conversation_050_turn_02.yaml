@@ -4,8 +4,6 @@ title: "RAG Conversation #50 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the steps involved to delete the CIS instance?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To delete a CIS instance, you must first delete all global load balancers, pools, and health checks. Then, delete the associated domain (zone). Go to the Overview page and click the trash can icon next to the domain name located in the Service Details section to start the deletion process.
 If you are moving your domain to a different provider, be sure to migrate your DNS records and other configuration information to the new provider before activating the domain there. Activating the domain before migrating from CIS can cause your domain to change to a \"Moved\" state.
 You can visit the IBM Cloud Internet Services for more information on how to delete the CIS instance. Delete the CIS instance if you created it specifically for this tutorial.
@@ -21,10 +19,10 @@ IBM Cloud Internet Service"
     rewrite:
       rewritten_query: "When deleting a CIS instance, do I need to import or recreate my DNS records afterward?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "No, before you switch the traffic for your domain to CIS, it's important to import or recreate your DNS records in CIS. Although you can skip this step, it's crucial to ensure that your DNS records are correctly configured in CIS to avoid any parts of your website becoming inaccessible. Here are the command options: DNS_DOMAIN_ID: The ID of the DNS domain. Since CIS doesn't support email traffic by default, you need to set the PTR record to the location of your email server. You may need to reach out to your email provider for help. Import records - By default, a total of 3500 DNS records are allowed (imported and created on CIS)."
 
   - turn_number: 3

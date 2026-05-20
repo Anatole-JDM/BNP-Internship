@@ -4,8 +4,6 @@ title: "RAG Conversation #5 - No References"
 turns:
   - turn_number: 1
     user_query: "Freelancer: Should I start a second bank account?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, as a freelancer, it is recommended to separate your business finances from your personal finances. You can use current account for daily spending and re-investing your business, and you can have another account for your savings. You should be careful so that not to mix personal and business expenses."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Is opening a second bank account usually free, especially for a freelancer setting up business finances?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Find a bank offering a free checking account, especially if you don't anticipate much activity. Other accounts, such as IRAs and discount brokerage, are also free. If you think it would be beneficial to open another account, feel free to do so."
 
   - turn_number: 3

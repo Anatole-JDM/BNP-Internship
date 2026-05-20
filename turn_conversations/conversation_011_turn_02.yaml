@@ -4,20 +4,18 @@ title: "RAG Conversation #11 - No References"
 turns:
   - turn_number: 1
     user_query: "I need to do some legal research to be prepared for my oral argument. Can I visit the law library?"
-    macro_informative: "0"
-    micro_informative: "1"
     agent_answer: "Yes, you can visit the law library to conduct legal research for your oral argument. The library can provide self-help guides and suggest materials that may be beneficial, such as resources on reserve or located at the reference desk. Additionally, the Form APP-001 provides comprehensive instructions on appeal procedures. Each Court of Appeal offers self-help resources online. You can also inquire with your local Court of Appeal to check if they have a self-help center at the court."
 
   - turn_number: 2
     user_query: "How to Hire a Lawyer"
-    macro_informative: "1"
-    micro_informative: "1"
+    macro_informative: 1
+    micro_informative: 1
     rewrite:
       rewritten_query: "How do I hire a lawyer for my case?"
-      macro_informative: "1"
-      micro_informative: "1"
-      correctness:
-        changes: ""
-        groundedness: ""
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
+      correctness: []
     agent_answer: "When looking to hire a lawyer, you can visit the California Courts website, which provides a lot of information about lawyers and legal assistance. If you need help finding a lawyer, the California Bar Association website can connect you with a lawyer referral service in your area. When you meet with a lawyer, it's important to ask questions to understand the services they can provide and the associated costs. You should also ask about their experience in handling cases similar to yours. If you find their answers satisfactory and their fees reasonable, you may want to consider hiring them. However, make sure you fully understand the agreement before signing it. If you're uncomfortable with any terms, don't sign it. It may be best to seek a new lawyer if disagreements arise and cannot be resolved."
 

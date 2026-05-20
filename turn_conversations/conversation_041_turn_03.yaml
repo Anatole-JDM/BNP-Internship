@@ -4,14 +4,10 @@ title: "RAG Conversation #41 - No References"
 turns:
   - turn_number: 1
     user_query: "Using credit card points to pay for tax deductible business expenses"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "When using credit card points to pay for tax-deductible business expenses, the expenses are not actually deductible because the points used effectively cancel out the cost. However, if the points were earned on a personal credit card and used for business-related expenses, the employer can reimburse the employee for those expenses, and it seems the IRS follows an unofficial \"don't ask, don't tell\" rule regarding any rewards or cashback earned on the employee's personal card. It's important to note that credit card fees for personal expenses are not tax-deductible, while fees for business credit cards are deductible on Schedule C or the appropriate form for reporting business income and expenses. If you have a card used for both business and personal expenses, it's advisable to get separate cards for clarity and ease of accounting. In summary, while the expenses themselves may not be deductible when using credit card points, the employer can reimburse the employee for the expenses, and having separate cards for business and personal use is recommended, i.e., getting a personal card that you only use for business expenses,  if you don't opt for a business card. It makes it very clear that expenses on that card are business expenses, and is just more professional."
 
   - turn_number: 2
     user_query: "small business"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you are asking about a small business owner use credit card points and pay for expenses and deduct them , you can. Also if your are a Sole Proprietorship ,you can file form Schedule C and deduct all eligible business expenses, regardless of how you pay for them (credit/debit/check/cash). As long as you are paying for business expenses and have all the necessary receipts to show, you can deduct them.  If you receive cashback on the side there seems to be a \"\"don't ask, don't tell\"\" rule that the IRS is OK with. I suggest that you have at least a personal card that you only use for business expenses, if you don't opt for a business card. It makes it easier to defend if you are ever audited, and if you use an accountant or tax preparer, it makes it very clear that expenses on that card are business expenses, and it is also just more professional.  I would highly recommend having a professional handle your taxes. It is worth the money to have it done correctly rather than doing something wrong and getting audited  or having penalties assessed and owing more money than you expected.  You can also write it off as a business expense."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "What are the basic steps to open a small business?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Opening a small business is the biggest dream of most entrepreneurs nowadays. The path can be of different forms and include starting one from scratch, buying an existing one or opting for a franchise. There are rules, regulations, requirements and laws for legally  operating  a small business, some of these may be federal but for the most part, it will be the locality (state, county, city) of the business that determines what needs to be done, including with regard to income taxes. It is best to start out creating a small business where you can control the content and grow it so that it ends up being a fairly decent-paying job for yourself and maybe a few others. Jobs for average people are disappearing, but those with the required dedication and discipline can scratch out an alright living running their own show."
 
   - turn_number: 4

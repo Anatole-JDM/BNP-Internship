@@ -4,8 +4,6 @@ title: "RAG Conversation #42 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I delete a key?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To delete a key using IBM Key Protect, you can follow these steps:
 1. Log in to the IBM Cloud console.
 2. Go to Menu > Resource List to view a list of your resources.
@@ -17,8 +15,6 @@ Also, keep in mind that deleting a key will make any data encrypted by the key i
 
   - turn_number: 2
     user_query: "what happen when the first user authorizes a key for deletion?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "When the first user authorizes a key for deletion, it remains in the Active state for seven days. During this time, all key operations are allowed on the key. To complete the deletion, another user with a Manager role can use the Key Protect GUI or API to delete the key at any point during those seven days. Once the key is deleted, it will be moved to the Destroyed state. However, because it is impossible to purge an active key, another user must delete the key before it can be purged.
 The key and its associated data will be inaccessible 90 days after being deleted. When you delete a key, it is \"soft deleted\", meaning that the key and its associated data will be restorable up to 30 days after deletion. You are able to still retrieve associated data such as key metadata, registrations, and policies for up to 90 days. After 90 days, the key becomes eligible to be automatically purged, or hard deleted, and its associated data will be permanently removed from the Key Protect service."
 
@@ -29,10 +25,10 @@ The key and its associated data will be inaccessible 90 days after being deleted
     rewrite:
       rewritten_query: "What happens if the second user takes no action and the 7-day key-deletion approval period expires?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "If no action is taken by the second user and the 7-day period expires, the key will remain in the Active state and will not be deleted and you must restart the dual authorization process to delete the key . All key operations will still be allowed on the key. The key and its associated data will continue to be accessible and will not be moved to the Destroyed state. No further action can be taken to delete the key until the first user authorizes deletion again."
 
   - turn_number: 4

@@ -4,38 +4,26 @@ title: "RAG Conversation #3 - No References"
 turns:
   - turn_number: 1
     user_query: "What is ground water contamination?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Groundwater contamination refers to the presence of harmful substances, such as household cleaners, flea powders, garden pesticides, paints, varnishes, motor oil, and antifreeze. It occurs when these products are disposed of improperly and seep into the ground.  By disposing of these harmful products improperly, we are contributing to groundwater contamination."
 
   - turn_number: 2
     user_query: "Can it be clean up?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, contaminated groundwater can be cleaned up, but it can be a time-consuming and expensive process. Communities whose drinking water source has become contaminated have had to spend millions of dollars to remove contaminants from the water before it can be piped to homes and businesses. The cleanup is effective, but it can significantly affect the cost of providing the water to customers. It is far better to prevent contamination in the first place."
 
   - turn_number: 3
     user_query: "What is it?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Contrary to popular belief, groundwater is not found in underground rivers or lakes. Instead, water fills the cracks and pore spaces in rocks and sediments beneath the Earth's surface, similar to how water saturates a sponge or towel. Only 3.5 percent of the water on Earth is fresh water suitable for drinking, and most of that, 68 percent, is trapped in ice and glaciers. One-third of the freshwater is found in the ground, known as groundwater."
 
   - turn_number: 4
     user_query: "What are the suppliers for the city?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The City of Monterey Park Water System gets its water from local groundwater, which is pumped from 12 City-owned wells. These wells have a total capacity of 20 million gallons per day (mgd) and reach a depth of up to 1,800 feet. They are located near the Rio Hondo, outside the city limits, in the Main San Gabriel groundwater basin. Monterey Park's water is supplied by the San Gabriel Valley Municipal Water District, of which the city is a member. It's important to note that the City of Monterey Park does not own the Garvey Reservoir, and the water it contains is not stored for city use."
 
   - turn_number: 5
     user_query: "Pollution"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Equipment, power plants that burn oil, gas, or coal, and industries that manufacture chemicals and other goods, along with other routine activities such as mowing the lawn, burning brush, heating with wood, and running errands in automobiles, all contribute to air pollution. Nearly everyone in any city around the world is exposed to air that has harmful levels of air pollution,\" said Anenberg, a member of NASA’s Health and Air Quality Applied Sciences team. For areas with little to no ground-based pollution monitoring, the data from Anenberg and colleagues may be the first that local officials have regarding the impacts of air pollution in their cities."
 
   - turn_number: 6
     user_query: "In water"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Pollution occurs when water collects contaminants from pesticide use, mining, logging, and other sources and deposits them in water bodies. The Department of Pesticide Regulation (DPR) would be involved if pesticides were the pollutants of concern. The California Department of Forestry and Fire Protection (CDFFP) would comment on a TMDL if timber harvesting contributed to a water body's impairment. The Department of Fish and Wildlife would be involved if fish and wildlife were beneficial uses of water impacted in an impaired water body."
 
   - turn_number: 7
@@ -45,10 +33,10 @@ turns:
     rewrite:
       rewritten_query: "What are effective solutions to reduce and prevent water pollution?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "To reduce air pollution, here are some suggestions:
 
 1. Turn off the lights when you leave a room.

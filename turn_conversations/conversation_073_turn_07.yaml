@@ -4,38 +4,26 @@ title: "RAG Conversation #73 - No References"
 turns:
   - turn_number: 1
     user_query: "Can you summarize the types of services?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The types of services include commodity services such as fuel, vehicles, office supplies, and food; service services like elevator maintenance; and technology services including hardware, software, telecommunications, and IT services."
 
   - turn_number: 2
     user_query: "process for contractor"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have specific information on the process for becoming a contractor with the Office of General Services."
 
   - turn_number: 3
     user_query: "Is VA using a seoparate procurement tool from OSG?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have much information about VA has its own procurement resources, the OGS has centralized statewide contracts, a Purchaser Notification Service (PNS), the 1122 Program, and other procurement resources."
 
   - turn_number: 4
     user_query: "Of course VA is federal !!"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. You are correct! The VA is a federal department of the United States government."
 
   - turn_number: 5
     user_query: "any advantage to a women owned company??"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Office of General Services (OGS) promotes participation by minority and women-owned businesses in state contracting opportunities through its Minority and Women-Owned Business Enterprise (M/WBE) program. This program encourages and supports the involvement of women-owned businesses in procurement activities."
 
   - turn_number: 6
     user_query: "anything for vets?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, there are programs specifically for Service-Disabled Veteran-Owned Businesses (SDVOBs). In 2014, New York State passed Executive Law Article 17-B, which aims at greater inclusion of service-disabled veterans within New York State's economy. The VA also has a Service-Disabled Veteran-Owned Business (SDVOSB) Verification Program to help verify businesses for potential contracting opportunities."
 
   - turn_number: 7
@@ -45,10 +33,10 @@ turns:
     rewrite:
       rewritten_query: "Are there procurement advantages or set-asides for veteran-owned businesses?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, the Office of General Services (OGS) has a Green Purchasing Preferred Sources program, which encourages the use of environmentally friendly products and services in state contracting."
 
   - turn_number: 8

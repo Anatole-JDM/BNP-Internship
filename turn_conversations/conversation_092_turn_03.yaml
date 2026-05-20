@@ -4,14 +4,10 @@ title: "RAG Conversation #92 - No References"
 turns:
   - turn_number: 1
     user_query: "What should I do if my garbage/recycling/organics collection is missed?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you are in City of Piedmont, you should call Republic Services at their toll-free number, (800) 320-8077 before 12 noon for a return trip on the same day."
 
   - turn_number: 2
     user_query: "do i need to pay for garbage/recycling/organics service? what if I do not have enough money?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, service rates are based upon the size of your garbage cart. According to the Piedmont Municipal Code, every owner of any premises is required to ensure that arrangements are made to properly dispose of solid waste, recyclable material, and organic waste created, produced, or accumulated on the premises. There are ways to reduce the cost of garbage collection service. For example, you may be able to switch to a smaller garbage cart to save money; or you can switch to curbside service."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Can you clarify garbage, recycling, and organics service rates and billing?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The service rates for single-family residences in the City of Piedmont are based on the size of the garbage cart. The rates for curbside collection are as follows: $94.76 per month for a 20-gallon garbage cart, $100.41 per month for a 35-gallon garbage cart, $138.33 per month for a 65-gallon garbage cart, and $154.91 per month for a 95-gallon garbage cart. Each residential account includes unlimited recycling and organics carts. On-premises (backyard) collection rates are different and are limited to a maximum size of 35 gallons. Additional garbage carts are available for an additional cost.
 For residents of Madison County, NY, there is no charge for residential yard waste drop-off if the items are up to 6 inches in diameter and no longer than 10 feet in length. Commercial yard waste, stumps, and oversized tree limbs are charged per ton and must go over the scales before unloading."
 

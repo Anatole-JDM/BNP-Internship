@@ -4,14 +4,10 @@ title: "RAG Conversation #77 - No References"
 turns:
   - turn_number: 1
     user_query: "what is the meaning of grenade by bruno mars"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Although I do not have information about the exactly meaning of grenade by Bruno Mars ,the song contains masochistic themes and tells the story of heartbreak caused by a failed relationship and the lyrics convey that despite Bruno's best efforts to show his love, The song 's lyrics carry a message of unrequited love and how Mars ' heart was broken , despite his best efforts to show her his love ."
 
   - turn_number: 2
     user_query: "Are you able to tell me who were the writers  of the song and also who were its performers?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, Grenade (song) Grenade '' was written and produced by The Smeezingtons ( Mars , Phillip Lawrence , Ari Levine ) with additional songwriting by Brody Brown , Claude Kelly ,and Andrew Wyatt. The song was recorded at Larrabee Recording Studios and Levcon Studios in Los Angeles , California and performed by Bruno Mars as lead vocal and  Nabil Elderkin directed the music video for the song ."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "When was Bruno Mars's song 'Grenade' released?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The song 'Grenade' by Bruno Mars was initially released as a promotional single on September 28, 2010 and debuted on the Billboard Hot 100 the week of October 16 and the music video was released on November 19 of the same year on MTV and MTV.com ."
 
   - turn_number: 4

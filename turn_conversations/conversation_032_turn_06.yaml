@@ -4,32 +4,22 @@ title: "RAG Conversation #32 - No References"
 turns:
   - turn_number: 1
     user_query: "how does the mls all star game work?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The MLS All-Star Game is an annual soccer game where selected players from Major League Soccer (MLS) compete against an international club. The format of the game has evolved over the years. Initially, it featured the Eastern Conference playing against the Western Conference. However, since 2005, MLS has been inviting a professional club from abroad to participate. The opponents are usually from Europe, specifically England's Premier League, due to the scheduling coincidence of the MLS midseason with the pre-seasons of most European leagues. Players earn roster spots through a combination of fan voting and selections by the appointed manager and league commissioner. The game is considered a pre-season friendly from a European perspective."
 
   - turn_number: 2
     user_query: "When did the MSL All-Star game start?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The first MLS All-Star Game was played at Giants Stadium in the summer of 1996. The game , using the traditional East -- West format with players handpicked by the coaching staffs , was the first game of a doubleheader with the Brazilian national team defeating a team of FIFA World All - Stars."
 
   - turn_number: 3
     user_query: "MSL All-Star game seems to be a big sport event.  Have any teams from Europe played in the MSL All-Star Games ?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. Several teams from Europe have participated in the MLS All-Star Games. The 2002 game featured the U.S. national team as the opponent, but since then (except in 2004), every opponent has been a professional club invited by the league. All games since 2005 have been against teams from Europe , the majority of which have been from England 's Premier League. For instance, the 2009 MLS All-Star game was against Everton; the 2015 game was against Tottenham Hotspur; and the 2017 game was against Real Madrid."
 
   - turn_number: 4
     user_query: "Talking about soccer, Can you name the best soccer players of all the time?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. I can provide some names of the most renowned soccer players of all time. For instance Zinedine Zidane, Lionel Messi and Cristiano Ronaldo are the only players to haves been named FIFA World Player of the Year. Zidane has received that honor three times. In 2002 , ESPN described Zidane as the greatest player in the world in the world 's biggest game . In 2004 , he was voted UEFA Best European Player of the Past 50 Years , and was named in the FIFA 100 list of the world 's greatest living players . Cristiano Ronaldo and Lionel Messi are considered to be the two best players of their generation. Ronaldo has four FIFA Ballon d'Or awards , the most for a European player, and is the first player in history to win four European Golden Shoes. He has scored more than 600 senior career goals for club and country. Pelé is considered the  best soccer player of the last century. In the late 1990s, France Football elected Pelé the Football Player of the Century."
 
   - turn_number: 5
     user_query: "What  does it make a good soccer player?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A good soccer player typically needs to possess a combination of various skills like passing , tackling , evasion of tackles , catching and kicking. It is important that they are lean and muscular with a reasonably high level of capacity in all areas of physical performance. Height is considered advantageous for forwards who aim to score with their heads, and many of the world 's best forwards and midfielders are taller than average."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "Is soccer still the most-watched sport worldwide?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, soccer, also known as football in many parts of the world, is the most-watched sport around the world. Globally it is played by over 250 million players in over 200 nations , and has the highest television audience in sport.  The World Cup is also the  most widely viewed and followed sporting event in the world . For example, the cumulative viewership of all matches of the 2006 World Cup is estimated to be 26.29 billion . 715.1 million individuals watched the final match of this tournament ( a ninth of the entire population of the planet )."
 
   - turn_number: 7

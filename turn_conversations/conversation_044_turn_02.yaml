@@ -4,8 +4,6 @@ title: "RAG Conversation #44 - No References"
 turns:
   - turn_number: 1
     user_query: "Is Red Hat Virtualization the same as Red Hat OpenShift virtualization?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The documents do not contain any information about Red Hat Virtualization to assist in deciding about potential differences."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What is Red Hat OpenShift?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Red Hat OpenShift is a Kubernetes container platform that offers a reliable environment for running enterprise workloads. It enhances the Kubernetes platform with built-in software to improve application lifecycle development, operations, and security. IBM sets up and assists in managing a cluster of worker nodes equipped with the OpenShift Container Platform container orchestration software. Red Hat OpenShift enables you to deploy your workloads consistently across hybrid cloud providers and environments."
 
   - turn_number: 3

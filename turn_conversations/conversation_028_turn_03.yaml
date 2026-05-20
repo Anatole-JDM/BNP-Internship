@@ -4,14 +4,10 @@ title: "RAG Conversation #28 - No References"
 turns:
   - turn_number: 1
     user_query: "what is the difference between primary and archaeological sources"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have specific information on difference between primary and archaeological sources. However, a primary source ( also called original source or evidence ) is an artifact , a document , diary , manuscript , autobiography , a recording , or any other source of information that was created at the time under study . It serves as an original source of information about the topic .Also, a primary source could be defined as something that was created either during the time period being studied or afterward by individuals reflecting on their involvement in the events of that time"
 
   - turn_number: 2
     user_query: "primary sources in history"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you asking about History as an academic discipline, it is based on primary sources can include artifacts, documents, diaries, manuscripts, autobiographies, recordings, or any other source of information that was created at the time under study. They serve as original sources of information about the topic. Examples of primary sources in history include novels or plays, photographs, newsreels, coins, paintings, buildings, archaeological artifacts, oral reports, and interviews. Written sources may be divided into three types: documents such as official reports, speeches, pamphlets, posters, or letters by participants, official election returns, and eyewitness accounts; books, essays, and letters written by intellectuals; and religious texts and descriptions of religious ceremonies and rituals."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "How did archaeological discoveries affect colonialist interpretations of history?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The archaeological discoveries helped to shaped the way European colonialists identified with the artifacts and the ancient people who made them . For instance, colonial Europe 's mission in Egypt was able to bring the glory and magnificence of ancient Egypt closer to Europe and incorporate it into knowledge of world history , putting that country  new spotlight . With the archaeological discoveries , ancient Egypt was adopted into the Western historical narrative and came to take on a significance that had up until that time been reserved for ancient Greek and Roman civilization . Also  , historians of the pre-Columbian period mainly interpreted the records of the European conquerors and the accounts of early European travelers and antiquaries ."
 
   - turn_number: 4

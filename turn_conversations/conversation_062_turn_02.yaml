@@ -4,8 +4,6 @@ title: "RAG Conversation #62 - No References"
 turns:
   - turn_number: 1
     user_query: "Is it possible to build a dialog skill in a language other than English?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, it is possible to build a dialog skill in a language other than English. Languages supported include English, Brazilian Portuguese, Czech, Dutch, French, German, Italian, Spanish, Arabic, Chinese, Korean, and Japanese languages."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "What other Watson Assistant skill types exist, and which languages does each support?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "1. **Actions Skill**: Actions offer step-by-step flows for a conversation and can be built by anyone. 
 2. **Search Skill**: This skill is configured to search appropriate external data sources for answers to customer questions. 
 The language support for this skill is not explicitly mentioned, but since it's a part of the Watson Assistant service, it should support the same languages as the dialog skill."

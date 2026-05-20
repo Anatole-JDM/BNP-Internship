@@ -4,14 +4,10 @@ title: "RAG Conversation #24 - No References"
 turns:
   - turn_number: 1
     user_query: "Pay off car loan entirely or leave $1 until the end of the loan period?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The decision between these two options may depend on your financial situation and your goals regarding your credit score and debt. If your goal is to improve your credit score, you might consider paying it on a monthly basis to benefit from positive effects of no late payments and long term accounts. If your goal is to minimize interest payments, you might consider paying off the loan entirely. Additionally, if you got a very low APR for your car loan, then you might want to consider investing instead of loan payment because you could earn more than the interest you pay."
 
   - turn_number: 2
     user_query: "what factors pay major impact on the credit score?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The five factors that have a major impact on your FICO credit score are:
 1. Payment history: Late payments can negatively affect your score, while on-time payments can improve it.
 2. Credit utilization: This refers to how much of your available credit you are currently using. Lower is better, but having 0% usage is not ideal either. Aiming for 10% or less is a good goal.
@@ -27,10 +23,10 @@ It is important to note that errors and fraud can also impact your credit score,
     rewrite:
       rewritten_query: "Is the credit score shown by Credit Karma the same as a FICO score?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The FICO score is a type of credit score developed by the Fair Isaac Corporation. It is widely used by lenders to determine the creditworthiness of potential borrowers. Credit Karma, on the other hand, provides users with free access to their credit scores, which are typically based on the VantageScore model, developed by the three major credit bureaus (Experian, Equifax, and TransUnion). While FICO and VantageScore models have some similarities, they are not the same and may produce slightly different credit scores. Therefore, the credit score you see on Credit Karma might not be exactly the same as your FICO score. However, it can still provide you with a general idea of your credit standing."
 
   - turn_number: 4

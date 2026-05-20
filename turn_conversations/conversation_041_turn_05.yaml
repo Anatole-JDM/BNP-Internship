@@ -4,26 +4,18 @@ title: "RAG Conversation #41 - No References"
 turns:
   - turn_number: 1
     user_query: "Using credit card points to pay for tax deductible business expenses"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "When using credit card points to pay for tax-deductible business expenses, the expenses are not actually deductible because the points used effectively cancel out the cost. However, if the points were earned on a personal credit card and used for business-related expenses, the employer can reimburse the employee for those expenses, and it seems the IRS follows an unofficial \"don't ask, don't tell\" rule regarding any rewards or cashback earned on the employee's personal card. It's important to note that credit card fees for personal expenses are not tax-deductible, while fees for business credit cards are deductible on Schedule C or the appropriate form for reporting business income and expenses. If you have a card used for both business and personal expenses, it's advisable to get separate cards for clarity and ease of accounting. In summary, while the expenses themselves may not be deductible when using credit card points, the employer can reimburse the employee for the expenses, and having separate cards for business and personal use is recommended, i.e., getting a personal card that you only use for business expenses,  if you don't opt for a business card. It makes it very clear that expenses on that card are business expenses, and is just more professional."
 
   - turn_number: 2
     user_query: "small business"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you are asking about a small business owner use credit card points and pay for expenses and deduct them , you can. Also if your are a Sole Proprietorship ,you can file form Schedule C and deduct all eligible business expenses, regardless of how you pay for them (credit/debit/check/cash). As long as you are paying for business expenses and have all the necessary receipts to show, you can deduct them.  If you receive cashback on the side there seems to be a \"\"don't ask, don't tell\"\" rule that the IRS is OK with. I suggest that you have at least a personal card that you only use for business expenses, if you don't opt for a business card. It makes it easier to defend if you are ever audited, and if you use an accountant or tax preparer, it makes it very clear that expenses on that card are business expenses, and it is also just more professional.  I would highly recommend having a professional handle your taxes. It is worth the money to have it done correctly rather than doing something wrong and getting audited  or having penalties assessed and owing more money than you expected.  You can also write it off as a business expense."
 
   - turn_number: 3
     user_query: "open a small business"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Opening a small business is the biggest dream of most entrepreneurs nowadays. The path can be of different forms and include starting one from scratch, buying an existing one or opting for a franchise. There are rules, regulations, requirements and laws for legally  operating  a small business, some of these may be federal but for the most part, it will be the locality (state, county, city) of the business that determines what needs to be done, including with regard to income taxes. It is best to start out creating a small business where you can control the content and grow it so that it ends up being a fairly decent-paying job for yourself and maybe a few others. Jobs for average people are disappearing, but those with the required dedication and discipline can scratch out an alright living running their own show."
 
   - turn_number: 4
     user_query: "registered business"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If you are asking about register a small business name, it is important to note that their names are notoriously hard to protect when they are active. What you should look for is a Registered Trademark (®), which is a federal legal designation disallowing other businesses from using your name or business branding.  However if you are asking about the process of registering business , it is done  accordingly to the state and the most essential thing for incorporating business is to create extra tax burden and keep record of the business with administrative details.  But if you are talking about VAT, you can do regardless of the nature or size of the business. Moreover if you do business under your name, you don't need to register your business. Your business will be treated as a sole proprietorship. If your revenue exceeds 30,000 (or wish to collect GST for the government) then you will have to register with the CRA for a GST account, but that is free."
 
   - turn_number: 5
@@ -33,10 +25,10 @@ turns:
     rewrite:
       rewritten_query: "How do small business credit cards work, and should I get one?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "If you are a newly registered small business owner, you can look into getting a business card using your \"\"personal\"\" credit score to get the credit and when you get it, you can add authorized users to the main account and set a spending limit on each card. It is important to note that  business credit normally refers to one or more credit cards which can be used to make purchases on behalf of a business. A business credit card will usually have both the business name and the card holder's name printed or embossed on the card. In most cases the cardholder will have provided a personal guarantee when applying for the card. A personal guarantee ultimately makes the card holder liable for all charges made on the card."
 
   - turn_number: 6

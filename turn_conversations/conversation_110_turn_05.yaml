@@ -4,26 +4,18 @@ title: "RAG Conversation #110 - No References"
 turns:
   - turn_number: 1
     user_query: "which industry provides the largest employment in india"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The retail industry, excluding wholesale, is the second largest employer in India, after agriculture. Economy of India Agricultural and allied sectors accounted for about 52.1 % of the total workforce in 2009 -- 10. About 51.2 % of the workforce in India is self - employed."
 
   - turn_number: 2
     user_query: "Agriculture seems very important to India"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, economy of India Agriculture is an important part of the Indian economy. It accounts for a significant portion of the country's GDP and employs a large portion of the workforce. Labour in India Agriculture, dairy, horticulture and related occupations alone employ 52 percent of labour in India. Agriculture and allied sectors accounted for 17% of the GDP and employed 49% of the total workforce in 2014. Additionally, agriculture alone accounted for 23% of GDP and employed 59% of the country's total workforce in 2016. Despite the declining contribution of agriculture to the GDP over the years, it remains the largest employment source in India and plays a significant role in the country's overall socio-economic development."
 
   - turn_number: 3
     user_query: "what does indian agriculture produce include?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Wheat, barley, and jujube were domesticated in the Indian subcontinent by 9,000 BC, soon followed by sheep and goats. Agriculture includes crops, horticulture, milk and animal husbandry, aquaculture, fishing, sericulture, aviculture, forestry and related activities. India is the second - largest producer of rice, wheat, sugarcane, cotton and groundnuts, as well as the second - largest fruit and vegetable producer, and it is also the second - largest producer and the largest consumer of silk; and it is the largest exporter of cashew kernels and cashew nut shell liquid."
 
   - turn_number: 4
     user_query: "do you think indian people working in agriculture industry make money"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Labourers do not get more than Rs. 80 in the private agricultural labour market. On an inflation adjusted 1973 Rupee basis, the average income of Indian agrarian labourer was Rs. 7.20 per year in 1885."
 
   - turn_number: 5
@@ -33,10 +25,10 @@ turns:
     rewrite:
       rewritten_query: "What are cashew kernels and cashew nut shell liquid used for?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The cashew nut,often simply called a cashew, is widely consumed. It is eaten on its own, used in recipes, or processed into cashew cheese or cashew butter. Cashew Cashew nutshell liquid is a natural resin found in the honeycomb structure of the cashew nutshell. It is a byproduct of processing cashew nuts and has multiple uses in developing drugs, antioxidants, fungicides, and biomaterials. It is also used in tropical folk medicine and for anti-termite treatment of timber. The composition of CNSL varies depending on how it is processed."
 
   - turn_number: 6

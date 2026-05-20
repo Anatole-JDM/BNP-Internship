@@ -4,32 +4,22 @@ title: "RAG Conversation #94 - No References"
 turns:
   - turn_number: 1
     user_query: "Does Vulnerability Advisor scan encrypted imagery?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "No, encrypted images are not scanned by Vulnerability Advisor."
 
   - turn_number: 2
     user_query: "Then what does Vulnerability Advisor scan? what does it actually do?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Vulnerability Advisor scans images that are stored in IBM Cloud Container Registry to find potential security vulnerabilities in the image content. It checks for known software vulnerabilities and weak system configurations. Also, it detects security issues and potential vulnerabilities. When it finds any issues, it provides suggestions to help fix the reported vulnerabilities."
 
   - turn_number: 3
     user_query: "I currently have Vulnerability Advisor version 3..."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Vulnerability Advisor v4 is now available, and you should update Vulnerability Advisor to version 4 by 19 June 2023. If you use one of the Vulnerability Advisor version 3 SDKs to access Vulnerability Advisor, you must update to the Vulnerability Advisor version 4 SDK."
 
   - turn_number: 4
     user_query: "how can I get this Vulnerability Advisor v4?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "About how to update to version 4, see Update Vulnerability Advisor to version 4 by 19 June 2023."
 
   - turn_number: 5
     user_query: "what is difference between Vulnerability Advisor version 3 and version 4?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Vulnerability Advisor version 4 uses new architecture and a different scanning engine compared to version 3. In version 4, the image is indexed the first time it is pushed and the vulnerability assessment is calculated every time Vulnerability Advisor is queried about that image. In contrast, version 3 triggers the scanning of an image when a new image is pushed to the registry, when a new security notice is released for a package that is installed in the image, or while an image is tagged in the registry. Additionally, version 3 is deprecated from 19 June 2023 and it is recommended to update to version 4."
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "If Vulnerability Advisor cannot scan encrypted images, what should I do when creating secure container images?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "You can protect the confidentiality of your IBM Cloud® Container Registry images, and ensure that hosts that aren't trusted can't run the images. You can create an encrypted image by using an RSA public-private key pair to encrypt and decrypt the image. The public key is used to encrypt the image, while a private key is a secret and then build a container image by using a Dockerfile, and only users that have that private key can use it to decrypt the image."
 
   - turn_number: 7

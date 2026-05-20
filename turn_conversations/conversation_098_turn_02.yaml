@@ -4,8 +4,6 @@ title: "RAG Conversation #98 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the differences between query parameters and message parameters?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Query parameters and message parameters are two types of parameters sent from WebSocket API. Query parameters are sent when phone integration connects to the service and are used in queries written with the Discovery Query Language. Message parameters are sent as part of the JSON data in the request body."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "Can you explain what the WebSocket API is and how it works?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Of course! The WebSocket interface of the IBM Watson® Speech to Text service is the most natural way for a client to interact with the service. Because of their advantages, WebSockets are the preferred mechanism for speech recognition.  The WebSocket interface can take minutes to produce final results for a recognition request for an especially long audio file. For the WebSocket interface, the underlying TCP connection remains idle while the service prepares the response."
 
   - turn_number: 3

@@ -4,8 +4,6 @@ title: "RAG Conversation #4 - No References"
 turns:
   - turn_number: 1
     user_query: "What's the difference between Market Cap and NAV?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The market cap is simply the share price multiplied by the number of shares. It doesn't indicate any inherent value; rather, it reflects what people believe the company is worth. NAV, or net asset value, is the total value of the company's assets divided by the number of shares. This is also referred to as the book value. In summary, market cap is calculated by multiplying the share price by the number of shares."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "When evaluating an investment fund, which is usually more important: market capitalization or net asset value (NAV)?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Both market capitalization and net asset value (NAV) provide different perspectives on a company's value. Market cap is basically the amount of money that it would cost to buy all of the company's shares of public stock. On the other hand, NAV adds up all the assets and subtracts all the liabilities, essentially representing a bookkeeping exercise."
 
   - turn_number: 3

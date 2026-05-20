@@ -4,20 +4,14 @@ title: "RAG Conversation #26 - No References"
 turns:
   - turn_number: 1
     user_query: "I cannot get select query to work, what steps should I take?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "1. Check if you have the correct access rights: You need at least 'Reader' access to the buckets that contain the input objects. 2. After the FROM keyword, specify one or more unique resource identifiers (URIs) which can be thought of as tables. Each URI can specify one or more input objects, which can also be thought of as table partitions. 3. If the format of the input objects is CSV, and no special options are required, it is not necessary to specify a STORED AS clause. However, if the format is JSON, ORC, Parquet, or AVRO, after the FROM clause, specify STORED AS JSON, STORED AS ORC, STORED AS PARQUET, or STORED AS AVRO. 4. If text formats, such as JSON and CSV, are compressed with either gzip or bzip2 and have the extensions .gz and .bz, they automatically get recognized as compressed files. However, do not use these kinds of compressed files due to performance reasons. 5. If the format of the input objects is CSV and a delimiter other than the default , (comma) is used, you must specify the delimiter by using the FIELDS TERMINATED BY option of the STORED AS clause. All single Unicode characters are allowed as delimiters. 6. Check for a header line: By default, it is assumed that CSV input objects have a header line that specifies the names of the input columns."
 
   - turn_number: 2
     user_query: "query definition"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Query is a standard JavaScript object, which is passed to the db.find function which it POSTs to the _find endpoint on your behalf. To retrieve data from Discovery after it is ingested, indexed, and enriched, submit a query."
 
   - turn_number: 3
     user_query: "how can I improve query"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You can use the tools that are built into Discovery to make improvements. If you want more control over how queries are handled, you must use the query API. Cataloging improves your query performance, especially for text-based data formats where the schema inference requires a full scan of the data before the actual query execution. Adding a custom stop words list can improve the relevance of results for natural language queries. You can also improve the quality of search results by expanding the meaning of the queries that are submitted by customers."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Can you explain the query API in more detail for troubleshooting SELECT queries?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Watson Query provides REST APIs that you can use to interact with your instance. When you submit a search from the product user interface, your text is passed as a natural language query value to the Query API. You can use operators when you write queries to submit to Discovery by using the Query API. The API coordination node can make a request directly to servers that host that data rather than needing to combine responses from many servers. The API coordination node is also free from buffering the response since it has no combination step to carry out. As a result, the data arrives at the client more quickly."
 
   - turn_number: 5

@@ -4,20 +4,14 @@ title: "RAG Conversation #79 - No References"
 turns:
   - turn_number: 1
     user_query: "types and causes of male and female infertility"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Here are the types and causes of male and female infertility: Male infertility can be caused by: 1. Low semen quality 2. Endocrine problems 3. Drugs 4. Radiation 5. Infection 6. Testicular malformations 7. Hormone imbalance 8. Blockage of the duct system 9. Primary ciliary dyskinesia 10. Antisperm antibodies Female infertility can be caused by: 1. Inability to ovulate 2. Malformation of the eggs 3. Polycystic ovarian syndrome 4. Failure of ovaries to mature and release eggs 5. Ovulatory problems These causes can be diagnosed and, in some cases, treated through medical intervention. However, in about 10-20% of cases, no cause is found."
 
   - turn_number: 2
     user_query: "How many years, think about adoption?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The documents do not include information on how long to consider adoption after experiencing infertility."
 
   - turn_number: 3
     user_query: "Regional differences"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The documents do not include information about regional differences in infertility types and causes. It is important to note that  existing definitions of infertility lack uniformity , rendering comparisons in prevalence between countries or over time problematic ."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "Can chemotherapy affect fertility, including when treatment happens before puberty?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The documents do not provide specific information about the impact of chemotherapy on fertility before puberty.   But, yes, chemotherapy can affect fertility.  It can cause DNA damaging of the cells in the testicles or ovaries that produce sperm and eggs, potentially leading to reduced fertility or even sterility."
 
   - turn_number: 5

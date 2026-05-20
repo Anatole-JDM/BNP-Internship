@@ -4,38 +4,26 @@ title: "RAG Conversation #2 - No References"
 turns:
   - turn_number: 1
     user_query: "\"What are the sheltered rooms designated for use?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "A safe room, as defined by FEMA, is designed to provide shelter from tornadoes. However, if the safe room is located below ground, it may not be suitable for protection during a weapons of mass destruction event. The Red Cross recommends safe rooms for areas prone to tornadoes. It's important not to confuse safe rooms for tornadoes with shelter-in-place rooms. An above-ground safe room with no windows can also be used as a shelter-in-place location. It's important to note that a safe room used for protection from windstorms is different from a room selected for shelter-in-place, although they serve a similar purpose. If an above-ground safe room for windstorms has no windows, it can also be an ideal location for sheltering-in-place."
 
   - turn_number: 2
     user_query: "What items should I keep?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Being prepared to take care of yourself during a disaster is crucial. This means having enough food, water, and other supplies to last at least three days if stores are closed and roads are impassable due to a flood or winter storm. While local officials and relief workers will be available after a disaster, they may only be able to reach some people after a disaster. You could receive help within hours, but it may take days. It's important to note that the recommendation to have at least three days' worth of disaster supplies differs from the advice to shelter in place, which may involve using duct tape and plastic sheeting during an emergency. The Red Cross advises people to have these supplies on hand if needed."
 
   - turn_number: 3
     user_query: "Is it the same for earthquakes?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Each disaster has its characteristics, but it's important to plan and prepare today for you and your family to recover from an emergency tomorrow. Here are some steps you can take: 1. Get an Emergency Supplies kit lasting up to three days per family member, and remember supplies for your pets. 2. Make a family communication plan, including shelter-in-place and evacuation procedures. 3. Stay informed by visiting Ready.gov and signing up for emergency notifications from San Mateo County (SMC) Alert. 4. Get involved by signing up for a Community Emergency Response Team (CERT) course and learning life-saving techniques in a CPR class. Remember, earthquakes can happen suddenly and without warning. Identifying potential hazards and planning can reduce the risk of severe injury or loss of life during an earthquake. If your home is damaged, check for gas leaks and avoid using toilets if you suspect sewage lines are damaged. Contact the gas company and a plumber if needed. In the same way, if water pipes are damaged, please contact the water company and avoid using tap water. You can obtain safe water by melting ice cubes. Each county prone to earthquakes has guides to help citizens before, during, and after an earthquake. Please reach out to your city hall for more information."
 
   - turn_number: 4
     user_query: "Which state has more wildfires?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Although I don't have the exact information about which state has more wildfires, it is known that the 2018 wildfire season in California was the deadliest and most destructive on record in the state. In the 2020 California wildfire season, record-setting wildfires burned across the state, with nearly 10,000 fires burning over 4.2 million acres by the end of the year. This accounted for more than 4% of the state's roughly 100 million acres of land, making 2020 the largest wildfire season in California's modern history. The August Complex fire, part of the 2020 wildfire year, has been described as the first \"gigafire\" due to the area burned exceeding 1 million acres. This fire spread across seven counties and was larger than the state of Rhode Island."
 
   - turn_number: 5
     user_query: "What causes wildfires?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Although wildfires occur naturally from lightning, human activities cause most wildfires. Drought fuels wildfires, as happened in the Amazon, caused by the El Niño system."
 
   - turn_number: 6
     user_query: "Why doesn't the government prevent people from living in areas prone to flooding?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I do not have the answer to your question."
 
   - turn_number: 7
@@ -45,10 +33,10 @@ turns:
     rewrite:
       rewritten_query: "Is flooding the most common type of natural disaster?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, floods are the most common disasters in the United States and can result from various sources such as rain, snow, coastal storms, and dam overflows. They can develop slowly or quickly, with flash floods occurring suddenly and without warning. Floods can cause power outages, disrupt transportation, damage buildings, and lead to landslides. Their impact can range from local to widespread, affecting entire river basins and multiple states. While some floods develop slowly over days, flash floods can emerge within minutes, carrying dangerous debris and swiftly sweeping away whatever is in their path."
 
   - turn_number: 8

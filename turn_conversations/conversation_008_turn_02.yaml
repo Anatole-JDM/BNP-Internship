@@ -4,8 +4,6 @@ title: "RAG Conversation #8 - No References"
 turns:
   - turn_number: 1
     user_query: "does IBM offer document databases?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, IBM offers [IBM Cloudant](https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-documents) which stores JSON objects."
 
   - turn_number: 2
@@ -15,10 +13,10 @@ turns:
     rewrite:
       rewritten_query: "In IBM's document database, can I store arbitrary JSON objects, or do I need to define a fixed schema in advance?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Yes, IBM Cloudant can store any JSON object subject to some caveats listed below
 1. All documents must have two fields:
     * A unique _id field. The _id field is detailed in the next section.

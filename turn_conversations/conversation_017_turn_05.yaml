@@ -4,37 +4,29 @@ title: "RAG Conversation #17 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the steps to be taken to gather the relevant worker node data?"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "There are general steps to gather the relevant worker node data: First,  Check the conditions of your worker nodes and cluster before you gather data. This includes checking the CPU and memory level of your nodes. If any node is over 80% in either CPU or memory usage, consider provisioning more nodes or reducing your workload.Secondly if all worker nodes in a cluster, or in a single zone, subnet, or VLAN are affected, you can open an initial support ticket without gathering data. However, you might later be asked to gather the relevant data. If only one or some of your worker nodes are affected, you must gather the relevant data to include in your support ticket.  Before opening a support ticket, it is recommended to review the information and follow any troubleshooting steps in Debugging worker nodes, Worker node states, and Troubleshooting worker nodes in Critical or NotReady state. To gather worker node data, you can use the command 'kubectl top node' (for Kubernetes clusters) or 'oc top node' (for OpenShift clusters), which will display the CPU and memory usage of each node and once you have gathered this information, include it in your support ticket when you open one."
 
   - turn_number: 2
     user_query: "How can i update a classic worker node?"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "An update is available for your worker nodes in a classic infrastructure cluster. As security updates and patches are put in place for the API server and other master components, you must be sure that the worker nodes remain in sync. You can make two types of updates: updating only the patch version, or updating the major.minor version with the patch version. For Classic clusters with a storage solution such as OpenShift Data Foundation you must cordon, drain, and replace each worker node sequentially. If you deployed OpenShift Data Foundation to a subset of worker nodes in your cluster, then after you replace the worker node, you must then edit the ocscluster resource to include the new worker node.You can update the master Kubernetes version with the ibmcloud ks cluster master updatecommand. Remember that your worker nodes can be only up to two versions behind the master version (n-2). The worker node IP address remains the same after the update operation."
 
   - turn_number: 3
     user_query: "Major. menor update."
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "To determine the type of update that is available, compare your current worker node versions to the latest worker node fix pack version in the Red Hat OpenShift version change log. Major updates are indicated by the first digit in the version label (4.x.x), minor updates are indicated by the second digit (x.7.x).  A major.minor update moves up the Kubernetes version of the worker node to the same version as the master. This type of update often includes changes to the Kubernetes API or other behaviors that you must prepare your cluster for. Remember that your worker nodes can only be one version behind the master version (n-1). You can update the classic worker node to the same patch by using the ibmcloud oc worker update command."
 
   - turn_number: 4
     user_query: "parts of a tag."
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "A tag consists of multiple parts as X.Y.Z-.[hash] where X represents the major version of an image; Y represents the minor version of an image and Z represents an incremental ID that determines the latest patched minor version.Depending on the tag that you use, you must consider upgrading the logging agent image in your DevOps maintenance plan, to resolve vulnerabilities and apply agent enhancements and agent bug fixes. Moreover  Tags are case-sensitive, and the maximum length of a tag is 128 characters.  The characters that are permitted to name tags are A-Z, 0-9, spaces, underscore, hyphen, period, and colon. Colons turn the tag into a string where you can isolate two logical parts, like a key:value pair. You can't use a colon in a tag without creating this pairing. A comma separate tags and can't be used within the tag name itself. If you add PII information in the name, you might be disclosing sensitive data to others in the same account.When you define your tags, do not add sensitive information in the tag name.Tags are visible to all members of an account.To control tag visibility, circulate tagging guidelines, and let users know that tags are visible account-wide.  Define the log ingestion strategy."
 
   - turn_number: 5
     user_query: "node data"
-    macro_informative: "0"
-    micro_informative: "0"
+    macro_informative: 0
+    micro_informative: 0
     rewrite:
       rewritten_query: "What worker-node data should I collect before updating cluster nodes?"
-      macro_informative: "1"
-      micro_informative: "1"
-      correctness:
-        changes: ""
-        groundedness: ""
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
+      correctness: []
     agent_answer: "I am not sure what you would like to know about node data but I can inform you that there are  some sort of nodes.    For instance  ordering node  that collects transactions from network members, orders the transactions and bundles them into blocks. Also known as orderer. Another one is Peer that is a blockchain network resource that provides the services to execute and validate transactions, and maintain ledgers. The peer runs smart contract and is the holder of transaction history and the current state of assets on ledgers. They are owned and managed by organizations and are joined to channels.  Additionally to those two, CA is another node that  issues certificates to all network participants (peers, ordering services, clients, admins, and so on). These certificates, which include a signing certificate and private key, allow network participants to communicate, authenticate, and ultimately transact. These CAs will create all of the identities and certificates that belong to your organization, in addition to defining the organization itself. You can then use those identities to deploy nodes, create admin identities, and submit transactions."

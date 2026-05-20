@@ -4,14 +4,10 @@ title: "RAG Conversation #45 - No References"
 turns:
   - turn_number: 1
     user_query: "What is the Web extension for federal government websites and how do we ensure the site is secure?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The web extension for federal government websites often ends in .gov or .mil. To ensure the site is secure, look for the \"https://\" in the website's URL. This indicates that you are connected to the official website and any information you provide will be encrypted and transmitted securely."
 
   - turn_number: 2
     user_query: "How can I protect my personal information from identity theft"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Here are some tips to protect your personal information from identity theft:
 1. Do not respond to or click on any links within unsolicited emails or pop-up boxes. They can put your personal information in jeopardy.
 2. Be cautious when using your debit card online. Consider using a credit card instead as they typically provide added protection against fraudulent charges.
@@ -29,8 +25,6 @@ For parents, it's important to start the conversation about online safety with y
 
   - turn_number: 3
     user_query: "can you clarify the definition of identity theft?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes. Identity theft occurs when someone steals your identity to commit fraud. Stealing your identity could mean using personal information without your permission, such as your name, Social Security number, bank account information, or credit card number."
 
   - turn_number: 4
@@ -40,10 +34,10 @@ For parents, it's important to start the conversation about online safety with y
     rewrite:
       rewritten_query: "What security systems and controls are used to protect personal information?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "I'm sorry, but I don't have any information to share about that topic."
 
   - turn_number: 5

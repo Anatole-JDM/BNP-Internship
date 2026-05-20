@@ -4,8 +4,6 @@ title: "RAG Conversation #76 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the advantages and disadvantages of Immutable data Storage?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "There are some potential advantages and disadvantages of Immutable Object Storage:  
 Advantages:  
 1. Data Integrity and Long-term Data Retention: Immutable Object Storage preserves electronic records and maintains data integrity. It ensures that data is stored in a WORM (Write-Once-Read-Many), no-erasable and non-rewritable manner, which can be beneficial for industries like Financial, Healthcare, and Media content archives where data integrity is crucial. 
@@ -20,20 +18,14 @@ To assist clients in making informed decisions, IBM engaged Cohasset Associates 
 
   - turn_number: 2
     user_query: "Are Cohasset Associates, Inc., a legal or IT management consulting firm?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Cohasset Associates, Inc. is an IT management consulting firm engaged by IBM to conduct an independent assessment of IBM’s Immutable Object Storage.  Review their report that provides details on this assessment here: https://cloud.ibm.com/media/docs/downloads/cos/immutable-cos.pdf"
 
   - turn_number: 3
     user_query: "What is the maximum retention period?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The supported Maximum Retention value for the retention period settings is 365243 days (1000 years)."
 
   - turn_number: 4
     user_query: "Isn't that an excessive timespan?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Sorry, I cannot find a response to that question in the document."
 
   - turn_number: 5
@@ -43,10 +35,10 @@ To assist clients in making informed decisions, IBM engaged Cohasset Associates 
     rewrite:
       rewritten_query: "Is cloud storage the only option for immutable data storage, or are there alternatives?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The document does not provide specific information about other methods of storage outside of IBM Cloud Object Storage. It primarily discusses the features, benefits, and considerations of using Immutable Object Storage in IBM Cloud."
 
   - turn_number: 6

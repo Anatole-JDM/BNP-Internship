@@ -4,20 +4,14 @@ title: "RAG Conversation #59 - No References"
 turns:
   - turn_number: 1
     user_query: "Where do guinea pigs sleep in the wild?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In the wild, guinea pigs, which are social animals, tend to be most active during dawn and dusk (crepuscular) and seek shelter in the burrows of other animals, as well as in crevices and tunnels formed by vegetation. However, the documents do not provide specific information about where or how guinea pigs sleep in the wild."
 
   - turn_number: 2
     user_query: "What do guinea pigs eat?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Guinea pigs in the wild primarily eat grass and other vegetation. However, they must also supplement their diet by eating their feces ( coprophagy ). They do not consume all their feces indiscriminately but produce special soft pellets called cecotropes (or caecal pellets), which recycle B vitamins, fiber, and bacteria required for proper digestion."
 
   - turn_number: 3
     user_query: "I meant c. tschudii specifically, but thank you for the information regarding the domesticated guinea pig."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Sorry, but I do not have any information about the Cavia tschudii diet."
 
   - turn_number: 4
@@ -27,10 +21,10 @@ turns:
     rewrite:
       rewritten_query: "For Cavia tschudii specifically, what are its main natural predators?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "I'm sorry, but I don't have any information about this topic."
 
   - turn_number: 5

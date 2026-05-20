@@ -4,26 +4,18 @@ title: "RAG Conversation #81 - No References"
 turns:
   - turn_number: 1
     user_query: "what is the great wall of China built out of"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Great Wall of China was built using various materials over different periods. Originally, it was mainly constructed from rammed earth, stones, and wood. During the Ming Dynasty (1368--1644), bricks became heavily used, along with materials such as tiles, lime, and stone. The bricks were easier to work with, could bear more weight, and endured better than rammed earth."
 
   - turn_number: 2
     user_query: "How long is the Wall?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The frontier walls built by different dynasties have multiple courses. Collectively, they stretch from Dandong in the east to Lop Lake in the west, from present - day Sino - Russian border in the north to Qinghai in the south. The walls built by the Ming dynasty measure 8,850 km. Faced with the threat of the Göktürks from the north, the Qi built up to 3,000 li about 1,600 kilometers. The Xuan - Da portion of the Great Wall totaled about 850 kilometers of wall, with some sections being doubled - up with two lines of wall, some tripled or even quadrupled. Chancellor Wanyan Xiang convinced the emperor to build an extensive systems of walls, which consisted of a 700 kilometers outer wall from Heilongjiang to Mongolia and a 1,000 kilometers network of inner walls, north and northeast of Beijing. Together, they formed a roughly elliptical web of fortifications 1,400 kilometers in length."
 
   - turn_number: 3
     user_query: "Who was the enemy?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Many scholars have operated under the belief that the Great Wall continually defended China 's border against the raids and invasions of the various nomadic groups of the Eurasian Steppe with an eye to expansion. Towards the end of the Ming, the Great Wall helped defend the empire against the Manchu invasions that began around 1600. The usefulness of the Great Wall as a defense line against northern nomads became questionable under the Qing dynasty, since China proper, Manchuria, and Mongolia were all under Qing control. So instead, the Great Wall became the means to limit Han Chinese movement into the steppes. Rather than being defensive, the walls indicate the northward expansions of the three northern states and their desire to safeguard their recent territorial acquisitions."
 
   - turn_number: 4
     user_query: "What is Qin Shi Huang known for?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In 221 BC , the state of Qin completed its conquest over the other Warring States and united China under Qin Shi Huang , the first emperor of China. Intending to impose centralized rule and prevent the resurgence of feudal lords , he ordered the destruction of the sections of the walls that divided his empire. Contrary to the building of the outer walls, which were built to stabilize the newly united China, the inner walls threatened the unity of the empire. In the north, the state of Wei and the Yiqu built walls to protect themselves from Qin aggression, but were still unable to stop Qin from eating into their territories. The settlement of the north continued up to Qin Shi Huang 's death in 210 BC."
 
   - turn_number: 5
@@ -33,10 +25,10 @@ turns:
     rewrite:
       rewritten_query: "What role did Meng Tian play in building and defending the Great Wall?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Meng Tian was a Chinese general and politician who served under Emperor Qin Shi Huang during the Qin Dynasty. He is best known for leading the northern expedition against the Xiongnu people. Meng Tian was responsible for building and extending the Great Wall of China along the empire's northern border. Meng Tian introduced 30,000 settler families to colonize the newly conquered territories. When Meng Tian's settlements in the north were abandoned, the Xiongnu nomads moved back into the Ordos Loop as the Qin empire became consumed by widespread rebellion. Upon Qin Shi Huang's death in 210 BC, Meng Tian was ordered to commit suicide in a succession conspiracy."
 
   - turn_number: 6

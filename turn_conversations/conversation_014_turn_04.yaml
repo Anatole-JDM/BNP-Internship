@@ -4,31 +4,29 @@ title: "RAG Conversation #14 - No References"
 turns:
   - turn_number: 1
     user_query: "name the viceroy at the time of quit india movement"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "The Viceroy at the time of the Quit India Movement was Lord Linlithgow."
 
   - turn_number: 2
     user_query: "what did he do?"
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "He had a significant role in the suppression of the Quit India Movement, which brought India into World War II without consultation with Indian nationalists, which led to their anger. The British had the support of his council. He brought India into World War II without consultation with Indian nationalists, which led to their anger.  The Conservatives in England were forced to concede some of the demands made by the Indians and On 8 August , the Viceroy issued a statement that has come to be referred as the `` August Offer '' . However , the Congress rejected the offer."
 
   - turn_number: 3
     user_query: "opposition leader for the movement"
-    macro_informative: "0"
-    micro_informative: "0"
     agent_answer: "A movement was launched at the Bombay session of the All - India Congress Committee by Mahatma Gandhi on 8 August 1942.  Many students paid attention to Subhas Chandra Bose as a leader,  who was in exile. He organized the Indian Legion in Germany , reorganized the Indian National Army with Japanese assistance , and soliciting help from the Axis Powers , conducted a guerrilla war against the British authorities."
 
   - turn_number: 4
     user_query: "who is Patel?"
-    macro_informative: "1"
-    micro_informative: "0"
+    macro_informative: 1
+    micro_informative: 0
     rewrite:
       rewritten_query: "Who was Sardar Patel in the context of India's independence movement?"
-      macro_informative: "1"
-      micro_informative: "1"
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
       correctness:
-        changes: "["Patel" > "Sardar Patel", "in the context of India's independence movement"]"
-        groundedness: "0, 1"
+        - change: "Patel ||| Sardar Patel"
+          score: 0
+        - change: "in the context of India's independence movement"
+          score: 1
     agent_answer: "Vallabhbhai Patel, popularly known as Sardar Patel , was the first Deputy Prime Minister of India . He was an Indian barrister and statesman , a senior leader of the Indian National Congress and a founding father of the Republic of India who played a leading role in the country 's struggle for independence and guided its integration into a united , independent nation . He acted as de facto Supreme Commander - in - chief of Indian army during the political integration of India and the Indo - Pakistani War of 1947 . He is credited by historians with ensuring the success of the rebellion across India. He was arrested and was imprisoned with the entire Congress Working Committee from 1942 to 1945"

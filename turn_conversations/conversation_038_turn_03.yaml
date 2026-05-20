@@ -4,14 +4,10 @@ title: "RAG Conversation #38 - No References"
 turns:
   - turn_number: 1
     user_query: "What is the Score Agreement level if it is less than 0?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "If the Score Agreement level is less than 0, it indicates poor agreement among the annotators, taking into account that what constitutes an acceptable level of agreement depends on your domain data and type system. This score can suggest that the annotation guidelines or instructions may need to be revised to improve consistency."
 
   - turn_number: 2
     user_query: "How many annotators are needed?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The number of annotators needed can vary depending on the specific requirements of the project. However, inter-annotator agreement scores cannot be calculated unless two or more human annotators annotate the same documents. That allows you to view the scores by comparing a pair of human annotators (for example, compare all of John's mention annotations to all of Mary's mention annotations). You can also view the scores by comparing specific documents (for example, compare the relation annotations that John made in one document to the relation annotations that Mary made in the same document)."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "How much data volume is needed for reliable annotation agreement analysis?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "There are certain guidelines for the volume of data when adding documents for annotation to train a machine learning model. It is recommended to provide a set of documents that have a total size of about 300,000 words. The number of words can be adjusted based on the complexity of the type system. Each document should be limited to a page or two of content, preferably fewer than 2,000 words and closer to 1,000 words per document.  A goal to aim for is to eventually have at least 50 annotations for each entity type and 50 for each relation type in the document collection.  The set of documents for training must contain at least 10 annotated documents."
 
   - turn_number: 4

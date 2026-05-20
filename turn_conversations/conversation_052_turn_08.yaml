@@ -4,44 +4,30 @@ title: "RAG Conversation #52 - No References"
 turns:
   - turn_number: 1
     user_query: "Name the sources of light pollution that affect skywatching."
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Light pollution is caused by stray light from various human activities, including parking lots, sport complexes, street lights, and other sources. This scattered light makes it difficult to observe fainter stars and the Milky Way in the night sky. The larger and more developed a city is, the more light pollution it tends to produce, and the effect decreases the farther away you travel from a city."
 
   - turn_number: 2
     user_query: "free viewing"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Astronomy clubs often host public viewings and events. You can find events and other skywatching resources via the NASA Night Sky Network."
 
   - turn_number: 3
     user_query: "is it bad for health?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "I can't find any information about whether light pollution is bad for your health."
 
   - turn_number: 4
     user_query: "do i need any equipment"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "While binoculars or a telescope can enhance your skywatching experience, they are not necessary to get started. You can use your own eyes to see stars, bright planets, the Moon, comets, and shooting stars."
 
   - turn_number: 5
     user_query: "what do I need for an eclipse?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To safely view a solar eclipse, you will need solar viewing or \"eclipse\" glasses, which are much darker than regular sunglasses and block most of the Sun's light. It is also recommended to use special filters over the lenses of cameras, telescopes, or binoculars when looking at the Sun. You can also use an indirect viewing method, such as a pinhole projector, which projects an image of the Sun onto a nearby surface. It is safe to look at the Moon with unprotected eyes or through a telescope during all types and during all stages of a lunar eclipse."
 
   - turn_number: 6
     user_query: "how can I make the projector?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "To make a pinhole projector for viewing a solar eclipse, you will need two pieces of white card stock, aluminum foil, tape, and a pin, paper clip, or pencil. First, cut a 1-inch to 2-inch square or rectangular hole in the middle of one of the pieces of card stock. Tape a piece of aluminum foil over the hole. Then, flip over the paper and use your pin, paper clip, or pencil to poke a small hole in the aluminum foil. To make your projection a bit more defined, try putting the bottom piece of card stock in a shadowed area while you hold the other piece in the sunlight."
 
   - turn_number: 7
     user_query: "I meant for a lunar eclipse"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You don't need to make a pinhole projector for a lunar eclipse. Unlike a solar eclipse, it is safe to look at the Moon with unprotected eyes or through a telescope during all types and during all stages of a lunar eclipse."
 
   - turn_number: 8
@@ -51,10 +37,10 @@ turns:
     rewrite:
       rewritten_query: "Why is viewing a lunar eclipse considered safe for your eyes?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "It is safe to look at the Moon during a lunar eclipse because the Moon does not produce its own light, but instead reflects sunlight."
 
   - turn_number: 9

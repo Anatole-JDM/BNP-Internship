@@ -4,44 +4,30 @@ title: "RAG Conversation #83 - No References"
 turns:
   - turn_number: 1
     user_query: "How can I obtain a replacement for my lost New York boating safety certificate?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You can order a replacement for your lost New York boating safety certificate online at https://www.ilostmycard.com/. However, if you lost temporary certificates, the temporary certificates cannot be replaced. Additionally, please note that NYS can only issue replacement certificates for the NY Safe Boating Course."
 
   - turn_number: 2
     user_query: "do I have to have Boating safety certificates ?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "In New York, anyone operating a Personal Watercraft (JetSki™, Wave Runner™, etc.) must have a boating safety certificate and be at least 14 years of age or older. Starting in 2024, if you are operating any other type of motorized boat, you will need a safety certificate if you were born on or after January 1, 1978. Starting in 2025, all operators of motorized vessels, regardless of age, will be required to have a safety certificate. However, if you are renting a boat, you do not need a safety certificate if you are at least 18 years old, although the livery must demonstrate how to properly use the boat before renting it. Persons under the age of 18 may only rent a motorboat if they hold a safety certificate."
 
   - turn_number: 3
     user_query: "I need to register my boat and boat trailer"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You can either register your boat online or call the DMV at (518) 486-9786. Note that if your boat is powered by a motor (electric or fuel-driven), it must be registered, regardless of the size of the craft or the motor."
 
   - turn_number: 4
     user_query: "Can I use my NY safety certificate in other states?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, the New York Safe Boating Certificate is nationally accredited and valid in other states and Canada. However, the Adventure License is not acceptable proof of a safe boating certificate outside of New York State."
 
   - turn_number: 5
     user_query: "how much is the class and what type of payment do you accept?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The cost of the boating safety course may vary, but students 18 years of age and older will be required to pay a $10 fee to NYS for issuance of a permanent boating safety certificate. Payment for certificates (both first time and replacement) must be made online at <https://www.ilostmycard.com/>. Please note that no cash or personal checks are accepted. If you require an alternative payment method, you must email [Boating@parks.ny.gov](mailto:Boating@parks.ny.gov)."
 
   - turn_number: 6
     user_query: "do I still need to get a New York State Boating Safety Certificate if I have certificate from other parties?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The certificate from the US Coast Guard Auxiliary, the US Power Squadron/America’s Boating Club, or US Powerboating is a boating safety certificate recognized as acceptable by New York State."
 
   - turn_number: 7
     user_query: "tell me some information about New York State Adventure License Program, please?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "You can turn your NYS driver license into an “adventure license” by adding your lifetime sporting and recreation privileges.  Students successfully completing the on-line course are also eligible to apply for the Adventure License. The New York State Adventure License Program allows eligible individuals to have their driver's license, non-driver ID, or learner's permit indicate completion of the New York Safe Boating Course. This icon is only available for licenses and IDs issued by the NYS DMV, and DMV will automatically place the icon on the license each time it is renewed. However, a U.S. Coast Guard License cannot be listed on the Adventure License. If you move out of state, you must apply for a NY Non-Driver ID to maintain the Adventure License status."
 
   - turn_number: 8
@@ -51,8 +37,8 @@ turns:
     rewrite:
       rewritten_query: "What boating safety rules should I know before operating a boat in New York?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Boaters can prevent most accidents by learning safe boating techniques and using common sense. California boating safety courses are designed to provide boaters with state specific boating laws and federal navigation requirements in many different environments to suit individual boater needs.  It is also designed to increase boating safety on California waterways. Carrying the proper safety equipment on your boat is not only smart, it’s the law! You can find the required safety equipment for your type of boat."

@@ -4,14 +4,10 @@ title: "RAG Conversation #74 - No References"
 turns:
   - turn_number: 1
     user_query: "Are the Lite pricing plans available with all account types in IBM Cloud"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, Lite pricing plans are available with all account types in IBM Cloud. You can have one instance of a Lite plan for each service. For more information about Lite accounts, you can refer to the Account types documentation."
 
   - turn_number: 2
     user_query: "What is it?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Lite plan is a free service plan with usage quotas. You can use the Lite plan to develop an app without any charges. The plan may be renewed monthly or used as a one-time offer. Lite pricing plans are accessible for all account types, and you can have one instance of a Lite plan for each service."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "In IBM Cloud, what does an account mean and what types are available?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "Your IBM Cloud account consists of various interconnected components and systems for managing resources, users, and access. Understanding how these components are linked and how access functions will help you set up your account effectively. An IBM Cloud account is necessary for provisioning and managing IBM Cloud services that are part of the IBM Cloud for Financial Services reference architectures. In addition to outlining the high-level steps to follow, we will also describe some best practices for setting up your account that will assist you in meeting the requirements of the IBM Cloud Framework for Financial Services. We will also provide the most relevant control requirements."
 
   - turn_number: 4

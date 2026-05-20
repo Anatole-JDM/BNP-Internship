@@ -4,14 +4,10 @@ title: "RAG Conversation #18 - No References"
 turns:
   - turn_number: 1
     user_query: "What are the MOXIE instrument's primary attributes and functionalities?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The Mars Oxygen In-Situ Resource Utilization Experiment (MOXIE) is a Scale Model for a Future Big MOXIE, an instrument designed to help NASA prepare for human exploration of Mars. Its main job is to produce oxygen from the Martian carbon-dioxide atmosphere where less than 1% as much air on the surface as on Earth is present.  It will test a way for future explorers to produce oxygen for burning fuel and breathing. MOXIE is currently making 6-10 grams of oxygen per hour, but the Big MOXIE, would need to make 2,000 to 3,000 grams of oxygen per hour to support a crewed mission to Mars."
 
   - turn_number: 2
     user_query: "Is there H on Mars to make water with O?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Mars' atmosphere is mostly carbon dioxide, that makes up about 96%, argon, and nitrogen, with only 0.13% oxygen.The only information about water (H2O) on Mars is that it could be found if travel to the far north or south to find ice, or to mine for ice buried deep in the ground."
 
   - turn_number: 3
@@ -21,10 +17,10 @@ turns:
     rewrite:
       rewritten_query: "Is MOXIE a tree, or what exactly is MOXIE on Mars missions?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "No, MOXIE does not work like a tree. It produces oxygen from the Martian carbon-dioxide atmosphere using a device called an \"electrolyzer,\" a close cousin to a fuel cell that is running in reverse. On Earth, trees and plants absorb carbon dioxide and release oxygen through photosynthesis, but MOXIE uses a different process to achieve the same result."
 
   - turn_number: 4

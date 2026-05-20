@@ -4,19 +4,17 @@ title: "RAG Conversation #14 - No References"
 turns:
   - turn_number: 1
     user_query: "name the viceroy at the time of quit india movement"
-    macro_informative: "1"
-    micro_informative: "1"
     agent_answer: "The Viceroy at the time of the Quit India Movement was Lord Linlithgow."
 
   - turn_number: 2
     user_query: "what did he do?"
-    macro_informative: "0"
-    micro_informative: "0"
+    macro_informative: 0
+    micro_informative: 0
     rewrite:
       rewritten_query: "What did the Viceroy of India do during the Quit India Movement?"
-      macro_informative: "1"
-      micro_informative: "1"
-      correctness:
-        changes: ""
-        groundedness: "1"
+      macro_informative: 1
+      micro_informative:
+        score: 1
+        expected_changes: []
+      correctness: []
     agent_answer: "He had a significant role in the suppression of the Quit India Movement, which brought India into World War II without consultation with Indian nationalists, which led to their anger. The British had the support of his council. He brought India into World War II without consultation with Indian nationalists, which led to their anger.  The Conservatives in England were forced to concede some of the demands made by the Indians and On 8 August , the Viceroy issued a statement that has come to be referred as the `` August Offer '' . However , the Congress rejected the offer."

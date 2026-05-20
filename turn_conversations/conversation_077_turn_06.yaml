@@ -4,32 +4,22 @@ title: "RAG Conversation #77 - No References"
 turns:
   - turn_number: 1
     user_query: "what is the meaning of grenade by bruno mars"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Although I do not have information about the exactly meaning of grenade by Bruno Mars ,the song contains masochistic themes and tells the story of heartbreak caused by a failed relationship and the lyrics convey that despite Bruno's best efforts to show his love, The song 's lyrics carry a message of unrequited love and how Mars ' heart was broken , despite his best efforts to show her his love ."
 
   - turn_number: 2
     user_query: "Are you able to tell me who were the writers  of the song and also who were its performers?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, Grenade (song) Grenade '' was written and produced by The Smeezingtons ( Mars , Phillip Lawrence , Ari Levine ) with additional songwriting by Brody Brown , Claude Kelly ,and Andrew Wyatt. The song was recorded at Larrabee Recording Studios and Levcon Studios in Los Angeles , California and performed by Bruno Mars as lead vocal and  Nabil Elderkin directed the music video for the song ."
 
   - turn_number: 3
     user_query: "Do you know when the song was released?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "The song 'Grenade' by Bruno Mars was initially released as a promotional single on September 28, 2010 and debuted on the Billboard Hot 100 the week of October 16 and the music video was released on November 19 of the same year on MTV and MTV.com ."
 
   - turn_number: 4
     user_query: "Did Grenade by Bruno Mars become a hit?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, \"Grenade\" by Bruno Mars was well received by critics , praising the vocals and emotional lyrics of the song and also considered it as one of the stand - out tracks on Doo - Wops & Hooligans . The single reached number one in fifteen different countries  became a hit. It debuted on the Billboard Hot 100 the week of October 16 , 2010 at number 81 and climbed the chart to number five for the week ending December 18 , 2010 . On January 8 , 2011 , it peaked at number 1 , making it Bruno Mars ' third number one single on the chart , the others being B.o.B 's Nothin ' on You '' , on which he was featured , and Just the Way You Are '' . Mars performed the song in many TV programs like   Late Show with David Letterman,NBC 's The Today Show ,the 2010 Soul Train Music Awards .  It was nominated for both Song of the Year and Record of the Year at the 54th Annual Grammy Awards ."
 
   - turn_number: 5
     user_query: "Did Bruno Mars perform at the Super Bowl?"
-    macro_informative: ""
-    micro_informative: ""
     agent_answer: "Yes, Bruno Mars did performed at the Super Bowl XLVIII halftime show . He was the headliner for Super Bowl XLVIII, which was held on February 2, 2014, at MetLife Stadium in East Rutherford, New Jersey. He performed a medley of his hits, including \"Grenade.\" Red Hot Chili Peppers also joined him as one of the  halftime show performers. The halftime performance  on the year was the most watched in the history of the Super Bowl drawing in a record 115.3 million viewers , passing the record 114 million who watched Madonna perform two years earlier . It was later revealed that the music was pre-recorded . Red Hot Chili Pepper 's drummer , Chad Smith responded on Twitter by saying `` FYI ... Every band in the last 10 years at the Super Bowl has performed to a previously recorded track . It 's the NFL 's policy . ''"
 
   - turn_number: 6
@@ -39,10 +29,10 @@ turns:
     rewrite:
       rewritten_query: "Which singers have performed at the Super Bowl halftime show in recent years?"
       macro_informative: ""
-      micro_informative: ""
-      correctness:
-        changes: ""
-        groundedness: ""
+      micro_informative:
+        score: 0
+        expected_changes: []
+      correctness: []
     agent_answer: "The last couple of Super Bowl halftime shows featured Bruno Mars ,  Phil Collins , Christina Aguilera , Enrique Iglesias,Queen Latifah. In the past,  , popular singers and musicians including Mariah Carey , Michael Jackson , Madonna , Prince , Beyoncé , Paul McCartney , The Rolling Stones , The Who , Whitney Houston , and Lady Gaga have performed during the event 's pre-game and halftime ceremonies ."
 
   - turn_number: 7
